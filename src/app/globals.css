@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf8ff;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Pretendard", var(--font-noto-sans-kr), "Noto Sans KR", Arial, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-weight: 400;
+  letter-spacing: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+p,
+li,
+label,
+input,
+select,
+textarea,
+button,
+a {
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.font-black {
+  font-weight: 800;
+}
+
+.font-extrabold {
+  font-weight: 700;
+}
+
+::selection {
+  background: #ddd0ff;
+  color: #111827;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 0.22s ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.22s ease-out;
+}
