@@ -4,7 +4,7 @@ import { regions, slugifyKorean, subjects } from "@/lib/regions";
 import { searchRegions } from "@/lib/searchRegions";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://studyhigh.example.com";
+  const baseUrl = "https://studyhigh.co.kr";
   const daejeonRegion = searchRegions.find((region) => region.slug === "daejeon");
 
   return [
