@@ -78,24 +78,24 @@ export function ProcessTimeline({
 export function ConsultationTimeline() {
   const steps = [
     {
-      title: "상담 신청",
-      description: "학생의 현재 학습 상황과 희망 과목, 목표를 상담합니다.",
+      title: "무료 상담",
+      description: "학년, 과목, 현재 수준과 목표를 듣고 필요한 수업 조건을 정리합니다.",
     },
     {
-      title: "학생 성향 분석",
-      description: "학생의 성향과 학습 스타일을 분석하여 교육 방향을 설계합니다.",
+      title: "학습 진단",
+      description: "학습 습관과 취약 단원, 질문 방식과 집중 패턴을 확인해 우선순위를 정합니다.",
     },
     {
-      title: "맞춤 선생님 추천",
-      description: "학생과 가장 잘 맞는 전문 선생님을 추천합니다.",
+      title: "선생님 매칭",
+      description: "학생의 성향, 목표, 일정과 원하는 수업 방식에 맞는 선생님을 추천합니다.",
     },
     {
-      title: "30분 무료 테스트 수업",
-      description: "실제 수업을 체험하며 학생과 선생님의 호흡을 확인합니다.",
+      title: "체험 수업",
+      description: "실제 수업 방식으로 설명을 이해하기 쉬운지, 학생과 호흡이 맞는지 확인합니다.",
     },
     {
-      title: "정식 수업 시작",
-      description: "학생만을 위한 맞춤 커리큘럼으로 본격적인 수업을 시작합니다.",
+      title: "정식 수업 · 피드백",
+      description: "맞춤 커리큘럼으로 수업을 시작하고 학습 진행 상황과 다음 계획을 공유합니다.",
     },
   ];
 
@@ -114,12 +114,12 @@ export function ConsultationTimeline() {
               STEP
             </span>
           </div>
-          <article className="rounded-[28px] bg-white p-7 shadow-sm shadow-black/5">
+          <article className="rounded-[28px] border border-violet-100 bg-white p-7 shadow-sm shadow-black/5 sm:p-8">
             <p className="text-sm font-black text-[#2b105f]">STEP {index + 1}</p>
-            <h3 className="mt-3 text-2xl font-black tracking-normal text-black">
+            <h3 className="mt-3 text-2xl font-black tracking-[-0.02em] text-black">
               {step.title}
             </h3>
-            <p className="mt-4 max-w-2xl whitespace-pre-line leading-8 text-black/60">
+            <p className="mt-4 max-w-2xl whitespace-pre-line text-base font-medium leading-8 text-black/60">
               {step.description}
             </p>
           </article>
