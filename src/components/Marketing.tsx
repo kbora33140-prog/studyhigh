@@ -15,14 +15,14 @@ export function SectionTitle({
 }) {
   return (
     <div className={cn("max-w-3xl", align === "center" && "mx-auto text-center")}>
-      <p className="text-xs font-black uppercase tracking-[0.28em] text-[#2b105f]">
+      <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">
         {eyebrow}
       </p>
-      <h2 className="mt-5 text-3xl font-black leading-tight tracking-normal text-black sm:text-5xl">
+      <h2 className="mt-5 text-3xl font-black leading-tight tracking-normal text-[#0f172a] sm:text-5xl">
         {title}
       </h2>
       {description ? (
-        <p className="mt-5 text-lg leading-8 text-black/60">{description}</p>
+        <p className="mt-5 text-lg leading-8 text-[#64748b]">{description}</p>
       ) : null}
     </div>
   );
@@ -42,15 +42,15 @@ export function PremiumCard({
   return (
     <article
       className={cn(
-        "flex min-h-64 flex-col rounded-[28px] bg-white p-7 transition duration-300 hover:-translate-y-1",
+        "flex min-h-64 flex-col rounded-[8px] bg-white p-7 transition duration-300 hover:-translate-y-1",
         className,
       )}
     >
-      <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3efff] text-[#2b105f]">
+      <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3efff] text-[#7c3aed]">
         <Icon className="h-6 w-6" strokeWidth={1.8} />
       </div>
-      <h3 className="text-2xl font-black tracking-normal text-black">{title}</h3>
-      <p className="mt-4 leading-8 text-black/58">{description}</p>
+      <h3 className="text-2xl font-black tracking-normal text-[#0f172a]">{title}</h3>
+      <p className="mt-4 leading-8 text-[#64748b]">{description}</p>
     </article>
   );
 }
@@ -63,12 +63,12 @@ export function ProcessTimeline({
   return (
     <ol className="grid gap-4 lg:grid-cols-4">
       {steps.map((step, index) => (
-        <li key={step.title} className="rounded-[28px] bg-white p-7">
-          <span className="text-sm font-black text-[#2b105f]">
+        <li key={step.title} className="rounded-[8px] bg-white p-7">
+          <span className="text-sm font-black text-[#7c3aed]">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <h3 className="mt-5 text-xl font-black text-black">{step.title}</h3>
-          <p className="mt-3 leading-7 text-black/58">{step.description}</p>
+          <h3 className="mt-5 text-xl font-black text-[#0f172a]">{step.title}</h3>
+          <p className="mt-3 leading-7 text-[#64748b]">{step.description}</p>
         </li>
       ))}
     </ol>
@@ -107,19 +107,19 @@ export function ConsultationTimeline() {
             <span className="absolute left-6 top-12 h-[calc(100%-48px)] w-px bg-black/10 md:left-[90px]" />
           ) : null}
           <div className="relative flex items-start gap-4 md:justify-end">
-            <span className="z-10 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#16072f] text-sm font-black text-white">
+            <span className="z-10 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#7c3aed] text-sm font-black text-white">
               {index + 1}
             </span>
-            <span className="pt-3 text-sm font-black text-[#2b105f] md:hidden">
+            <span className="pt-3 text-sm font-black text-[#7c3aed] md:hidden">
               STEP
             </span>
           </div>
-          <article className="rounded-[28px] border border-violet-100 bg-white p-7 shadow-sm shadow-black/5 sm:p-8">
-            <p className="text-sm font-black text-[#2b105f]">STEP {index + 1}</p>
-            <h3 className="mt-3 text-2xl font-black tracking-[-0.02em] text-black">
+          <article className="rounded-[8px] border border-[#e5d8ff] bg-white p-7 shadow-sm shadow-black/5 sm:p-8">
+            <p className="text-sm font-black text-[#7c3aed]">STEP {index + 1}</p>
+            <h3 className="mt-3 text-2xl font-black tracking-normal text-[#0f172a]">
               {step.title}
             </h3>
-            <p className="mt-4 max-w-2xl whitespace-pre-line text-base font-medium leading-8 text-black/60">
+            <p className="mt-4 max-w-2xl whitespace-pre-line text-base font-medium leading-8 text-[#64748b]">
               {step.description}
             </p>
           </article>
@@ -139,10 +139,10 @@ export function ReviewCarousel({
       {reviews.map((review) => (
         <article
           key={review.label}
-          className="min-w-[82%] snap-start rounded-[28px] bg-white p-7 sm:min-w-[48%] lg:min-w-0"
+          className="min-w-[82%] snap-start rounded-[8px] bg-white p-7 sm:min-w-[48%] lg:min-w-0"
         >
-          <p className="text-sm font-black text-[#2b105f]">{review.label}</p>
-          <p className="mt-5 text-lg leading-8 text-black/68">{review.quote}</p>
+          <p className="text-sm font-black text-[#7c3aed]">{review.label}</p>
+          <p className="mt-5 text-lg leading-8 text-[#475569]">{review.quote}</p>
         </article>
       ))}
     </div>
@@ -151,7 +151,7 @@ export function ReviewCarousel({
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#16072f] px-5 py-14 text-sm text-white/62 lg:px-8">
+    <footer className="bg-[#0f172a] px-5 py-14 text-sm text-white/62 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-10">
         <div className="flex flex-col items-start gap-4">
           <Image

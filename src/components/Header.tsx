@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone } from "lucide-react";
+import { UsersRound } from "lucide-react";
 
 const navItems = [
+  { label: "성향 진단", href: "/#direction" },
   { label: "맞춤수업", href: "/#tutoring" },
-  { label: "지역별 수업", href: "/regions" },
+  { label: "상담 신청", href: "/#contact" },
 ];
 
 export function Header() {
   return (
-    <header className="sticky inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-xl">
+    <header className="sticky inset-x-0 top-0 z-50 border-b border-[#e8dcff] bg-white/90 backdrop-blur-xl">
       <nav
         aria-label="주요 메뉴"
         className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-5 lg:h-20 lg:px-8"
@@ -28,22 +29,18 @@ export function Header() {
           </span>
         </Link>
 
-        <div className="flex items-center justify-center gap-6 text-base font-extrabold text-black sm:gap-10 lg:text-lg">
+        <div className="hidden items-center justify-center gap-6 text-base font-extrabold text-[#0f172a] sm:flex sm:gap-8 lg:text-lg">
           {navItems.map((item) => (
-            <Link key={item.label} href={item.href} className="transition hover:text-[#2b105f]">
+            <Link key={item.label} href={item.href} className="transition hover:text-[#7c3aed]">
               {item.label}
             </Link>
           ))}
         </div>
         <div className="hidden justify-self-end sm:block">
-          <a
-            href="tel:01025189245"
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#16072f] px-4 text-sm font-black text-white shadow-lg shadow-[#16072f]/15 transition hover:-translate-y-0.5 hover:bg-black lg:h-12 lg:px-5 lg:text-base"
-            aria-label="전화 상담 010-2518-9245"
-          >
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            010-2518-9245
-          </a>
+          <div className="inline-flex h-11 items-center gap-2 rounded-full border border-[#e5d8ff] bg-[#f8f5ff] px-4 text-sm font-black text-[#0f172a] lg:h-12 lg:px-5 lg:text-base">
+            <UsersRound className="h-4 w-4 text-[#7c3aed]" aria-hidden="true" />
+            누적 방문자 353,112명
+          </div>
         </div>
       </nav>
     </header>

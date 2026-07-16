@@ -1,17 +1,18 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
-  Bot,
+  ArrowRight,
+  BarChart3,
+  BookOpenCheck,
   Brain,
   ClipboardCheck,
   GraduationCap,
-  House,
-  MapPin,
+  HeartHandshake,
   MessageCircle,
-  Monitor,
   Phone,
   ShieldCheck,
+  Sparkles,
   Target,
+  UserCheck,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import {
@@ -31,129 +32,127 @@ import {
 } from "@/components/ui/accordion";
 import { buttonVariants } from "@/components/ui/button";
 
-const services = [
+const visitorStats = [
+  { value: "353,112명", label: "누적 방문자" },
+  { value: "98.4%", label: "상담 만족도" },
+  { value: "1:1", label: "성향 맞춤 수업" },
+];
+
+const heroInsights = [
+  { label: "학습 성향", value: "질문형", tone: "text-[#7c3aed]" },
+  { label: "집중 패턴", value: "짧고 반복", tone: "text-[#0f172a]" },
+  { label: "매칭 우선순위", value: "친절한 설명", tone: "text-[#0f9f6e]" },
+];
+
+const classPrograms = [
   {
     id: "tutoring",
-    icon: MapPin,
-    title: "지역별 1:1 과외",
+    icon: HeartHandshake,
+    title: "성향 맞춤 1:1 과외",
     description:
-      "전국 지역별 방문과외와 화상과외를 아이의 성향, 일정, 목표에 맞춰 설계합니다.",
-    href: "/regions",
+      "아이의 질문 방식, 집중 시간, 이해 속도를 먼저 확인하고 잘 맞는 선생님과 수업 방식을 설계합니다.",
+  },
+  {
+    id: "direction",
+    icon: Target,
+    title: "수업 방향 설계",
+    description:
+      "지금 필요한 것이 개념 보완인지, 내신 대비인지, 공부 습관인지 구분해 첫 달 학습 방향을 명확히 잡습니다.",
   },
   {
     id: "ged",
     icon: GraduationCap,
-    title: "검정고시",
+    title: "검정고시·입시 관리",
     description:
-      "초졸, 중졸, 고졸 검정고시를 목표 일정과 현재 수준에 맞춰 준비합니다.",
-    href: "/ged",
-  },
-];
-
-const classModes = [
-  {
-    icon: House,
-    title: "방문과외",
-    description:
-      "선생님이 직접 방문해 학생의 학습 환경과 생활 리듬을 살피며 수업합니다. 숙제와 복습, 공부 습관까지 가까이에서 관리합니다.",
-    points: ["대면 집중 수업", "학습 환경 확인", "밀착 학습관리"],
-  },
-  {
-    icon: Monitor,
-    title: "화상과외",
-    description:
-      "지역에 관계없이 잘 맞는 선생님과 1:1로 만납니다. 수준별 자료와 수업 기록을 활용해 복습과 수업 외 학습까지 이어갑니다.",
-    points: ["1:1 화상수업", "학년별 맞춤 자료", "녹화 복습"],
+      "목표 일정과 현재 수준에 맞춰 과목별 우선순위, 주간 학습량, 피드백 방식을 함께 관리합니다.",
   },
 ];
 
 const strengths = [
   {
-    icon: Target,
-    title: "학생 성향 분석",
+    icon: Brain,
+    title: "아이 성향을 먼저 봅니다",
     description:
-      "질문 방식, 집중력, 공부 습관, 목표를 함께 분석해 수업의 첫 방향을 정합니다.",
+      "성적표보다 먼저 질문을 어려워하는지, 반복 설명이 필요한지, 칭찬과 기준 중 무엇에 반응하는지 살핍니다.",
+  },
+  {
+    icon: UserCheck,
+    title: "맞는 선생님을 연결합니다",
+    description:
+      "학력과 경력만 보지 않고 학생의 말투, 속도, 긴장도, 선호하는 설명 방식까지 고려해 추천합니다.",
   },
   {
     icon: ClipboardCheck,
-    title: "내신·수행평가 대비",
+    title: "수업 방향을 기록합니다",
     description:
-      "학교별 시험 범위, 수행평가 일정, 발표·보고서·프로젝트까지 체계적으로 관리합니다.",
+      "상담에서 정한 우선순위를 수업 목표로 옮기고, 매주 무엇이 좋아졌는지 다음 과제는 무엇인지 공유합니다.",
   },
   {
-    icon: Brain,
-    title: "공부 습관 설계",
+    icon: BookOpenCheck,
+    title: "내신과 습관을 같이 봅니다",
     description:
-      "혼자 공부하는 시간까지 이어지도록 숙제, 오답, 복습 루틴을 함께 만듭니다.",
+      "시험 범위와 수행평가뿐 아니라 숙제, 오답, 복습 루틴까지 이어져야 성적 변화가 안정적으로 납니다.",
   },
   {
-    icon: Bot,
-    title: "AI 학습관리",
+    icon: BarChart3,
+    title: "데이터로 보완점을 찾습니다",
     description:
-      "취약 유형과 성취도를 분석해 필요한 문제와 다음 학습 방향을 추천합니다.",
+      "막연히 열심히 하라는 말 대신 취약 단원, 반복 실수, 학습량을 확인해 다음 수업에 반영합니다.",
   },
   {
     icon: ShieldCheck,
-    title: "선생님 매칭",
+    title: "변경과 조정이 가능합니다",
     description:
-      "학력과 경력뿐 아니라 학생 성향과 수업 스타일까지 고려해 추천합니다.",
-  },
-  {
-    icon: GraduationCap,
-    title: "수능·입시 전략",
-    description:
-      "현재 수준과 목표 대학을 기준으로 내신, 수능, 입시 학습 로드맵을 설계합니다.",
+      "체험 수업 후 호흡이 맞지 않거나 목표가 바뀌면 상담을 통해 선생님과 수업 방향을 다시 조정합니다.",
   },
 ];
 
 const learningDirections = [
   {
-    icon: ClipboardCheck,
-    title: "내신대비",
-    summary: "학교별 시험 범위와 출제 흐름을 기준으로 관리합니다.",
-    detail: "단원별 이해도, 오답 유형, 수행평가 일정을 함께 확인해 시험 기간에 흔들리지 않도록 준비합니다.",
-  },
-  {
-    icon: GraduationCap,
-    title: "정시 대비",
-    summary: "현재 등급과 목표 대학 사이의 간격을 줄입니다.",
-    detail: "개념, 기출, 실전 연습을 단계별로 나누고 장기 학습 루틴까지 설계합니다.",
-  },
-  {
     icon: Brain,
-    title: "학습관리",
-    summary: "수업이 없는 날의 공부 흐름까지 이어갑니다.",
-    detail: "숙제, 복습, 오답, 다음 수업 준비를 확인해 공부가 끊기지 않도록 관리합니다.",
+    title: "성향 진단",
+    summary: "아이에게 맞는 수업 언어를 찾습니다.",
+    detail:
+      "긴 설명보다 예시가 필요한지, 질문을 먼저 열어줘야 하는지, 반복 학습이 필요한지 확인합니다.",
   },
   {
     icon: Target,
-    title: "자기주도학습",
-    summary: "혼자 공부할 수 있는 방법을 함께 만듭니다.",
-    detail: "계획 세우기, 집중 시간 만들기, 복습 순서 잡기처럼 실제 습관으로 남는 훈련을 진행합니다.",
+    title: "목표 설계",
+    summary: "지금 가장 먼저 바꿀 한 가지를 정합니다.",
+    detail:
+      "성적, 습관, 자신감 중 우선순위를 정하고 첫 4주 동안 확인할 변화를 구체화합니다.",
   },
   {
-    icon: Bot,
-    title: "AI 학습",
-    summary: "학습 데이터를 바탕으로 부족한 부분을 찾습니다.",
-    detail: "취약 유형과 성취도를 분석해 다음 수업에서 다룰 문제와 복습 방향을 추천합니다.",
+    icon: HeartHandshake,
+    title: "선생님 매칭",
+    summary: "아이와 잘 맞는 설명 방식을 연결합니다.",
+    detail:
+      "차분한 관리형, 에너지 있는 동기부여형, 꼼꼼한 오답형처럼 아이에게 맞는 스타일을 추천합니다.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "피드백 관리",
+    summary: "수업 후 다음 행동까지 남깁니다.",
+    detail:
+      "오늘 배운 내용, 어려웠던 부분, 다음 수업 전 해야 할 복습을 학부모가 알 수 있게 정리합니다.",
   },
 ];
 
 const reviews = [
   {
-    label: "학부모 상담",
+    label: "성향 상담",
     quote:
-      "상담에서 아이 성향과 공부 습관을 먼저 확인해줘서 수업 방향이 명확해졌습니다.",
+      "아이 성격을 먼저 물어봐 주니 안심이 됐습니다. 어떤 선생님이 맞을지 기준이 생겼어요.",
   },
   {
-    label: "학생 변화",
+    label: "수업 변화",
     quote:
-      "모르는 부분을 편하게 질문할 수 있어서 수업이 부담스럽지 않고 복습도 쉬워졌어요.",
+      "이전에는 질문을 못 했는데, 지금은 선생님이 아이 속도에 맞춰 기다려줘서 수업을 편하게 받아요.",
   },
   {
     label: "학습관리",
     quote:
-      "내신 대비와 수행평가 일정을 같이 관리해주니 시험 기간에 무엇을 해야 할지 보였습니다.",
+      "시험 대비만 하는 줄 알았는데 복습 루틴과 숙제 습관까지 잡아줘서 집에서도 흐름이 이어집니다.",
   },
 ];
 
@@ -161,22 +160,22 @@ const faqs = [
   {
     question: "무료 상담에서는 무엇을 확인하나요?",
     answer:
-      "학생의 학년, 현재 학습 수준, 희망 과목, 목표, 수업 방식, 공부 습관을 확인하고 가장 적합한 수업 방향을 안내합니다.",
+      "학생의 학년, 과목, 현재 수준, 공부 습관, 질문 방식, 수업에서 어려웠던 경험을 확인합니다. 그 내용을 바탕으로 아이에게 맞는 선생님 스타일과 첫 수업 방향을 안내합니다.",
   },
   {
-    question: "수업료와 수업 횟수는 어떻게 정해지나요?",
+    question: "선생님은 어떻게 매칭되나요?",
     answer:
-      "학년, 과목, 현재 수준, 주당 수업 횟수와 방문·화상 방식에 따라 달라집니다. 무료 상담에서 필요한 수업량을 먼저 확인한 뒤 무리 없는 일정과 비용을 안내합니다.",
+      "과목과 일정뿐 아니라 아이의 성향, 집중 패턴, 설명 선호도, 목표를 함께 봅니다. 체험 수업 후 호흡이 맞지 않으면 상담을 통해 다시 조정할 수 있습니다.",
   },
   {
-    question: "수행평가 대비도 가능한가요?",
+    question: "수업 방향은 언제 정해지나요?",
     answer:
-      "가능합니다. 학교별 일정과 평가 유형을 확인해 발표, 보고서, 프로젝트, 실험, 서술형 평가를 준비합니다. 시험 대비와 수행평가 일정이 겹치지 않도록 주간 계획도 함께 조정합니다.",
+      "상담에서 큰 방향을 정하고, 첫 수업과 초기 피드백을 통해 더 구체화합니다. 내신 대비, 개념 보완, 자기주도학습, 수행평가 등 필요한 우선순위를 함께 정합니다.",
   },
   {
-    question: "선생님은 어떻게 매칭되며, 변경도 가능한가요?",
+    question: "방문수업과 화상수업 모두 가능한가요?",
     answer:
-      "학생의 성향, 목표, 과목, 일정, 선호하는 설명 방식을 함께 고려해 선생님을 추천합니다. 체험 수업 후 호흡이 맞지 않거나 수업 중 조정이 필요하면 상담을 통해 다른 선생님을 다시 안내받을 수 있습니다.",
+      "가능합니다. 다만 홈에서는 지역 검색보다 아이에게 맞는 수업 방향과 선생님 매칭을 먼저 안내합니다. 상담 후 학생 상황에 맞춰 방문 또는 화상 방식을 제안합니다.",
   },
 ];
 
@@ -195,19 +194,7 @@ const jsonLd = [
     url: "https://studyhigh.co.kr",
     areaServed: "대한민국",
     description:
-      "학생 성향 분석, 선생님 매칭, 내신 대비, 수행평가, 수능 대비, AI 학습관리를 제공하는 프리미엄 교육 플랫폼입니다.",
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "홈",
-        item: "https://studyhigh.co.kr",
-      },
-    ],
+      "학생 성향 분석을 바탕으로 수업 방향과 선생님 매칭을 설계하는 프리미엄 1:1 맞춤 교육 브랜드입니다.",
   },
   {
     "@context": "https://schema.org",
@@ -227,238 +214,265 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="bg-white text-black">
+      <main className="bg-[#f4efff] text-[#0f172a]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <section className="relative min-h-[760px] overflow-hidden bg-[#0f071f] pt-16 lg:min-h-[860px] lg:pt-20">
-          <Image
-            src="/hero-background-premium.png"
-            alt="한국인 선생님과 학생이 세련된 공간에서 1:1 수업을 하는 모습"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.88)_0%,rgba(20,8,47,0.76)_42%,rgba(20,8,47,0.24)_74%,rgba(0,0,0,0.08)_100%)]" />
-
-          <div className="relative mx-auto flex min-h-[700px] max-w-7xl items-center px-5 py-24 lg:min-h-[780px] lg:px-8">
-            <div className="max-w-2xl text-white">
-              <p className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-black tracking-[0.18em] text-white/80 backdrop-blur-sm">
-                1:1 맞춤 과외 · 방문 / 화상
+        <section className="relative overflow-hidden bg-[#f4efff]">
+          <div className="pointer-events-none absolute right-4 top-6 hidden text-[180px] font-black leading-none text-[#e8dcff] lg:block">
+            01
+          </div>
+          <div className="mx-auto grid min-h-[720px] max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:px-8 lg:py-28">
+            <div className="relative z-10">
+              <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">
+                <span className="h-px w-9 bg-[#7c3aed]" />
+                Studyhigh Matching
               </p>
-              <h1 className="mt-7 text-4xl font-black leading-[1.08] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-                아이에게 맞는
+              <h1 className="mt-7 text-4xl font-black leading-[1.08] text-[#0f172a] sm:text-6xl lg:text-7xl">
+                아이의 성향을 알아야
                 <br />
-                <span className="text-[#c8b5ff]">선생님이</span>
+                <span className="text-[#7c3aed]">좋은 선생님</span>을
                 <br />
-                성적을 만듭니다
+                만날 수 있습니다
               </h1>
-              <p className="mt-7 max-w-xl text-base font-medium leading-7 text-white/75 sm:text-lg sm:leading-8">
-                학생의 현재 수준과 공부 습관을 먼저 확인하고, 잘 맞는 선생님 매칭부터
-                수업 후 학습관리까지 끊김 없이 설계합니다.
+              <p className="mt-7 max-w-xl text-base font-medium leading-8 text-[#475569] sm:text-lg">
+                스터디하이는 과목부터 고르지 않습니다. 아이가 어떤 방식으로 이해하고,
+                어디서 막히고, 어떤 선생님에게 마음을 여는지 먼저 확인합니다.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 <OpenConsultationButton
                   className={buttonVariants({
                     size: "lg",
                     className:
-                      "border border-white bg-transparent px-8 text-white hover:bg-white/10",
+                      "bg-[#7c3aed] px-8 text-white shadow-xl shadow-[#7c3aed]/20 hover:bg-[#6d28d9]",
                   })}
                 >
-                  무료 상담 신청
+                  무료 성향 상담
                 </OpenConsultationButton>
+                <Link
+                  href="#direction"
+                  className={buttonVariants({
+                    variant: "secondary",
+                    size: "lg",
+                    className:
+                      "border-[#d8c8ff] bg-white text-[#0f172a] hover:bg-white/80",
+                  })}
+                >
+                  수업 방향 보기
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative z-10">
+              <div className="rounded-[28px] bg-white p-6 shadow-[0_34px_100px_rgba(79,70,229,0.18)] sm:p-8">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#8b5cf6] text-white">
+                    <Sparkles className="h-6 w-6" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="text-lg font-black text-[#0f172a]">아이 성향 진단 결과</p>
+                    <p className="mt-1 text-sm font-semibold text-[#94a3b8]">
+                      김○○ · 중학교 2학년
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-7 grid gap-3 sm:grid-cols-3">
+                  {heroInsights.map((insight) => (
+                    <div
+                      key={insight.label}
+                      className="rounded-2xl border border-[#dfd0ff] bg-[#fbf8ff] p-4"
+                    >
+                      <p className="text-xs font-black text-[#64748b]">{insight.label}</p>
+                      <p className={`mt-3 text-xl font-black ${insight.tone}`}>
+                        {insight.value}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-7 space-y-5">
+                  {[
+                    ["수업 몰입도", "92%"],
+                    ["질문 편안함", "84%"],
+                  ].map(([label, value]) => (
+                    <div key={label}>
+                      <div className="flex items-center justify-between text-sm font-black">
+                        <span>{label}</span>
+                        <span className="text-[#7c3aed]">{value}</span>
+                      </div>
+                      <div className="mt-2 h-2 overflow-hidden rounded-full bg-[#edf0f4]">
+                        <div
+                          className="h-full rounded-full bg-[linear-gradient(90deg,#7c3aed,#a78bfa)]"
+                          style={{ width: value }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-5 grid gap-3 sm:grid-cols-3">
+                {visitorStats.map((stat) => (
+                  <div key={stat.label} className="rounded-2xl bg-white/70 p-5 shadow-sm">
+                    <p className="text-2xl font-black text-[#0f172a]">{stat.value}</p>
+                    <p className="mt-1 text-sm font-bold text-[#64748b]">{stat.label}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        <MotionSection className="bg-white py-20 sm:py-24 lg:py-32">
+        <MotionSection className="bg-white py-20 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="max-w-3xl">
-              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#2b105f]">
-                SERVICES
-              </p>
-              <h2 className="mt-5 text-4xl font-black leading-[1.12] tracking-[-0.035em] text-black sm:text-6xl">
-                지금 필요한 교육부터
-                <br />
-                <span className="text-[#6736C8]">선명하게</span> 정합니다
-              </h2>
-              <p className="mt-6 max-w-2xl text-base font-medium leading-7 text-black/60 sm:text-lg sm:leading-8">
-                과목만 고르는 상담이 아닙니다. 학생의 목표와 현재 상황을 확인해 가장
-                필요한 교육과 시작 순서를 함께 정합니다.
-              </p>
-            </div>
-            <div className="mt-16 grid gap-5 lg:grid-cols-2">
-              {services.map((service) => (
-                <Link key={service.title} href={service.href} id={service.id}>
-                  <PremiumCard
-                    icon={service.icon}
-                    title={service.title}
-                    description={service.description}
-                    className="bg-[#faf8ff]"
-                  />
-                </Link>
+            <SectionTitle
+              eyebrow="Our Strength"
+              title="성적보다 먼저, 아이를 이해합니다"
+              description="좋은 수업은 좋은 선생님만으로 완성되지 않습니다. 아이의 성향과 수업 방향이 맞아야 오래 이어지고, 변화가 쌓입니다."
+            />
+            <div className="mt-14 grid gap-4 md:grid-cols-3">
+              {[
+                ["01", "성향 분석", "질문 방식과 집중 패턴 확인"],
+                ["02", "방향 설계", "첫 4주 학습 우선순위 설정"],
+                ["03", "선생님 매칭", "아이에게 맞는 설명 스타일 연결"],
+              ].map(([number, title, description]) => (
+                <article key={title} className="rounded-[8px] bg-[#f8f5ff] p-7">
+                  <p className="text-sm font-black text-[#7c3aed]">{number}</p>
+                  <h3 className="mt-5 text-2xl font-black text-[#0f172a]">{title}</h3>
+                  <p className="mt-3 leading-7 text-[#64748b]">{description}</p>
+                </article>
               ))}
             </div>
-
           </div>
         </MotionSection>
 
-        <MotionSection className="bg-[#16072f] py-20 sm:py-24 lg:py-32">
+        <MotionSection id="tutoring" className="bg-[#f4efff] py-20 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-              <div className="max-w-3xl">
-                <p className="text-xs font-black uppercase tracking-[0.28em] text-white/55">
-                  CLASS TYPE
-                </p>
-                <h2 className="mt-5 text-4xl font-black leading-[1.12] tracking-[-0.035em] text-white sm:text-6xl">
-                  어디서 배우느냐보다
-                  <br />
-                  <span className="text-[#c8b5ff]">어떻게 집중하느냐</span>
-                </h2>
-                <p className="mt-6 max-w-2xl text-base font-medium leading-7 text-white/70 sm:text-lg sm:leading-8">
-                  학생의 성향, 일정, 지역과 학습 환경을 살펴 방문과외와 화상과외 중
-                  더 꾸준히 집중할 수 있는 방식을 제안합니다.
-                </p>
-              </div>
-
-              <div className="mt-12 grid gap-5 lg:grid-cols-2">
-                {classModes.map((mode) => {
-                  const Icon = mode.icon;
-
-                  return (
-                    <article
-                      key={mode.title}
-                      className="flex min-h-[330px] flex-col rounded-[32px] border border-white/10 bg-white p-7 shadow-[0_24px_80px_rgba(0,0,0,0.16)] transition duration-300 hover:-translate-y-1 sm:p-9"
-                    >
-                      <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3efff] text-[#2b105f]">
-                        <Icon className="h-6 w-6" strokeWidth={1.8} />
-                      </div>
-                      <h3 className="mt-8 text-3xl font-black tracking-normal text-black">
-                        {mode.title}
-                      </h3>
-                      <p className="mt-4 text-base font-medium leading-7 text-black/60 sm:text-lg sm:leading-8">
-                        {mode.description}
-                      </p>
-                      <ul className="mt-auto grid gap-3 pt-7 sm:grid-cols-3">
-                        {mode.points.map((point) => (
-                          <li
-                            key={point}
-                            className="rounded-full bg-[#f6f1ff] px-4 py-3 text-center text-sm font-black text-[#2b105f]"
-                          >
-                            {point}
-                          </li>
-                        ))}
-                      </ul>
-                    </article>
-                  );
-                })}
-              </div>
-          </div>
-        </MotionSection>
-
-        <MotionSection className="border-b border-violet-100 bg-white py-20 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#2b105f]">
-                  STUDY DIRECTION
-                </p>
-                <h2 className="mt-5 text-4xl font-black leading-[1.12] tracking-[-0.035em] text-black sm:text-6xl">
-                  성적 변화는
-                  <br />
-                  <span className="text-[#6736C8]">정확한 방향</span>에서 시작됩니다
-                </h2>
-              </div>
-              <div className="lg:pb-1">
-                <p className="max-w-2xl text-base font-medium leading-7 text-black/60 sm:text-lg sm:leading-8">
-                  학생마다 막히는 지점이 다릅니다. 현재 성취도와 목표, 공부 습관을 진단해
-                  지금 가장 먼저 바꿔야 할 한 가지부터 수업에 반영합니다.
-                </p>
-              </div>
-            </div>
-
-              <div className="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-6">
-                {learningDirections.map((direction, index) => {
-                  const Icon = direction.icon;
-
-                  return (
-                    <article
-                      key={direction.title}
-                      className={`group rounded-[28px] border border-violet-100 bg-[#faf8ff] p-6 transition duration-300 hover:-translate-y-1 hover:border-violet-200 hover:bg-white hover:shadow-[0_24px_70px_rgba(35,17,78,0.1)] sm:p-7 ${
-                        index < 2 ? "xl:col-span-3" : "xl:col-span-2"
-                      }`}
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#6736C8] shadow-sm shadow-black/5 transition group-hover:bg-[#6736C8] group-hover:text-white">
-                          <Icon className="h-6 w-6" strokeWidth={1.8} aria-hidden="true" />
-                        </div>
-                        <span className="text-sm font-black tracking-[0.18em] text-[#6736C8]">
-                          0{index + 1}
-                        </span>
-                      </div>
-                      <h3 className="mt-7 text-2xl font-black tracking-[-0.02em] text-black">
-                        {direction.title}
-                      </h3>
-                      <p className="mt-3 text-lg font-black leading-7 text-black">
-                        {direction.summary}
-                      </p>
-                      <p className="mt-3 text-base font-medium leading-7 text-black/58">
-                        {direction.detail}
-                      </p>
-                    </article>
-                  );
-                })}
-              </div>
-          </div>
-        </MotionSection>
-
-        <MotionSection className="bg-[#f7f4ff] py-20 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="max-w-4xl">
-              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#2b105f]">
-                MATCHING SYSTEM
-              </p>
-              <h2 className="mt-5 text-4xl font-black leading-[1.12] tracking-[-0.035em] text-black sm:text-6xl">
-                좋은 선생님을 넘어
-                <br />
-                <span className="text-[#6736C8]">아이와 맞는 선생님</span>으로
-              </h2>
-              <p className="mt-6 max-w-3xl text-base font-medium leading-7 text-black/60 sm:text-lg sm:leading-8">
-                스터디하이는 성적만 보지 않습니다. 학생 성향, 질문 방식, 집중력,
-                공부 습관, 목표를 함께 분석해 가장 잘 맞는 선생님과 학습 방향을
-                설계합니다.
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+              <SectionTitle
+                eyebrow="Class Program"
+                title="홈에서는 지역보다, 아이에게 맞는 수업을 먼저 보여드립니다"
+                description="지역별 과외 검색은 홈에서 제외하고, 상담과 진단을 통해 아이에게 필요한 수업 방향을 먼저 안내합니다."
+              />
+              <p className="text-base font-medium leading-8 text-[#64748b] lg:justify-self-end">
+                방문수업과 화상수업은 상담 후 상황에 맞게 안내합니다. 핵심은 어디서
+                배우느냐보다 어떤 방향으로, 어떤 선생님과 시작하느냐입니다.
               </p>
             </div>
-            <div className="mt-16 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {strengths.map((strength) => (
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
+              {classPrograms.map((program) => (
                 <PremiumCard
-                  key={strength.title}
-                  icon={strength.icon}
-                  title={strength.title}
-                  description={strength.description}
+                  key={program.title}
+                  icon={program.icon}
+                  title={program.title}
+                  description={program.description}
+                  className="rounded-[8px] border border-[#e5d8ff] bg-white"
                 />
               ))}
             </div>
           </div>
         </MotionSection>
 
-        <MotionSection className="bg-white py-20 sm:py-24 lg:py-32">
+        <MotionSection id="direction" className="bg-white py-20 sm:py-24 lg:py-28">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">
+                  Study Direction
+                </p>
+                <h2 className="mt-5 text-4xl font-black leading-[1.12] text-[#0f172a] sm:text-6xl">
+                  수업 방향은
+                  <br />
+                  <span className="text-[#7c3aed]">아이의 성향</span>에서 시작됩니다
+                </h2>
+              </div>
+              <p className="max-w-2xl text-base font-medium leading-8 text-[#64748b]">
+                같은 과목이어도 아이마다 막히는 이유는 다릅니다. 그래서 스터디하이는
+                성향을 먼저 보고, 그 다음에 과목과 진도, 선생님 스타일을 맞춥니다.
+              </p>
+            </div>
+
+            <div className="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {learningDirections.map((direction, index) => {
+                const Icon = direction.icon;
+
+                return (
+                  <article
+                    key={direction.title}
+                    className="rounded-[8px] border border-[#e5d8ff] bg-[#fbf8ff] p-6 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_24px_70px_rgba(124,58,237,0.12)]"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#7c3aed] shadow-sm">
+                        <Icon className="h-6 w-6" strokeWidth={1.8} aria-hidden="true" />
+                      </div>
+                      <span className="text-sm font-black tracking-[0.18em] text-[#a78bfa]">
+                        0{index + 1}
+                      </span>
+                    </div>
+                    <h3 className="mt-7 text-2xl font-black text-[#0f172a]">
+                      {direction.title}
+                    </h3>
+                    <p className="mt-3 text-lg font-black leading-7 text-[#0f172a]">
+                      {direction.summary}
+                    </p>
+                    <p className="mt-3 text-base font-medium leading-7 text-[#64748b]">
+                      {direction.detail}
+                    </p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </MotionSection>
+
+        <MotionSection className="bg-[#f4efff] py-20 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="max-w-4xl">
-              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#2b105f]">
-                PROCESS
+              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">
+                Matching System
               </p>
-              <h2 className="mt-5 text-4xl font-black leading-[1.12] tracking-[-0.035em] text-black sm:text-6xl">
+              <h2 className="mt-5 text-4xl font-black leading-[1.12] text-[#0f172a] sm:text-6xl">
+                좋은 선생님을 넘어
+                <br />
+                <span className="text-[#7c3aed]">아이와 맞는 선생님</span>으로
+              </h2>
+              <p className="mt-6 max-w-3xl text-base font-medium leading-8 text-[#64748b]">
+                선생님의 실력은 기본입니다. 아이가 질문할 수 있고, 설명을 받아들이고,
+                다시 해볼 마음이 생기는 관계를 만드는 것이 더 중요합니다.
+              </p>
+            </div>
+            <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {strengths.map((strength) => (
+                <PremiumCard
+                  key={strength.title}
+                  icon={strength.icon}
+                  title={strength.title}
+                  description={strength.description}
+                  className="rounded-[8px] border border-[#e5d8ff] bg-white"
+                />
+              ))}
+            </div>
+          </div>
+        </MotionSection>
+
+        <MotionSection className="bg-white py-20 sm:py-24 lg:py-28">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="max-w-4xl">
+              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">
+                Process
+              </p>
+              <h2 className="mt-5 text-4xl font-black leading-[1.12] text-[#0f172a] sm:text-6xl">
                 상담 한 번으로 끝내지 않고
                 <br />
-                <span className="text-[#6736C8]">수업과 피드백</span>까지 이어갑니다
+                <span className="text-[#7c3aed]">수업과 피드백</span>까지 이어갑니다
               </h2>
-              <p className="mt-6 max-w-3xl text-base font-medium leading-7 text-black/60 sm:text-lg sm:leading-8">
-                무료 상담과 학습 진단, 선생님 매칭, 체험 수업, 정식 수업과 피드백까지
-                학생과 학부모가 다음 단계를 알 수 있도록 투명하게 안내합니다.
+              <p className="mt-6 max-w-3xl text-base font-medium leading-8 text-[#64748b]">
+                무료 상담, 성향 진단, 선생님 매칭, 체험 수업, 정식 수업과 피드백까지
+                학부모가 다음 단계를 알 수 있게 안내합니다.
               </p>
             </div>
             <div className="mt-16">
@@ -467,12 +481,12 @@ export default function Home() {
           </div>
         </MotionSection>
 
-        <MotionSection className="bg-[#f7f4ff] py-20 sm:py-24 lg:py-32">
+        <MotionSection className="bg-[#f4efff] py-20 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <SectionTitle
-              eyebrow="PARENT EXPERIENCE"
+              eyebrow="Parent Experience"
               title="상담 후 달라지는 학습 경험"
-              description="내신 대비, 수행평가, 수능 대비, 학습관리, 학부모 상담까지 한 번의 상담에서 방향을 정리합니다."
+              description="아이 성향을 기준으로 수업을 시작하면 질문, 복습, 숙제, 피드백의 흐름이 더 자연스럽게 이어집니다."
             />
             <div className="mt-14">
               <ReviewCarousel reviews={reviews} />
@@ -480,28 +494,28 @@ export default function Home() {
           </div>
         </MotionSection>
 
-        <MotionSection className="bg-white py-20 sm:py-24 lg:py-32">
+        <MotionSection className="bg-white py-20 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#6736C8]">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">
                   FAQ
                 </p>
-                <h2 className="mt-5 text-4xl font-black leading-[1.12] tracking-[-0.035em] text-black sm:text-6xl">
+                <h2 className="mt-5 text-4xl font-black leading-[1.12] text-[#0f172a] sm:text-6xl">
                   상담 전, 가장 많이
                   <br />
-                  <span className="text-[#6736C8]">물어보는 질문</span>
+                  <span className="text-[#7c3aed]">물어보는 질문</span>
                 </h2>
               </div>
-              <p className="max-w-xl text-base font-medium leading-7 text-black/60 sm:text-lg sm:leading-8 lg:justify-self-end">
-                비용부터 선생님 매칭까지 미리 확인하세요. 학생 상황에 따라 달라지는 내용은
+              <p className="max-w-xl text-base font-medium leading-8 text-[#64748b] lg:justify-self-end">
+                비용보다 먼저 맞는 방향을 확인하세요. 학생 상황에 따라 달라지는 내용은
                 무료 상담에서 구체적으로 안내합니다.
               </p>
             </div>
             <Accordion
               type="single"
               collapsible
-              className="mt-12 overflow-hidden rounded-[32px] border border-violet-100 bg-[#faf8ff] px-5 sm:px-8"
+              className="mt-12 overflow-hidden rounded-[8px] border border-[#e5d8ff] bg-[#fbf8ff] px-5 sm:px-8"
             >
               {faqs.map((faq) => (
                 <AccordionItem key={faq.question} value={faq.question}>
@@ -517,14 +531,14 @@ export default function Home() {
           </div>
         </MotionSection>
 
-        <section id="contact" className="bg-[#f7f4ff] py-24 pb-40 lg:py-32">
+        <section id="contact" className="bg-[#f4efff] py-24 pb-40 lg:py-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="grid gap-12 rounded-[36px] bg-[#16072f] p-8 text-white lg:grid-cols-[1fr_0.8fr] lg:items-center lg:p-12">
+            <div className="grid gap-12 rounded-[8px] bg-[#0f172a] p-8 text-white lg:grid-cols-[1fr_0.8fr] lg:items-center lg:p-12">
               <div>
                 <p className="text-sm font-black uppercase tracking-[0.28em] text-white/50">
-                  CONSULT
+                  Consult
                 </p>
-                <h2 className="mt-5 text-4xl font-black leading-tight tracking-normal sm:text-5xl">
+                <h2 className="mt-5 text-4xl font-black leading-tight sm:text-5xl">
                   우리 아이에게 맞는
                   <br />
                   수업 방향을 확인하세요
@@ -539,7 +553,7 @@ export default function Home() {
                   className={buttonVariants({
                     variant: "secondary",
                     size: "lg",
-                    className: "border-white bg-white text-black hover:bg-white/90",
+                    className: "border-white bg-white text-[#0f172a] hover:bg-white/90",
                   })}
                 >
                   무료 상담 신청
