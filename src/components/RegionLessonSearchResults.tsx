@@ -3,14 +3,8 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ArrowRight, MapPin } from "lucide-react";
-import { gradeOptions } from "@/lib/gradeLevels";
+import { getGradeRouteSlug, gradeOptions } from "@/lib/gradeLevels";
 import { subjects, slugifyKorean, type Region } from "@/lib/regions";
-
-type SearchResult = {
-  region: Region;
-  district: Region["districts"][number];
-  dong: string;
-};
 
 export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
   const searchParams = useSearchParams();
@@ -20,7 +14,7 @@ export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
   const gradeSlug = searchParams.get("grade") || "";
   const subjectSlug = searchParams.get("subject") || "";
   const schoolName = searchParams.get("school") || "";
-  const requestType = searchParams.get("requestType") || "";
+  const request = searchParams.get("request") || "";
   const hasSearch = Array.from(searchParams.keys()).length > 0;
 
   if (!hasSearch) {
@@ -28,10 +22,11 @@ export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
   }
 
   const gradeLabel =
-    gradeOptions.find((grade) => grade.value === gradeSlug)?.label.replace(/\s*\d학년$/, "") ||
-    "맞춤";
+    gradeOptions.find((grade) => grade.value === gradeSlug)?.label ||
+    (gradeSlug ? "맞춤 학년" : "맞춤");
+  const routeGradeSlug = getGradeRouteSlug(gradeSlug);
   const subjectLabel = subjects.find((subject) => subject.slug === subjectSlug)?.name || "전과목";
-  const lessonType = requestType || "1:1 맞춤수업";
+  const lessonType = request || "1:1 맞춤수업";
 
   const results = regions.flatMap((region) => {
     if (regionSlug && region.slug !== regionSlug) {
@@ -49,7 +44,13 @@ export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
     });
   });
 
-  const visibleResults = results.slice(0, 24);
+  const visibleResults = results.slice(0, regionSlug || districtSlug || dongName ? 24 : 12);
+  const searchSummary = [
+    schoolName && `학교: ${schoolName}`,
+    gradeSlug && `학년: ${gradeLabel}`,
+    subjectSlug && `희망 과목: ${subjectLabel}`,
+    request && `요청사항: ${request}`,
+  ].filter(Boolean);
 
   return (
     <section id="region-results" className="mt-8 rounded-[1.55rem] bg-[#faf8ff] p-5 sm:p-7">
@@ -61,14 +62,21 @@ export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
           <h3 className="mt-3 text-2xl font-black text-black">검색 조건에 맞는 수업</h3>
         </div>
         <p className="text-sm font-bold text-black/55">
-          {results.length}개 지역 중 {visibleResults.length}개 표시
+          {results.length}개 후보 중 {visibleResults.length}개 표시
         </p>
       </div>
 
-      {schoolName ? (
-        <p className="mt-4 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-black/60">
-          학교명: <span className="font-black text-black">{schoolName}</span>
-        </p>
+      {searchSummary.length > 0 ? (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {searchSummary.map((summary) => (
+            <span
+              key={summary}
+              className="rounded-full bg-white px-4 py-2 text-sm font-bold text-black/62"
+            >
+              {summary}
+            </span>
+          ))}
+        </div>
       ) : null}
 
       {visibleResults.length > 0 ? (
@@ -76,7 +84,7 @@ export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
           {visibleResults.map((result) => {
             const href = `/regions/${result.region.slug}/${result.district.slug}/${slugifyKorean(
               result.dong,
-            )}/${gradeSlug || "high"}/${subjectSlug || "all"}`;
+            )}/${routeGradeSlug}/${subjectSlug || "all"}`;
 
             return (
               <Link
@@ -91,6 +99,7 @@ export function RegionLessonSearchResults({ regions }: { regions: Region[] }) {
                       {result.region.name} {result.district.name} {result.dong}
                     </div>
                     <p className="mt-3 text-lg font-black leading-7 text-black">
+                      {schoolName ? `${schoolName} 기준 ` : ""}
                       {result.dong} {gradeLabel} {subjectLabel} 과외
                     </p>
                     <p className="mt-2 text-sm font-semibold leading-6 text-black/55">

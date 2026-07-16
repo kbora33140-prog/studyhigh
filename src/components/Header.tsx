@@ -3,8 +3,8 @@ import Link from "next/link";
 import { UsersRound } from "lucide-react";
 
 const navItems = [
-  { label: "성향 진단", href: "/#direction" },
   { label: "맞춤수업", href: "/#tutoring" },
+  { label: "지역별 수업", href: "/regions" },
   { label: "상담 신청", href: "/#contact" },
 ];
 

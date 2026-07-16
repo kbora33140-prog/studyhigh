@@ -91,14 +91,14 @@ const directionHighlights = [
 export const metadata: Metadata = {
   title: "지역별 수업 | 시군구·학교·학년·과목별 1:1 맞춤 과외",
   description:
-    "스터디하이 지역별 수업 검색. 시·도, 시·군·구, 읍면동, 학교별, 학년별, 과목별, 요청수업별로 방문과외와 화상과외를 찾고 1:1 맞춤수업 상담을 신청하세요.",
+    "스터디하이 지역별 수업 검색. 시·군·구, 동·면·읍, 학년, 학교, 희망 과목, 요청사항 기준으로 방문과외와 화상과외를 찾고 1:1 맞춤수업 상담을 신청하세요.",
   alternates: {
     canonical: "/regions",
   },
   openGraph: {
     title: "스터디하이 지역별 수업",
     description:
-      "전국 지역별 방문과외와 화상과외를 시도, 시군구, 학교, 학년, 과목, 요청수업 기준으로 찾는 1:1 맞춤수업 페이지입니다.",
+      "전국 지역별 방문과외와 화상과외를 시군구, 동면읍, 학교, 학년, 희망 과목, 요청사항 기준으로 찾는 1:1 맞춤수업 페이지입니다.",
     url: "/regions",
     type: "website",
   },
@@ -194,7 +194,7 @@ export default function RegionsPage() {
                       지역별 수업 검색
                     </h2>
                     <p className="mt-1 text-sm font-medium text-black/55">
-                      원하는 조건을 선택해 상담 기준을 정리하세요.
+                      학교와 학년만 입력해도 상담 후보를 확인할 수 있습니다.
                     </p>
                   </div>
                 </div>
@@ -315,7 +315,7 @@ export default function RegionsPage() {
                 상담 과정
               </h2>
               <p className="mt-5 text-lg leading-8 text-black/62">
-                지역, 학교, 학년, 과목, 요청수업을 확인한 뒤 학생에게 맞는 선생님과 수업 방향을 차근차근 연결합니다.
+                지역, 학교, 학년, 희망 과목, 요청사항을 확인한 뒤 학생에게 맞는 선생님과 수업 방향을 차근차근 연결합니다.
               </p>
             </div>
             <ConsultationTimeline />

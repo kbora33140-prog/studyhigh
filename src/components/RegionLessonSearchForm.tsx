@@ -6,8 +6,6 @@ import { CascadingRegionFields } from "@/components/CascadingRegionFields";
 import { gradeOptions } from "@/lib/gradeLevels";
 import { subjects, type Region } from "@/lib/regions";
 
-const requestTypes = ["내신대비", "학습관리", "정시대비", "검정고시", "기타"];
-
 export function RegionLessonSearchForm({ regions }: { regions: Region[] }) {
   const router = useRouter();
 
@@ -24,7 +22,7 @@ export function RegionLessonSearchForm({ regions }: { regions: Region[] }) {
         const grade = String(formData.get("grade") || "");
         const subject = String(formData.get("subject") || "");
         const school = String(formData.get("school") || "");
-        const requestType = String(formData.get("requestType") || "");
+        const request = String(formData.get("request") || "");
 
         const params = new URLSearchParams();
 
@@ -34,24 +32,24 @@ export function RegionLessonSearchForm({ regions }: { regions: Region[] }) {
         if (grade) params.set("grade", grade);
         if (subject) params.set("subject", subject);
         if (school) params.set("school", school);
-        if (requestType) params.set("requestType", requestType);
+        if (request) params.set("request", request);
 
         router.push(params.size ? `/regions?${params.toString()}#region-results` : "/regions");
       }}
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CascadingRegionFields regions={regions} />
+        <SearchSelect label="학년" name="grade" options={gradeOptions} />
         <label className="grid gap-2 text-sm font-bold text-black">
           학교명
           <input
             name="school"
-            placeholder="학교명을 입력하세요"
+            placeholder="예: 둔산고, 대전중, 검정고시"
             className="h-12 rounded-2xl bg-[#f7f7fa] px-4 text-sm font-semibold text-black outline-none transition placeholder:text-black/35 focus:bg-white focus:ring-2 focus:ring-[#6736C8]"
           />
         </label>
-        <SearchSelect label="학년" name="grade" options={gradeOptions} />
         <SearchSelect
-          label="과목"
+          label="희망 과목"
           name="subject"
           options={subjects.map((subject) => ({
             label: subject.name,
@@ -60,11 +58,15 @@ export function RegionLessonSearchForm({ regions }: { regions: Region[] }) {
         />
       </div>
 
-      <SearchSelect
-        label="요청수업"
-        name="requestType"
-        options={requestTypes.map((type) => ({ label: type, value: type }))}
-      />
+      <label className="grid gap-2 text-sm font-bold text-black">
+        요청사항
+        <textarea
+          name="request"
+          rows={3}
+          placeholder="예: 내신대비, 수학 개념 보완, 숙제 관리, 방문수업 희망"
+          className="resize-none rounded-2xl bg-[#f7f7fa] px-4 py-3 text-sm font-semibold leading-6 text-black outline-none transition placeholder:text-black/35 focus:bg-white focus:ring-2 focus:ring-[#6736C8]"
+        />
+      </label>
 
       <button
         type="submit"
@@ -74,7 +76,7 @@ export function RegionLessonSearchForm({ regions }: { regions: Region[] }) {
         수업 검색하기
       </button>
       <p className="text-center text-xs font-semibold leading-5 text-black/45">
-        검색 조건에 맞는 지역별 수업 페이지로 이동합니다.
+        지역을 선택하지 않아도 학교와 학년만으로 검색할 수 있습니다.
       </p>
     </form>
   );
