@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
@@ -89,6 +90,7 @@ export async function generateMetadata({
 
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
+  const articleImage = article?.image || "/high-school-math-tutoring.png";
 
   return {
     title: article?.title || `${region.name} ${district.name} ${pageKeyword} | 스터디하이`,
@@ -105,6 +107,7 @@ export async function generateMetadata({
         `${dong} ${grade.name} 학생을 위한 ${subjectKeyword} 상담 페이지입니다. 학생 수준과 목표에 맞춰 수업 방향을 제안합니다.`,
       url: canonical,
       type: "article",
+      images: [articleImage],
     },
     twitter: {
       card: "summary_large_image",
@@ -125,6 +128,9 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
 
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
+  const articleImage = article?.image || "/high-school-math-tutoring.png";
+  const articleImageAlt =
+    article?.imageAlt || `${region.name} ${district.name} ${dong} ${grade.name} ${subject.name}과외 이미지`;
   const faqItems =
     article?.faq || [
       {
@@ -232,40 +238,52 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
 
         <article>
           <section className="bg-[#f7f4ff] py-24 lg:py-32">
-            <div className="mx-auto max-w-7xl px-5 lg:px-8">
-              <Link href="/regions" className="text-sm font-black text-[#2b105f]">
-                지역별 수업 검색으로 돌아가기
-              </Link>
-              <h1 className="mt-8 max-w-5xl text-5xl font-black leading-tight tracking-normal sm:text-6xl">
-                {article?.title || (
-                  <>
-                    {region.name} {district.name} {dong}
-                    <br />
-                    {grade.name} {subjectKeyword}
-                  </>
-                )}
-              </h1>
-              <p className="mt-7 max-w-3xl text-lg leading-8 text-black/65">
-                {article?.lead ||
-                  `${dong}에서 ${grade.name} ${subjectKeyword}를 찾는 학생을 위해 현재 수준, 학교 진도, 목표 성적, 공부 습관을 확인하고 맞춤 수업 방향을 제안합니다.`}
-              </p>
-              {article ? (
-                <ul className="mt-8 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                  {article.points.map((point) => (
-                    <li
-                      key={point}
-                      className="rounded-full bg-white px-4 py-3 text-center text-sm font-black text-[#2b105f] shadow-sm shadow-black/5"
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-              <OpenConsultationButton
-                className={buttonVariants({ size: "lg", className: "mt-10 bg-[#16072f]" })}
-              >
-                무료 상담 신청
-              </OpenConsultationButton>
+            <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1fr_0.86fr] lg:items-center lg:px-8">
+              <div>
+                <Link href="/regions" className="text-sm font-black text-[#2b105f]">
+                  지역별 수업 검색으로 돌아가기
+                </Link>
+                <h1 className="mt-8 max-w-5xl text-5xl font-black leading-tight tracking-normal sm:text-6xl">
+                  {article?.title || (
+                    <>
+                      {region.name} {district.name} {dong}
+                      <br />
+                      {grade.name} {subjectKeyword}
+                    </>
+                  )}
+                </h1>
+                <p className="mt-7 max-w-3xl text-lg leading-8 text-black/65">
+                  {article?.lead ||
+                    `${dong}에서 ${grade.name} ${subjectKeyword}를 찾는 학생을 위해 현재 수준, 학교 진도, 목표 성적, 공부 습관을 확인하고 맞춤 수업 방향을 제안합니다.`}
+                </p>
+                {article ? (
+                  <ul className="mt-8 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                    {article.points.map((point) => (
+                      <li
+                        key={point}
+                        className="rounded-full bg-white px-4 py-3 text-center text-sm font-black text-[#2b105f] shadow-sm shadow-black/5"
+                      >
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                <OpenConsultationButton
+                  className={buttonVariants({ size: "lg", className: "mt-10 bg-[#16072f]" })}
+                >
+                  무료 상담 신청
+                </OpenConsultationButton>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
+                <Image
+                  src={articleImage}
+                  alt={articleImageAlt}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </section>
 
