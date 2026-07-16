@@ -11,6 +11,8 @@ import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
 import { slugifyKorean, subjects } from "@/lib/regions";
 
+const SITE_URL = "https://studyhigh.co.kr";
+
 type GradeSubjectPageProps = {
   params: Promise<{
     slug: string;
@@ -90,6 +92,7 @@ export async function generateMetadata({
 
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
+  const targetKeyword = `${region.name} ${dong} ${grade.name} ${subjectKeyword}`;
   const articleImage = article?.image || "/high-school-math-tutoring.png";
 
   return {
@@ -97,6 +100,15 @@ export async function generateMetadata({
     description:
       article?.metaDescription ||
       `${region.name} ${district.name} ${pageKeyword}를 찾는 학생을 위해 내신대비, 정시 대비, 학습관리, 방문과외와 화상과외를 1:1 맞춤으로 상담합니다.`,
+    keywords: [
+      targetKeyword,
+      `${dong} ${grade.name} ${subjectKeyword}`,
+      `${region.name} ${district.name} ${subjectKeyword}`,
+      `${dong} ${subjectKeyword}`,
+      `${grade.name} ${subject.name} 내신대비`,
+      `${grade.name} ${subject.name} 정시 대비`,
+      `1:1 ${subject.name}과외 상담`,
+    ],
     alternates: {
       canonical,
     },
@@ -166,19 +178,19 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
         "@type": "ListItem",
         position: 1,
         name: "홈",
-        item: "https://studyhigh.example.com",
+        item: SITE_URL,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "지역별 수업",
-        item: "https://studyhigh.example.com/regions",
+        item: `${SITE_URL}/regions`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: `${region.name} ${district.name} ${pageKeyword}`,
-        item: `https://studyhigh.example.com${canonical}`,
+        item: `${SITE_URL}${canonical}`,
       },
     ],
   };
@@ -189,7 +201,8 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
         "@type": "Article",
         headline: article.title,
         description: article.metaDescription,
-        mainEntityOfPage: `https://studyhigh.example.com${canonical}`,
+        image: `${SITE_URL}${articleImage}`,
+        mainEntityOfPage: `${SITE_URL}${canonical}`,
         author: {
           "@type": "Organization",
           name: "스터디하이",
@@ -209,8 +222,33 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
     name: `스터디하이 ${dong} ${grade.name} ${subject.name}과외`,
     areaServed: `${region.name} ${district.name} ${dong}`,
     telephone: "010-2518-9245",
-    url: `https://studyhigh.example.com${canonical}`,
+    url: `${SITE_URL}${canonical}`,
     description: article?.metaDescription || `${dong} ${grade.name} ${subjectKeyword} 1:1 맞춤수업 상담`,
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${region.name} ${dong} ${grade.name} ${subjectKeyword}`,
+    serviceType: `${grade.name} ${subject.name} 1:1 과외`,
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "스터디하이",
+      url: SITE_URL,
+    },
+    areaServed: {
+      "@type": "Place",
+      name: `${region.name} ${district.name} ${dong}`,
+    },
+    description:
+      article?.metaDescription ||
+      `${region.name} ${district.name} ${dong} ${grade.name} ${subjectKeyword} 상담 페이지입니다.`,
+    url: `${SITE_URL}${canonical}`,
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      category: "무료 상담",
+    },
   };
 
   return (
@@ -234,6 +272,10 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
 
         <article>
@@ -284,6 +326,50 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
                   className="object-cover"
                 />
               </div>
+            </div>
+          </section>
+
+          <section className="bg-white py-16 lg:py-20">
+            <div className="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[1fr_0.72fr] lg:items-stretch lg:px-8">
+              <div className="rounded-[28px] border border-violet-100 bg-[#faf8ff] p-7 sm:p-9">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#6736C8]">
+                  QUICK ANSWER
+                </p>
+                <h2 className="mt-4 text-3xl font-black leading-tight text-black sm:text-4xl">
+                  {region.name} {dong} {grade.name} {subjectKeyword},
+                  <br />
+                  어떤 학생에게 맞나요?
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-black/65">
+                  {region.name} {district.name} {dong}에서 {grade.name} {subjectKeyword}를 찾는
+                  학생이라면 먼저 학교 진도, 최근 시험지, 목표 등급, 오답 유형을 확인해야
+                  합니다. 스터디하이는 상담에서 수업 방향을 정리한 뒤 학생 성향에 맞는
+                  선생님과 방문과외 또는 화상과외 방식을 안내합니다.
+                </p>
+              </div>
+              <aside className="rounded-[28px] bg-[#16072f] p-7 text-white sm:p-9">
+                <p className="text-sm font-black uppercase tracking-[0.24em] text-white/45">
+                  CONSULT CTA
+                </p>
+                <h3 className="mt-4 text-2xl font-black leading-tight">
+                  {dong} {grade.name} {subject.name} 수업,
+                  <br />
+                  무료 상담으로 바로 확인하세요.
+                </h3>
+                <ul className="mt-6 space-y-3 text-sm font-semibold leading-6 text-white/70">
+                  <li>학생 수준과 학교 진도 확인</li>
+                  <li>내신대비·정시 대비 우선순위 정리</li>
+                  <li>학생 성향에 맞는 선생님 매칭 안내</li>
+                </ul>
+                <OpenConsultationButton
+                  className={buttonVariants({
+                    size: "lg",
+                    className: "mt-7 w-full bg-white text-black hover:bg-white/90",
+                  })}
+                >
+                  무료 상담 신청
+                </OpenConsultationButton>
+              </aside>
             </div>
           </section>
 
