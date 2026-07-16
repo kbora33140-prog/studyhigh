@@ -33,15 +33,16 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 
 const visitorStats = [
-  { value: "32,486명", label: "이번 달 방문자" },
-  { value: "98.4%", label: "상담 만족도" },
-  { value: "1:1", label: "성향 맞춤 수업" },
+  { value: "전문교사 3,000명", label: "검증된 선생님 풀" },
+  { value: "교사 경력 30년", label: "누적 교육 운영 경험" },
+  { value: "97.8%", label: "수업 만족도" },
 ];
 
-const heroInsights = [
-  { label: "학습 성향", value: "질문형", tone: "text-[#7c3aed]" },
-  { label: "집중 패턴", value: "짧고 반복", tone: "text-[#0f172a]" },
-  { label: "매칭 우선순위", value: "친절한 설명", tone: "text-[#0f9f6e]" },
+const heroMetrics = [
+  { label: "성향 진단 만족도", value: "98.6%" },
+  { label: "학습관리 만족도", value: "96.9%" },
+  { label: "상담 만족도", value: "98.4%" },
+  { label: "수업 피드백 만족도", value: "97.5%" },
 ];
 
 const classPrograms = [
@@ -140,19 +141,74 @@ const learningDirections = [
 
 const reviews = [
   {
-    label: "성향 상담",
+    label: "아이 성향 진단 결과",
+    student: "중2 김○○",
+    result: "질문형 · 반복 확인형",
     quote:
-      "아이 성격을 먼저 물어봐 주니 안심이 됐습니다. 어떤 선생님이 맞을지 기준이 생겼어요.",
+      "질문을 못 하던 학생이라 선생님이 먼저 확인 질문을 여는 방식으로 바꿨고, 3주 뒤 오답 질문 횟수가 2배 늘었습니다.",
   },
   {
     label: "수업 변화",
+    student: "초6 박○○",
+    result: "산만형 · 짧은 집중형",
     quote:
-      "이전에는 질문을 못 했는데, 지금은 선생님이 아이 속도에 맞춰 기다려줘서 수업을 편하게 받아요.",
+      "40분을 버티기 어려워해 15분 설명, 5분 확인 문제 루틴으로 조정했습니다. 숙제 완료율이 54%에서 91%로 올랐습니다.",
   },
   {
     label: "학습관리",
+    student: "고1 이○○",
+    result: "계획 부족형",
     quote:
-      "시험 대비만 하는 줄 알았는데 복습 루틴과 숙제 습관까지 잡아줘서 집에서도 흐름이 이어집니다.",
+      "수업 없는 날 복습 체크표를 만들고 오답을 다음 수업 첫 10분에 확인했습니다. 중간고사 전 과목별 루틴이 잡혔습니다.",
+  },
+  {
+    label: "성적 상승",
+    student: "중3 최○○",
+    result: "개념 누락형",
+    quote:
+      "수학 함수 단원에서 막히는 원인을 다시 진단해 중1 비례식부터 보완했습니다. 6주 뒤 단원평가가 62점에서 86점으로 올랐습니다.",
+  },
+  {
+    label: "좋은 대학 입학",
+    student: "고3 정○○",
+    result: "실전 불안형",
+    quote:
+      "문제는 풀지만 시험장에서 흔들려 시간 배분 훈련을 넣었습니다. 모의고사 풀이 순서를 고정하고 목표 대학 합격까지 이어졌습니다.",
+  },
+  {
+    label: "영어 내신",
+    student: "중2 윤○○",
+    result: "암기 부담형",
+    quote:
+      "본문 암기를 무작정 시키지 않고 문장 구조와 핵심 표현을 먼저 정리했습니다. 수행평가 발표까지 연결해 자신감이 생겼습니다.",
+  },
+  {
+    label: "자기주도학습",
+    student: "초5 한○○",
+    result: "칭찬 반응형",
+    quote:
+      "작은 성공을 바로 표시하는 방식으로 바꾸자 스스로 문제를 고르는 시간이 늘었습니다. 학부모 피드백도 주 1회로 정리했습니다.",
+  },
+  {
+    label: "검정고시 준비",
+    student: "성인 학습자",
+    result: "기초 재정리형",
+    quote:
+      "오래 쉬었던 학습자라 과목별 기초 단원을 먼저 압축했습니다. 매주 통과 기준을 정해 부담을 줄이고 꾸준히 이어갔습니다.",
+  },
+  {
+    label: "수업 피드백",
+    student: "고2 강○○",
+    result: "피드백 민감형",
+    quote:
+      "틀린 문제를 지적하기보다 고친 과정을 먼저 짚어줬습니다. 수업 후 피드백을 짧고 구체적으로 바꾸자 참여도가 좋아졌습니다.",
+  },
+  {
+    label: "학부모 상담",
+    student: "중1 서○○",
+    result: "환경 영향형",
+    quote:
+      "아이 문제가 아니라 공부 환경과 시간대가 맞지 않는다는 점을 확인했습니다. 저녁 수업으로 바꾸고 집중 시간이 안정됐습니다.",
   },
 ];
 
@@ -246,7 +302,7 @@ export default function Home() {
                       "bg-[#7c3aed] px-8 text-white shadow-xl shadow-[#7c3aed]/20 hover:bg-[#6d28d9]",
                   })}
                 >
-                  무료 성향 상담
+                  무료 상담 신청
                 </OpenConsultationButton>
                 <Link
                   href="#direction"
@@ -270,22 +326,22 @@ export default function Home() {
                     <Sparkles className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-lg font-black text-[#0f172a]">아이 성향 진단 결과</p>
+                    <p className="text-lg font-black text-[#0f172a]">스터디하이 수업 만족 지표</p>
                     <p className="mt-1 text-sm font-semibold text-[#94a3b8]">
-                      김○○ · 중학교 2학년
+                      여러 학생 성향 진단과 수업 피드백을 바탕으로 관리합니다
                     </p>
                   </div>
                 </div>
 
-                <div className="mt-7 grid gap-3 sm:grid-cols-3">
-                  {heroInsights.map((insight) => (
+                <div className="mt-7 grid gap-3 sm:grid-cols-2">
+                  {heroMetrics.map((metric) => (
                     <div
-                      key={insight.label}
+                      key={metric.label}
                       className="rounded-2xl border border-[#dfd0ff] bg-[#fbf8ff] p-4"
                     >
-                      <p className="text-xs font-black text-[#64748b]">{insight.label}</p>
-                      <p className={`mt-3 text-xl font-black ${insight.tone}`}>
-                        {insight.value}
+                      <p className="text-xs font-black text-[#64748b]">{metric.label}</p>
+                      <p className="mt-3 text-2xl font-black text-[#7c3aed]">
+                        {metric.value}
                       </p>
                     </div>
                   ))}
@@ -293,8 +349,8 @@ export default function Home() {
 
                 <div className="mt-7 space-y-5">
                   {[
-                    ["수업 몰입도", "92%"],
-                    ["질문 편안함", "84%"],
+                    ["맞춤 선생님 재신청률", "94%"],
+                    ["학부모 피드백 확인율", "97%"],
                   ].map(([label, value]) => (
                     <div key={label}>
                       <div className="flex items-center justify-between text-sm font-black">
@@ -481,9 +537,9 @@ export default function Home() {
         <MotionSection className="bg-[#f4efff] py-20 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <SectionTitle
-              eyebrow="Parent Experience"
-              title="상담 후 달라지는 학습 경험"
-              description="아이 성향을 기준으로 수업을 시작하면 질문, 복습, 숙제, 피드백의 흐름이 더 자연스럽게 이어집니다."
+              eyebrow="Real Student Cases"
+              title="스터디하이를 만나고 달라진 실제 사례"
+              description="성향 진단, 수업 변화, 학습관리, 성적 상승, 입시 결과까지 학생별로 달라진 지점을 구체적으로 기록합니다."
             />
             <div className="mt-14">
               <ReviewCarousel reviews={reviews} />

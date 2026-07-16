@@ -132,19 +132,35 @@ export function ConsultationTimeline() {
 export function ReviewCarousel({
   reviews,
 }: {
-  reviews: Array<{ label: string; quote: string }>;
+  reviews: Array<{ label: string; quote: string; student?: string; result?: string }>;
 }) {
+  const rollingReviews = [...reviews, ...reviews];
+
   return (
-    <div className="-mx-5 flex snap-x gap-4 overflow-x-auto px-5 pb-3 lg:mx-0 lg:grid lg:grid-cols-3 lg:overflow-visible lg:px-0">
-      {reviews.map((review) => (
-        <article
-          key={review.label}
-          className="min-w-[82%] snap-start rounded-[8px] bg-white p-7 sm:min-w-[48%] lg:min-w-0"
-        >
-          <p className="text-sm font-black text-[#7c3aed]">{review.label}</p>
-          <p className="mt-5 text-lg leading-8 text-[#475569]">{review.quote}</p>
-        </article>
-      ))}
+    <div className="-mx-5 overflow-hidden px-5 pb-3 lg:mx-0 lg:px-0">
+      <div className="flex w-max gap-4 animate-[case-scroll_55s_linear_infinite] hover:[animation-play-state:paused]">
+        {rollingReviews.map((review, index) => (
+          <article
+            key={`${review.label}-${review.student}-${index}`}
+            className="w-[310px] shrink-0 rounded-[8px] bg-white p-7 shadow-sm shadow-[#7c3aed]/5 sm:w-[380px]"
+          >
+            <p className="text-sm font-black text-[#7c3aed]">{review.label}</p>
+            {review.student || review.result ? (
+              <div className="mt-4 rounded-2xl bg-[#fbf8ff] px-4 py-3">
+                {review.student ? (
+                  <p className="text-base font-black text-[#0f172a]">{review.student}</p>
+                ) : null}
+                {review.result ? (
+                  <p className="mt-1 text-sm font-bold text-[#64748b]">{review.result}</p>
+                ) : null}
+              </div>
+            ) : null}
+            <p className="mt-5 text-base font-medium leading-7 text-[#475569]">
+              {review.quote}
+            </p>
+          </article>
+        ))}
+      </div>
     </div>
   );
 }

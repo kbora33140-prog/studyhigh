@@ -79,6 +79,15 @@ a {
   }
 }
 
+@keyframes case-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .animate-accordion-down {
   animation: accordion-down 0.22s ease-out;
 }

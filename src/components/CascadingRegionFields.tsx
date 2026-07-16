@@ -3,7 +3,96 @@
 import { useMemo, useState } from "react";
 import type { Region } from "@/lib/regions";
 
-const POPULAR_DONG_LIMIT = 22;
+const POPULAR_DONG_LIMIT = 24;
+
+const districtPriorityDongs: Record<string, string[]> = {
+  "daejeon-서구": [
+    "둔산동",
+    "탄방동",
+    "월평동",
+    "용문동",
+    "갈마동",
+    "관저동",
+    "도안동",
+    "괴정동",
+    "내동",
+    "도마동",
+    "복수동",
+    "가수원동",
+    "만년동",
+    "정림동",
+    "가장동",
+    "변동",
+  ],
+  "daejeon-유성구": [
+    "봉명동",
+    "노은동",
+    "전민동",
+    "관평동",
+    "도룡동",
+    "궁동",
+    "어은동",
+    "죽동",
+    "지족동",
+    "반석동",
+    "원신흥동",
+    "상대동",
+    "복용동",
+    "학하동",
+    "구암동",
+    "장대동",
+    "신성동",
+    "문지동",
+    "송강동",
+    "원내동",
+  ],
+  "daejeon-동구": [
+    "대동",
+    "가양동",
+    "가오동",
+    "용전동",
+    "판암동",
+    "용운동",
+    "성남동",
+    "자양동",
+    "신흥동",
+    "천동",
+    "홍도동",
+    "신안동",
+    "효동",
+    "인동",
+  ],
+  "daejeon-중구": [
+    "태평동",
+    "문화동",
+    "대흥동",
+    "은행동",
+    "선화동",
+    "오류동",
+    "용두동",
+    "유천동",
+    "중촌동",
+    "목동",
+    "석교동",
+    "산성동",
+    "문창동",
+    "부사동",
+  ],
+  "daejeon-대덕구": [
+    "송촌동",
+    "중리동",
+    "법동",
+    "비래동",
+    "오정동",
+    "대화동",
+    "석봉동",
+    "신탄진동",
+    "덕암동",
+    "와동",
+    "읍내동",
+    "연축동",
+  ],
+};
 
 const priorityDongs = [
   "둔산동",
@@ -121,10 +210,28 @@ const lowResidentialDongs = new Set([
 
 const priorityIndex = new Map(priorityDongs.map((dong, index) => [dong, index]));
 
-function getPopularDongs(dongs: string[]) {
+function getPopularDongs(regionSlug: string, districtName: string, dongs: string[]) {
+  const districtPriority = districtPriorityDongs[`${regionSlug}-${districtName}`] || [];
+  const districtPriorityIndex = new Map(
+    districtPriority.map((dong, index) => [dong, index]),
+  );
+
+  if (districtPriority.length > 0) {
+    return districtPriority
+      .filter((dong) => dongs.includes(dong) && !lowResidentialDongs.has(dong))
+      .slice(0, POPULAR_DONG_LIMIT);
+  }
+
   return [...dongs]
     .filter((dong) => !lowResidentialDongs.has(dong))
     .sort((a, b) => {
+      const aDistrictIndex = districtPriorityIndex.get(a) ?? Number.MAX_SAFE_INTEGER;
+      const bDistrictIndex = districtPriorityIndex.get(b) ?? Number.MAX_SAFE_INTEGER;
+
+      if (aDistrictIndex !== bDistrictIndex) {
+        return aDistrictIndex - bDistrictIndex;
+      }
+
       const aIndex = priorityIndex.get(a) ?? Number.MAX_SAFE_INTEGER;
       const bIndex = priorityIndex.get(b) ?? Number.MAX_SAFE_INTEGER;
 
@@ -153,8 +260,11 @@ export function CascadingRegionFields({ regions }: { regions: Region[] }) {
   );
 
   const popularDongs = useMemo(
-    () => (selectedDistrict ? getPopularDongs(selectedDistrict.dongs) : []),
-    [selectedDistrict],
+    () =>
+      selectedRegion && selectedDistrict
+        ? getPopularDongs(selectedRegion.slug, selectedDistrict.name, selectedDistrict.dongs)
+        : [],
+    [selectedRegion, selectedDistrict],
   );
 
   return (
