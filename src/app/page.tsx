@@ -33,7 +33,7 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 
 const visitorStats = [
-  { value: "353,112명", label: "누적 방문자" },
+  { value: "32,486명", label: "이번 달 방문자" },
   { value: "98.4%", label: "상담 만족도" },
   { value: "1:1", label: "성향 맞춤 수업" },
 ];
@@ -221,9 +221,6 @@ export default function Home() {
         />
 
         <section className="relative overflow-hidden bg-[#f4efff]">
-          <div className="pointer-events-none absolute right-4 top-6 hidden text-[180px] font-black leading-none text-[#e8dcff] lg:block">
-            01
-          </div>
           <div className="mx-auto grid min-h-[720px] max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:px-8 lg:py-28">
             <div className="relative z-10">
               <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.28em] text-[#7c3aed]">

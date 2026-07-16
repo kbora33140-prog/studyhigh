@@ -39,7 +39,7 @@ export function Header() {
         <div className="hidden justify-self-end sm:block">
           <div className="inline-flex h-11 items-center gap-2 rounded-full border border-[#e5d8ff] bg-[#f8f5ff] px-4 text-sm font-black text-[#0f172a] lg:h-12 lg:px-5 lg:text-base">
             <UsersRound className="h-4 w-4 text-[#7c3aed]" aria-hidden="true" />
-            누적 방문자 353,112명
+            누적 방문자 428,913명
           </div>
         </div>
       </nav>
