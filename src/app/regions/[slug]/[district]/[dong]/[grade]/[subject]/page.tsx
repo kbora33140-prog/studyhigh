@@ -9,7 +9,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { getGradeGroup, gradeGroups } from "@/lib/gradeLevels";
 import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
-import { slugifyKorean, subjects } from "@/lib/regions";
+import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
@@ -38,7 +38,8 @@ function getPageData({
 }) {
   const region = searchRegions.find((item) => item.slug === slug);
   const district = region?.districts.find((item) => item.slug === districtSlug);
-  const dong = district?.dongs.find((item) => slugifyKorean(item) === dongSlug);
+  const normalizedDongSlug = normalizeKoreanSlug(dongSlug);
+  const dong = district?.dongs.find((item) => item === normalizedDongSlug);
   const grade = getGradeGroup(gradeSlug);
   const subject = subjects.find((item) => item.slug === subjectSlug);
 

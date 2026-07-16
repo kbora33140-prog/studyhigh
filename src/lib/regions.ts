@@ -105,7 +105,27 @@ export function slugifyKorean(value: string) {
   return encodeURIComponent(value);
 }
 
+export function normalizeKoreanSlug(value: string) {
+  let normalized = value;
+
+  for (let index = 0; index < 3; index += 1) {
+    try {
+      const decoded = decodeURIComponent(normalized);
+      if (decoded === normalized) {
+        return decoded;
+      }
+      normalized = decoded;
+    } catch {
+      return normalized;
+    }
+  }
+
+  return normalized;
+}
+
 export function findDong(regionSlug: string, districtSlug: string, dongSlug: string) {
   const district = getDistrict(regionSlug, districtSlug);
-  return district?.dongs.find((dong) => slugifyKorean(dong) === dongSlug);
+  const normalizedDongSlug = normalizeKoreanSlug(dongSlug);
+
+  return district?.dongs.find((dong) => dong === normalizedDongSlug);
 }
