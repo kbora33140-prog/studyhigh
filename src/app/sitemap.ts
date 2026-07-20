@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { gradeGroups } from "@/lib/gradeLevels";
+import { searchableGradeRoutes } from "@/lib/gradeLevels";
 import { regions, slugifyKorean, subjects } from "@/lib/regions";
 import { searchRegions } from "@/lib/searchRegions";
 
@@ -71,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(daejeonRegion
       ? daejeonRegion.districts.flatMap((district) =>
           district.dongs.flatMap((dong) =>
-            gradeGroups.flatMap((grade) =>
+            searchableGradeRoutes.flatMap((grade) =>
               subjects.map((subject) => ({
                 url: `${baseUrl}/regions/${daejeonRegion.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`,
                 lastModified: new Date(),

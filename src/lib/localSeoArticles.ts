@@ -564,6 +564,282 @@ const daejeonHighMathArticles: LocalSeoArticle[] = [
 
 export const localSeoArticles = [...daejeonHighMathArticles];
 
+const gradeNames: Record<string, string> = {
+  elementary: "초등",
+  middle: "중등",
+  high: "고등",
+  "high-1": "고1",
+  "high-2": "고2",
+  "high-3": "고3",
+};
+
+const subjectNames: Record<string, string> = {
+  all: "전과목",
+  korean: "국어",
+  math: "수학",
+  english: "영어",
+  science: "과학",
+  social: "사회",
+  history: "한국사",
+};
+
+const daejeonDistrictContext: Record<
+  string,
+  {
+    name: string;
+    learningArea: string;
+    parentConcern: string;
+    nearbyAreas: string;
+  }
+> = {
+  "d-30170": {
+    name: "서구",
+    learningArea: "둔산동, 탄방동, 월평동, 도안동, 관저동 생활권과 학교별 내신 수요가 함께 움직이는 지역",
+    parentConcern: "학원 선택지는 많지만 아이에게 맞는 설명 방식과 관리 강도를 찾기 어려워하는 상담",
+    nearbyAreas: "둔산동, 탄방동, 월평동, 도안동, 관저동",
+  },
+  "d-30200": {
+    name: "유성구",
+    learningArea: "노은동, 반석동, 지족동, 봉명동, 관평동, 전민동 생활권처럼 학교·주거·이동 동선이 중요한 지역",
+    parentConcern: "학교 진도와 목표 대학, 이동 가능한 수업 시간, 학생 성향을 함께 맞춰야 하는 상담",
+    nearbyAreas: "노은동, 반석동, 지족동, 봉명동, 관평동, 전민동",
+  },
+  "d-30230": {
+    name: "대덕구",
+    learningArea: "송촌동, 법동, 중리동, 석봉동, 신탄진동 생활권을 중심으로 내신 관리와 학습 습관 수요가 많은 지역",
+    parentConcern: "공부 루틴이 끊기거나 오답 복습이 이어지지 않아 밀착 관리가 필요한 상담",
+    nearbyAreas: "송촌동, 법동, 중리동, 석봉동, 신탄진동",
+  },
+  "d-30110": {
+    name: "동구",
+    learningArea: "가양동, 용전동, 판암동, 대동, 자양동 생활권처럼 학교와 이동 동선을 함께 보는 지역",
+    parentConcern: "기초 개념 보완과 시험 전 실전 관리가 모두 필요한 상담",
+    nearbyAreas: "가양동, 용전동, 판암동, 대동, 자양동",
+  },
+  "d-30140": {
+    name: "중구",
+    learningArea: "태평동, 문화동, 오류동, 목동, 대흥동 생활권을 중심으로 내신 대비와 공부 습관 상담이 많은 지역",
+    parentConcern: "현재 성적보다 공부 방식, 집중도, 선생님과의 소통 방식이 더 중요한 상담",
+    nearbyAreas: "태평동, 문화동, 오류동, 목동, 대흥동",
+  },
+};
+
+const highDemandDongContext: Record<
+  string,
+  {
+    schoolArea: string;
+    studentType: string;
+    lessonAngle: string;
+  }
+> = {
+  둔산동: {
+    schoolArea: "둔산 학원가와 학교 내신 경쟁을 함께 고려해야 하는 지역",
+    studentType: "문제는 많이 풀지만 시험에서 실수와 시간 관리가 흔들리는 학생",
+    lessonAngle: "내신 범위, 서술형, 모의고사 약점을 분리해 관리하는 수업",
+  },
+  탄방동: {
+    schoolArea: "둔산동과 생활권이 이어져 학교·학원·이동 동선을 함께 보는 지역",
+    studentType: "개념은 이해했지만 혼자 복습하는 루틴이 약한 학생",
+    lessonAngle: "숙제, 오답, 복습 피드백을 촘촘히 잡는 관리형 수업",
+  },
+  월평동: {
+    schoolArea: "월평역과 둔산 생활권 접근성이 있어 수업 시간 조율이 중요한 지역",
+    studentType: "내신과 정시 중 어디에 비중을 둬야 할지 고민하는 학생",
+    lessonAngle: "시험 기간과 비시험 기간의 학습 비율을 나눠 설계하는 수업",
+  },
+  도안동: {
+    schoolArea: "도안신도시 생활권에서 학교 진도와 학생별 목표 차이가 크게 나타나는 지역",
+    studentType: "목표는 높지만 학습 방향과 선생님 매칭 기준이 아직 분명하지 않은 학생",
+    lessonAngle: "성향 진단 후 수업 속도와 피드백 방식을 맞추는 수업",
+  },
+  관저동: {
+    schoolArea: "도안동, 가수원동과 이어지는 생활권에서 방문수업 문의가 많은 지역",
+    studentType: "기초를 다시 잡으면서 시험 점수도 함께 올려야 하는 학생",
+    lessonAngle: "개념 보완과 학교 시험 대비를 병행하는 수업",
+  },
+  노은동: {
+    schoolArea: "반석동, 지족동 생활권과 이어져 학교·교통·시간표를 함께 고려하는 지역",
+    studentType: "상위권 도약 또는 목표 대학에 맞춘 장기 계획이 필요한 학생",
+    lessonAngle: "목표 등급과 현재 약점을 기준으로 로드맵을 세우는 수업",
+  },
+  반석동: {
+    schoolArea: "반석역과 노은 생활권을 중심으로 이동 동선과 수업 시간이 중요한 지역",
+    studentType: "꾸준히 공부하지만 점수 상승 폭이 작아 오답 원인 분석이 필요한 학생",
+    lessonAngle: "오답 유형과 반복 실수를 줄이는 피드백형 수업",
+  },
+  지족동: {
+    schoolArea: "노은동, 반석동과 가까워 학교별 시험 일정과 생활 동선을 함께 보는 지역",
+    studentType: "숙제 관리와 자기주도학습 습관이 함께 필요한 학생",
+    lessonAngle: "수업 없는 날의 복습 계획까지 이어지는 관리형 수업",
+  },
+  봉명동: {
+    schoolArea: "유성온천역, 궁동 생활권과 이어져 화상·방문 선택 상담이 많은 지역",
+    studentType: "개념 빈틈과 실전 적용 사이에서 막히는 학생",
+    lessonAngle: "기초 보완 후 유형 적용으로 넘어가는 단계형 수업",
+  },
+  상대동: {
+    schoolArea: "도안동, 원신흥동 생활권과 이어져 학교 진도 확인이 중요한 지역",
+    studentType: "학습 의지는 있지만 혼자 계획을 유지하기 어려운 학생",
+    lessonAngle: "주간 목표와 피드백을 분명히 정하는 수업",
+  },
+  전민동: {
+    schoolArea: "문지동, 관평동 생활권과 이어져 이공계 진로 관심 상담도 많은 지역",
+    studentType: "심화 문제와 실전 응용력을 함께 키우고 싶은 학생",
+    lessonAngle: "개념 연결, 심화 유형, 시험 적용력을 함께 보는 수업",
+  },
+  송촌동: {
+    schoolArea: "대덕구에서 학부모 상담 수요가 높은 생활권",
+    studentType: "공부 습관과 시험 대비를 동시에 잡아야 하는 학생",
+    lessonAngle: "내신 대비와 복습 루틴을 함께 만드는 수업",
+  },
+};
+
+const subjectFocus: Record<string, { pain: string; method: string; result: string }> = {
+  all: {
+    pain: "과목별 우선순위가 정리되지 않아 공부 시간이 흩어지는 문제",
+    method: "국어, 수학, 영어 등 주요 과목의 현재 수준을 먼저 보고 필요한 과목부터 순서를 정합니다",
+    result: "학생에게 필요한 과목과 학습 시간을 분명히 나눌 수 있습니다",
+  },
+  korean: {
+    pain: "독해 속도, 문학 해석, 서술형 답안에서 점수가 흔들리는 문제",
+    method: "학교 시험 범위와 지문 해석 습관을 확인해 독해·문법·서술형을 나눠 관리합니다",
+    result: "감으로 푸는 국어가 아니라 근거를 찾는 국어 학습으로 바뀝니다",
+  },
+  math: {
+    pain: "개념은 안다고 느끼지만 시험에서 계산 실수, 시간 부족, 오답 반복이 생기는 문제",
+    method: "개념 이해, 유형 적용, 오답 원인, 실전 속도를 나눠 수업 방향을 잡습니다",
+    result: "내신대비와 정시 대비를 학생 수준에 맞춰 연결할 수 있습니다",
+  },
+  english: {
+    pain: "단어는 외워도 독해, 문법, 내신 서술형에서 점수가 안정되지 않는 문제",
+    method: "학교 교과서, 부교재, 모의고사 지문을 기준으로 어휘·구문·독해를 함께 봅니다",
+    result: "암기 위주의 영어에서 시험에 적용되는 영어로 전환할 수 있습니다",
+  },
+  science: {
+    pain: "개념 암기와 문제 적용 사이의 간격 때문에 단원별 점수 차이가 커지는 문제",
+    method: "물리, 화학, 생명, 지구과학 단원별 개념 연결과 자료 해석을 분리해 관리합니다",
+    result: "학교 시험과 탐구 과목 선택에 맞춘 학습 방향을 세울 수 있습니다",
+  },
+  social: {
+    pain: "암기량은 많지만 개념 관계와 자료 해석이 정리되지 않는 문제",
+    method: "단원별 핵심 개념, 빈출 자료, 서술형 포인트를 시험 범위에 맞춰 정리합니다",
+    result: "단순 암기보다 출제 의도를 읽는 사회 학습으로 바뀝니다",
+  },
+  history: {
+    pain: "흐름을 놓치면 사건과 연도가 따로 외워져 시험에서 헷갈리는 문제",
+    method: "시대 흐름, 핵심 사건, 인물, 자료 해석을 연결해 반복 복습합니다",
+    result: "한국사 암기 부담을 줄이고 시험 직전 정리 속도를 높일 수 있습니다",
+  },
+};
+
+const gradeFocus: Record<string, { goal: string; management: string }> = {
+  elementary: {
+    goal: "공부 습관과 기초 개념을 안정적으로 만드는 것",
+    management: "흥미, 집중 시간, 숙제 습관, 설명을 받아들이는 방식을 먼저 확인합니다",
+  },
+  middle: {
+    goal: "중학교 내신과 고등 선행의 균형을 잡는 것",
+    management: "학교 시험 범위, 수행평가, 고등 과정 연결 가능성을 함께 점검합니다",
+  },
+  high: {
+    goal: "내신대비와 정시 대비의 우선순위를 분명히 정하는 것",
+    management: "학교 진도, 최근 시험지, 모의고사 흐름, 목표 대학을 함께 확인합니다",
+  },
+  "high-1": {
+    goal: "고등 과정 적응과 첫 내신 흐름을 안정적으로 잡는 것",
+    management: "중학교 때와 달라진 시험 난도, 학교 진도, 수행평가, 공부 시간을 함께 확인합니다",
+  },
+  "high-2": {
+    goal: "선택 과목과 내신 등급, 정시 준비의 균형을 잡는 것",
+    management: "최근 내신 결과, 모의고사 흐름, 취약 단원, 목표 대학과 학과를 함께 확인합니다",
+  },
+  "high-3": {
+    goal: "내신 마무리와 수능 실전 대비의 우선순위를 빠르게 정하는 것",
+    management: "남은 시험 일정, 모의고사 등급, 기출 약점, 주간 학습 가능 시간을 함께 확인합니다",
+  },
+};
+
+function buildDaejeonArticle({
+  districtSlug,
+  dong,
+  gradeSlug,
+  subjectSlug,
+}: {
+  districtSlug: string;
+  dong: string;
+  gradeSlug: string;
+  subjectSlug: string;
+}): LocalSeoArticle | null {
+  const district = daejeonDistrictContext[districtSlug];
+  const gradeName = gradeNames[gradeSlug];
+  const subjectName = subjectNames[subjectSlug];
+  const focus = subjectFocus[subjectSlug];
+  const grade = gradeFocus[gradeSlug];
+
+  if (!district || !gradeName || !subjectName || !focus || !grade) {
+    return null;
+  }
+
+  const dongContext =
+    highDemandDongContext[dong] || {
+      schoolArea: `${district.name} 안에서 학교 진도와 이동 가능한 수업 시간을 함께 확인해야 하는 지역`,
+      studentType: "현재 성적보다 공부 방식과 선생님 성향이 더 중요한 학생",
+      lessonAngle: "상담에서 아이 성향과 학습 우선순위를 먼저 정하는 수업",
+    };
+  const subjectKeyword = subjectSlug === "all" ? "전과목과외" : `${subjectName}과외`;
+
+  return {
+    regionSlug: "daejeon",
+    districtSlug,
+    dong,
+    gradeSlug,
+    subjectSlug,
+    title: `대전 ${dong} ${gradeName} ${subjectKeyword}, 아이 성향에 맞춰 수업 방향을 잡는 1:1 상담`,
+    metaDescription: `대전 ${district.name} ${dong} ${gradeName} ${subjectKeyword}는 ${focus.pain}를 확인하고 학교 진도, 목표 성적, 아이 성향에 맞춰 상담합니다.`,
+    lead: `대전 ${dong}에서 ${gradeName} ${subjectKeyword}를 찾는다면 먼저 아이가 왜 막히는지부터 봐야 합니다. ${dongContext.schoolArea}이기 때문에 학교 진도, 수업 가능 시간, 학생 성향, 목표 성적을 함께 확인한 뒤 선생님 매칭 방향을 정합니다.`,
+    image: "/high-school-math-tutoring.png",
+    imageAlt: `대전 ${dong} ${gradeName} ${subjectKeyword} 1:1 맞춤수업 상담 이미지`,
+    points: [
+      `${dong} ${gradeName} ${subjectName}`,
+      "아이 성향 진단",
+      "학교별 진도 확인",
+      "무료 상담 신청",
+    ],
+    sections: [
+      {
+        heading: `${dong} ${gradeName} ${subjectKeyword}, 먼저 아이 성향을 봅니다`,
+        body: `${dong} 상담에서 자주 확인하는 부분은 ${dongContext.studentType}입니다. 같은 ${subjectName} 수업이라도 질문을 많이 해야 집중하는 학생, 조용히 예습 후 확인받는 학생, 숙제 관리가 있어야 움직이는 학생의 수업 방식은 달라야 합니다.`,
+      },
+      {
+        heading: `${district.name} ${dong} 생활권에 맞춘 수업 방향`,
+        body: `${district.learningArea}입니다. 스터디하이는 ${district.parentConcern}을 줄이기 위해 학교, 학년, 현재 등급, 희망 요일, 방문과외 가능 여부를 상담에서 함께 확인합니다.`,
+      },
+      {
+        heading: `${gradeName} ${subjectName} 수업은 이렇게 설계합니다`,
+        body: `${gradeName} 단계의 핵심은 ${grade.goal}입니다. ${focus.method}. 이후 ${grade.management}.`,
+      },
+      {
+        heading: `상담 후 달라지는 학습 관리`,
+        body: `${dongContext.lessonAngle}으로 진행하면 ${focus.result}. 상담 후에는 첫 수업 방향, 복습 방식, 피드백 주기, 선생님 변경 가능 여부까지 안내해 학부모님이 바로 판단할 수 있도록 돕습니다.`,
+      },
+    ],
+    faq: [
+      {
+        question: `대전 ${dong} ${gradeName} ${subjectKeyword} 상담은 어떻게 진행되나요?`,
+        answer: `무료 상담에서 학교, 학년, 현재 성적, 목표, 어려워하는 단원, 아이 성향을 확인한 뒤 ${dong} 또는 ${district.nearbyAreas} 생활권 기준으로 방문과외와 화상과외 가능 여부를 안내합니다.`,
+      },
+      {
+        question: `${dong} ${gradeName} ${subjectName} 수업은 내신대비도 가능한가요?`,
+        answer: `가능합니다. 학교 시험 범위와 최근 오답 유형을 확인한 뒤 ${subjectName} 내신대비, 수행평가, 시험 전 복습 계획을 학생 수준에 맞춰 정리합니다.`,
+      },
+      {
+        question: `선생님은 아이 성향에 맞춰 매칭되나요?`,
+        answer: `네. 설명을 자세히 원하는 학생, 관리가 필요한 학생, 심화 문제를 원하는 학생처럼 성향을 먼저 확인하고 그에 맞는 선생님과 수업 방식을 제안합니다.`,
+      },
+    ],
+  };
+}
+
 export function getLocalSeoArticle({
   regionSlug,
   districtSlug,
@@ -577,7 +853,7 @@ export function getLocalSeoArticle({
   gradeSlug: string;
   subjectSlug: string;
 }) {
-  return localSeoArticles.find(
+  const article = localSeoArticles.find(
     (article) =>
       article.regionSlug === regionSlug &&
       article.districtSlug === districtSlug &&
@@ -585,4 +861,14 @@ export function getLocalSeoArticle({
       article.gradeSlug === gradeSlug &&
       article.subjectSlug === subjectSlug,
   );
+
+  if (article) {
+    return article;
+  }
+
+  if (regionSlug === "daejeon") {
+    return buildDaejeonArticle({ districtSlug, dong, gradeSlug, subjectSlug });
+  }
+
+  return undefined;
 }

@@ -33,16 +33,55 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 
 const visitorStats = [
-  { value: "전문교사 3,000명", label: "검증된 선생님 풀" },
-  { value: "교사 경력 30년", label: "누적 교육 운영 경험" },
-  { value: "97.8%", label: "수업 만족도" },
+  {
+    title: "전문교사",
+    value: "3,000명",
+    label: "검증된 선생님 풀",
+    icon: UserCheck,
+  },
+  {
+    title: "교사 경력",
+    value: "30년",
+    label: "누적 교육 운영 경험",
+    icon: GraduationCap,
+  },
+  {
+    title: "97.8%",
+    value: "수업 만족도",
+    label: "학생·학부모 피드백 기준",
+    icon: ShieldCheck,
+  },
 ];
 
 const heroMetrics = [
-  { label: "성향 진단 만족도", value: "98.6%" },
-  { label: "학습관리 만족도", value: "96.9%" },
-  { label: "상담 만족도", value: "98.4%" },
-  { label: "수업 피드백 만족도", value: "97.5%" },
+  {
+    label: "성향 진단",
+    value: "98.6%",
+    caption: "아이 성향 분석 만족",
+    icon: Brain,
+    tone: "bg-[#ede9fe] text-[#7c3aed]",
+  },
+  {
+    label: "학습관리",
+    value: "96.9%",
+    caption: "숙제·오답 관리 만족",
+    icon: ClipboardCheck,
+    tone: "bg-[#e0f2fe] text-[#0284c7]",
+  },
+  {
+    label: "상담 만족",
+    value: "98.4%",
+    caption: "학부모 상담 피드백",
+    icon: MessageCircle,
+    tone: "bg-[#dcfce7] text-[#16a34a]",
+  },
+  {
+    label: "수업 피드백",
+    value: "97.5%",
+    caption: "수업 후 관리 만족",
+    icon: Sparkles,
+    tone: "bg-[#fce7f3] text-[#db2777]",
+  },
 ];
 
 const classPrograms = [
@@ -320,34 +359,82 @@ export default function Home() {
             </div>
 
             <div className="relative z-10">
-              <div className="rounded-[28px] bg-white p-6 shadow-[0_34px_100px_rgba(79,70,229,0.18)] sm:p-8">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#8b5cf6] text-white">
-                    <Sparkles className="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="text-lg font-black text-[#0f172a]">스터디하이 수업 만족 지표</p>
-                    <p className="mt-1 text-sm font-semibold text-[#94a3b8]">
-                      여러 학생 성향 진단과 수업 피드백을 바탕으로 관리합니다
-                    </p>
-                  </div>
+              <div className="rounded-[8px] border border-white/70 bg-white/72 p-4 shadow-[0_34px_100px_rgba(79,70,229,0.16)] backdrop-blur sm:p-5">
+                <div className="grid gap-3 sm:grid-cols-3">
+                  {visitorStats.map((stat) => {
+                    const Icon = stat.icon;
+
+                    return (
+                      <div
+                        key={stat.label}
+                        className="rounded-[16px] border border-[#e6ddff] bg-[linear-gradient(180deg,#ffffff,#fbf8ff)] p-5 shadow-[0_14px_35px_rgba(79,70,229,0.08)]"
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div>
+                            <p className="text-[15px] font-black leading-5 text-[#0f172a]">
+                              {stat.title}
+                            </p>
+                            <p className="mt-1 text-3xl font-black leading-none text-[#0f172a]">
+                              {stat.value}
+                            </p>
+                          </div>
+                          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-[#f0e9ff] text-[#7c3aed]">
+                            <Icon className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
+                          </div>
+                        </div>
+                        <p className="mt-4 text-sm font-bold leading-5 text-[#64748b]">
+                          {stat.label}
+                        </p>
+                      </div>
+                    );
+                  })}
                 </div>
 
-                <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                  {heroMetrics.map((metric) => (
-                    <div
-                      key={metric.label}
-                      className="rounded-2xl border border-[#dfd0ff] bg-[#fbf8ff] p-4"
-                    >
-                      <p className="text-xs font-black text-[#64748b]">{metric.label}</p>
-                      <p className="mt-3 text-2xl font-black text-[#7c3aed]">
-                        {metric.value}
+                <div className="mt-4 rounded-[8px] bg-white p-5 shadow-[0_18px_50px_rgba(15,23,42,0.06)] sm:p-6">
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-[#7c3aed]">
+                        Satisfaction Report
                       </p>
+                      <h2 className="mt-2 text-2xl font-black leading-tight text-[#0f172a]">
+                        상담부터 수업 피드백까지
+                        <br />
+                        숫자로 확인하는 만족도
+                      </h2>
                     </div>
-                  ))}
+                    <p className="text-sm font-bold text-[#94a3b8]">실제 상담·수업 관리 기준</p>
+                  </div>
+
+                  <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                    {heroMetrics.map((metric) => {
+                      const Icon = metric.icon;
+
+                      return (
+                        <div
+                          key={metric.label}
+                          className="rounded-[8px] border border-[#edf0f7] bg-[#fbfcff] p-5 text-center shadow-[0_14px_38px_rgba(15,23,42,0.05)]"
+                        >
+                          <div
+                            className={`mx-auto flex h-14 w-14 items-center justify-center rounded-[16px] ${metric.tone}`}
+                          >
+                            <Icon className="h-7 w-7" strokeWidth={2.1} aria-hidden="true" />
+                          </div>
+                          <p className="mt-5 text-3xl font-black leading-none text-[#0f172a]">
+                            {metric.value}
+                          </p>
+                          <p className="mt-3 text-sm font-black text-[#0f172a]">
+                            {metric.label}
+                          </p>
+                          <p className="mt-2 text-sm font-semibold text-[#94a3b8]">
+                            {metric.caption}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
 
-                <div className="mt-7 space-y-5">
+                <div className="mt-4 space-y-4 rounded-[8px] bg-[#fbf8ff] p-5">
                   {[
                     ["맞춤 선생님 재신청률", "94%"],
                     ["학부모 피드백 확인율", "97%"],
@@ -366,15 +453,6 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </div>
-
-              <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                {visitorStats.map((stat) => (
-                  <div key={stat.label} className="rounded-2xl bg-white/70 p-5 shadow-sm">
-                    <p className="text-2xl font-black text-[#0f172a]">{stat.value}</p>
-                    <p className="mt-1 text-sm font-bold text-[#64748b]">{stat.label}</p>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 import { ConsultationTimeline, SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
-import { getGradeGroup, gradeGroups } from "@/lib/gradeLevels";
+import { getSearchableGradeRoute, searchableGradeRoutes } from "@/lib/gradeLevels";
 import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
 import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
@@ -40,7 +40,7 @@ function getPageData({
   const district = region?.districts.find((item) => item.slug === districtSlug);
   const normalizedDongSlug = normalizeKoreanSlug(dongSlug);
   const dong = district?.dongs.find((item) => item === normalizedDongSlug);
-  const grade = getGradeGroup(gradeSlug);
+  const grade = getSearchableGradeRoute(gradeSlug);
   const subject = subjects.find((item) => item.slug === subjectSlug);
 
   if (!region || !district || !dong || !grade || !subject) {
@@ -69,7 +69,7 @@ export function generateStaticParams() {
 
   return daejeon.districts.flatMap((district) =>
     district.dongs.flatMap((dong) =>
-      gradeGroups.flatMap((grade) =>
+      searchableGradeRoutes.flatMap((grade) =>
         subjects.map((subject) => ({
           slug: daejeon.slug,
           district: district.slug,
@@ -108,6 +108,7 @@ export async function generateMetadata({
       `${dong} ${subjectKeyword}`,
       `${grade.name} ${subject.name} 내신대비`,
       `${grade.name} ${subject.name} 정시 대비`,
+      `${dong} ${grade.name} ${subject.name}과외`,
       `1:1 ${subject.name}과외 상담`,
     ],
     alternates: {
@@ -212,7 +213,13 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
           "@type": "EducationalOrganization",
           name: "스터디하이",
         },
-        about: [`${dong} 고등 수학과외`, "내신대비", "정시 대비", "학습관리", "자기주도학습"],
+        about: [
+          `${dong} ${grade.name} ${subjectKeyword}`,
+          "아이 성향 진단",
+          "내신대비",
+          "학습관리",
+          "선생님 매칭",
+        ],
         areaServed: `${region.name} ${district.name} ${dong}`,
       }
     : null;
@@ -382,7 +389,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
                     LOCAL SEO GUIDE
                   </p>
                   <h2 className="mt-5 text-3xl font-black leading-tight sm:text-5xl">
-                    {dong} 고등 수학,
+                    {dong} {grade.name} {subject.name},
                     <br />
                     수업 방향부터
                     <br />

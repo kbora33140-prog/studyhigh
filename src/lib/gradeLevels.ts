@@ -4,6 +4,13 @@ export const gradeGroups = [
   { name: "고등", slug: "high" },
 ];
 
+export const searchableGradeRoutes = [
+  ...gradeGroups,
+  { name: "고1", slug: "high-1", group: "high" },
+  { name: "고2", slug: "high-2", group: "high" },
+  { name: "고3", slug: "high-3", group: "high" },
+];
+
 export const gradeOptions = [
   { label: "초등 1학년", value: "elementary-1", group: "elementary" },
   { label: "초등 2학년", value: "elementary-2", group: "elementary" },
@@ -23,6 +30,10 @@ export const gradeOptions = [
 
 export function getGradeGroup(slug: string) {
   return gradeGroups.find((grade) => grade.slug === slug);
+}
+
+export function getSearchableGradeRoute(slug: string) {
+  return searchableGradeRoutes.find((grade) => grade.slug === slug);
 }
 
 export function getGradeRouteSlug(value: string) {
