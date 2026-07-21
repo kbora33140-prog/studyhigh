@@ -32,7 +32,7 @@ import {
 } from "@/components/ui/accordion";
 import { buttonVariants } from "@/components/ui/button";
 
-const visitorStats = [
+const statsBarItems = [
   {
     title: "전문교사",
     value: "3,000명",
@@ -41,15 +41,21 @@ const visitorStats = [
   },
   {
     title: "교사 경력",
-    value: "30년",
+    value: "30년+",
     label: "누적 교육 운영 경험",
     icon: GraduationCap,
   },
   {
-    title: "97.8%",
-    value: "수업 만족도",
+    title: "수업 만족도",
+    value: "97.8%",
     label: "학생·학부모 피드백 기준",
     icon: ShieldCheck,
+  },
+  {
+    title: "무료 테스트",
+    value: "100%",
+    label: "맞춤 선생님 추천",
+    icon: Sparkles,
   },
 ];
 
@@ -360,37 +366,7 @@ export default function Home() {
 
             <div className="relative z-10">
               <div className="rounded-[8px] border border-white/70 bg-white/72 p-4 shadow-[0_34px_100px_rgba(79,70,229,0.16)] backdrop-blur sm:p-5">
-                <div className="grid gap-3 sm:grid-cols-3">
-                  {visitorStats.map((stat) => {
-                    const Icon = stat.icon;
-
-                    return (
-                      <div
-                        key={stat.label}
-                        className="rounded-[16px] border border-[#e6ddff] bg-[linear-gradient(180deg,#ffffff,#fbf8ff)] p-5 shadow-[0_14px_35px_rgba(79,70,229,0.08)]"
-                      >
-                        <div className="flex items-start justify-between gap-3">
-                          <div>
-                            <p className="text-[15px] font-black leading-5 text-[#0f172a]">
-                              {stat.title}
-                            </p>
-                            <p className="mt-1 text-3xl font-black leading-none text-[#0f172a]">
-                              {stat.value}
-                            </p>
-                          </div>
-                          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-[#f0e9ff] text-[#7c3aed]">
-                            <Icon className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
-                          </div>
-                        </div>
-                        <p className="mt-4 text-sm font-bold leading-5 text-[#64748b]">
-                          {stat.label}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="mt-4 rounded-[8px] bg-white p-5 shadow-[0_18px_50px_rgba(15,23,42,0.06)] sm:p-6">
+                <div className="rounded-[8px] bg-white p-5 shadow-[0_18px_50px_rgba(15,23,42,0.06)] sm:p-6">
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                     <div>
                       <p className="text-xs font-black uppercase tracking-[0.24em] text-[#7c3aed]">
@@ -454,6 +430,38 @@ export default function Home() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#f4efff] px-5 py-10 lg:px-8">
+          <div className="mx-auto max-w-[1280px] rounded-[24px] bg-white px-6 py-10 shadow-[0_24px_70px_rgba(15,23,42,0.08)] sm:px-12">
+            <div className="grid gap-0 md:grid-cols-4">
+              {statsBarItems.map((stat, index) => {
+                const Icon = stat.icon;
+
+                return (
+                  <div
+                    key={stat.title}
+                    className={`flex items-start gap-4 py-5 md:px-8 md:py-3 ${
+                      index === 0 ? "md:pl-0" : "border-t border-[#eef0f5] md:border-l md:border-t-0"
+                    } ${index === statsBarItems.length - 1 ? "md:pr-0" : ""}`}
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-[#f4f0ff] text-[#7c3aed]">
+                      <Icon className="h-5 w-5" strokeWidth={2.1} aria-hidden="true" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-black text-[#64748b]">{stat.title}</p>
+                      <p className="mt-2 text-3xl font-black leading-none tracking-normal text-[#0f172a] sm:text-4xl">
+                        {stat.value}
+                      </p>
+                      <p className="mt-3 text-sm font-bold leading-5 text-[#94a3b8]">
+                        {stat.label}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
