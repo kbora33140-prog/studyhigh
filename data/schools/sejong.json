@@ -1,0 +1,2217 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-07-24T06:23:35.475Z",
+    "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+    "sourceDate": "2026-02"
+  },
+  "provinceId": "province:36",
+  "schools": [
+    {
+      "id": "school:9300025",
+      "code": "9300025",
+      "name": "조치원대동초등학교",
+      "englishName": "Chochiwon Dae-Dong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30029",
+        "road": "세종특별자치시 조치원읍 대동학교길",
+        "detail": "11"
+      },
+      "slug": "chochiwon-dae-dong-elementary-school-9300025",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300026",
+      "code": "9300026",
+      "name": "조치원명동초등학교",
+      "englishName": "Jochiwon Myung Dong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30026",
+        "road": "세종특별자치시  조치원읍 조치원10길 35",
+        "detail": "/ 조치원명동초 (조치원읍/ 조치원명동초등학교)"
+      },
+      "slug": "jochiwon-myung-dong-elementary-school-9300026",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300027",
+      "code": "9300027",
+      "name": "조치원교동초등학교",
+      "englishName": "Gyodong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30024",
+        "road": "세종특별자치시  조치원읍 새내18길 21",
+        "detail": "/ 조치원교동초등학교 (조치원읍)"
+      },
+      "slug": "gyodong-elementary-school-9300027",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300028",
+      "code": "9300028",
+      "name": "조치원신봉초등학교",
+      "englishName": "Chochiwon Sinbong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30020",
+        "road": "세종특별자치시  조치원읍 서북부로 10",
+        "detail": "(조치원읍/ 신봉초등학교)"
+      },
+      "slug": "chochiwon-sinbong-elementary-school-9300028",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300029",
+      "code": "9300029",
+      "name": "연동초등학교",
+      "englishName": "Yeondong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30069",
+        "road": "세종특별자치시  연동면 청연로 606-36",
+        "detail": "(연동면/연동초등학교)"
+      },
+      "slug": "yeondong-elementary-school-9300029",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300031",
+      "code": "9300031",
+      "name": "연서초등학교",
+      "englishName": "Yeonsoe Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30044",
+        "road": "세종특별자치시  연서면 연서로 148",
+        "detail": "(연서면/ 연서초등학교)"
+      },
+      "slug": "yeonsoe-elementary-school-9300031",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611036000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300032",
+      "code": "9300032",
+      "name": "쌍류초등학교",
+      "englishName": "Ssangryu Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30041",
+        "road": "세종특별자치시  연서면 벌말길 73",
+        "detail": "(연서면)"
+      },
+      "slug": "ssangryu-elementary-school-9300032",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611036000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300033",
+      "code": "9300033",
+      "name": "연봉초등학교",
+      "englishName": "Yeonbong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30047",
+        "road": "세종특별자치시  연서면 당산로 357-1",
+        "detail": "(연서면/ 연봉초등학교)"
+      },
+      "slug": "yeonbong-elementary-school-9300033",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611036000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300034",
+      "code": "9300034",
+      "name": "연남초등학교",
+      "englishName": "Yeonnam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30058",
+        "road": "세종특별자치시  연기면 연기길 2",
+        "detail": "(연기면/ 연남초등학교)"
+      },
+      "slug": "yeonnam-elementary-school-9300034",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300035",
+      "code": "9300035",
+      "name": "수왕초등학교",
+      "englishName": "Suwnag Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30057",
+        "road": "세종특별자치시  연기면 눌왕길 8-45",
+        "detail": "(연기면/ 수왕초등학교)"
+      },
+      "slug": "suwnag-elementary-school-9300035",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300036",
+      "code": "9300036",
+      "name": "금남초등학교",
+      "englishName": "Kumnam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30083",
+        "road": "세종특별자치시  금남면 금남구즉로 62",
+        "detail": "(금남면/ 금남초등학교)"
+      },
+      "slug": "kumnam-elementary-school-9300036",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611034000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300037",
+      "code": "9300037",
+      "name": "감성초등학교",
+      "englishName": "Gamseoung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30088",
+        "road": "세종특별자치시  금남면 감성길 6",
+        "detail": "(금남면/ 감성초등학교)"
+      },
+      "slug": "gamseoung-elementary-school-9300037",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611034000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300038",
+      "code": "9300038",
+      "name": "전의초등학교",
+      "englishName": "Jeonui Elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30004",
+        "road": "세종특별자치시 전의면 운주산로 1204-9",
+        "detail": "/ 전의초등학교 (전의면)"
+      },
+      "slug": "jeonui-elementary-school-9300038",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611037000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300039",
+      "code": "9300039",
+      "name": "소정초등학교",
+      "englishName": "Sojeong Elementry school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30001",
+        "road": "세종특별자치시  소정면 학교말길 10",
+        "detail": "(소정면/ 소정초등학교)"
+      },
+      "slug": "sojeong-elementry-school-9300039",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611039000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300040",
+      "code": "9300040",
+      "name": "전동초등학교",
+      "englishName": "Jeondong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30011",
+        "road": "세종특별자치시  전동면 하노장3길 9",
+        "detail": "(전동면/ 전동초등학교)"
+      },
+      "slug": "jeondong-elementary-school-9300040",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611038000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300041",
+      "code": "9300041",
+      "name": "장기초등학교",
+      "englishName": "Janggi Elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30053",
+        "road": "세종특별자치시  장군면 장척로 398-9",
+        "detail": "/ 장기초등학교 (장군면/ 장기초등학교)"
+      },
+      "slug": "janggi-elementary-school-9300041",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611035000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300042",
+      "code": "9300042",
+      "name": "의랑초등학교",
+      "englishName": "Uirang Elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30050",
+        "road": "세종특별자치시  장군면 태산길 50-1",
+        "detail": "(장군면/ 의랑초등학교)"
+      },
+      "slug": "uirang-elementary-school-9300042",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611035000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300043",
+      "code": "9300043",
+      "name": "부강초등학교",
+      "englishName": "Bugang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30076",
+        "road": "세종특별자치시  부강면 부강로 15",
+        "detail": "(부강면/ 부강초등학교)"
+      },
+      "slug": "bugang-elementary-school-9300043",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611033000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300044",
+      "code": "9300044",
+      "name": "참샘초등학교",
+      "englishName": "Charmsaem Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30130",
+        "road": "세종특별자치시  노을1로 29",
+        "detail": "(한솔동)"
+      },
+      "slug": "charmsaem-elementary-school-9300044",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300045",
+      "code": "9300045",
+      "name": "조치원중학교",
+      "englishName": "Jochiwon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30030",
+        "road": "세종특별자치시  조치원읍 대첩로 90",
+        "detail": "/ 조치원중학교 (조치원읍)"
+      },
+      "slug": "jochiwon-middle-school-9300045",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300047",
+      "code": "9300047",
+      "name": "연동중학교",
+      "englishName": "Yeondong Middle school",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30068",
+        "road": "세종특별자치시  연동면 내판로 10-13",
+        "detail": "(연동면/ 연동중학교)"
+      },
+      "slug": "yeondong-middle-school-9300047",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300048",
+      "code": "9300048",
+      "name": "연서중학교",
+      "englishName": "Yeonseo Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30044",
+        "road": "세종특별자치시  연서면 연서로 115",
+        "detail": "(연서면/ 연서중학교)"
+      },
+      "slug": "yeonseo-middle-school-9300048",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611036000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300049",
+      "code": "9300049",
+      "name": "금호중학교",
+      "englishName": "Kumho Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30153",
+        "road": "세종특별자치시  대평로 27",
+        "detail": "/ 금호중학교 (대평동)77-79"
+      },
+      "slug": "kumho-middle-school-9300049",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300050",
+      "code": "9300050",
+      "name": "전의중학교",
+      "englishName": "Jeonui Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30004",
+        "road": "세종특별자치시  전의면 운주산로 1260-6",
+        "detail": "(전의면/ 전의중학교)"
+      },
+      "slug": "jeonui-middle-school-9300050",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611037000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300051",
+      "code": "9300051",
+      "name": "장기중학교",
+      "englishName": "Jang-gi Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30053",
+        "road": "세종특별자치시  장군면 장척로 359",
+        "detail": "(장군면)"
+      },
+      "slug": "jang-gi-middle-school-9300051",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611035000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300052",
+      "code": "9300052",
+      "name": "부강중학교",
+      "englishName": "Bugang Middle school",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30076",
+        "road": "세종특별자치시  부강면 부강로 25-7",
+        "detail": "(부강면/ 부강중학교)"
+      },
+      "slug": "bugang-middle-school-9300052",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611033000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300053",
+      "code": "9300053",
+      "name": "한솔중학교",
+      "englishName": "Hansol Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30130",
+        "road": "세종특별자치시  나리로 43",
+        "detail": "(한솔동)"
+      },
+      "slug": "hansol-middle-school-9300053",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300054",
+      "code": "9300054",
+      "name": "세종고등학교",
+      "englishName": "Sejong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30017",
+        "road": "세종특별자치시  조치원읍 조치원중고길 10",
+        "detail": "/ 세종고등학교 (조치원읍)"
+      },
+      "slug": "sejong-high-school-9300054",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300058",
+      "code": "9300058",
+      "name": "한솔고등학교",
+      "englishName": "Hansol High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30130",
+        "road": "세종특별자치시  누리로 34",
+        "detail": "/ 한솔고등학교 (한솔동)"
+      },
+      "slug": "hansol-high-school-9300058",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300087",
+      "code": "9300087",
+      "name": "한솔초등학교",
+      "englishName": "Hansol Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30130",
+        "road": "세종특별자치시  누리로 32",
+        "detail": "(한솔동)"
+      },
+      "slug": "hansol-elementary-school-9300087",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300105",
+      "code": "9300105",
+      "name": "도담초등학교",
+      "englishName": "Dodam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30098",
+        "road": "세종특별자치시  보람로 33",
+        "detail": "/ 도담초등학교 (도담동/ 도담초등학교)"
+      },
+      "slug": "dodam-elementary-school-9300105",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300106",
+      "code": "9300106",
+      "name": "도담중학교",
+      "englishName": "Dodam Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30098",
+        "road": "세종특별자치시  보람로 80",
+        "detail": "(도담동) 도담중학교"
+      },
+      "slug": "dodam-middle-school-9300106",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300107",
+      "code": "9300107",
+      "name": "도담고등학교",
+      "englishName": "Dodam High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30098",
+        "road": "세종특별자치시  보듬4로 41",
+        "detail": "(도담동/ 도담고등학교)"
+      },
+      "slug": "dodam-high-school-9300107",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300108",
+      "code": "9300108",
+      "name": "세종국제고등학교",
+      "englishName": "Sejong Global High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30099",
+        "road": "세종특별자치시  달빛1로 251",
+        "detail": "(아름동)"
+      },
+      "slug": "sejong-global-high-school-9300108",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300111",
+      "code": "9300111",
+      "name": "연세초등학교",
+      "englishName": "Yeonse Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30104",
+        "road": "세종특별자치시  다솜로 291",
+        "detail": "(어진동)"
+      },
+      "slug": "yeonse-elementary-school-9300111",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300115",
+      "code": "9300115",
+      "name": "아름초등학교",
+      "englishName": "Areum elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30100",
+        "road": "세종특별자치시 달빛로 174",
+        "detail": "(아름동)"
+      },
+      "slug": "areum-elementary-school-9300115",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300116",
+      "code": "9300116",
+      "name": "아름중학교",
+      "englishName": "Areum middle school",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30100",
+        "road": "세종특별자치시  달빛1로 167",
+        "detail": "(아름동)"
+      },
+      "slug": "areum-middle-school-9300116",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300117",
+      "code": "9300117",
+      "name": "아름고등학교",
+      "englishName": "Areum high School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30100",
+        "road": "세종특별자치시  달빛1로 151",
+        "detail": "(아름동/ 아름고등학교)"
+      },
+      "slug": "areum-high-school-9300117",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300119",
+      "code": "9300119",
+      "name": "미르초등학교",
+      "englishName": "Mir Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30130",
+        "road": "세종특별자치시  나리로 26-16",
+        "detail": "(한솔동)"
+      },
+      "slug": "mir-elementary-school-9300119",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300121",
+      "code": "9300121",
+      "name": "연양초등학교",
+      "englishName": "Yeonyang elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30064",
+        "road": "세종특별자치시  도움3로 37",
+        "detail": "(어진동)"
+      },
+      "slug": "yeonyang-elementary-school-9300121",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300123",
+      "code": "9300123",
+      "name": "새롬중학교",
+      "englishName": "Saerom Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30126",
+        "road": "세종특별자치시  어울로 41",
+        "detail": "(새롬동)"
+      },
+      "slug": "saerom-middle-school-9300123",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300126",
+      "code": "9300126",
+      "name": "나래초등학교",
+      "englishName": "Narae elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30100",
+        "road": "세종특별자치시  달빛1로 108",
+        "detail": "(아름동)"
+      },
+      "slug": "narae-elementary-school-9300126",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300128",
+      "code": "9300128",
+      "name": "양지초등학교",
+      "englishName": "Yangji Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30098",
+        "road": "세종특별자치시  보듬8로 11",
+        "detail": "/ 양지초등학교 (도담동)"
+      },
+      "slug": "yangji-elementary-school-9300128",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300166",
+      "code": "9300166",
+      "name": "두루초등학교",
+      "englishName": "Duru Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30062",
+        "road": "세종특별자치시  만남로 227",
+        "detail": "/ 두루초등학교 (고운동)"
+      },
+      "slug": "duru-elementary-school-9300166",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300167",
+      "code": "9300167",
+      "name": "으뜸초등학교",
+      "englishName": "Eutteum  Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30063",
+        "road": "세종특별자치시  마음로 132",
+        "detail": "(고운동)"
+      },
+      "slug": "eutteum-elementary-school-9300167",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300168",
+      "code": "9300168",
+      "name": "고운초등학교",
+      "englishName": "Gowoon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30063",
+        "road": "세종특별자치시  만남로 45",
+        "detail": "(고운동)"
+      },
+      "slug": "gowoon-elementary-school-9300168",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300169",
+      "code": "9300169",
+      "name": "온빛초등학교",
+      "englishName": "Onbit  Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30101",
+        "road": "세종특별자치시  만남로 174",
+        "detail": "(고운동)"
+      },
+      "slug": "onbit-elementary-school-9300169",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300170",
+      "code": "9300170",
+      "name": "종촌초등학교",
+      "englishName": "Jongchon  Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30064",
+        "road": "세종특별자치시  도움1로 160",
+        "detail": "(종촌동)"
+      },
+      "slug": "jongchon-elementary-school-9300170",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300171",
+      "code": "9300171",
+      "name": "다빛초등학교",
+      "englishName": "Dabit Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30064",
+        "road": "세종특별자치시  달빛1로 7",
+        "detail": "(종촌동/ 다빛초등학교)"
+      },
+      "slug": "dabit-elementary-school-9300171",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300172",
+      "code": "9300172",
+      "name": "늘봄초등학교",
+      "englishName": "Neulbom Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30100",
+        "road": "세종특별자치시  다솜1로 183",
+        "detail": "(도담동)"
+      },
+      "slug": "neulbom-elementary-school-9300172",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300173",
+      "code": "9300173",
+      "name": "두루중학교",
+      "englishName": "Duru  Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30062",
+        "road": "세종특별자치시  만남로 211",
+        "detail": "(고운동)"
+      },
+      "slug": "duru-middle-school-9300173",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300174",
+      "code": "9300174",
+      "name": "고운중학교",
+      "englishName": "Gowoon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30063",
+        "road": "세종특별자치시  만남로 65",
+        "detail": "(고운동)"
+      },
+      "slug": "gowoon-middle-school-9300174",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300175",
+      "code": "9300175",
+      "name": "양지중학교",
+      "englishName": "Yangji   Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30097",
+        "road": "세종특별자치시  갈매로 512",
+        "detail": "(도담동)"
+      },
+      "slug": "yangji-middle-school-9300175",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300176",
+      "code": "9300176",
+      "name": "종촌중학교",
+      "englishName": "Jongchon  Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30064",
+        "road": "세종특별자치시  도움1로 126",
+        "detail": "(종촌동)"
+      },
+      "slug": "jongchon-middle-school-9300176",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300177",
+      "code": "9300177",
+      "name": "두루고등학교",
+      "englishName": "Duru High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30062",
+        "road": "세종특별자치시  마음안1로 53",
+        "detail": "(고운동)"
+      },
+      "slug": "duru-high-school-9300177",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300178",
+      "code": "9300178",
+      "name": "고운고등학교",
+      "englishName": "Gowoon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30063",
+        "road": "세종특별자치시  마음안로 93",
+        "detail": "(고운동/ 고운고등학교)"
+      },
+      "slug": "gowoon-high-school-9300178",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300179",
+      "code": "9300179",
+      "name": "양지고등학교",
+      "englishName": "Yangji   High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30097",
+        "road": "세종특별자치시  갈매로 518",
+        "detail": "(도담동)"
+      },
+      "slug": "yangji-high-school-9300179",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300180",
+      "code": "9300180",
+      "name": "종촌고등학교",
+      "englishName": "Jongchon  High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30064",
+        "road": "세종특별자치시  달빛1로 60",
+        "detail": "(종촌동)"
+      },
+      "slug": "jongchon-high-school-9300180",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300181",
+      "code": "9300181",
+      "name": "세종과학예술영재학교",
+      "englishName": "Sejong Academy of Science and Arts",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30099",
+        "road": "세종특별자치시  달빛1로 265",
+        "detail": "(아름동)"
+      },
+      "slug": "sejong-academy-of-science-and-arts-9300181",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300184",
+      "code": "9300184",
+      "name": "세종도원초등학교",
+      "englishName": "Sejong Dowon Elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30049",
+        "road": "세종특별자치시  연서면 도원로 63",
+        "detail": "(연서면/ 세종도원초등학교)"
+      },
+      "slug": "sejong-dowon-elementary-school-9300184",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611036000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300185",
+      "code": "9300185",
+      "name": "세종여자고등학교",
+      "englishName": "SEJONG GIRLS’ HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30019",
+        "road": "세종특별자치시  조치원읍 봉산로 16",
+        "detail": "/ 세종여자고등학교 (조치원읍/ 세종여자고등학교)"
+      },
+      "slug": "sejong-girls-high-school-9300185",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300187",
+      "code": "9300187",
+      "name": "가락초등학교",
+      "englishName": "Garak Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30062",
+        "road": "세종특별자치시  마음로 208",
+        "detail": "/ 가락초등학교 (고운동)"
+      },
+      "slug": "garak-elementary-school-9300187",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300190",
+      "code": "9300190",
+      "name": "보람초등학교",
+      "englishName": "Boram Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30150",
+        "road": "세종특별자치시  보람동로 39",
+        "detail": "/ 보람초등학교 (보람동)"
+      },
+      "slug": "boram-elementary-school-9300190",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300191",
+      "code": "9300191",
+      "name": "보람고등학교",
+      "englishName": "Boram High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30151",
+        "road": "세종특별자치시  한누리대로 2176",
+        "detail": "(보람동)"
+      },
+      "slug": "boram-high-school-9300191",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300194",
+      "code": "9300194",
+      "name": "소담초등학교",
+      "englishName": "Sodam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30150",
+        "road": "세종특별자치시  소담1로 35",
+        "detail": "(소담동)"
+      },
+      "slug": "sodam-elementary-school-9300194",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300195",
+      "code": "9300195",
+      "name": "소담중학교",
+      "englishName": "Sodam Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30150",
+        "road": "세종특별자치시  남세종로 340",
+        "detail": "(소담동)"
+      },
+      "slug": "sodam-middle-school-9300195",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300201",
+      "code": "9300201",
+      "name": "어진중학교",
+      "englishName": "Eojin Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30123",
+        "road": "세종특별자치시  다솜로 10",
+        "detail": "(어진동)"
+      },
+      "slug": "eojin-middle-school-9300201",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300210",
+      "code": "9300210",
+      "name": "새롬초등학교",
+      "englishName": "Saerom Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30126",
+        "road": "세종특별자치시  새롬중앙1로 27",
+        "detail": "/ 새롬초등학교 (새롬동)"
+      },
+      "slug": "saerom-elementary-school-9300210",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300211",
+      "code": "9300211",
+      "name": "새뜸초등학교",
+      "englishName": "Saetteum Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30127",
+        "road": "세종특별자치시  새롬남로 75",
+        "detail": "/ 새뜸초등학교 (새롬동)"
+      },
+      "slug": "saetteum-elementary-school-9300211",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300212",
+      "code": "9300212",
+      "name": "가득초등학교",
+      "englishName": "Gadeuk  Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30125",
+        "road": "세종특별자치시  세종로 941",
+        "detail": "(새롬동)"
+      },
+      "slug": "gadeuk-elementary-school-9300212",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300213",
+      "code": "9300213",
+      "name": "여울초등학교",
+      "englishName": "Yeoul Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30150",
+        "road": "세종특별자치시  보람1길 9",
+        "detail": "(보람동)"
+      },
+      "slug": "yeoul-elementary-school-9300213",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300214",
+      "code": "9300214",
+      "name": "글벗초등학교",
+      "englishName": "Geulbeot Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30151",
+        "road": "세종특별자치시  소담로 121",
+        "detail": "(소담동)"
+      },
+      "slug": "geulbeot-elementary-school-9300214",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300215",
+      "code": "9300215",
+      "name": "새움중학교",
+      "englishName": "Saeum Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30124",
+        "road": "세종특별자치시  다정서로 12",
+        "detail": "/ 새움중학교/ 다정동 (다정동)"
+      },
+      "slug": "saeum-middle-school-9300215",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300216",
+      "code": "9300216",
+      "name": "새뜸중학교",
+      "englishName": "saetteum middle school",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30126",
+        "road": "세종특별자치시  새롬중앙로 62-12",
+        "detail": "/ 새뜸중학교 (새롬동)"
+      },
+      "slug": "saetteum-middle-school-9300216",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300217",
+      "code": "9300217",
+      "name": "보람중학교",
+      "englishName": "Boram Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30150",
+        "road": "세종특별자치시  남세종로 423",
+        "detail": "(보람동)"
+      },
+      "slug": "boram-middle-school-9300217",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300218",
+      "code": "9300218",
+      "name": "글벗중학교",
+      "englishName": "Geulbeot Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30147",
+        "road": "세종특별자치시  소담4로 33",
+        "detail": "(소담동)"
+      },
+      "slug": "geulbeot-middle-school-9300218",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300219",
+      "code": "9300219",
+      "name": "새롬고등학교",
+      "englishName": "Saerom High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30126",
+        "road": "세종특별자치시  새롬서로 68",
+        "detail": "(새롬동)"
+      },
+      "slug": "saerom-high-school-9300219",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300220",
+      "code": "9300220",
+      "name": "소담고등학교",
+      "englishName": "Sodam High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30150",
+        "road": "세종특별자치시  남세종로 326",
+        "detail": "(소담동/ 소담고등학교)"
+      },
+      "slug": "sodam-high-school-9300220",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300224",
+      "code": "9300224",
+      "name": "한결초등학교",
+      "englishName": "Hangyeol Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30124",
+        "road": "세종특별자치시  다정북로 139",
+        "detail": "(다정동/ 한결초등학교)"
+      },
+      "slug": "hangyeol-elementary-school-9300224",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300226",
+      "code": "9300226",
+      "name": "다정초등학교",
+      "englishName": "Dajeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30124",
+        "road": "세종특별자치시  다정남로 35",
+        "detail": "/ 다정초등학교"
+      },
+      "slug": "dajeong-elementary-school-9300226",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300227",
+      "code": "9300227",
+      "name": "다정중학교",
+      "englishName": "Dajeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30124",
+        "road": "세종특별자치시  다정서로 52",
+        "detail": "(다정동)"
+      },
+      "slug": "dajeong-middle-school-9300227",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300229",
+      "code": "9300229",
+      "name": "새움초등학교",
+      "englishName": "Saeum Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30124",
+        "road": "세종특별자치시  다정남로 93",
+        "detail": "/ 새움초등학교 (다정동/ 새움초등학교)"
+      },
+      "slug": "saeum-elementary-school-9300229",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300231",
+      "code": "9300231",
+      "name": "대평초등학교",
+      "englishName": "Daepyeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30153",
+        "road": "세종특별자치시  대평1길 19",
+        "detail": "(대평동)"
+      },
+      "slug": "daepyeong-elementary-school-9300231",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300233",
+      "code": "9300233",
+      "name": "세종예술고등학교",
+      "englishName": "Sejong Arts High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30106",
+        "road": "세종특별자치시  중앙공원서로 60",
+        "detail": "(세종동/ 세종예술고등학교)"
+      },
+      "slug": "sejong-arts-high-school-9300233",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300235",
+      "code": "9300235",
+      "name": "다정고등학교",
+      "englishName": "Dajeong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30124",
+        "road": "세종특별자치시  다정남로 15",
+        "detail": "/ (다정동/ 다정고등학교)"
+      },
+      "slug": "dajeong-high-school-9300235",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300236",
+      "code": "9300236",
+      "name": "반곡초등학교",
+      "englishName": "Bangok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30146",
+        "road": "세종특별자치시  시청대로 468",
+        "detail": "(반곡동/ 반곡초등학교)"
+      },
+      "slug": "bangok-elementary-school-9300236",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300238",
+      "code": "9300238",
+      "name": "반곡중학교",
+      "englishName": "Bangok Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30146",
+        "road": "세종특별자치시  시청대로 480",
+        "detail": "(반곡동/ 반곡중학교)"
+      },
+      "slug": "bangok-middle-school-9300238",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300239",
+      "code": "9300239",
+      "name": "솔빛초등학교",
+      "englishName": "Solbit Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30145",
+        "road": "세종특별자치시  반곡2길 21",
+        "detail": "(반곡동/ 솔빛초등학교)"
+      },
+      "slug": "solbit-elementary-school-9300239",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300265",
+      "code": "9300265",
+      "name": "반곡고등학교",
+      "englishName": "Bangok High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30145",
+        "road": "세종특별자치시  시청대로 566",
+        "detail": "(반곡동/ 반곡고등학교)"
+      },
+      "slug": "bangok-high-school-9300265",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300266",
+      "code": "9300266",
+      "name": "세종장영실고등학교",
+      "englishName": "Sejong Jangyeongsil high School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30079",
+        "road": "세종특별자치시  금남면 금남구즉로 196",
+        "detail": "(금남면)"
+      },
+      "slug": "sejong-jangyeongsil-high-school-9300266",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611034000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300268",
+      "code": "9300268",
+      "name": "해밀초등학교",
+      "englishName": "Haemil Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30092",
+        "road": "세종특별자치시  해밀1로 73",
+        "detail": "(해밀동)"
+      },
+      "slug": "haemil-elementary-school-9300268",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300269",
+      "code": "9300269",
+      "name": "해밀중학교",
+      "englishName": "HAEMIL MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30092",
+        "road": "세종특별자치시 해밀2로 6",
+        "detail": "(해밀동)"
+      },
+      "slug": "haemil-middle-school-9300269",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300270",
+      "code": "9300270",
+      "name": "해밀고등학교",
+      "englishName": "Haemil High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30095",
+        "road": "세종특별자치시 해밀2로 36",
+        "detail": "(해밀동)"
+      },
+      "slug": "haemil-high-school-9300270",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300278",
+      "code": "9300278",
+      "name": "세종대성고등학교",
+      "englishName": "Sejong Daeseong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "30123",
+        "road": "세종특별자치시  다솜로 22",
+        "detail": "(어진동/ 세종대성고등학교)"
+      },
+      "slug": "sejong-daeseong-high-school-9300278",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300285",
+      "code": "9300285",
+      "name": "나성초등학교",
+      "englishName": "Naseong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30128",
+        "road": "세종특별자치시  갈매로 294",
+        "detail": "(나성동/ 나성초등학교)"
+      },
+      "slug": "naseong-elementary-school-9300285",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300286",
+      "code": "9300286",
+      "name": "나성중학교",
+      "englishName": "Naseong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30128",
+        "road": "세종특별자치시  갈매로 298",
+        "detail": "(나성동)"
+      },
+      "slug": "naseong-middle-school-9300286",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611051800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300305",
+      "code": "9300305",
+      "name": "세종중학교",
+      "englishName": "Sejong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30024",
+        "road": "세종특별자치시  조치원읍 새내로 160",
+        "detail": "/ (세종중학교) (조치원읍)"
+      },
+      "slug": "sejong-middle-school-9300305",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300310",
+      "code": "9300310",
+      "name": "집현초등학교",
+      "englishName": "집현초등학교",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30141",
+        "road": "세종특별자치시  집현서로 23",
+        "detail": "(집현동/ 집현초등학교)"
+      },
+      "slug": "school-9300310",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300311",
+      "code": "9300311",
+      "name": "집현중학교",
+      "englishName": "집현중학교",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30141",
+        "road": "세종특별자치시  집현서로 42",
+        "detail": "/ 집현중학교"
+      },
+      "slug": "school-9300311",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300315",
+      "code": "9300315",
+      "name": "나루초등학교",
+      "englishName": "나루초등학교",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30141",
+        "road": "세종특별자치시  집현서로 90",
+        "detail": "/ 나루초등학교"
+      },
+      "slug": "school-9300315",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611055600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300329",
+      "code": "9300329",
+      "name": "세종미래고등학교",
+      "englishName": "Sejong Mirae High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30073",
+        "road": "세종특별자치시  부강면 문곡달미길  6",
+        "detail": "(부강면)"
+      },
+      "slug": "sejong-mirae-high-school-9300329",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611033000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300347",
+      "code": "9300347",
+      "name": "바른초등학교",
+      "englishName": "Bareun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30091",
+        "road": "세종특별자치시 산울3로 33",
+        "detail": "(산울동)"
+      },
+      "slug": "bareun-elementary-school-9300347",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300355",
+      "code": "9300355",
+      "name": "산울초등학교",
+      "englishName": "Sanul Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30091",
+        "road": "세종특별자치시 산울7로 33",
+        "detail": "(산울동)"
+      },
+      "slug": "sanul-elementary-school-9300355",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300356",
+      "code": "9300356",
+      "name": "산울중학교",
+      "englishName": "Sanul Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30091",
+        "road": "세종특별자치시 산울7로 33",
+        "detail": "(산울동)"
+      },
+      "slug": "sanul-middle-school-9300356",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9300357",
+      "code": "9300357",
+      "name": "세종캠퍼스고등학교",
+      "englishName": "SejongCampus High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "30091",
+        "road": "세종특별자치시 산울3로 140",
+        "detail": "(산울동)"
+      },
+      "slug": "sejongcampus-high-school-9300357",
+      "region": {
+        "provinceId": "province:36",
+        "districtId": "district:36110",
+        "townId": "town:3611052500"
+      },
+      "extensions": {}
+    }
+  ],
+  "extensions": {}
+}

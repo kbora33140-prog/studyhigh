@@ -1,0 +1,2821 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-07-24T06:23:35.392Z",
+    "source": "행정안전부 행정동 경계 (Esri Korea Living Atlas 재배포)",
+    "sourceDate": "2026-07"
+  },
+  "province": {
+    "id": "province:26",
+    "code": "26",
+    "name": "부산광역시",
+    "englishName": "Busan",
+    "slug": "busan"
+  },
+  "districts": [
+    {
+      "id": "district:26110",
+      "code": "26110",
+      "name": "중구",
+      "englishName": "Jung-gu",
+      "slug": "jung-gu",
+      "towns": [
+        {
+          "id": "town:2611051000",
+          "code": "2611051000",
+          "name": "중앙동",
+          "englishName": "Jungang-dong",
+          "slug": "jungang-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611052000",
+          "code": "2611052000",
+          "name": "동광동",
+          "englishName": "Donggwang-dong",
+          "slug": "donggwang-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611053000",
+          "code": "2611053000",
+          "name": "대청동",
+          "englishName": "Daecheong-dong",
+          "slug": "daecheong-dong",
+          "schoolIds": [
+            "school:7171093",
+            "school:7171097",
+            "school:7150125"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611054500",
+          "code": "2611054500",
+          "name": "보수동",
+          "englishName": "Bosu-dong",
+          "slug": "bosu-dong",
+          "schoolIds": [
+            "school:7171094",
+            "school:7150162"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611056000",
+          "code": "2611056000",
+          "name": "부평동",
+          "englishName": "Bupyeong-dong",
+          "slug": "bupyeong-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611057000",
+          "code": "2611057000",
+          "name": "광복동",
+          "englishName": "Gwangbok-dong",
+          "slug": "gwangbok-dong",
+          "schoolIds": [
+            "school:7150431"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611058000",
+          "code": "2611058000",
+          "name": "남포동",
+          "englishName": "Nampo-dong",
+          "slug": "nampo-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611059000",
+          "code": "2611059000",
+          "name": "영주제1동",
+          "englishName": "Yeongju1(il)-dong",
+          "slug": "yeongju1-il-dong",
+          "schoolIds": [
+            "school:7171095"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2611060000",
+          "code": "2611060000",
+          "name": "영주제2동",
+          "englishName": "Yeongju2(i)-dong",
+          "slug": "yeongju2-i-dong",
+          "schoolIds": [
+            "school:7171042",
+            "school:7150345"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26140",
+      "code": "26140",
+      "name": "서구",
+      "englishName": "Seo-gu",
+      "slug": "seo-gu",
+      "towns": [
+        {
+          "id": "town:2614051000",
+          "code": "2614051000",
+          "name": "동대신제1동",
+          "englishName": "Dongdaesin 1(il)-dong",
+          "slug": "dongdaesin-1-il-dong",
+          "schoolIds": [
+            "school:7171089"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614052000",
+          "code": "2614052000",
+          "name": "동대신제2동",
+          "englishName": "Dongdaesin 2(i)-dong",
+          "slug": "dongdaesin-2-i-dong",
+          "schoolIds": [
+            "school:7171035",
+            "school:7150105"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614053000",
+          "code": "2614053000",
+          "name": "동대신제3동",
+          "englishName": "Dongdaesin 3(sam)-dong",
+          "slug": "dongdaesin-3-sam-dong",
+          "schoolIds": [
+            "school:7171059",
+            "school:7150085"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614054000",
+          "code": "2614054000",
+          "name": "서대신제1동",
+          "englishName": "Seodaesin 1(il)-dong",
+          "slug": "seodaesin-1-il-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614056000",
+          "code": "2614056000",
+          "name": "서대신제3동",
+          "englishName": "Seodaesin 3(sam)-dong",
+          "slug": "seodaesin-3-sam-dong",
+          "schoolIds": [
+            "school:7171056",
+            "school:7171022",
+            "school:7150397",
+            "school:7150429"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614057000",
+          "code": "2614057000",
+          "name": "서대신제4동",
+          "englishName": "Seodaesin 4(sa)-dong",
+          "slug": "seodaesin-4-sa-dong",
+          "schoolIds": [
+            "school:7171046",
+            "school:7171019",
+            "school:7171020"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614059000",
+          "code": "2614059000",
+          "name": "부민동",
+          "englishName": "Bumin-dong",
+          "slug": "bumin-dong",
+          "schoolIds": [
+            "school:7171062"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614061500",
+          "code": "2614061500",
+          "name": "아미동",
+          "englishName": "Ami-dong",
+          "slug": "ami-dong",
+          "schoolIds": [
+            "school:7171074"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614063000",
+          "code": "2614063000",
+          "name": "초장동",
+          "englishName": "Chojang-dong",
+          "slug": "chojang-dong",
+          "schoolIds": [
+            "school:7171028"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614064000",
+          "code": "2614064000",
+          "name": "충무동",
+          "englishName": "Chungmu-dong",
+          "slug": "chungmu-dong",
+          "schoolIds": [
+            "school:7171086",
+            "school:7171011"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614065000",
+          "code": "2614065000",
+          "name": "남부민제1동",
+          "englishName": "Nambumin 1(il)-dong",
+          "slug": "nambumin-1-il-dong",
+          "schoolIds": [
+            "school:7171049"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614066000",
+          "code": "2614066000",
+          "name": "남부민제2동",
+          "englishName": "Nambumin 2(i)-dong",
+          "slug": "nambumin-2-i-dong",
+          "schoolIds": [
+            "school:7171038",
+            "school:7150422"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2614068000",
+          "code": "2614068000",
+          "name": "암남동",
+          "englishName": "Amnam-dong",
+          "slug": "amnam-dong",
+          "schoolIds": [
+            "school:7171068",
+            "school:7171082",
+            "school:7171099"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26170",
+      "code": "26170",
+      "name": "동구",
+      "englishName": "Dong-gu",
+      "slug": "dong-gu",
+      "towns": [
+        {
+          "id": "town:2617051000",
+          "code": "2617051000",
+          "name": "초량제1동",
+          "englishName": "Choryang1(il)-dong",
+          "slug": "choryang1-il-dong",
+          "schoolIds": [
+            "school:7181067"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617052000",
+          "code": "2617052000",
+          "name": "초량제2동",
+          "englishName": "Choryang2(i)-dong",
+          "slug": "choryang2-i-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617053000",
+          "code": "2617053000",
+          "name": "초량제3동",
+          "englishName": "Choryang3(sam)-dong",
+          "slug": "choryang3-sam-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617055000",
+          "code": "2617055000",
+          "name": "초량제6동",
+          "englishName": "Choryang6(yuk)-dong",
+          "slug": "choryang6-yuk-dong",
+          "schoolIds": [
+            "school:7181088",
+            "school:7181107",
+            "school:7150100",
+            "school:7150337"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617056000",
+          "code": "2617056000",
+          "name": "수정제1동",
+          "englishName": "Sujeong1(il)-dong",
+          "slug": "sujeong1-il-dong",
+          "schoolIds": [
+            "school:7181026",
+            "school:7181074",
+            "school:7181086"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617057000",
+          "code": "2617057000",
+          "name": "수정제2동",
+          "englishName": "Sujeong2(i)-dong",
+          "slug": "sujeong2-i-dong",
+          "schoolIds": [
+            "school:7181047",
+            "school:7181104"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617059000",
+          "code": "2617059000",
+          "name": "수정제4동",
+          "englishName": "Sujeong4(sa)-dong",
+          "slug": "sujeong4-sa-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617060000",
+          "code": "2617060000",
+          "name": "수정제5동",
+          "englishName": "Sujeong5(o)-dong",
+          "slug": "sujeong5-o-dong",
+          "schoolIds": [
+            "school:7181046",
+            "school:7150086"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617064500",
+          "code": "2617064500",
+          "name": "좌천동",
+          "englishName": "Jwacheon-dong",
+          "slug": "jwacheon-dong",
+          "schoolIds": [
+            "school:7150124"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617065000",
+          "code": "2617065000",
+          "name": "범일제1동",
+          "englishName": "Beomil1(il)-dong",
+          "slug": "beomil1-il-dong",
+          "schoolIds": [
+            "school:7181032",
+            "school:7150131"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617066000",
+          "code": "2617066000",
+          "name": "범일제2동",
+          "englishName": "Beomil2(i)-dong",
+          "slug": "beomil2-i-dong",
+          "schoolIds": [
+            "school:7181039"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2617068000",
+          "code": "2617068000",
+          "name": "범일제5동",
+          "englishName": "Beomil5(o)-dong",
+          "slug": "beomil5-o-dong",
+          "schoolIds": [],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26200",
+      "code": "26200",
+      "name": "영도구",
+      "englishName": "Yeongdo-gu",
+      "slug": "yeongdo-gu",
+      "towns": [
+        {
+          "id": "town:2620053000",
+          "code": "2620053000",
+          "name": "남항동",
+          "englishName": "Namhang-dong",
+          "slug": "namhang-dong",
+          "schoolIds": [
+            "school:7171057",
+            "school:7171018"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620054000",
+          "code": "2620054000",
+          "name": "영선제1동",
+          "englishName": "Yeongseon1(il)-dong",
+          "slug": "yeongseon1-il-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620055000",
+          "code": "2620055000",
+          "name": "영선제2동",
+          "englishName": "Yeongseon2(i)-dong",
+          "slug": "yeongseon2-i-dong",
+          "schoolIds": [
+            "school:7171050",
+            "school:7150533"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620058500",
+          "code": "2620058500",
+          "name": "신선동",
+          "englishName": "Sinseon-dong",
+          "slug": "sinseon-dong",
+          "schoolIds": [
+            "school:7171071",
+            "school:7171075",
+            "school:7171021",
+            "school:7171024",
+            "school:7171033",
+            "school:7150426"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620059000",
+          "code": "2620059000",
+          "name": "봉래제1동",
+          "englishName": "Bongnae1(il)-dong",
+          "slug": "bongnae1-il-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620060500",
+          "code": "2620060500",
+          "name": "봉래제2동",
+          "englishName": "Bongnae2(i)-dong",
+          "slug": "bongnae2-i-dong",
+          "schoolIds": [
+            "school:7171055"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620063000",
+          "code": "2620063000",
+          "name": "청학제1동",
+          "englishName": "Cheonghak1(il)-dong",
+          "slug": "cheonghak1-il-dong",
+          "schoolIds": [
+            "school:7171061",
+            "school:7171084"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620064000",
+          "code": "2620064000",
+          "name": "청학제2동",
+          "englishName": "Cheonghak2(i)-dong",
+          "slug": "cheonghak2-i-dong",
+          "schoolIds": [
+            "school:7171083"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620065000",
+          "code": "2620065000",
+          "name": "동삼제1동",
+          "englishName": "Dongsam1(il)-dong",
+          "slug": "dongsam1-il-dong",
+          "schoolIds": [
+            "school:7171058",
+            "school:7171060",
+            "school:7171079",
+            "school:7171080",
+            "school:7171029",
+            "school:7171041",
+            "school:7171184",
+            "school:7171202",
+            "school:7150102",
+            "school:7150110",
+            "school:7150116"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620066000",
+          "code": "2620066000",
+          "name": "동삼제2동",
+          "englishName": "Dongsam2(i)-dong",
+          "slug": "dongsam2-i-dong",
+          "schoolIds": [
+            "school:7171085",
+            "school:1192068"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2620067000",
+          "code": "2620067000",
+          "name": "동삼제3동",
+          "englishName": "Dongsam3(sam)-dong",
+          "slug": "dongsam3-sam-dong",
+          "schoolIds": [
+            "school:7171066",
+            "school:7150123"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26230",
+      "code": "26230",
+      "name": "부산진구",
+      "englishName": "Busanjin-gu",
+      "slug": "busanjin-gu",
+      "towns": [
+        {
+          "id": "town:2623051000",
+          "code": "2623051000",
+          "name": "부전제1동",
+          "englishName": "Bujeon1(il)-dong",
+          "slug": "bujeon1-il-dong",
+          "schoolIds": [
+            "school:7181044",
+            "school:7181090"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623052000",
+          "code": "2623052000",
+          "name": "부전제2동",
+          "englishName": "Bujeon2(i)-dong",
+          "slug": "bujeon2-i-dong",
+          "schoolIds": [
+            "school:7181035"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623054000",
+          "code": "2623054000",
+          "name": "연지동",
+          "englishName": "Yeonji-dong",
+          "slug": "yeonji-dong",
+          "schoolIds": [
+            "school:7181052"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623055000",
+          "code": "2623055000",
+          "name": "초읍동",
+          "englishName": "Choeup-dong",
+          "slug": "choeup-dong",
+          "schoolIds": [
+            "school:7181054",
+            "school:7181068",
+            "school:7181098",
+            "school:7181099",
+            "school:7150109"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623056000",
+          "code": "2623056000",
+          "name": "양정제1동",
+          "englishName": "Yangjeong1(il)-dong",
+          "slug": "yangjeong1-il-dong",
+          "schoolIds": [
+            "school:7181050",
+            "school:7150149",
+            "school:7150152",
+            "school:7150178",
+            "school:7150348"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623057000",
+          "code": "2623057000",
+          "name": "양정제2동",
+          "englishName": "Yangjeong2(i)-dong",
+          "slug": "yangjeong2-i-dong",
+          "schoolIds": [
+            "school:7181049",
+            "school:7181051",
+            "school:7181094",
+            "school:7150142",
+            "school:7150622"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623060000",
+          "code": "2623060000",
+          "name": "전포제1동",
+          "englishName": "Jeonpo1(il)-dong",
+          "slug": "jeonpo1-il-dong",
+          "schoolIds": [
+            "school:7181041",
+            "school:7181069",
+            "school:7181089",
+            "school:7181101",
+            "school:7181105",
+            "school:7150138",
+            "school:7150139",
+            "school:7150166",
+            "school:7150421"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623061000",
+          "code": "2623061000",
+          "name": "전포제2동",
+          "englishName": "Jeonpo2(i)-dong",
+          "slug": "jeonpo2-i-dong",
+          "schoolIds": [
+            "school:7181043",
+            "school:7181062",
+            "school:7181102",
+            "school:7181108",
+            "school:7150739"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623064000",
+          "code": "2623064000",
+          "name": "부암제1동",
+          "englishName": "Buam1(il)-dong",
+          "slug": "buam1-il-dong",
+          "schoolIds": [
+            "school:7181034",
+            "school:7181106"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623066000",
+          "code": "2623066000",
+          "name": "부암제3동",
+          "englishName": "Buam3(sam)-dong",
+          "slug": "buam3-sam-dong",
+          "schoolIds": [
+            "school:7181024",
+            "school:7181079",
+            "school:7181080",
+            "school:7181081"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623067000",
+          "code": "2623067000",
+          "name": "당감제1동",
+          "englishName": "Danggam1(il)-dong",
+          "slug": "danggam1-il-dong",
+          "schoolIds": [
+            "school:7181019",
+            "school:7181020",
+            "school:7181072",
+            "school:7181085",
+            "school:7150121",
+            "school:7150369",
+            "school:7150400"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623068000",
+          "code": "2623068000",
+          "name": "당감제2동",
+          "englishName": "Danggam2(i)-dong",
+          "slug": "danggam2-i-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623070000",
+          "code": "2623070000",
+          "name": "당감제4동",
+          "englishName": "Danggam4(sa)-dong",
+          "slug": "danggam4-sa-dong",
+          "schoolIds": [
+            "school:7181025",
+            "school:7181028",
+            "school:7150396"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623071000",
+          "code": "2623071000",
+          "name": "가야제1동",
+          "englishName": "Gaya1(il)-dong",
+          "slug": "gaya1-il-dong",
+          "schoolIds": [
+            "school:7181010",
+            "school:7181012",
+            "school:7181070"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623072000",
+          "code": "2623072000",
+          "name": "가야제2동",
+          "englishName": "Gaya2(i)-dong",
+          "slug": "gaya2-i-dong",
+          "schoolIds": [
+            "school:7181013",
+            "school:7181084",
+            "school:7150119"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623074000",
+          "code": "2623074000",
+          "name": "개금제1동",
+          "englishName": "Gaegeum1(il)-dong",
+          "slug": "gaegeum1-il-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623075000",
+          "code": "2623075000",
+          "name": "개금제2동",
+          "englishName": "Gaegeum2(i)-dong",
+          "slug": "gaegeum2-i-dong",
+          "schoolIds": [
+            "school:7181065"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623076000",
+          "code": "2623076000",
+          "name": "개금제3동",
+          "englishName": "Gaegeum3(sam)-dong",
+          "slug": "gaegeum3-sam-dong",
+          "schoolIds": [
+            "school:7181014",
+            "school:7181015",
+            "school:7181016",
+            "school:7181017",
+            "school:7181018",
+            "school:7181073",
+            "school:7181075",
+            "school:7150084"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623077000",
+          "code": "2623077000",
+          "name": "범천제1동",
+          "englishName": "Beomcheon1(il)-dong",
+          "slug": "beomcheon1-il-dong",
+          "schoolIds": [
+            "school:7181042"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2623078000",
+          "code": "2623078000",
+          "name": "범천제2동",
+          "englishName": "Beomcheon2(i)-dong",
+          "slug": "beomcheon2-i-dong",
+          "schoolIds": [
+            "school:7181033",
+            "school:7181038"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26260",
+      "code": "26260",
+      "name": "동래구",
+      "englishName": "Dongnae-gu",
+      "slug": "dongnae-gu",
+      "towns": [
+        {
+          "id": "town:2626051000",
+          "code": "2626051000",
+          "name": "수민동",
+          "englishName": "Sumin-dong",
+          "slug": "sumin-dong",
+          "schoolIds": [
+            "school:7191057",
+            "school:7191077",
+            "school:7191080"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626052000",
+          "code": "2626052000",
+          "name": "복산동",
+          "englishName": "Boksan-dong",
+          "slug": "boksan-dong",
+          "schoolIds": [
+            "school:7191061",
+            "school:7150097"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626054500",
+          "code": "2626054500",
+          "name": "명륜동",
+          "englishName": "Myeongnyun-dong",
+          "slug": "myeongnyun-dong",
+          "schoolIds": [
+            "school:7191049",
+            "school:7191068",
+            "school:7191017",
+            "school:7191039",
+            "school:7150108"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626055000",
+          "code": "2626055000",
+          "name": "온천제1동",
+          "englishName": "Oncheon1(il)-dong",
+          "slug": "oncheon1-il-dong",
+          "schoolIds": [
+            "school:7191031",
+            "school:7150170",
+            "school:7150177"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626056000",
+          "code": "2626056000",
+          "name": "온천제2동",
+          "englishName": "Oncheon2(i)-dong",
+          "slug": "oncheon2-i-dong",
+          "schoolIds": [
+            "school:7191060",
+            "school:7191092",
+            "school:7191214"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626057000",
+          "code": "2626057000",
+          "name": "온천제3동",
+          "englishName": "Oncheon3(sam)-dong",
+          "slug": "oncheon3-sam-dong",
+          "schoolIds": [
+            "school:7191051",
+            "school:7191062",
+            "school:7191071",
+            "school:7191016",
+            "school:7191030"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626058000",
+          "code": "2626058000",
+          "name": "사직제1동",
+          "englishName": "Sajik1(il)-dong",
+          "slug": "sajik1-il-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626059000",
+          "code": "2626059000",
+          "name": "사직제2동",
+          "englishName": "Sajik2(i)-dong",
+          "slug": "sajik2-i-dong",
+          "schoolIds": [
+            "school:7191073",
+            "school:7191091",
+            "school:7191022",
+            "school:7191023",
+            "school:7150112",
+            "school:7150134",
+            "school:7150146"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626060000",
+          "code": "2626060000",
+          "name": "사직제3동",
+          "englishName": "Sajik3(sam)-dong",
+          "slug": "sajik3-sam-dong",
+          "schoolIds": [
+            "school:7191082",
+            "school:7191025"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626074000",
+          "code": "2626074000",
+          "name": "안락제1동",
+          "englishName": "Allak1(il)-dong",
+          "slug": "allak1-il-dong",
+          "schoolIds": [
+            "school:7191081"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626075000",
+          "code": "2626075000",
+          "name": "안락제2동",
+          "englishName": "Allak2(i)-dong",
+          "slug": "allak2-i-dong",
+          "schoolIds": [
+            "school:7191078",
+            "school:7191015",
+            "school:7191024"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626076100",
+          "code": "2626076100",
+          "name": "명장제1동",
+          "englishName": "Myeongjang1(il)-dong",
+          "slug": "myeongjang1-il-dong",
+          "schoolIds": [
+            "school:7191067",
+            "school:7191079",
+            "school:7191097",
+            "school:7191102",
+            "school:7191034",
+            "school:7150090",
+            "school:7150118",
+            "school:7150163"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2626076200",
+          "code": "2626076200",
+          "name": "명장제2동",
+          "englishName": "Myeongjang2(i)-dong",
+          "slug": "myeongjang2-i-dong",
+          "schoolIds": [
+            "school:7191069",
+            "school:7191070",
+            "school:7191076",
+            "school:7191018",
+            "school:7191041",
+            "school:7150128",
+            "school:7150154",
+            "school:7150158"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26290",
+      "code": "26290",
+      "name": "남구",
+      "englishName": "Nam-gu",
+      "slug": "nam-gu",
+      "towns": [
+        {
+          "id": "town:2629051000",
+          "code": "2629051000",
+          "name": "대연제1동",
+          "englishName": "Daeyeon1(il)-dong",
+          "slug": "daeyeon1-il-dong",
+          "schoolIds": [
+            "school:7181077"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629053000",
+          "code": "2629053000",
+          "name": "대연제3동",
+          "englishName": "Daeyeon3(sam)-dong",
+          "slug": "daeyeon3-sam-dong",
+          "schoolIds": [
+            "school:7181023",
+            "school:7181199",
+            "school:7181076",
+            "school:7181078",
+            "school:7150129"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629054000",
+          "code": "2629054000",
+          "name": "대연제4동",
+          "englishName": "Daeyeon4(sa)-dong",
+          "slug": "daeyeon4-sa-dong",
+          "schoolIds": [
+            "school:7181037",
+            "school:7150171"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629055000",
+          "code": "2629055000",
+          "name": "대연제5동",
+          "englishName": "Daeyeon5(o)-dong",
+          "slug": "daeyeon5-o-dong",
+          "schoolIds": [
+            "school:7181022",
+            "school:7150135"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629056000",
+          "code": "2629056000",
+          "name": "대연제6동",
+          "englishName": "Daeyeon6(yuk)-dong",
+          "slug": "daeyeon6-yuk-dong",
+          "schoolIds": [
+            "school:7181053",
+            "school:7181109",
+            "school:7150107",
+            "school:7150660"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629057000",
+          "code": "2629057000",
+          "name": "용호제1동",
+          "englishName": "Yongho1(il)-dong",
+          "slug": "yongho1-il-dong",
+          "schoolIds": [
+            "school:7181031",
+            "school:7181036",
+            "school:7181057",
+            "school:7181059",
+            "school:7181091",
+            "school:7181096",
+            "school:7150371"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629058000",
+          "code": "2629058000",
+          "name": "용호제2동",
+          "englishName": "Yongho2(i)-dong",
+          "slug": "yongho2-i-dong",
+          "schoolIds": [
+            "school:7181055",
+            "school:7181061",
+            "school:7181095"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629059000",
+          "code": "2629059000",
+          "name": "용호제3동",
+          "englishName": "Yongho3(sam)-dong",
+          "slug": "yongho3-sam-dong",
+          "schoolIds": [
+            "school:7181058",
+            "school:7181097",
+            "school:7150579"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629060000",
+          "code": "2629060000",
+          "name": "용호제4동",
+          "englishName": "Yongho4(sa)-dong",
+          "slug": "yongho4-sa-dong",
+          "schoolIds": [
+            "school:7150153"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629061000",
+          "code": "2629061000",
+          "name": "용당동",
+          "englishName": "Yongdang-dong",
+          "slug": "yongdang-dong",
+          "schoolIds": [
+            "school:7181056",
+            "school:7181092",
+            "school:7150620"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629062000",
+          "code": "2629062000",
+          "name": "감만제1동",
+          "englishName": "Gamman1(il)-dong",
+          "slug": "gamman1-il-dong",
+          "schoolIds": [
+            "school:7181029",
+            "school:7181082"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629063000",
+          "code": "2629063000",
+          "name": "감만제2동",
+          "englishName": "Gamman2(i)-dong",
+          "slug": "gamman2-i-dong",
+          "schoolIds": [
+            "school:7181027",
+            "school:7181071"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629064500",
+          "code": "2629064500",
+          "name": "우암동",
+          "englishName": "Uam-dong",
+          "slug": "uam-dong",
+          "schoolIds": [
+            "school:7181045",
+            "school:7181048",
+            "school:7181060",
+            "school:7150455"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629068000",
+          "code": "2629068000",
+          "name": "문현제1동",
+          "englishName": "Munhyeon1(il)-dong",
+          "slug": "munhyeon1-il-dong",
+          "schoolIds": [
+            "school:7181030",
+            "school:7181083",
+            "school:7150098",
+            "school:7150598"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629069000",
+          "code": "2629069000",
+          "name": "문현제2동",
+          "englishName": "Munhyeon2(i)-dong",
+          "slug": "munhyeon2-i-dong",
+          "schoolIds": [
+            "school:7181040",
+            "school:7181093"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629070000",
+          "code": "2629070000",
+          "name": "문현제3동",
+          "englishName": "Munhyeon3(sam)-dong",
+          "slug": "munhyeon3-sam-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2629071000",
+          "code": "2629071000",
+          "name": "문현제4동",
+          "englishName": "Munhyeon4(sa)-dong",
+          "slug": "munhyeon4-sa-dong",
+          "schoolIds": [
+            "school:7150136",
+            "school:7150625",
+            "school:7150626"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26320",
+      "code": "26320",
+      "name": "북구",
+      "englishName": "Buk-gu",
+      "slug": "buk-gu",
+      "towns": [
+        {
+          "id": "town:2632051000",
+          "code": "2632051000",
+          "name": "구포제1동",
+          "englishName": "Gupo1(il)-dong",
+          "slug": "gupo1-il-dong",
+          "schoolIds": [
+            "school:7201065",
+            "school:7201031",
+            "school:7150122"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632052000",
+          "code": "2632052000",
+          "name": "구포제2동",
+          "englishName": "Gupo2(i)-dong",
+          "slug": "gupo2-i-dong",
+          "schoolIds": [
+            "school:7201047",
+            "school:7201048",
+            "school:pending-0-611",
+            "school:7201011",
+            "school:7201012",
+            "school:7201013",
+            "school:pending-1-391",
+            "school:7150420"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632052100",
+          "code": "2632052100",
+          "name": "구포제3동",
+          "englishName": "Gupo3(sam)-dong",
+          "slug": "gupo3-sam-dong",
+          "schoolIds": [
+            "school:7201090",
+            "school:7201102",
+            "school:7150148",
+            "school:7150430"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632053000",
+          "code": "2632053000",
+          "name": "금곡동",
+          "englishName": "Geumgok-dong",
+          "slug": "geumgok-dong",
+          "schoolIds": [
+            "school:7201050",
+            "school:7201051",
+            "school:7201052",
+            "school:7201088",
+            "school:7201014",
+            "school:7201015",
+            "school:7150372"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632054100",
+          "code": "2632054100",
+          "name": "화명제1동",
+          "englishName": "Hwamyeong1(il)-dong",
+          "slug": "hwamyeong1-il-dong",
+          "schoolIds": [
+            "school:7201070",
+            "school:7201095",
+            "school:7201107",
+            "school:7201202",
+            "school:7201038"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632054200",
+          "code": "2632054200",
+          "name": "화명제2동",
+          "englishName": "Hwamyeong2(i)-dong",
+          "slug": "hwamyeong2-i-dong",
+          "schoolIds": [
+            "school:7201059",
+            "school:7201106",
+            "school:7201017",
+            "school:7201039",
+            "school:7150424"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632054300",
+          "code": "2632054300",
+          "name": "화명제3동",
+          "englishName": "Hwamyeong3(sam)-dong",
+          "slug": "hwamyeong3-sam-dong",
+          "schoolIds": [
+            "school:7201072",
+            "school:7201096",
+            "school:7201103",
+            "school:7201024",
+            "school:7201033",
+            "school:7150364"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632055000",
+          "code": "2632055000",
+          "name": "덕천제1동",
+          "englishName": "Deokcheon1(il)-dong",
+          "slug": "deokcheon1-il-dong",
+          "schoolIds": [
+            "school:7201020"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632056000",
+          "code": "2632056000",
+          "name": "덕천제2동",
+          "englishName": "Deokcheon2(i)-dong",
+          "slug": "deokcheon2-i-dong",
+          "schoolIds": [
+            "school:7201063",
+            "school:7201092",
+            "school:7150092"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632056100",
+          "code": "2632056100",
+          "name": "덕천제3동",
+          "englishName": "Deokcheon3(sam)-dong",
+          "slug": "deokcheon3-sam-dong",
+          "schoolIds": [
+            "school:7201093"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632057100",
+          "code": "2632057100",
+          "name": "만덕제1동",
+          "englishName": "Mandeok1(il)-dong",
+          "slug": "mandeok1-il-dong",
+          "schoolIds": [
+            "school:7201069",
+            "school:7201084",
+            "school:7201023"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632057200",
+          "code": "2632057200",
+          "name": "만덕제2동",
+          "englishName": "Mandeok2(i)-dong",
+          "slug": "mandeok2-i-dong",
+          "schoolIds": [
+            "school:7201080",
+            "school:7201089",
+            "school:7201028",
+            "school:7201030",
+            "school:7150363"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2632057300",
+          "code": "2632057300",
+          "name": "만덕제3동",
+          "englishName": "Mandeok3(sam)-dong",
+          "slug": "mandeok3-sam-dong",
+          "schoolIds": [
+            "school:7201064",
+            "school:7201079"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26350",
+      "code": "26350",
+      "name": "해운대구",
+      "englishName": "Haeundae-gu",
+      "slug": "haeundae-gu",
+      "towns": [
+        {
+          "id": "town:2635051000",
+          "code": "2635051000",
+          "name": "우제1동",
+          "englishName": "U1(il)-dong",
+          "slug": "u1-il-dong",
+          "schoolIds": [
+            "school:7211081",
+            "school:7211037",
+            "school:7211038",
+            "school:1421117",
+            "school:7150160",
+            "school:7150161",
+            "school:7150367"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635052000",
+          "code": "2635052000",
+          "name": "우제2동",
+          "englishName": "U2(i)-dong",
+          "slug": "u2-i-dong",
+          "schoolIds": [
+            "school:7211039",
+            "school:7211085",
+            "school:7211030",
+            "school:7150404",
+            "school:7150456",
+            "school:7150659",
+            "school:7150746"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635052500",
+          "code": "2635052500",
+          "name": "우제3동",
+          "englishName": "U3(sam)-dong",
+          "slug": "u3-sam-dong",
+          "schoolIds": [
+            "school:7211080",
+            "school:7211185"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635053000",
+          "code": "2635053000",
+          "name": "중제1동",
+          "englishName": "Jung1(il)-dong",
+          "slug": "jung1-il-dong",
+          "schoolIds": [
+            "school:7211083",
+            "school:7211012"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635054000",
+          "code": "2635054000",
+          "name": "중제2동",
+          "englishName": "Jung2(i)-dong",
+          "slug": "jung2-i-dong",
+          "schoolIds": [
+            "school:7211046"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635055100",
+          "code": "2635055100",
+          "name": "좌제1동",
+          "englishName": "Jwa1(il)-dong",
+          "slug": "jwa1-il-dong",
+          "schoolIds": [
+            "school:7211055",
+            "school:7211074",
+            "school:7211015",
+            "school:7150111"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635055200",
+          "code": "2635055200",
+          "name": "좌제2동",
+          "englishName": "Jwa2(i)-dong",
+          "slug": "jwa2-i-dong",
+          "schoolIds": [
+            "school:7211061",
+            "school:7211075",
+            "school:7211082",
+            "school:7211018"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635055300",
+          "code": "2635055300",
+          "name": "좌제3동",
+          "englishName": "Jwa3(sam)-dong",
+          "slug": "jwa3-sam-dong",
+          "schoolIds": [
+            "school:7211062",
+            "school:7211064",
+            "school:7211019",
+            "school:7211020",
+            "school:7150114"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635055400",
+          "code": "2635055400",
+          "name": "좌제4동",
+          "englishName": "Jwa4(sa)-dong",
+          "slug": "jwa4-sa-dong",
+          "schoolIds": [
+            "school:7211056",
+            "school:7211016",
+            "school:7150115"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635056000",
+          "code": "2635056000",
+          "name": "송정동",
+          "englishName": "Songjeong-dong",
+          "slug": "songjeong-dong",
+          "schoolIds": [
+            "school:7211058"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635057000",
+          "code": "2635057000",
+          "name": "반여제1동",
+          "englishName": "Banyeo1(il)-dong",
+          "slug": "banyeo1-il-dong",
+          "schoolIds": [
+            "school:7211051",
+            "school:7211070",
+            "school:7211089",
+            "school:7211090",
+            "school:7211029",
+            "school:7211032",
+            "school:7150383"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635058000",
+          "code": "2635058000",
+          "name": "반여제2동",
+          "englishName": "Banyeo2(i)-dong",
+          "slug": "banyeo2-i-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635059000",
+          "code": "2635059000",
+          "name": "반여제3동",
+          "englishName": "Banyeo3(sam)-dong",
+          "slug": "banyeo3-sam-dong",
+          "schoolIds": [
+            "school:7211053",
+            "school:7211014"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635059500",
+          "code": "2635059500",
+          "name": "반여제4동",
+          "englishName": "Banyeo4(sa)-dong",
+          "slug": "banyeo4-sa-dong",
+          "schoolIds": [
+            "school:7211087",
+            "school:7211091",
+            "school:7191042",
+            "school:7211027"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635061000",
+          "code": "2635061000",
+          "name": "반송제1동",
+          "englishName": "Bansong1(il)-dong",
+          "slug": "bansong1-il-dong",
+          "schoolIds": [
+            "school:7211052",
+            "school:7211066",
+            "school:7150621"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635062000",
+          "code": "2635062000",
+          "name": "반송제2동",
+          "englishName": "Bansong2(i)-dong",
+          "slug": "bansong2-i-dong",
+          "schoolIds": [
+            "school:7211057",
+            "school:7211065",
+            "school:7211013",
+            "school:7211025"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635065000",
+          "code": "2635065000",
+          "name": "재송제1동",
+          "englishName": "Jaesong1(il)-dong",
+          "slug": "jaesong1-il-dong",
+          "schoolIds": [
+            "school:7211072",
+            "school:7211092",
+            "school:7211093",
+            "school:7211031",
+            "school:7150428"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2635066000",
+          "code": "2635066000",
+          "name": "재송제2동",
+          "englishName": "Jaesong2(i)-dong",
+          "slug": "jaesong2-i-dong",
+          "schoolIds": [
+            "school:7211050",
+            "school:7211063",
+            "school:7211022",
+            "school:7211026"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26380",
+      "code": "26380",
+      "name": "사하구",
+      "englishName": "Saha-gu",
+      "slug": "saha-gu",
+      "towns": [
+        {
+          "id": "town:2638051000",
+          "code": "2638051000",
+          "name": "괴정제1동",
+          "englishName": "Goejeong1(il)-dong",
+          "slug": "goejeong1-il-dong",
+          "schoolIds": [
+            "school:7171065",
+            "school:7150133",
+            "school:7150159",
+            "school:7150198"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638052000",
+          "code": "2638052000",
+          "name": "괴정제2동",
+          "englishName": "Goejeong2(i)-dong",
+          "slug": "goejeong2-i-dong",
+          "schoolIds": [
+            "school:7171045",
+            "school:7171069",
+            "school:7171036"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638053000",
+          "code": "2638053000",
+          "name": "괴정제3동",
+          "englishName": "Goejeong3(sam)-dong",
+          "slug": "goejeong3-sam-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638054000",
+          "code": "2638054000",
+          "name": "괴정제4동",
+          "englishName": "Goejeong4(sa)-dong",
+          "slug": "goejeong4-sa-dong",
+          "schoolIds": [
+            "school:7171063",
+            "school:7171023"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638055000",
+          "code": "2638055000",
+          "name": "당리동",
+          "englishName": "Dangni-dong",
+          "slug": "dangni-dong",
+          "schoolIds": [
+            "school:7171048",
+            "school:7171054",
+            "school:7171064",
+            "school:7171015",
+            "school:7150120",
+            "school:7150532",
+            "school:7150624"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638056100",
+          "code": "2638056100",
+          "name": "하단제1동",
+          "englishName": "Hadan1(il)-dong",
+          "slug": "hadan1-il-dong",
+          "schoolIds": [
+            "school:7171087",
+            "school:7171088",
+            "school:7171030"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638056200",
+          "code": "2638056200",
+          "name": "하단제2동",
+          "englishName": "Hadan2(i)-dong",
+          "slug": "hadan2-i-dong",
+          "schoolIds": [
+            "school:7171091",
+            "school:7171031",
+            "school:7171032",
+            "school:7150106"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638057100",
+          "code": "2638057100",
+          "name": "신평제1동",
+          "englishName": "Sinpyeong1(il)-dong",
+          "slug": "sinpyeong1-il-dong",
+          "schoolIds": [
+            "school:7171072",
+            "school:7171073",
+            "school:7171034",
+            "school:7150127",
+            "school:7150150"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638057200",
+          "code": "2638057200",
+          "name": "신평제2동",
+          "englishName": "Sinpyeong2(i)-dong",
+          "slug": "sinpyeong2-i-dong",
+          "schoolIds": [
+            "school:7171070"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638058000",
+          "code": "2638058000",
+          "name": "장림제1동",
+          "englishName": "Jangnim1(il)-dong",
+          "slug": "jangnim1-il-dong",
+          "schoolIds": [
+            "school:7171092",
+            "school:7150747"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638059000",
+          "code": "2638059000",
+          "name": "장림제2동",
+          "englishName": "Jangnim2(i)-dong",
+          "slug": "jangnim2-i-dong",
+          "schoolIds": [
+            "school:7171078",
+            "school:7171090",
+            "school:7171026",
+            "school:7171040"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638060100",
+          "code": "2638060100",
+          "name": "다대제1동",
+          "englishName": "Dadae2(il)-dong",
+          "slug": "dadae2-il-dong",
+          "schoolIds": [
+            "school:7171051",
+            "school:7171077",
+            "school:7171081",
+            "school:7171096",
+            "school:7171012",
+            "school:7171013",
+            "school:7150095"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638060200",
+          "code": "2638060200",
+          "name": "다대제2동",
+          "englishName": "Dadae2(i)-dong",
+          "slug": "dadae2-i-dong",
+          "schoolIds": [
+            "school:7171052",
+            "school:7171053",
+            "school:7171014",
+            "school:7171017"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638061000",
+          "code": "2638061000",
+          "name": "구평동",
+          "englishName": "Gupyeong-dong",
+          "slug": "gupyeong-dong",
+          "schoolIds": [
+            "school:7171047"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638062000",
+          "code": "2638062000",
+          "name": "감천제1동",
+          "englishName": "Gamcheon1(il)-dong",
+          "slug": "gamcheon1-il-dong",
+          "schoolIds": [
+            "school:7171044",
+            "school:7171067",
+            "school:7171076",
+            "school:7171010",
+            "school:7171027",
+            "school:7171037",
+            "school:7150147",
+            "school:7150346",
+            "school:7150755"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2638063000",
+          "code": "2638063000",
+          "name": "감천제2동",
+          "englishName": "Gamcheon2(i)-dong",
+          "slug": "gamcheon2-i-dong",
+          "schoolIds": [],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26410",
+      "code": "26410",
+      "name": "금정구",
+      "englishName": "Geumjeong-gu",
+      "slug": "geumjeong-gu",
+      "towns": [
+        {
+          "id": "town:2641051000",
+          "code": "2641051000",
+          "name": "서제1동",
+          "englishName": "Seo1(il)-dong",
+          "slug": "seo1-il-dong",
+          "schoolIds": [
+            "school:7191075",
+            "school:7150091"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641052000",
+          "code": "2641052000",
+          "name": "서제2동",
+          "englishName": "Seo2(i)-dong",
+          "slug": "seo2-i-dong",
+          "schoolIds": [
+            "school:7191064"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641053000",
+          "code": "2641053000",
+          "name": "서제3동",
+          "englishName": "Seo3(sam)-dong",
+          "slug": "seo3-sam-dong",
+          "schoolIds": [
+            "school:7191052",
+            "school:7191012",
+            "school:7150738"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641055500",
+          "code": "2641055500",
+          "name": "금사회동동",
+          "englishName": "Geumsahoedong-dong",
+          "slug": "geumsahoedong-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641057000",
+          "code": "2641057000",
+          "name": "부곡제1동",
+          "englishName": "Bugok1(il)-dong",
+          "slug": "bugok1-il-dong",
+          "schoolIds": [
+            "school:7191065",
+            "school:7191021",
+            "school:7150208"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641058000",
+          "code": "2641058000",
+          "name": "부곡제2동",
+          "englishName": "Bugok2(i)-dong",
+          "slug": "bugok2-i-dong",
+          "schoolIds": [
+            "school:7191072",
+            "school:7191099",
+            "school:7191013",
+            "school:7191020",
+            "school:7005103"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641059000",
+          "code": "2641059000",
+          "name": "부곡제3동",
+          "englishName": "Bugok3(sam)-dong",
+          "slug": "bugok3-sam-dong",
+          "schoolIds": [
+            "school:7191055",
+            "school:7150157"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641059100",
+          "code": "2641059100",
+          "name": "부곡제4동",
+          "englishName": "Bugok4(sa)-dong",
+          "slug": "bugok4-sa-dong",
+          "schoolIds": [
+            "school:7191019",
+            "school:7150094"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641060000",
+          "code": "2641060000",
+          "name": "장전제1동",
+          "englishName": "Jangjeon1(il)-dong",
+          "slug": "jangjeon1-il-dong",
+          "schoolIds": [
+            "school:7191094",
+            "school:7150597"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641061000",
+          "code": "2641061000",
+          "name": "장전제2동",
+          "englishName": "Jangjeon2(i)-dong",
+          "slug": "jangjeon2-i-dong",
+          "schoolIds": [
+            "school:7191056",
+            "school:7191180",
+            "school:7191033"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641063500",
+          "code": "2641063500",
+          "name": "선두구동",
+          "englishName": "Seondugu-dong",
+          "slug": "seondugu-dong",
+          "schoolIds": [
+            "school:7191047"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641066500",
+          "code": "2641066500",
+          "name": "청룡노포동",
+          "englishName": "Cheongnyongnopo-dong",
+          "slug": "cheongnyongnopo-dong",
+          "schoolIds": [
+            "school:7191096",
+            "school:7191202"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641067000",
+          "code": "2641067000",
+          "name": "남산동",
+          "englishName": "Namsan-dong",
+          "slug": "namsan-dong",
+          "schoolIds": [
+            "school:7191053",
+            "school:7191059",
+            "school:7191014",
+            "school:7191037",
+            "school:7150093"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641068000",
+          "code": "2641068000",
+          "name": "구서제1동",
+          "englishName": "Guseo1(il)-dong",
+          "slug": "guseo1-il-dong",
+          "schoolIds": [
+            "school:7191093",
+            "school:7191101",
+            "school:7191011",
+            "school:7191038",
+            "school:7191043",
+            "school:7191199",
+            "school:7150132",
+            "school:7150140",
+            "school:7150144",
+            "school:7150145",
+            "school:7150592"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641069000",
+          "code": "2641069000",
+          "name": "구서제2동",
+          "englishName": "Guseo2(i)-dong",
+          "slug": "guseo2-i-dong",
+          "schoolIds": [
+            "school:7191050",
+            "school:7191066",
+            "school:7150459"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2641070000",
+          "code": "2641070000",
+          "name": "금성동",
+          "englishName": "Geumseong-dong",
+          "slug": "geumseong-dong",
+          "schoolIds": [
+            "school:7191054"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26440",
+      "code": "26440",
+      "name": "강서구",
+      "englishName": "Gangseo-gu",
+      "slug": "gangseo-gu",
+      "towns": [
+        {
+          "id": "town:2644051000",
+          "code": "2644051000",
+          "name": "대저1동",
+          "englishName": "Daejeo1(il)-dong",
+          "slug": "daejeo1-il-dong",
+          "schoolIds": [
+            "school:7201056",
+            "school:7201058",
+            "school:7201016",
+            "school:7150099"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644052000",
+          "code": "2644052000",
+          "name": "대저2동",
+          "englishName": "Daejeo2(i)-dong",
+          "slug": "daejeo2-i-dong",
+          "schoolIds": [
+            "school:7201061",
+            "school:7201078",
+            "school:7201042",
+            "school:7150137"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644053000",
+          "code": "2644053000",
+          "name": "강동동",
+          "englishName": "Gangdong-dong",
+          "slug": "gangdong-dong",
+          "schoolIds": [
+            "school:7201055",
+            "school:7201268",
+            "school:7201272",
+            "school:7201269"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644053500",
+          "code": "2644053500",
+          "name": "명지1동",
+          "englishName": "Myeongji1(il)-dong",
+          "slug": "myeongji1-il-dong",
+          "schoolIds": [
+            "school:7201071",
+            "school:7201226",
+            "school:7201243",
+            "school:7201252",
+            "school:7201263",
+            "school:7201224",
+            "school:7201254",
+            "school:7150423",
+            "school:7150743"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644054500",
+          "code": "2644054500",
+          "name": "명지2동",
+          "englishName": "Myeongji2(i)-dong",
+          "slug": "myeongji2-i-dong",
+          "schoolIds": [
+            "school:7201073",
+            "school:7201201",
+            "school:7201223",
+            "school:7201025",
+            "school:7201262",
+            "school:7150451"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644055000",
+          "code": "2644055000",
+          "name": "가락동",
+          "englishName": "Garak-dong",
+          "slug": "garak-dong",
+          "schoolIds": [
+            "school:7201044",
+            "school:7150658"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644056000",
+          "code": "2644056000",
+          "name": "녹산동",
+          "englishName": "Noksan-dong",
+          "slug": "noksan-dong",
+          "schoolIds": [
+            "school:7201053",
+            "school:7201211",
+            "school:7201041",
+            "school:7201227"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644058000",
+          "code": "2644058000",
+          "name": "가덕도동",
+          "englishName": "Gadeokdo-dong",
+          "slug": "gadeokdo-dong",
+          "schoolIds": [
+            "school:7201101",
+            "school:7201018",
+            "school:7150096"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2644059000",
+          "code": "2644059000",
+          "name": "신호동",
+          "englishName": "Sinho-dong",
+          "slug": "sinho-dong",
+          "schoolIds": [
+            "school:7201091",
+            "school:7201235",
+            "school:7201210"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26470",
+      "code": "26470",
+      "name": "연제구",
+      "englishName": "Yeonje-gu",
+      "slug": "yeonje-gu",
+      "towns": [
+        {
+          "id": "town:2647061000",
+          "code": "2647061000",
+          "name": "거제제1동",
+          "englishName": "Geoje1(il)-dong",
+          "slug": "geoje1-il-dong",
+          "schoolIds": [
+            "school:7004971",
+            "school:7191046",
+            "school:7191058",
+            "school:7191040",
+            "school:7150344"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647062000",
+          "code": "2647062000",
+          "name": "거제제2동",
+          "englishName": "Geoje2(i)-dong",
+          "slug": "geoje2-i-dong",
+          "schoolIds": [
+            "school:7191095",
+            "school:7191010"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647063000",
+          "code": "2647063000",
+          "name": "거제제3동",
+          "englishName": "Geoje3(sam)-dong",
+          "slug": "geoje3-sam-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647064000",
+          "code": "2647064000",
+          "name": "거제제4동",
+          "englishName": "Geoje4(sa)-dong",
+          "slug": "geoje4-sa-dong",
+          "schoolIds": [
+            "school:7191045",
+            "school:7191036",
+            "school:7150623"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647065000",
+          "code": "2647065000",
+          "name": "연산제1동",
+          "englishName": "Yeonsan1(il)-dong",
+          "slug": "yeonsan1-il-dong",
+          "schoolIds": [
+            "school:7191083",
+            "school:7191086",
+            "school:7191087",
+            "school:7191026"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647066000",
+          "code": "2647066000",
+          "name": "연산제2동",
+          "englishName": "Yeonsan2(i)-dong",
+          "slug": "yeonsan2-i-dong",
+          "schoolIds": [
+            "school:7191085"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647067000",
+          "code": "2647067000",
+          "name": "연산제3동",
+          "englishName": "Yeonsan3(sam)-dong",
+          "slug": "yeonsan3-sam-dong",
+          "schoolIds": [
+            "school:7191084"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647068000",
+          "code": "2647068000",
+          "name": "연산제4동",
+          "englishName": "Yeonsan4(sa)-dong",
+          "slug": "yeonsan4-sa-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647069000",
+          "code": "2647069000",
+          "name": "연산제5동",
+          "englishName": "Yeonsan5(o)-dong",
+          "slug": "yeonsan5-o-dong",
+          "schoolIds": [
+            "school:7191089"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647070000",
+          "code": "2647070000",
+          "name": "연산제6동",
+          "englishName": "Yeonsan6(yuk)-dong",
+          "slug": "yeonsan6-yuk-dong",
+          "schoolIds": [
+            "school:7191063",
+            "school:7191028",
+            "school:7150405"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647072000",
+          "code": "2647072000",
+          "name": "연산제8동",
+          "englishName": "Yeonsan8(pal)-dong",
+          "slug": "yeonsan8-pal-dong",
+          "schoolIds": [
+            "school:7191088",
+            "school:7191090",
+            "school:7191027",
+            "school:7150141"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2647073000",
+          "code": "2647073000",
+          "name": "연산제9동",
+          "englishName": "Yeonsan9(gu)-dong",
+          "slug": "yeonsan9-gu-dong",
+          "schoolIds": [
+            "school:7191048",
+            "school:7191098",
+            "school:7191029",
+            "school:7191035"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26500",
+      "code": "26500",
+      "name": "수영구",
+      "englishName": "Suyeong-gu",
+      "slug": "suyeong-gu",
+      "towns": [
+        {
+          "id": "town:2650066000",
+          "code": "2650066000",
+          "name": "남천제1동",
+          "englishName": "Namcheon1(il)-dong",
+          "slug": "namcheon1-il-dong",
+          "schoolIds": [
+            "school:7211043",
+            "school:7150104"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650067000",
+          "code": "2650067000",
+          "name": "남천제2동",
+          "englishName": "Namcheon2(i)-dong",
+          "slug": "namcheon2-i-dong",
+          "schoolIds": [
+            "school:7211040"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650073000",
+          "code": "2650073000",
+          "name": "수영동",
+          "englishName": "Suyeong-dong",
+          "slug": "suyeong-dong",
+          "schoolIds": [],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650074000",
+          "code": "2650074000",
+          "name": "망미제1동",
+          "englishName": "Mangmi1(il)-dong",
+          "slug": "mangmi1-il-dong",
+          "schoolIds": [
+            "school:7211054",
+            "school:7211059",
+            "school:7211024",
+            "school:7150103",
+            "school:7150756"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650075000",
+          "code": "2650075000",
+          "name": "망미제2동",
+          "englishName": "Mangmi2(i)-dong",
+          "slug": "mangmi2-i-dong",
+          "schoolIds": [
+            "school:7211047"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650076000",
+          "code": "2650076000",
+          "name": "광안제1동",
+          "englishName": "Gwangan1(il)-dong",
+          "slug": "gwangan1-il-dong",
+          "schoolIds": [
+            "school:7211060",
+            "school:7211035"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650077000",
+          "code": "2650077000",
+          "name": "광안제2동",
+          "englishName": "Gwangan2(i)-dong",
+          "slug": "gwangan2-i-dong",
+          "schoolIds": [
+            "school:7211041",
+            "school:7211023"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650078000",
+          "code": "2650078000",
+          "name": "광안제3동",
+          "englishName": "Gwangan3(sam)-dong",
+          "slug": "gwangan3-sam-dong",
+          "schoolIds": [
+            "school:7211010",
+            "school:7150130"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650079000",
+          "code": "2650079000",
+          "name": "광안제4동",
+          "englishName": "Gwangan4(sa)-dong",
+          "slug": "gwangan4-sa-dong",
+          "schoolIds": [
+            "school:7211084",
+            "school:7211017",
+            "school:7211034"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2650080000",
+          "code": "2650080000",
+          "name": "민락동",
+          "englishName": "Millak-dong",
+          "slug": "millak-dong",
+          "schoolIds": [
+            "school:7211048",
+            "school:7211049"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26530",
+      "code": "26530",
+      "name": "사상구",
+      "englishName": "Sasang-gu",
+      "slug": "sasang-gu",
+      "towns": [
+        {
+          "id": "town:2653058000",
+          "code": "2653058000",
+          "name": "삼락동",
+          "englishName": "Samnak-dong",
+          "slug": "samnak-dong",
+          "schoolIds": [
+            "school:7201083"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653059100",
+          "code": "2653059100",
+          "name": "모라제1동",
+          "englishName": "Mora1(il)-dong",
+          "slug": "mora1-il-dong",
+          "schoolIds": [
+            "school:7201074",
+            "school:7201076",
+            "school:7201027"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653059300",
+          "code": "2653059300",
+          "name": "모라제3동",
+          "englishName": "Mora2(i)-dong",
+          "slug": "mora2-i-dong",
+          "schoolIds": [
+            "school:7201075",
+            "school:7201077",
+            "school:7201026"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653060000",
+          "code": "2653060000",
+          "name": "덕포제1동",
+          "englishName": "Deokpo1(il)-dong",
+          "slug": "deokpo1-il-dong",
+          "schoolIds": [
+            "school:7201081",
+            "school:7201021",
+            "school:7201043",
+            "school:7150425"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653061000",
+          "code": "2653061000",
+          "name": "덕포제2동",
+          "englishName": "Deokpo2(i)-dong",
+          "slug": "deokpo2-i-dong",
+          "schoolIds": [
+            "school:7201062",
+            "school:7201066",
+            "school:7150126",
+            "school:7150737"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653062000",
+          "code": "2653062000",
+          "name": "괘법동",
+          "englishName": "Gwaebeop-dong",
+          "slug": "gwaebeop-dong",
+          "schoolIds": [
+            "school:7201046",
+            "school:7201100"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653064500",
+          "code": "2653064500",
+          "name": "감전동",
+          "englishName": "Gamjeon-dong",
+          "slug": "gamjeon-dong",
+          "schoolIds": [
+            "school:7201045",
+            "school:7201085"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653065000",
+          "code": "2653065000",
+          "name": "주례제1동",
+          "englishName": "Jurye1(il)-dong",
+          "slug": "jurye1-il-dong",
+          "schoolIds": [
+            "school:7201097",
+            "school:7201034"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653066000",
+          "code": "2653066000",
+          "name": "주례제2동",
+          "englishName": "Jurye2(i)-dong",
+          "slug": "jurye2-i-dong",
+          "schoolIds": [
+            "school:7201098",
+            "school:7201099",
+            "school:7201036",
+            "school:7150117"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653066100",
+          "code": "2653066100",
+          "name": "주례제3동",
+          "englishName": "Jurye3(sam)-dong",
+          "slug": "jurye3-sam-dong",
+          "schoolIds": [
+            "school:7201068",
+            "school:7201022",
+            "school:7201035"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653067000",
+          "code": "2653067000",
+          "name": "학장동",
+          "englishName": "Hakjang-dong",
+          "slug": "hakjang-dong",
+          "schoolIds": [
+            "school:7201049",
+            "school:7201104",
+            "school:7201037",
+            "school:7150087"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2653068000",
+          "code": "2653068000",
+          "name": "엄궁동",
+          "englishName": "Eomgung-dong",
+          "slug": "eomgung-dong",
+          "schoolIds": [
+            "school:7201067",
+            "school:7201094",
+            "school:7201105",
+            "school:7201032"
+          ],
+          "extensions": {}
+        }
+      ]
+    },
+    {
+      "id": "district:26710",
+      "code": "26710",
+      "name": "기장군",
+      "englishName": "Gijang-gun",
+      "slug": "gijang-gun",
+      "towns": [
+        {
+          "id": "town:2671025000",
+          "code": "2671025000",
+          "name": "기장읍",
+          "englishName": "Gijang-eup",
+          "slug": "gijang-eup",
+          "schoolIds": [
+            "school:7211042",
+            "school:7211045",
+            "school:7211077",
+            "school:7211086",
+            "school:7211094",
+            "school:7211231",
+            "school:7211011",
+            "school:7211028",
+            "school:7150089"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2671025300",
+          "code": "2671025300",
+          "name": "장안읍",
+          "englishName": "Jangan-eup",
+          "slug": "jangan-eup",
+          "schoolIds": [
+            "school:7211067",
+            "school:7211071",
+            "school:7211076",
+            "school:7211036",
+            "school:7150341",
+            "school:7150365"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2671025600",
+          "code": "2671025600",
+          "name": "정관읍",
+          "englishName": "Jeonggwan-eup",
+          "slug": "jeonggwan-eup",
+          "schoolIds": [
+            "school:7211068",
+            "school:7211073",
+            "school:7211095",
+            "school:7211200",
+            "school:7211207",
+            "school:7211209",
+            "school:7211215",
+            "school:7211224",
+            "school:7211033",
+            "school:7211196",
+            "school:7211211",
+            "school:7211226",
+            "school:7150452",
+            "school:7150580"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2671025900",
+          "code": "2671025900",
+          "name": "일광읍",
+          "englishName": "Ilgwang-eup",
+          "slug": "ilgwang-eup",
+          "schoolIds": [
+            "school:7211079",
+            "school:7211240",
+            "school:7211243",
+            "school:pending-0-612",
+            "school:7211242"
+          ],
+          "extensions": {}
+        },
+        {
+          "id": "town:2671033000",
+          "code": "2671033000",
+          "name": "철마면",
+          "englishName": "Cheolma-myeon",
+          "slug": "cheolma-myeon",
+          "schoolIds": [
+            "school:7211078",
+            "school:7211096"
+          ],
+          "extensions": {}
+        }
+      ]
+    }
+  ],
+  "extensions": {}
+}

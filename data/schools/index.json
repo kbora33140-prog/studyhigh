@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-07-24T06:23:35.769Z",
+    "source": "generated index",
+    "sourceDate": "current"
+  },
+  "provinces": [
+    {
+      "provinceId": "province:11",
+      "file": "seoul.json",
+      "schoolCount": 1319
+    },
+    {
+      "provinceId": "province:12",
+      "file": "gwangju-jeonnam.json",
+      "schoolCount": 1181
+    },
+    {
+      "provinceId": "province:26",
+      "file": "busan.json",
+      "schoolCount": 621
+    },
+    {
+      "provinceId": "province:27",
+      "file": "daegu.json",
+      "schoolCount": 469
+    },
+    {
+      "provinceId": "province:28",
+      "file": "incheon.json",
+      "schoolCount": 554
+    },
+    {
+      "provinceId": "province:30",
+      "file": "daejeon.json",
+      "schoolCount": 307
+    },
+    {
+      "provinceId": "province:31",
+      "file": "ulsan.json",
+      "schoolCount": 245
+    },
+    {
+      "provinceId": "province:36",
+      "file": "sejong.json",
+      "schoolCount": 105
+    },
+    {
+      "provinceId": "province:41",
+      "file": "gyeonggi.json",
+      "schoolCount": 2585
+    },
+    {
+      "provinceId": "province:43",
+      "file": "chungbuk.json",
+      "schoolCount": 489
+    },
+    {
+      "provinceId": "province:44",
+      "file": "chungnam.json",
+      "schoolCount": 728
+    },
+    {
+      "provinceId": "province:47",
+      "file": "gyeongbuk.json",
+      "schoolCount": 936
+    },
+    {
+      "provinceId": "province:48",
+      "file": "gyeongnam.json",
+      "schoolCount": 997
+    },
+    {
+      "provinceId": "province:50",
+      "file": "jeju.json",
+      "schoolCount": 195
+    },
+    {
+      "provinceId": "province:51",
+      "file": "gangwon.json",
+      "schoolCount": 634
+    },
+    {
+      "provinceId": "province:52",
+      "file": "jeonbuk.json",
+      "schoolCount": 744
+    }
+  ],
+  "unmatchedFile": "_unmatched.json",
+  "unmatchedCount": 0
+}

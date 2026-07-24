@@ -1,0 +1,30 @@
+# StudyHigh SEO 데이터
+
+이 디렉터리는 페이지 코드와 분리된 전국 지역·학교 정적 데이터베이스입니다.
+
+## 구조
+
+- `regions/index.json`: 시도별 파일과 집계
+- `regions/{시도-slug}.json`: 시도 → 시군구 → 읍면동 계층 및 `schoolIds`
+- `schools/index.json`: 시도별 학교 파일과 집계
+- `schools/{시도-slug}.json`: 학교 기본정보 및 `region.townId`
+- `schools/_unmatched.json`: 자동 연결 예외(정상 배포 데이터에서는 비어 있어야 함)
+
+모든 엔터티는 외부 시스템의 안정적인 코드를 사용한 `id`, 사람이 읽을 수 있는
+`slug`, 향후 필드를 위한 `extensions`를 가집니다. 학년, 과목, 학생/학부모 고민,
+시험 특징은 기존 구조를 깨지 않고 `extensions` 또는 별도 엔터티 파일로 추가할 수
+있습니다.
+
+## 생성과 검증
+
+```bash
+npm run data:generate
+npm run data:validate
+```
+
+지역 원천은 행정안전부 주소기반산업지원서비스의 2026년 7월 행정 읍면동 자료이며,
+학교 원천은 교육부 나이스 학교기본정보의 2026년 2월 자료입니다. 학교는
+도로명주소와 주소 상세의 읍면동을 기준으로 지역에 양방향 연결됩니다.
+
+`data:generate`는 출력 디렉터리를 다시 생성합니다. 원천 개정 후 결과를 커밋하기
+전에 반드시 `data:validate`로 ID 중복, 지역 참조, 역참조를 검사해야 합니다.

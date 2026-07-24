@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-07-24T06:23:35.769Z",
+    "source": "generated index",
+    "sourceDate": "2026-07"
+  },
+  "provinces": [
+    {
+      "id": "province:11",
+      "code": "11",
+      "name": "서울특별시",
+      "englishName": "Seoul",
+      "slug": "seoul",
+      "file": "seoul.json",
+      "districtCount": 25,
+      "townCount": 427
+    },
+    {
+      "id": "province:12",
+      "code": "12",
+      "name": "전남광주통합특별시",
+      "englishName": "Jeonnam-Gwangju",
+      "slug": "gwangju-jeonnam",
+      "file": "gwangju-jeonnam.json",
+      "districtCount": 27,
+      "townCount": 393
+    },
+    {
+      "id": "province:26",
+      "code": "26",
+      "name": "부산광역시",
+      "englishName": "Busan",
+      "slug": "busan",
+      "file": "busan.json",
+      "districtCount": 16,
+      "townCount": 206
+    },
+    {
+      "id": "province:27",
+      "code": "27",
+      "name": "대구광역시",
+      "englishName": "Daegu",
+      "slug": "daegu",
+      "file": "daegu.json",
+      "districtCount": 9,
+      "townCount": 150
+    },
+    {
+      "id": "province:28",
+      "code": "28",
+      "name": "인천광역시",
+      "englishName": "Incheon",
+      "slug": "incheon",
+      "file": "incheon.json",
+      "districtCount": 11,
+      "townCount": 158
+    },
+    {
+      "id": "province:30",
+      "code": "30",
+      "name": "대전광역시",
+      "englishName": "Daejeon",
+      "slug": "daejeon",
+      "file": "daejeon.json",
+      "districtCount": 5,
+      "townCount": 82
+    },
+    {
+      "id": "province:31",
+      "code": "31",
+      "name": "울산광역시",
+      "englishName": "Ulsan",
+      "slug": "ulsan",
+      "file": "ulsan.json",
+      "districtCount": 5,
+      "townCount": 55
+    },
+    {
+      "id": "province:36",
+      "code": "36",
+      "name": "세종특별자치시",
+      "englishName": "Sejong-si",
+      "slug": "sejong",
+      "file": "sejong.json",
+      "districtCount": 1,
+      "townCount": 24
+    },
+    {
+      "id": "province:41",
+      "code": "41",
+      "name": "경기도",
+      "englishName": "Gyeonggi-do",
+      "slug": "gyeonggi",
+      "file": "gyeonggi.json",
+      "districtCount": 47,
+      "townCount": 602
+    },
+    {
+      "id": "province:43",
+      "code": "43",
+      "name": "충청북도",
+      "englishName": "Chungcheongbuk-do",
+      "slug": "chungbuk",
+      "file": "chungbuk.json",
+      "districtCount": 14,
+      "townCount": 153
+    },
+    {
+      "id": "province:44",
+      "code": "44",
+      "name": "충청남도",
+      "englishName": "Chungcheongnam-do",
+      "slug": "chungnam",
+      "file": "chungnam.json",
+      "districtCount": 16,
+      "townCount": 208
+    },
+    {
+      "id": "province:47",
+      "code": "47",
+      "name": "경상북도",
+      "englishName": "Gyeongsangbuk-do",
+      "slug": "gyeongbuk",
+      "file": "gyeongbuk.json",
+      "districtCount": 23,
+      "townCount": 321
+    },
+    {
+      "id": "province:48",
+      "code": "48",
+      "name": "경상남도",
+      "englishName": "Gyeongsangnam-do",
+      "slug": "gyeongnam",
+      "file": "gyeongnam.json",
+      "districtCount": 22,
+      "townCount": 305
+    },
+    {
+      "id": "province:50",
+      "code": "50",
+      "name": "제주특별자치도",
+      "englishName": "Jeju-do",
+      "slug": "jeju",
+      "file": "jeju.json",
+      "districtCount": 2,
+      "townCount": 43
+    },
+    {
+      "id": "province:51",
+      "code": "51",
+      "name": "강원특별자치도",
+      "englishName": "Gangwon-do",
+      "slug": "gangwon",
+      "file": "gangwon.json",
+      "districtCount": 18,
+      "townCount": 193
+    },
+    {
+      "id": "province:52",
+      "code": "52",
+      "name": "전북특별자치도",
+      "englishName": "Jeonbuk-do",
+      "slug": "jeonbuk",
+      "file": "jeonbuk.json",
+      "districtCount": 15,
+      "townCount": 243
+    }
+  ]
+}

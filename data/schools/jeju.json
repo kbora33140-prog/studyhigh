@@ -1,0 +1,4107 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-07-24T06:23:35.705Z",
+    "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+    "sourceDate": "2026-02"
+  },
+  "provinceId": "province:50",
+  "schools": [
+    {
+      "id": "school:7003713",
+      "code": "7003713",
+      "name": "제주대학교사범대학부설고등학교",
+      "englishName": "JEJU NATIONAL UNIVERSITY HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "국립",
+      "address": {
+        "postalCode": "63151",
+        "road": "제주특별자치도 제주시 용담로 65",
+        "detail": "(용담삼동)"
+      },
+      "slug": "jeju-national-university-high-school-7003713",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7003714",
+      "code": "7003714",
+      "name": "제주대학교사범대학부설중학교",
+      "englishName": "JEJU NATIONAL UNIVERSITY MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "국립",
+      "address": {
+        "postalCode": "63151",
+        "road": "제주특별자치도 제주시 용담로7길 33",
+        "detail": "(용담삼동)"
+      },
+      "slug": "jeju-national-university-middle-school-7003714",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290049",
+      "code": "9290049",
+      "name": "제주제일고등학교",
+      "englishName": "JEJU JEIL HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63087",
+        "road": "제주특별자치도 제주시 진군길 22",
+        "detail": "(노형동/제주제일고등학교)"
+      },
+      "slug": "jeju-jeil-high-school-9290049",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290050",
+      "code": "9290050",
+      "name": "제주중앙여자고등학교",
+      "englishName": "JEJU JUNGANG GIRLS HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63231",
+        "road": "제주특별자치도 제주시 구남동5길 11",
+        "detail": "(이도이동)"
+      },
+      "slug": "jeju-jungang-girls-high-school-9290050",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290051",
+      "code": "9290051",
+      "name": "제주여자상업고등학교",
+      "englishName": "JEJU GIRLS` COMMERCIAL HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63282",
+        "road": "제주특별자치도 제주시 동문로 89-1",
+        "detail": "(건입동)"
+      },
+      "slug": "jeju-girls-commercial-high-school-9290051",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290055",
+      "code": "9290055",
+      "name": "한림고등학교",
+      "englishName": "HALLIM HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63012",
+        "road": "제주특별자치도 제주시 한림읍 월계로 74",
+        "detail": "/ 한림고등학교 (한림읍)"
+      },
+      "slug": "hallim-high-school-9290055",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290056",
+      "code": "9290056",
+      "name": "대정고등학교",
+      "englishName": "DAEJEONG HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63509",
+        "road": "제주특별자치도 서귀포시 대정읍 일주서로2498번길 21",
+        "detail": "/ 대정고등학교 (대정읍)"
+      },
+      "slug": "daejeong-high-school-9290056",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290057",
+      "code": "9290057",
+      "name": "대정여자고등학교",
+      "englishName": "DAEJEONG GIRLS HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63509",
+        "road": "제주특별자치도 서귀포시 대정읍 대한로88번길 82-22",
+        "detail": "/ 대정여자고등학교 (대정읍)"
+      },
+      "slug": "daejeong-girls-high-school-9290057",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290059",
+      "code": "9290059",
+      "name": "서귀포고등학교",
+      "englishName": "SEOGWIPO HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63585",
+        "road": "제주특별자치도 서귀포시 중앙로 140",
+        "detail": "(동홍동)"
+      },
+      "slug": "seogwipo-high-school-9290059",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290060",
+      "code": "9290060",
+      "name": "서귀포산업과학고등학교",
+      "englishName": "SEOGWIPO INDUSTRIAL SCIENCE HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63582",
+        "road": "제주특별자치도 서귀포시 516로 501",
+        "detail": "/ 서귀포산업과학고등학교 (상효동)"
+      },
+      "slug": "seogwipo-industrial-science-high-school-9290060",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290061",
+      "code": "9290061",
+      "name": "서귀포여자고등학교",
+      "englishName": "SEOGWIPO GIRLS  HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63571",
+        "road": "제주특별자치도 서귀포시 태평로 80",
+        "detail": "(호근동/서귀포여자고등학교)"
+      },
+      "slug": "seogwipo-girls-high-school-9290061",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290064",
+      "code": "9290064",
+      "name": "세화고등학교",
+      "englishName": "SEHWA HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63361",
+        "road": "제주특별자치도 제주시 구좌읍 세종로 26",
+        "detail": "(구좌읍/ 세화고등학교)"
+      },
+      "slug": "sehwa-high-school-9290064",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290066",
+      "code": "9290066",
+      "name": "제주과학고등학교",
+      "englishName": "JEJU SCIENCE HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63144",
+        "road": "제주특별자치도 제주시 산록북로 421-1",
+        "detail": "(오라이동)"
+      },
+      "slug": "jeju-science-high-school-9290066",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290068",
+      "code": "9290068",
+      "name": "제주외국어고등학교",
+      "englishName": "JEJU FOREIGN LANGUAGE HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63065",
+        "road": "제주특별자치도 제주시 애월읍 고성남길 34",
+        "detail": "(애월읍)"
+      },
+      "slug": "jeju-foreign-language-high-school-9290068",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290069",
+      "code": "9290069",
+      "name": "오현고등학교",
+      "englishName": "OHYUN HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63293",
+        "road": "제주특별자치도 제주시 일주동로 101",
+        "detail": "/ 오현고등학교 (화북일동)"
+      },
+      "slug": "ohyun-high-school-9290069",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290071",
+      "code": "9290071",
+      "name": "제주여자고등학교",
+      "englishName": "JEJU GIRLS' HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63236",
+        "road": "제주특별자치도 제주시 구산로 50",
+        "detail": ", 제주여자고등학교 (아라일동)"
+      },
+      "slug": "jeju-girls-high-school-9290071",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290072",
+      "code": "9290072",
+      "name": "신성여자고등학교",
+      "englishName": "SHINSEONG GIRLS HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63308",
+        "road": "제주특별자치도 제주시 아봉로 174-1",
+        "detail": "(영평동/ 신성여자고등학교)"
+      },
+      "slug": "shinseong-girls-high-school-9290072",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290073",
+      "code": "9290073",
+      "name": "남주고등학교",
+      "englishName": "NAMJU HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63579",
+        "road": "제주특별자치도 서귀포시 동홍로303번길 14",
+        "detail": "(동홍동/남주고등학교)"
+      },
+      "slug": "namju-high-school-9290073",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290074",
+      "code": "9290074",
+      "name": "삼성여자고등학교",
+      "englishName": "SAMSUNG GIRLS` HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63598",
+        "road": "제주특별자치도 서귀포시 검은여로 151",
+        "detail": "/ 삼성여자고등학교 (토평동)"
+      },
+      "slug": "samsung-girls-high-school-9290074",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290075",
+      "code": "9290075",
+      "name": "대기고등학교",
+      "englishName": "DAYKEY HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63328",
+        "road": "제주특별자치도 제주시 번영로 453-6",
+        "detail": "(봉개동/대기고등학교)"
+      },
+      "slug": "daykey-high-school-9290075",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290076",
+      "code": "9290076",
+      "name": "남녕고등학교",
+      "englishName": "NAM NYEONG HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63128",
+        "road": "제주특별자치도 제주시 도령로 55",
+        "detail": "/ 남녕고등학교 (연동)"
+      },
+      "slug": "nam-nyeong-high-school-9290076",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290086",
+      "code": "9290086",
+      "name": "애월고등학교",
+      "englishName": "AEWOL HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63044",
+        "road": "제주특별자치도 제주시 애월읍 일주서로 6372-20",
+        "detail": "(애월읍/애월고등학교)"
+      },
+      "slug": "aewol-high-school-9290086",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290087",
+      "code": "9290087",
+      "name": "표선고등학교",
+      "englishName": "PYOSEON HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63629",
+        "road": "제주특별자치도 서귀포시 표선면 표선중앙로 22-15",
+        "detail": "(표선면/표선고등학교)"
+      },
+      "slug": "pyoseon-high-school-9290087",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290088",
+      "code": "9290088",
+      "name": "제주중앙고등학교",
+      "englishName": "JEJU  JUNGANG  HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63311",
+        "road": "제주특별자치도 제주시 아봉로 323",
+        "detail": "(월평동)"
+      },
+      "slug": "jeju-jungang-high-school-9290088",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290089",
+      "code": "9290089",
+      "name": "영주고등학교",
+      "englishName": "YOUNGJU HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63311",
+        "road": "제주특별자치도 제주시 첨단동길 92",
+        "detail": "(월평동/영주고등학교)"
+      },
+      "slug": "youngju-high-school-9290089",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290096",
+      "code": "9290096",
+      "name": "제주고등학교",
+      "englishName": "JEJU HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63092",
+        "road": "제주특별자치도 제주시 1100로 3213",
+        "detail": "(노형동)"
+      },
+      "slug": "jeju-high-school-9290096",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290102",
+      "code": "9290102",
+      "name": "성산고등학교",
+      "englishName": "SEONGSAN HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63639",
+        "road": "제주특별자치도 서귀포시 성산읍 한도로 79-17",
+        "detail": "/ 성산고등학교 (성산읍)"
+      },
+      "slug": "seongsan-high-school-9290102",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290103",
+      "code": "9290103",
+      "name": "함덕고등학교",
+      "englishName": "HAMDEOK HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63332",
+        "road": "제주특별자치도 제주시 조천읍 신흥로 9",
+        "detail": "/ (신흥리 215번지) 함덕고등학교 (조천읍)"
+      },
+      "slug": "hamdeok-high-school-9290103",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290104",
+      "code": "9290104",
+      "name": "한국뷰티고등학교",
+      "englishName": "KOREA BEAUTY HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63008",
+        "road": "제주특별자치도 제주시 한경면 용고로 70",
+        "detail": "/ 한국뷰티고등학교 (한경면)"
+      },
+      "slug": "korea-beauty-high-school-9290104",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290128",
+      "code": "9290128",
+      "name": "중문고등학교",
+      "englishName": "JUNGMUN HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63540",
+        "road": "제주특별자치도 서귀포시 일주서로570번길 19",
+        "detail": "(대포동)"
+      },
+      "slug": "jungmun-high-school-9290128",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9290226",
+      "code": "9290226",
+      "name": "한림항공우주고등학교",
+      "englishName": "Hallim Aerospace High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63028",
+        "road": "제주특별자치도 제주시 한림읍 한림중앙로 87",
+        "detail": "(한림읍)"
+      },
+      "slug": "hallim-aerospace-high-school-9290226",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296011",
+      "code": "9296011",
+      "name": "제주제일중학교",
+      "englishName": "JEJU JEIL MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63224",
+        "road": "제주특별자치도 제주시 남광로 33",
+        "detail": "/ 제주제일중학교 (이도이동)"
+      },
+      "slug": "jeju-jeil-middle-school-9296011",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296012",
+      "code": "9296012",
+      "name": "제주중앙중학교",
+      "englishName": "JEJU JUNGANG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63121",
+        "road": "제주특별자치도 제주시 선덕로5길 37",
+        "detail": "(연동/제주중앙중학교)"
+      },
+      "slug": "jeju-jungang-middle-school-9296012",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296013",
+      "code": "9296013",
+      "name": "제주중앙여자중학교",
+      "englishName": "JEJU JUNGANG GIRLS'  MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63178",
+        "road": "제주특별자치도 제주시 서사로11길 8",
+        "detail": ", (제주중앙여자중학교) (삼도이동)"
+      },
+      "slug": "jeju-jungang-girls-middle-school-9296013",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296014",
+      "code": "9296014",
+      "name": "제주동여자중학교",
+      "englishName": "JEJU DONG GIRLS MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63215",
+        "road": "제주특별자치도 제주시 천수로 24",
+        "detail": "(이도이동/ 제주동여자중학교)"
+      },
+      "slug": "jeju-dong-girls-middle-school-9296014",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296015",
+      "code": "9296015",
+      "name": "제주동중학교",
+      "englishName": "JEJU DONG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63300",
+        "road": "제주특별자치도 제주시 동화로 12-1",
+        "detail": "(화북일동)"
+      },
+      "slug": "jeju-dong-middle-school-9296015",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296016",
+      "code": "9296016",
+      "name": "제주서중학교",
+      "englishName": "JEJUSEO MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63116",
+        "road": "제주특별자치도 제주시 일주서로 7811",
+        "detail": "/ 제주서중학교 (연동)"
+      },
+      "slug": "jejuseo-middle-school-9296016",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296017",
+      "code": "9296017",
+      "name": "아라중학교",
+      "englishName": "ARA MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63246",
+        "road": "제주특별자치도 제주시 간월동로 30",
+        "detail": "/ 아라중학교 (아라이동)"
+      },
+      "slug": "ara-middle-school-9296017",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296018",
+      "code": "9296018",
+      "name": "한라중학교",
+      "englishName": "HALLA MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63090",
+        "road": "제주특별자치도 제주시 과원북2길 24",
+        "detail": "/ 한라중학교 (노형동)"
+      },
+      "slug": "halla-middle-school-9296018",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296019",
+      "code": "9296019",
+      "name": "신엄중학교",
+      "englishName": "SHINUM MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63047",
+        "road": "제주특별자치도 제주시 애월읍 일주서로 6711",
+        "detail": "(애월읍)"
+      },
+      "slug": "shinum-middle-school-9296019",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296020",
+      "code": "9296020",
+      "name": "애월중학교",
+      "englishName": "AEWOL MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63043",
+        "road": "제주특별자치도 제주시 애월읍 애월로15길 8",
+        "detail": "(애월읍)"
+      },
+      "slug": "aewol-middle-school-9296020",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296021",
+      "code": "9296021",
+      "name": "한림중학교",
+      "englishName": "HALLIM MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63013",
+        "road": "제주특별자치도 제주시 한림읍 명월성로 21",
+        "detail": "(한림읍/ 한림중학교)"
+      },
+      "slug": "hallim-middle-school-9296021",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296022",
+      "code": "9296022",
+      "name": "한림여자중학교",
+      "englishName": "HALLIM GIRLS MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63032",
+        "road": "제주특별자치도 제주시 한림읍 한림로 604",
+        "detail": "(한림읍)"
+      },
+      "slug": "hallim-girls-middle-school-9296022",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296023",
+      "code": "9296023",
+      "name": "고산중학교",
+      "englishName": "GOSAN MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63008",
+        "road": "제주특별자치도 제주시 한경면 용고로 70",
+        "detail": "(한경면/ 고산중학교)"
+      },
+      "slug": "gosan-middle-school-9296023",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296024",
+      "code": "9296024",
+      "name": "저청중학교",
+      "englishName": "JEOCHEONG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63006",
+        "road": "제주특별자치도 제주시 한경면 중산간서로 3590",
+        "detail": "(한경면)"
+      },
+      "slug": "jeocheong-middle-school-9296024",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296025",
+      "code": "9296025",
+      "name": "신창중학교",
+      "englishName": "SINCHANG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63002",
+        "road": "제주특별자치도 제주시 한경면 두신로 72",
+        "detail": "(한경면)"
+      },
+      "slug": "sinchang-middle-school-9296025",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296026",
+      "code": "9296026",
+      "name": "조천중학교",
+      "englishName": "JOCHEON MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63337",
+        "road": "제주특별자치도 제주시 조천읍 신북로 31",
+        "detail": "(조천읍/ 조천중학교)"
+      },
+      "slug": "jocheon-middle-school-9296026",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296027",
+      "code": "9296027",
+      "name": "함덕중학교",
+      "englishName": "HAMDEOK MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63334",
+        "road": "제주특별자치도 제주시 조천읍 일주동로 1234",
+        "detail": "(조천읍/ 함덕중학교)"
+      },
+      "slug": "hamdeok-middle-school-9296027",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296028",
+      "code": "9296028",
+      "name": "김녕중학교",
+      "englishName": "GIMNYEONG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63357",
+        "road": "제주특별자치도 제주시 구좌읍 김녕로 118-20",
+        "detail": "(구좌읍)"
+      },
+      "slug": "gimnyeong-middle-school-9296028",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296029",
+      "code": "9296029",
+      "name": "세화중학교",
+      "englishName": "SEWHA MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63361",
+        "road": "제주특별자치도 제주시 구좌읍 일주동로 3132",
+        "detail": "/ 세화중학교 (구좌읍)"
+      },
+      "slug": "sewha-middle-school-9296029",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296030",
+      "code": "9296030",
+      "name": "우도중학교",
+      "englishName": "Udo Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63365",
+        "road": "제주특별자치도 제주시 우도면 우도로 156-11",
+        "detail": "(우도면)"
+      },
+      "slug": "udo-middle-school-9296030",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011033000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296031",
+      "code": "9296031",
+      "name": "추자중학교",
+      "englishName": "CHUJA MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63001",
+        "road": "제주특별자치도 제주시 추자면 신양3길 15",
+        "detail": "(추자면)"
+      },
+      "slug": "chuja-middle-school-9296031",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296032",
+      "code": "9296032",
+      "name": "오현중학교",
+      "englishName": "OHYUN MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63293",
+        "road": "제주특별자치도 제주시 일주동로 101",
+        "detail": "/ 오현중학교 (화북일동)"
+      },
+      "slug": "ohyun-middle-school-9296032",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296033",
+      "code": "9296033",
+      "name": "제주중학교",
+      "englishName": "JEJU MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63153",
+        "road": "제주특별자치도 제주시 서문로 47",
+        "detail": "/ 제주중학교 (용담일동)"
+      },
+      "slug": "jeju-middle-school-9296033",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296034",
+      "code": "9296034",
+      "name": "신성여자중학교",
+      "englishName": "SHINSEONG GIRLS MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63308",
+        "road": "제주특별자치도 제주시 아봉로 174-5",
+        "detail": "/ 신성여자중학교 (영평동)"
+      },
+      "slug": "shinseong-girls-middle-school-9296034",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296035",
+      "code": "9296035",
+      "name": "제주여자중학교",
+      "englishName": "JEJU GIRLS MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63236",
+        "road": "제주특별자치도 제주시 구산로 50",
+        "detail": "(아라일동/ 제주여자중학교)"
+      },
+      "slug": "jeju-girls-middle-school-9296035",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296036",
+      "code": "9296036",
+      "name": "귀일중학교",
+      "englishName": "KWIIL MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63051",
+        "road": "제주특별자치도 제주시 애월읍 항몽로 44",
+        "detail": "(애월읍)"
+      },
+      "slug": "kwiil-middle-school-9296036",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296037",
+      "code": "9296037",
+      "name": "제주동초등학교",
+      "englishName": "JEJU DONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63279",
+        "road": "제주특별자치도 제주시 동문로 65",
+        "detail": "(건입동)"
+      },
+      "slug": "jeju-dong-elementary-school-9296037",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296038",
+      "code": "9296038",
+      "name": "제주서초등학교",
+      "englishName": "JEJUSEO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63156",
+        "road": "제주특별자치도 제주시 성화로6길 51",
+        "detail": "(용담이동)"
+      },
+      "slug": "jejuseo-elementary-school-9296038",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296039",
+      "code": "9296039",
+      "name": "제주남초등학교",
+      "englishName": "JEJU NAM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63169",
+        "road": "제주특별자치도 제주시 남성로 149",
+        "detail": "(삼도이동/ 제주남초등학교)"
+      },
+      "slug": "jeju-nam-elementary-school-9296039",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296040",
+      "code": "9296040",
+      "name": "제주북초등학교",
+      "englishName": "JEJUBUK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63166",
+        "road": "제주특별자치도 제주시 중앙로8길 18",
+        "detail": "(삼도이동/제주북초등학교)"
+      },
+      "slug": "jejubuk-elementary-school-9296040",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296041",
+      "code": "9296041",
+      "name": "일도초등학교",
+      "englishName": "ILDO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63269",
+        "road": "제주특별자치도 제주시 삼성로9길 27",
+        "detail": "/ 일도초등학교 (일도이동)"
+      },
+      "slug": "ildo-elementary-school-9296041",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296042",
+      "code": "9296042",
+      "name": "광양초등학교",
+      "englishName": "GWANGYANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63197",
+        "road": "제주특별자치도 제주시 돈내길 5",
+        "detail": "(이도일동)"
+      },
+      "slug": "gwangyang-elementary-school-9296042",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296043",
+      "code": "9296043",
+      "name": "제주중앙초등학교",
+      "englishName": "JEJUJUNGANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63175",
+        "road": "제주특별자치도 제주시 서사로18길 40",
+        "detail": "(삼도일동)"
+      },
+      "slug": "jejujungang-elementary-school-9296043",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296044",
+      "code": "9296044",
+      "name": "신제주초등학교",
+      "englishName": "SHINJEJU ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63135",
+        "road": "제주특별자치도 제주시 비월길 29",
+        "detail": "/ 신제주초등학교 (연동)"
+      },
+      "slug": "shinjeju-elementary-school-9296044",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296045",
+      "code": "9296045",
+      "name": "삼성초등학교",
+      "englishName": "SAMSUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63199",
+        "road": "제주특별자치도 제주시 서광로29길 35",
+        "detail": "(이도일동)"
+      },
+      "slug": "samsung-elementary-school-9296045",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296046",
+      "code": "9296046",
+      "name": "한천초등학교",
+      "englishName": "HANCHEON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63174",
+        "road": "제주특별자치도 제주시 남성로11길 22",
+        "detail": "(용담일동 254-1)"
+      },
+      "slug": "hancheon-elementary-school-9296046",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296047",
+      "code": "9296047",
+      "name": "남광초등학교",
+      "englishName": "NAMGWANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63231",
+        "road": "제주특별자치도 제주시 남광로 28",
+        "detail": "(이도이동)"
+      },
+      "slug": "namgwang-elementary-school-9296047",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296048",
+      "code": "9296048",
+      "name": "인화초등학교",
+      "englishName": "INHWA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63273",
+        "road": "제주특별자치도 제주시 신산로15길 35",
+        "detail": "(일도이동/인화초등학교)"
+      },
+      "slug": "inhwa-elementary-school-9296048",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296049",
+      "code": "9296049",
+      "name": "도남초등학교",
+      "englishName": "DONAM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63204",
+        "road": "제주특별자치도 제주시 도남로8길 22",
+        "detail": "(도남동/도남초등학교)"
+      },
+      "slug": "donam-elementary-school-9296049",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296050",
+      "code": "9296050",
+      "name": "화북초등학교",
+      "englishName": "HWABUK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63293",
+        "road": "제주특별자치도 제주시 일주동로 157",
+        "detail": "(화북일동)"
+      },
+      "slug": "hwabuk-elementary-school-9296050",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296051",
+      "code": "9296051",
+      "name": "삼양초등학교",
+      "englishName": "SAMYANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63321",
+        "road": "제주특별자치도 제주시 지석14길 7",
+        "detail": "(삼양이동)"
+      },
+      "slug": "samyang-elementary-school-9296051",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296052",
+      "code": "9296052",
+      "name": "봉개초등학교",
+      "englishName": "BONGGAE ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63313",
+        "road": "제주특별자치도 제주시 번영로 484",
+        "detail": "(봉개동)"
+      },
+      "slug": "bonggae-elementary-school-9296052",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296053",
+      "code": "9296053",
+      "name": "아라초등학교",
+      "englishName": "ARA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63237",
+        "road": "제주특별자치도 제주시 중앙로 518",
+        "detail": "(아라일동)"
+      },
+      "slug": "ara-elementary-school-9296053",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296054",
+      "code": "9296054",
+      "name": "영평초등학교",
+      "englishName": "YEONGPYEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63308",
+        "road": "제주특별자치도 제주시 아봉로 225",
+        "detail": "/ 영평초등학교 (영평동)"
+      },
+      "slug": "yeongpyeong-elementary-school-9296054",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296055",
+      "code": "9296055",
+      "name": "오라초등학교",
+      "englishName": "O-RA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63145",
+        "road": "제주특별자치도 제주시 연사길 48",
+        "detail": "(오라이동/ 오라초등학교)"
+      },
+      "slug": "o-ra-elementary-school-9296055",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296056",
+      "code": "9296056",
+      "name": "노형초등학교",
+      "englishName": "NOHYUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63102",
+        "road": "제주특별자치도 제주시 노형로 383",
+        "detail": "(노형동)"
+      },
+      "slug": "nohyung-elementary-school-9296056",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296057",
+      "code": "9296057",
+      "name": "도리초등학교",
+      "englishName": "JEJU DORI  ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63112",
+        "road": "제주특별자치도 제주시 도리로 129",
+        "detail": "/ 도리초등학교 (도두일동)"
+      },
+      "slug": "jeju-dori-elementary-school-9296057",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011069000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296058",
+      "code": "9296058",
+      "name": "외도초등학교",
+      "englishName": "OEDO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63071",
+        "road": "제주특별자치도 제주시 일주서로 7368",
+        "detail": "(외도이동)"
+      },
+      "slug": "oedo-elementary-school-9296058",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011067000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296059",
+      "code": "9296059",
+      "name": "신광초등학교",
+      "englishName": "SINKWANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63127",
+        "road": "제주특별자치도 제주시 성신로 25",
+        "detail": "(연동)"
+      },
+      "slug": "sinkwang-elementary-school-9296059",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296060",
+      "code": "9296060",
+      "name": "동광초등학교",
+      "englishName": "DONGGWANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63260",
+        "road": "제주특별자치도 제주시 태성로 6",
+        "detail": "(일도이동)"
+      },
+      "slug": "donggwang-elementary-school-9296060",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296061",
+      "code": "9296061",
+      "name": "동화초등학교",
+      "englishName": "DONGHWA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63301",
+        "road": "제주특별자치도 제주시 동화로1길 44",
+        "detail": "(화북일동/ 동화초등학교)"
+      },
+      "slug": "donghwa-elementary-school-9296061",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296062",
+      "code": "9296062",
+      "name": "한라초등학교",
+      "englishName": "HALLA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63090",
+        "road": "제주특별자치도 제주시 연화로 42",
+        "detail": "(노형동/ 한라초등학교)"
+      },
+      "slug": "halla-elementary-school-9296062",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296063",
+      "code": "9296063",
+      "name": "백록초등학교",
+      "englishName": "BAENGNOK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63101",
+        "road": "제주특별자치도 제주시 정존5길 62",
+        "detail": "(노형동/ 백록초등학교)"
+      },
+      "slug": "baengnok-elementary-school-9296063",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296064",
+      "code": "9296064",
+      "name": "월랑초등학교",
+      "englishName": "WOLLANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63096",
+        "road": "제주특별자치도 제주시 남녕로 63",
+        "detail": "(노형동/월랑초등학교)"
+      },
+      "slug": "wollang-elementary-school-9296064",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296065",
+      "code": "9296065",
+      "name": "하귀초등학교",
+      "englishName": "HAGWI ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63051",
+        "road": "제주특별자치도 제주시 애월읍 하귀로 44",
+        "detail": "(애월읍)"
+      },
+      "slug": "hagwi-elementary-school-9296065",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296066",
+      "code": "9296066",
+      "name": "물메초등학교",
+      "englishName": "MULME ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63056",
+        "road": "제주특별자치도 제주시 애월읍 엄수로 202-4",
+        "detail": "(애월읍)"
+      },
+      "slug": "mulme-elementary-school-9296066",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296067",
+      "code": "9296067",
+      "name": "광령초등학교",
+      "englishName": "GWANGRYEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63062",
+        "road": "제주특별자치도 제주시 애월읍 광성로 276",
+        "detail": "(애월읍/ 광령초등학교)"
+      },
+      "slug": "gwangryeong-elementary-school-9296067",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296068",
+      "code": "9296068",
+      "name": "장전초등학교",
+      "englishName": "JANGJEON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63055",
+        "road": "제주특별자치도 제주시 애월읍 장전로 122",
+        "detail": "/ 장전초등학교 (애월읍)"
+      },
+      "slug": "jangjeon-elementary-school-9296068",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296069",
+      "code": "9296069",
+      "name": "구엄초등학교",
+      "englishName": "GUEOM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63049",
+        "road": "제주특별자치도 제주시 애월읍 일주서로 6768",
+        "detail": "(애월읍/구엄초등학교)"
+      },
+      "slug": "gueom-elementary-school-9296069",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296070",
+      "code": "9296070",
+      "name": "납읍초등학교",
+      "englishName": "NABEUP ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63035",
+        "road": "제주특별자치도 제주시 애월읍 납읍로2길 47",
+        "detail": "/ 납읍초등학교 (애월읍)"
+      },
+      "slug": "nabeup-elementary-school-9296070",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296071",
+      "code": "9296071",
+      "name": "애월초등학교",
+      "englishName": "AEWOL ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63043",
+        "road": "제주특별자치도 제주시 애월읍 애월로 139-10",
+        "detail": "(애월읍)"
+      },
+      "slug": "aewol-elementary-school-9296071",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296072",
+      "code": "9296072",
+      "name": "곽금초등학교",
+      "englishName": "GWAKGEUM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63034",
+        "road": "제주특별자치도 제주시 애월읍 일주서로 6000",
+        "detail": "(애월읍)"
+      },
+      "slug": "gwakgeum-elementary-school-9296072",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296073",
+      "code": "9296073",
+      "name": "어도초등학교",
+      "englishName": "UHDO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63039",
+        "road": "제주특별자치도 제주시 애월읍 봉성로 76",
+        "detail": "/ 어도초등학교 (애월읍)"
+      },
+      "slug": "uhdo-elementary-school-9296073",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296074",
+      "code": "9296074",
+      "name": "귀덕초등학교",
+      "englishName": "GWIDEOK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63024",
+        "road": "제주특별자치도 제주시 한림읍 귀덕14길 14-5",
+        "detail": "/ 귀덕초등학교 (한림읍)"
+      },
+      "slug": "gwideok-elementary-school-9296074",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296075",
+      "code": "9296075",
+      "name": "수원초등학교",
+      "englishName": "SUWON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63026",
+        "road": "제주특별자치도 제주시 한림읍 한림로 822",
+        "detail": "(한림읍)"
+      },
+      "slug": "suwon-elementary-school-9296075",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296076",
+      "code": "9296076",
+      "name": "한림초등학교",
+      "englishName": "HALLIM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63032",
+        "road": "제주특별자치도 제주시 한림읍 한림로4길 16",
+        "detail": "/ 한림초등학교 (한림읍)"
+      },
+      "slug": "hallim-elementary-school-9296076",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296077",
+      "code": "9296077",
+      "name": "재릉초등학교",
+      "englishName": "JAEREUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63011",
+        "road": "제주특별자치도 제주시 한림읍 한림로 288-18",
+        "detail": "(한림읍)"
+      },
+      "slug": "jaereung-elementary-school-9296077",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296078",
+      "code": "9296078",
+      "name": "금악초등학교",
+      "englishName": "GEUMAk ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63019",
+        "road": "제주특별자치도 제주시 한림읍 금악남2길 1",
+        "detail": "(한림읍)"
+      },
+      "slug": "geumak-elementary-school-9296078",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296079",
+      "code": "9296079",
+      "name": "고산초등학교",
+      "englishName": "GOSAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63008",
+        "road": "제주특별자치도 제주시 한경면 고산로1길 16",
+        "detail": "(한경면/ 고산초등학교)"
+      },
+      "slug": "gosan-elementary-school-9296079",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296080",
+      "code": "9296080",
+      "name": "저청초등학교",
+      "englishName": "JEOCHEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63006",
+        "road": "제주특별자치도 제주시 한경면 중산간서로 3591",
+        "detail": "(한경면)"
+      },
+      "slug": "jeocheong-elementary-school-9296080",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296081",
+      "code": "9296081",
+      "name": "신창초등학교",
+      "englishName": "SINCHANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63002",
+        "road": "제주특별자치도 제주시 한경면 두신로 72",
+        "detail": "(한경면)"
+      },
+      "slug": "sinchang-elementary-school-9296081",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296082",
+      "code": "9296082",
+      "name": "신촌초등학교",
+      "englishName": "SINCHON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63337",
+        "road": "제주특별자치도 제주시 조천읍 신북로 51",
+        "detail": "/ 신촌초등학교 (조천읍)"
+      },
+      "slug": "sinchon-elementary-school-9296082",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296083",
+      "code": "9296083",
+      "name": "조천초등학교",
+      "englishName": "JOCHEON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63331",
+        "road": "제주특별자치도 제주시 조천읍 신북로 195",
+        "detail": "(조천읍)"
+      },
+      "slug": "jocheon-elementary-school-9296083",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296084",
+      "code": "9296084",
+      "name": "대흘초등학교",
+      "englishName": "DAEHUL ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63343",
+        "road": "제주특별자치도 제주시 조천읍 중산간동로 677",
+        "detail": "(조천읍)"
+      },
+      "slug": "daehul-elementary-school-9296084",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296085",
+      "code": "9296085",
+      "name": "함덕초등학교",
+      "englishName": "HAMDEOK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63333",
+        "road": "제주특별자치도 제주시 조천읍 일주동로 1231",
+        "detail": "/ 함덕초등학교 (조천읍)"
+      },
+      "slug": "hamdeok-elementary-school-9296085",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296086",
+      "code": "9296086",
+      "name": "북촌초등학교",
+      "englishName": "BUKCHON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63339",
+        "road": "제주특별자치도 제주시 조천읍 일주동로 1481",
+        "detail": "(조천읍)"
+      },
+      "slug": "bukchon-elementary-school-9296086",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296087",
+      "code": "9296087",
+      "name": "김녕초등학교",
+      "englishName": "KIMNYEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63357",
+        "road": "제주특별자치도 제주시 구좌읍 김녕로 117",
+        "detail": "(구좌읍)"
+      },
+      "slug": "kimnyeong-elementary-school-9296087",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296088",
+      "code": "9296088",
+      "name": "구좌중앙초등학교",
+      "englishName": "KUJWAJOONGANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63358",
+        "road": "제주특별자치도 제주시 구좌읍 월정7길 1",
+        "detail": "(구좌읍)"
+      },
+      "slug": "kujwajoongang-elementary-school-9296088",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296089",
+      "code": "9296089",
+      "name": "한동초등학교",
+      "englishName": "HANDONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63359",
+        "road": "제주특별자치도 제주시 구좌읍 일주동로 2831",
+        "detail": "(구좌읍)"
+      },
+      "slug": "handong-elementary-school-9296089",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296090",
+      "code": "9296090",
+      "name": "평대초등학교",
+      "englishName": "PYUNGDAE ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63360",
+        "road": "제주특별자치도 제주시 구좌읍 일주동로 2979",
+        "detail": "(구좌읍)"
+      },
+      "slug": "pyungdae-elementary-school-9296090",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296091",
+      "code": "9296091",
+      "name": "세화초등학교",
+      "englishName": "SEHWA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63361",
+        "road": "제주특별자치도 제주시 구좌읍 구좌로 65",
+        "detail": "(구좌읍)"
+      },
+      "slug": "sehwa-elementary-school-9296091",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296092",
+      "code": "9296092",
+      "name": "송당초등학교",
+      "englishName": "SONGDANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63355",
+        "road": "제주특별자치도 제주시 구좌읍 중산간동로 2218-3",
+        "detail": "(구좌읍)"
+      },
+      "slug": "songdang-elementary-school-9296092",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296093",
+      "code": "9296093",
+      "name": "하도초등학교",
+      "englishName": "HADO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63363",
+        "road": "제주특별자치도 제주시 구좌읍 일주동로 3378",
+        "detail": "/ 하도초등학교 (구좌읍)"
+      },
+      "slug": "hado-elementary-school-9296093",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296094",
+      "code": "9296094",
+      "name": "종달초등학교",
+      "englishName": "JONGDAL ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63364",
+        "road": "제주특별자치도 제주시 구좌읍 종달로7길 5",
+        "detail": "(구좌읍)"
+      },
+      "slug": "jongdal-elementary-school-9296094",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296095",
+      "code": "9296095",
+      "name": "우도초등학교",
+      "englishName": "Udo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63365",
+        "road": "제주특별자치도 제주시 우도면 우도로 156-11",
+        "detail": "(우도면)"
+      },
+      "slug": "udo-elementary-school-9296095",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011033000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296096",
+      "code": "9296096",
+      "name": "추자초등학교",
+      "englishName": "CHUJA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63000",
+        "road": "제주특별자치도 제주시 추자면 대서3길 10",
+        "detail": "(추자면/추자초등학교)"
+      },
+      "slug": "chuja-elementary-school-9296096",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296100",
+      "code": "9296100",
+      "name": "한림초등학교비양분교장",
+      "englishName": null,
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63033",
+        "road": "제주특별자치도 제주시 한림읍 비양도길 270",
+        "detail": "(한림읍)"
+      },
+      "slug": "school-9296100",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296101",
+      "code": "9296101",
+      "name": "조천초등학교교래분교장",
+      "englishName": "gyorae branch school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63346",
+        "road": "제주특별자치도 제주시 조천읍 비자림로 672",
+        "detail": "(조천읍)"
+      },
+      "slug": "gyorae-branch-school-9296101",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296102",
+      "code": "9296102",
+      "name": "함덕초등학교선인분교장",
+      "englishName": "hamdeoksuninbungyojang elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63341",
+        "road": "제주특별자치도 제주시 조천읍 선진길 7-18",
+        "detail": "/ 함덕초등학교선인분교장 (조천읍)"
+      },
+      "slug": "hamdeoksuninbungyojang-elementary-school-9296102",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296104",
+      "code": "9296104",
+      "name": "김녕초등학교동복분교장",
+      "englishName": "KimNyeong Elementaryschool DongBok Branch",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63347",
+        "road": "제주특별자치도 제주시 구좌읍 동복로 66-5",
+        "detail": "(구좌읍/김녕초등학교분교장)"
+      },
+      "slug": "kimnyeong-elementaryschool-dongbok-branch-9296104",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296105",
+      "code": "9296105",
+      "name": "추자초등학교신양분교장",
+      "englishName": null,
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63001",
+        "road": "제주특별자치도 제주시 추자면 추자로 553-10",
+        "detail": "/ 추자초등학교신양분교장 (추자면)"
+      },
+      "slug": "school-9296105",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296174",
+      "code": "9296174",
+      "name": "탐라중학교",
+      "englishName": "TAMNA MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63229",
+        "road": "제주특별자치도 제주시 신설로 56",
+        "detail": "(아라이동/ 탐라중학교)"
+      },
+      "slug": "tamna-middle-school-9296174",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296175",
+      "code": "9296175",
+      "name": "도평초등학교",
+      "englishName": "Dopyeong Elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63076",
+        "road": "제주특별자치도 제주시 도평길 17",
+        "detail": "(도평동)"
+      },
+      "slug": "dopyeong-elementary-school-9296175",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011067000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296176",
+      "code": "9296176",
+      "name": "해안초등학교",
+      "englishName": "Haean Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63077",
+        "road": "제주특별자치도 제주시 해안마을길 76",
+        "detail": "(해안동)"
+      },
+      "slug": "haean-elementary-school-9296176",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296179",
+      "code": "9296179",
+      "name": "이도초등학교",
+      "englishName": "Ido Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63233",
+        "road": "제주특별자치도 제주시 구남동2길 58",
+        "detail": "/ 이도초등학교 (이도이동)"
+      },
+      "slug": "ido-elementary-school-9296179",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296181",
+      "code": "9296181",
+      "name": "하귀일초등학교",
+      "englishName": "Hagwiil Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63054",
+        "road": "제주특별자치도 제주시 애월읍 하귀9길 42",
+        "detail": "(애월읍)"
+      },
+      "slug": "hagwiil-elementary-school-9296181",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296185",
+      "code": "9296185",
+      "name": "노형중학교",
+      "englishName": "Nohyeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63088",
+        "road": "제주특별자치도 제주시 노형1길 28",
+        "detail": "/ 노형중학교 (노형동)"
+      },
+      "slug": "nohyeong-middle-school-9296185",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296192",
+      "code": "9296192",
+      "name": "삼화초등학교",
+      "englishName": "Samhwa Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63303",
+        "road": "제주특별자치도 제주시 화삼북로2길 27",
+        "detail": "(화북일동)"
+      },
+      "slug": "samhwa-elementary-school-9296192",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296195",
+      "code": "9296195",
+      "name": "도련초등학교",
+      "englishName": "Doryeon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63324",
+        "road": "제주특별자치도 제주시 화삼로 104",
+        "detail": "/ 도련초등학교 (도련일동)"
+      },
+      "slug": "doryeon-elementary-school-9296195",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296197",
+      "code": "9296197",
+      "name": "오름중학교",
+      "englishName": "Oreum Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63323",
+        "road": "제주특별자치도 제주시 화삼북로 110",
+        "detail": "(도련일동)"
+      },
+      "slug": "oreum-middle-school-9296197",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296204",
+      "code": "9296204",
+      "name": "더럭초등학교",
+      "englishName": "Deoreok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63036",
+        "road": "제주특별자치도 제주시 애월읍 하가로 195",
+        "detail": "(애월읍)"
+      },
+      "slug": "deoreok-elementary-school-9296204",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9296210",
+      "code": "9296210",
+      "name": "선흘초등학교",
+      "englishName": "Seonheul Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63340",
+        "road": "제주특별자치도 제주시 조천읍 선흘동1길 41",
+        "detail": "/ 선흘초등학교 (조천읍)"
+      },
+      "slug": "seonheul-elementary-school-9296210",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299009",
+      "code": "9299009",
+      "name": "서귀포중학교",
+      "englishName": "SEOGWIPO MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63595",
+        "road": "제주특별자치도 서귀포시 태평로 474",
+        "detail": "(서귀동/ 서귀포중학교)"
+      },
+      "slug": "seogwipo-middle-school-9299009",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299010",
+      "code": "9299010",
+      "name": "서귀포여자중학교",
+      "englishName": "SEOGWIPO GIRLS   MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63583",
+        "road": "제주특별자치도 서귀포시 일주동로 8820",
+        "detail": "(서홍동/서귀포여자중학교)"
+      },
+      "slug": "seogwipo-girls-middle-school-9299010",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299011",
+      "code": "9299011",
+      "name": "서귀중앙여자중학교",
+      "englishName": "SEOGWI JUNGANG GIRLS MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63585",
+        "road": "제주특별자치도 서귀포시 중앙로 120",
+        "detail": "(동홍동)"
+      },
+      "slug": "seogwi-jungang-girls-middle-school-9299011",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299012",
+      "code": "9299012",
+      "name": "효돈중학교",
+      "englishName": "HYODON MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63606",
+        "road": "제주특별자치도 서귀포시 효돈로 207",
+        "detail": "/ 효돈중학교 (하효동)"
+      },
+      "slug": "hyodon-middle-school-9299012",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299013",
+      "code": "9299013",
+      "name": "중문중학교",
+      "englishName": "JUNGMUN MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63546",
+        "road": "제주특별자치도 서귀포시 천제연로232번길 10",
+        "detail": "(중문동)"
+      },
+      "slug": "jungmun-middle-school-9299013",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299014",
+      "code": "9299014",
+      "name": "서귀포대신중학교",
+      "englishName": "SEOGWIPO DAESIN MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63566",
+        "road": "제주특별자치도 서귀포시 신중로 13번길 15",
+        "detail": "/ 강정동 136"
+      },
+      "slug": "seogwipo-daesin-middle-school-9299014",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299015",
+      "code": "9299015",
+      "name": "성산중학교",
+      "englishName": "SEONGSAN MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63641",
+        "road": "제주특별자치도 서귀포시 성산읍 일주동로 4316",
+        "detail": "/ 성산중학교 (성산읍)"
+      },
+      "slug": "seongsan-middle-school-9299015",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299016",
+      "code": "9299016",
+      "name": "표선중학교",
+      "englishName": "PYOSEON MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63629",
+        "road": "제주특별자치도 서귀포시 표선면 표선중앙로 31",
+        "detail": "(표선면/ 표선중학교)"
+      },
+      "slug": "pyoseon-middle-school-9299016",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299017",
+      "code": "9299017",
+      "name": "남원중학교",
+      "englishName": "NAMWON MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63621",
+        "road": "제주특별자치도 서귀포시 남원읍 남한로 36",
+        "detail": "(남원읍)"
+      },
+      "slug": "namwon-middle-school-9299017",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299018",
+      "code": "9299018",
+      "name": "위미중학교",
+      "englishName": "WIMI MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63609",
+        "road": "제주특별자치도 서귀포시 남원읍 위미상원북로 34",
+        "detail": "(남원읍)"
+      },
+      "slug": "wimi-middle-school-9299018",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299019",
+      "code": "9299019",
+      "name": "안덕중학교",
+      "englishName": "ANDEOK MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63530",
+        "road": "제주특별자치도 서귀포시 안덕면 화순로 74",
+        "detail": "(안덕면)"
+      },
+      "slug": "andeok-middle-school-9299019",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299020",
+      "code": "9299020",
+      "name": "대정중학교",
+      "englishName": "DAEJUNG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63513",
+        "road": "제주특별자치도 서귀포시 대정읍 비행장로 18",
+        "detail": "(대정읍/ 대정중학교)"
+      },
+      "slug": "daejung-middle-school-9299020",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299021",
+      "code": "9299021",
+      "name": "무릉중학교",
+      "englishName": "MURUNG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63501",
+        "road": "제주특별자치도 서귀포시 대정읍 서삼중로 106",
+        "detail": "/ 무릉중학교 (대정읍/ 무릉초등학교)"
+      },
+      "slug": "murung-middle-school-9299021",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299022",
+      "code": "9299022",
+      "name": "신산중학교",
+      "englishName": "SINSAN MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63634",
+        "road": "제주특별자치도 서귀포시 성산읍 일주동로 5104",
+        "detail": "(성산읍/신산중학교)"
+      },
+      "slug": "sinsan-middle-school-9299022",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299023",
+      "code": "9299023",
+      "name": "남주중학교",
+      "englishName": "NAMJU MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "63579",
+        "road": "제주특별자치도 서귀포시 동홍로303번길 14",
+        "detail": "/ 남주중학교 (동홍동)"
+      },
+      "slug": "namju-middle-school-9299023",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299024",
+      "code": "9299024",
+      "name": "서귀포초등학교",
+      "englishName": "SEOGWIPO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63596",
+        "road": "제주특별자치도 서귀포시 솔동산로11번길 17",
+        "detail": "(서귀동)"
+      },
+      "slug": "seogwipo-elementary-school-9299024",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299025",
+      "code": "9299025",
+      "name": "서귀중앙초등학교",
+      "englishName": "SEOGWIJOONGANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63590",
+        "road": "제주특별자치도 서귀포시 동문동로 54",
+        "detail": "(서귀동/ 서귀중앙초등학교)"
+      },
+      "slug": "seogwijoongang-elementary-school-9299025",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299026",
+      "code": "9299026",
+      "name": "서귀서초등학교",
+      "englishName": "SEOGWISEO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63584",
+        "road": "제주특별자치도 서귀포시 솜반천로 38",
+        "detail": "(서홍동/서귀서초등학교)"
+      },
+      "slug": "seogwiseo-elementary-school-9299026",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299027",
+      "code": "9299027",
+      "name": "서귀북초등학교",
+      "englishName": "SEOGWIBUK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63584",
+        "road": "제주특별자치도 서귀포시 중앙로 175",
+        "detail": "(서홍동)"
+      },
+      "slug": "seogwibuk-elementary-school-9299027",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299028",
+      "code": "9299028",
+      "name": "법환초등학교",
+      "englishName": "BEOPHWAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63573",
+        "road": "제주특별자치도 서귀포시 이어도로 879",
+        "detail": "(법환동)"
+      },
+      "slug": "beophwan-elementary-school-9299028",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299029",
+      "code": "9299029",
+      "name": "서호초등학교",
+      "englishName": "SEOHO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63569",
+        "road": "제주특별자치도 서귀포시 호근남로 40",
+        "detail": "(호근동)"
+      },
+      "slug": "seoho-elementary-school-9299029",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299030",
+      "code": "9299030",
+      "name": "토평초등학교",
+      "englishName": "TOPYEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63604",
+        "road": "제주특별자치도 서귀포시 토평남로 86",
+        "detail": "(토평동)"
+      },
+      "slug": "topyeong-elementary-school-9299030",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299031",
+      "code": "9299031",
+      "name": "효돈초등학교",
+      "englishName": "HYODON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63606",
+        "road": "제주특별자치도 서귀포시 효돈로 161",
+        "detail": "(신효동)"
+      },
+      "slug": "hyodon-elementary-school-9299031",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299032",
+      "code": "9299032",
+      "name": "보목초등학교",
+      "englishName": "BOMOK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63599",
+        "road": "제주특별자치도 서귀포시 마소물로8번길 9",
+        "detail": "(보목동)"
+      },
+      "slug": "bomok-elementary-school-9299032",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299033",
+      "code": "9299033",
+      "name": "중문초등학교",
+      "englishName": "JUNGMUN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63545",
+        "road": "제주특별자치도 서귀포시 천제연로 231",
+        "detail": "(중문동)"
+      },
+      "slug": "jungmun-elementary-school-9299033",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299034",
+      "code": "9299034",
+      "name": "예래초등학교",
+      "englishName": "YERAE ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63537",
+        "road": "제주특별자치도 서귀포시 예래로 210-14",
+        "detail": "(상예동)"
+      },
+      "slug": "yerae-elementary-school-9299034",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299035",
+      "code": "9299035",
+      "name": "도순초등학교",
+      "englishName": "DOSUN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63561",
+        "road": "제주특별자치도 서귀포시 도순남로 83",
+        "detail": "(도순동/도순초등학교)"
+      },
+      "slug": "dosun-elementary-school-9299035",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299036",
+      "code": "9299036",
+      "name": "하원초등학교",
+      "englishName": "HAWON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63542",
+        "road": "제주특별자치도 서귀포시 월평하원로 149",
+        "detail": "(하원동)"
+      },
+      "slug": "hawon-elementary-school-9299036",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299037",
+      "code": "9299037",
+      "name": "강정초등학교",
+      "englishName": "GANGJEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63563",
+        "road": "제주특별자치도 서귀포시 말질로 188",
+        "detail": "(강정동)"
+      },
+      "slug": "gangjeong-elementary-school-9299037",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299038",
+      "code": "9299038",
+      "name": "새서귀초등학교",
+      "englishName": "SAESEOGWI ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63565",
+        "road": "제주특별자치도 서귀포시 신서귀로76번길 6-3",
+        "detail": "(서호동)"
+      },
+      "slug": "saeseogwi-elementary-school-9299038",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299039",
+      "code": "9299039",
+      "name": "동홍초등학교",
+      "englishName": "DONGHONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63586",
+        "road": "제주특별자치도 서귀포시 동홍북로 17",
+        "detail": "(동홍동)"
+      },
+      "slug": "donghong-elementary-school-9299039",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299040",
+      "code": "9299040",
+      "name": "동남초등학교",
+      "englishName": "DONGNAM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63640",
+        "road": "제주특별자치도 서귀포시 성산읍 고성오조로 55",
+        "detail": "/ 동남초등학교 (성산읍)"
+      },
+      "slug": "dongnam-elementary-school-9299040",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299041",
+      "code": "9299041",
+      "name": "시흥초등학교",
+      "englishName": "SIHEUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63638",
+        "road": "제주특별자치도 서귀포시 성산읍 시흥상동로 113",
+        "detail": "(성산읍)"
+      },
+      "slug": "siheung-elementary-school-9299041",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299042",
+      "code": "9299042",
+      "name": "수산초등학교",
+      "englishName": "SUSAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63630",
+        "road": "제주특별자치도 서귀포시 성산읍 수시로 9",
+        "detail": "(성산읍)"
+      },
+      "slug": "susan-elementary-school-9299042",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299043",
+      "code": "9299043",
+      "name": "성산초등학교",
+      "englishName": "SEONGSAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63643",
+        "road": "제주특별자치도 서귀포시 성산읍 한도로 217",
+        "detail": "/ 성산초등학교 (성산읍)"
+      },
+      "slug": "seongsan-elementary-school-9299043",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299044",
+      "code": "9299044",
+      "name": "온평초등학교",
+      "englishName": "ONPYUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63633",
+        "road": "제주특별자치도 서귀포시 성산읍 일주동로 4740",
+        "detail": "(성산읍)"
+      },
+      "slug": "onpyung-elementary-school-9299044",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299045",
+      "code": "9299045",
+      "name": "풍천초등학교",
+      "englishName": "PUNGCHEON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63637",
+        "road": "제주특별자치도 서귀포시 성산읍 풍천로 18",
+        "detail": "(성산읍)"
+      },
+      "slug": "pungcheon-elementary-school-9299045",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299046",
+      "code": "9299046",
+      "name": "표선초등학교",
+      "englishName": "PYOSON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63629",
+        "road": "제주특별자치도 서귀포시 표선면 표선동서로 293",
+        "detail": "(표선면)"
+      },
+      "slug": "pyoson-elementary-school-9299046",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299047",
+      "code": "9299047",
+      "name": "성읍초등학교",
+      "englishName": "SEONGEUP ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63624",
+        "road": "제주특별자치도 서귀포시 표선면 성읍민속로 65",
+        "detail": "(표선면/ 성읍초등학교)"
+      },
+      "slug": "seongeup-elementary-school-9299047",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299048",
+      "code": "9299048",
+      "name": "가마초등학교",
+      "englishName": "GAMA ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63625",
+        "road": "제주특별자치도 서귀포시 표선면 일주동로6285번길 8",
+        "detail": "/ 가마초등학교 (표선면)"
+      },
+      "slug": "gama-elementary-school-9299048",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299049",
+      "code": "9299049",
+      "name": "토산초등학교",
+      "englishName": "TOSAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63626",
+        "road": "제주특별자치도 서귀포시 표선면 토산중앙로 68-9",
+        "detail": "/ 토산초등학교 (표선면)"
+      },
+      "slug": "tosan-elementary-school-9299049",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299050",
+      "code": "9299050",
+      "name": "한마음초등학교",
+      "englishName": "HANMAUM ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63627",
+        "road": "제주특별자치도 서귀포시 표선면 한마음초등로 408",
+        "detail": "/ 한마음초등학교 (표선면)"
+      },
+      "slug": "hanmaum-elementary-school-9299050",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013032000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299051",
+      "code": "9299051",
+      "name": "흥산초등학교",
+      "englishName": "HEUNGSAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63616",
+        "road": "제주특별자치도 서귀포시 남원읍 일주동로 6642",
+        "detail": "/ 흥산초등학교 (남원읍/ 흥산초등학교)"
+      },
+      "slug": "heungsan-elementary-school-9299051",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299052",
+      "code": "9299052",
+      "name": "태흥초등학교",
+      "englishName": "TAEHEUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63617",
+        "road": "제주특별자치도 서귀포시 남원읍 태위로 915",
+        "detail": "(남원읍/ 태흥초등학교)"
+      },
+      "slug": "taeheung-elementary-school-9299052",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299053",
+      "code": "9299053",
+      "name": "의귀초등학교",
+      "englishName": "EUIGWI ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63618",
+        "road": "제주특별자치도 서귀포시 남원읍 한신로 213",
+        "detail": "(남원읍/ 의귀초등학교)"
+      },
+      "slug": "euigwi-elementary-school-9299053",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299054",
+      "code": "9299054",
+      "name": "남원초등학교",
+      "englishName": "NAMWON  ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63621",
+        "road": "제주특별자치도 서귀포시 남원읍 태위로 647",
+        "detail": "(남원읍)"
+      },
+      "slug": "namwon-elementary-school-9299054",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299055",
+      "code": "9299055",
+      "name": "위미초등학교",
+      "englishName": "WIMI ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63611",
+        "road": "제주특별자치도 서귀포시 남원읍 태위로 57",
+        "detail": "/ 위미초등학교 (남원읍)"
+      },
+      "slug": "wimi-elementary-school-9299055",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299056",
+      "code": "9299056",
+      "name": "신례초등학교",
+      "englishName": "SHINRYE ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63608",
+        "road": "제주특별자치도 서귀포시 남원읍 중산간동로 7116",
+        "detail": "(남원읍)"
+      },
+      "slug": "shinrye-elementary-school-9299056",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299057",
+      "code": "9299057",
+      "name": "하례초등학교",
+      "englishName": "HARAE ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63613",
+        "road": "제주특별자치도 서귀포시 남원읍 일주동로 8002",
+        "detail": "/ 하례초등학교 (남원읍)"
+      },
+      "slug": "harae-elementary-school-9299057",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299058",
+      "code": "9299058",
+      "name": "대정서초등학교",
+      "englishName": "DAEJEONG SEO ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63506",
+        "road": "제주특별자치도 서귀포시 대정읍 동일하모로 43",
+        "detail": "(대정읍)"
+      },
+      "slug": "daejeong-seo-elementary-school-9299058",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299059",
+      "code": "9299059",
+      "name": "대정초등학교",
+      "englishName": "DAEJEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63508",
+        "road": "제주특별자치도 서귀포시 대정읍 상모대서로 15",
+        "detail": "(대정읍)"
+      },
+      "slug": "daejeong-elementary-school-9299059",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299060",
+      "code": "9299060",
+      "name": "보성초등학교",
+      "englishName": "BOSEONG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63517",
+        "road": "제주특별자치도 서귀포시 대정읍 추사로55번길 6-1",
+        "detail": "(대정읍)"
+      },
+      "slug": "boseong-elementary-school-9299060",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299062",
+      "code": "9299062",
+      "name": "서광초등학교",
+      "englishName": "SEOGWANG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63522",
+        "road": "제주특별자치도 서귀포시 안덕면 중산간서로 1842",
+        "detail": "(안덕면)"
+      },
+      "slug": "seogwang-elementary-school-9299062",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299063",
+      "code": "9299063",
+      "name": "덕수초등학교",
+      "englishName": "DEOKSU  ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63527",
+        "road": "제주특별자치도 서귀포시 안덕면 덕수서로 10",
+        "detail": "(안덕면)"
+      },
+      "slug": "deoksu-elementary-school-9299063",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299064",
+      "code": "9299064",
+      "name": "사계초등학교",
+      "englishName": "SAGYE ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63528",
+        "road": "제주특별자치도 서귀포시 안덕면 산방로 346",
+        "detail": "(안덕면)"
+      },
+      "slug": "sagye-elementary-school-9299064",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299065",
+      "code": "9299065",
+      "name": "안덕초등학교",
+      "englishName": "ANDEOK ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63530",
+        "road": "제주특별자치도 서귀포시 안덕면 화순로56번길 32",
+        "detail": "(안덕면/ 안덕초등학교)"
+      },
+      "slug": "andeok-elementary-school-9299065",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299066",
+      "code": "9299066",
+      "name": "창천초등학교",
+      "englishName": "CHANGCHEON ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63532",
+        "road": "제주특별자치도 서귀포시 안덕면 창천중앙로 12",
+        "detail": "(안덕면)"
+      },
+      "slug": "changcheon-elementary-school-9299066",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013031000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299067",
+      "code": "9299067",
+      "name": "무릉초등학교",
+      "englishName": "MURUNG ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63501",
+        "road": "제주특별자치도 서귀포시 대정읍 서삼중로 106",
+        "detail": "/ 무릉초등학교 (대정읍)"
+      },
+      "slug": "murung-elementary-school-9299067",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299068",
+      "code": "9299068",
+      "name": "신산초등학교",
+      "englishName": "SINSAN ELEMENTARY SCHOOL",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63634",
+        "road": "제주특별자치도 서귀포시 성산읍 일주동로 5104",
+        "detail": "(성산읍)"
+      },
+      "slug": "sinsan-elementary-school-9299068",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025900"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299124",
+      "code": "9299124",
+      "name": "대정초등학교가파분교장",
+      "englishName": "DAEJEONG ELEMENTARY SCHOOL GAPA BRANCH",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63514",
+        "road": "제주특별자치도 서귀포시 대정읍 가파로67번길 45",
+        "detail": "(대정읍,가파초등학교)"
+      },
+      "slug": "daejeong-elementary-school-gapa-branch-9299124",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:9299125",
+      "code": "9299125",
+      "name": "대정초등학교마라분교장",
+      "englishName": "Mara Branch of the Deajeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "63515",
+        "road": "제주특별자치도 서귀포시 대정읍 마라로 58",
+        "detail": "(대정읍,가파초등학교마라분교)"
+      },
+      "slug": "mara-branch-of-the-deajeong-elementary-school-9299125",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50130",
+        "townId": "town:5013025000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:pending-0-6332",
+      "code": "pending-0-6332",
+      "name": "제주대학교교육대학부설초등학교",
+      "englishName": "Jeju National University Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "국립",
+      "address": {
+        "postalCode": "63294",
+        "road": "제주특별자치도 제주시 일주동로 61",
+        "detail": "(화북일동)"
+      },
+      "slug": "jeju-national-university-elementary-school-pending-0-6332",
+      "region": {
+        "provinceId": "province:50",
+        "districtId": "district:50110",
+        "townId": "town:5011060000"
+      },
+      "extensions": {}
+    }
+  ],
+  "extensions": {}
+}

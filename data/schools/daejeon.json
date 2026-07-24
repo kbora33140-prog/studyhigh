@@ -1,0 +1,6459 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-07-24T06:23:35.455Z",
+    "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+    "sourceDate": "2026-02"
+  },
+  "provinceId": "province:30",
+  "schools": [
+    {
+      "id": "school:7430030",
+      "code": "7430030",
+      "name": "대덕고등학교",
+      "englishName": "Daedeok High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34121",
+        "road": "대전광역시 유성구 대덕대로556번길 158",
+        "detail": "(도룡동/ 대덕고등학교)"
+      },
+      "slug": "daedeok-high-school-7430030",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430031",
+      "code": "7430031",
+      "name": "대전고등학교",
+      "englishName": "Daejeon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34932",
+        "road": "대전광역시 중구 대흥로 110",
+        "detail": "(대흥동/ 대전고등학교)"
+      },
+      "slug": "daejeon-high-school-7430031",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430032",
+      "code": "7430032",
+      "name": "대전과학고등학교",
+      "englishName": "Daejeon Science High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34142",
+        "road": "대전광역시 유성구 과학로 46",
+        "detail": "(구성동/ 과학고등학교)"
+      },
+      "slug": "daejeon-science-high-school-7430032",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430033",
+      "code": "7430033",
+      "name": "대전관저고등학교",
+      "englishName": "DaeJeon GwanJeo High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35358",
+        "road": "대전광역시 서구 관저북로 94",
+        "detail": "/ 대전관저고등학교 (관저동/ 관저고등학교)"
+      },
+      "slug": "daejeon-gwanjeo-high-school-7430033",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430034",
+      "code": "7430034",
+      "name": "대전둔산여자고등학교",
+      "englishName": "Daejeon Dunsan Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35231",
+        "road": "대전광역시 서구 갈마역로 33",
+        "detail": "(갈마동/ 대전둔산여자고등학교)"
+      },
+      "slug": "daejeon-dunsan-girls-high-school-7430034",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430035",
+      "code": "7430035",
+      "name": "대전만년고등학교",
+      "englishName": "Daejeon Mannyon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35200",
+        "road": "대전광역시 서구 만년로 6",
+        "detail": "(만년동)"
+      },
+      "slug": "daejeon-mannyon-high-school-7430035",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430036",
+      "code": "7430036",
+      "name": "대전여자고등학교",
+      "englishName": "Daejeon Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34656",
+        "road": "대전광역시 동구 용운로1번길 28-37",
+        "detail": "/ 대전여자고등학교 (대동)"
+      },
+      "slug": "daejeon-girls-high-school-7430036",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011058500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430037",
+      "code": "7430037",
+      "name": "대전외국어고등학교",
+      "englishName": "Daejeon Foreign Language High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35280",
+        "road": "대전광역시 서구 신갈마로 19",
+        "detail": "(내동)"
+      },
+      "slug": "daejeon-foreign-language-high-school-7430037",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430038",
+      "code": "7430038",
+      "name": "대전체육고등학교",
+      "englishName": "Daejeon Physical Education High school",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34195",
+        "road": "대전광역시 유성구 원신흥로40번길 6",
+        "detail": "(원신흥동/ 대전체육중고등학교)"
+      },
+      "slug": "daejeon-physical-education-high-school-7430038",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430039",
+      "code": "7430039",
+      "name": "동대전고등학교",
+      "englishName": "Dong-daejeon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34427",
+        "road": "대전광역시 대덕구 청림길 33",
+        "detail": "(중리동/ 동대전고등학교)"
+      },
+      "slug": "dong-daejeon-high-school-7430039",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430041",
+      "code": "7430041",
+      "name": "신탄진고등학교",
+      "englishName": "Shintanjin High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34308",
+        "road": "대전광역시 대덕구 신탄진북로 14",
+        "detail": "(신탄진동)"
+      },
+      "slug": "shintanjin-high-school-7430041",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430042",
+      "code": "7430042",
+      "name": "유성고등학교",
+      "englishName": "Yu Seong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34181",
+        "road": "대전광역시 유성구 유성대로654번길 130",
+        "detail": "(구암동/유성고등학교)"
+      },
+      "slug": "yu-seong-high-school-7430042",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430043",
+      "code": "7430043",
+      "name": "충남고등학교",
+      "englishName": "Chungnam High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35249",
+        "road": "대전광역시 서구 문정로 171",
+        "detail": "(둔산동/충남고등학교)"
+      },
+      "slug": "chungnam-high-school-7430043",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430044",
+      "code": "7430044",
+      "name": "충남여자고등학교",
+      "englishName": "Chungnam Girls` High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34849",
+        "road": "대전광역시 중구 선화로43번길 77",
+        "detail": "(목동/충남여자고등학교)"
+      },
+      "slug": "chungnam-girls-high-school-7430044",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430045",
+      "code": "7430045",
+      "name": "한밭고등학교",
+      "englishName": "Hanbat High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35277",
+        "road": "대전광역시 서구 신갈마로141번길 58",
+        "detail": "(갈마동/ 한밭고등학교)"
+      },
+      "slug": "hanbat-high-school-7430045",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430046",
+      "code": "7430046",
+      "name": "남대전고등학교",
+      "englishName": "Namdaejeon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35051",
+        "road": "대전광역시 중구 보문로111번길 63",
+        "detail": "(대사동/ 남대전고등학교)"
+      },
+      "slug": "namdaejeon-high-school-7430046",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430048",
+      "code": "7430048",
+      "name": "대전대신고등학교",
+      "englishName": "Daejeon Daeshin High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35406",
+        "road": "대전광역시 서구 오량1길 98",
+        "detail": "(복수동/ 대전대신중·고등학교)"
+      },
+      "slug": "daejeon-daeshin-high-school-7430048",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430049",
+      "code": "7430049",
+      "name": "대전동산고등학교",
+      "englishName": "Daejeon Dongsan High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34960",
+        "road": "대전광역시 중구 문화로 183",
+        "detail": "(문화동/ 대전동산중고등학교)"
+      },
+      "slug": "daejeon-dongsan-high-school-7430049",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430051",
+      "code": "7430051",
+      "name": "대전성모여자고등학교",
+      "englishName": "Daejeon Saint Marys Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34943",
+        "road": "대전광역시 중구 대흥로 62",
+        "detail": "(대흥동)"
+      },
+      "slug": "daejeon-saint-marys-girls-high-school-7430051",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430052",
+      "code": "7430052",
+      "name": "대전중앙고등학교",
+      "englishName": "Daejoen Jung-ang High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34804",
+        "road": "대전광역시 중구 대종로 634",
+        "detail": "(중촌동/ 대전중앙중.고등학교)"
+      },
+      "slug": "daejoen-jung-ang-high-school-7430052",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430053",
+      "code": "7430053",
+      "name": "대전예술고등학교",
+      "englishName": "Daejeon Arts High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34198",
+        "road": "대전광역시 유성구 월드컵대로308번길 33",
+        "detail": "(상대동/대전예술고등학교)"
+      },
+      "slug": "daejeon-arts-high-school-7430053",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430056",
+      "code": "7430056",
+      "name": "명석고등학교",
+      "englishName": "Myeongseok High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34503",
+        "road": "대전광역시 동구 우암로 380",
+        "detail": "/ 명석고등학교 (가양동)"
+      },
+      "slug": "myeongseok-high-school-7430056",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430057",
+      "code": "7430057",
+      "name": "보문고등학교",
+      "englishName": "Bomoon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34619",
+        "road": "대전광역시 동구 우암로 57",
+        "detail": "/ 보문고등학교 (삼성동/ 보문고등학교/보문중학교)"
+      },
+      "slug": "bomoon-high-school-7430057",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430059",
+      "code": "7430059",
+      "name": "서대전고등학교",
+      "englishName": "Seodaejeon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35216",
+        "road": "대전광역시 서구 월평동로 60",
+        "detail": "(월평동/ 서대전고등학교)"
+      },
+      "slug": "seodaejeon-high-school-7430059",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430060",
+      "code": "7430060",
+      "name": "서대전여자고등학교",
+      "englishName": "Seodaejeon Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35344",
+        "road": "대전광역시 서구 배재로197번길 20",
+        "detail": "(도마동, 서대전여자고등학교)"
+      },
+      "slug": "seodaejeon-girls-high-school-7430060",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430061",
+      "code": "7430061",
+      "name": "서일고등학교",
+      "englishName": "Seoil High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35377",
+        "road": "대전광역시 서구 계백로828번길 30",
+        "detail": "(관저동)"
+      },
+      "slug": "seoil-high-school-7430061",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430062",
+      "code": "7430062",
+      "name": "서일여자고등학교",
+      "englishName": "SEOIL GIRLS` HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35377",
+        "road": "대전광역시 서구 구봉산북로 22",
+        "detail": "(관저동/ 서일여자고등학교)"
+      },
+      "slug": "seoil-girls-high-school-7430062",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430064",
+      "code": "7430064",
+      "name": "유성여자고등학교",
+      "englishName": "Yuseong Girls` High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34097",
+        "road": "대전광역시 유성구 은구비로138번길 70",
+        "detail": "/ 유성여자고등학교 (죽동)"
+      },
+      "slug": "yuseong-girls-high-school-7430064",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430065",
+      "code": "7430065",
+      "name": "중일고등학교",
+      "englishName": "Jung il High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34023",
+        "road": "대전 유성구 배울2로 68",
+        "detail": "(관평동/중일고등학교)"
+      },
+      "slug": "jung-il-high-school-7430065",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430066",
+      "code": "7430066",
+      "name": "청란여자고등학교",
+      "englishName": "Cheongran Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35051",
+        "road": "대전광역시 중구 보문로95번길 40",
+        "detail": "/ 청란여자고등학교 (부사동)"
+      },
+      "slug": "cheongran-girls-high-school-7430066",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430067",
+      "code": "7430067",
+      "name": "호수돈여자고등학교",
+      "englishName": "Holston Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34859",
+        "road": "대전광역시 중구 선화로 50",
+        "detail": "(용두동/호수돈여자중.고등학교)"
+      },
+      "slug": "holston-girls-high-school-7430067",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014065500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430073",
+      "code": "7430073",
+      "name": "충남기계공업고등학교",
+      "englishName": "ChungNam Mechanical Technical High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34999",
+        "road": "대전광역시 중구 산성로 154",
+        "detail": "(문화동)"
+      },
+      "slug": "chungnam-mechanical-technical-high-school-7430073",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014073000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430083",
+      "code": "7430083",
+      "name": "대전여자상업고등학교",
+      "englishName": "Daejeon Girls Commercial High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34831",
+        "road": "대전광역시 중구 대종로550번길 31",
+        "detail": "(선화동/ 대전여자상업고등학교)"
+      },
+      "slug": "daejeon-girls-commercial-high-school-7430083",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014053500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430132",
+      "code": "7430132",
+      "name": "대전송촌고등학교",
+      "englishName": "Daejeon Songchon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34404",
+        "road": "대전광역시 대덕구 선비마을로23번길 11",
+        "detail": "(송촌동/대전송촌고등학교)"
+      },
+      "slug": "daejeon-songchon-high-school-7430132",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430133",
+      "code": "7430133",
+      "name": "대전신일여자고등학교",
+      "englishName": "Daejeon Shin-il Girls High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35058",
+        "road": "대전광역시 중구 부사로 48",
+        "detail": "(부사동/ 대전신일여자고등학교)"
+      },
+      "slug": "daejeon-shin-il-girls-high-school-7430133",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430135",
+      "code": "7430135",
+      "name": "유성생명과학고등학교",
+      "englishName": "yuseong-bio science technology high school",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34197",
+        "road": "대전광역시 유성구 월드컵대로 270",
+        "detail": "(구암동/유성생명과학고등학교)"
+      },
+      "slug": "yuseong-bio-science-technology-high-school-7430135",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430138",
+      "code": "7430138",
+      "name": "대전한빛고등학교",
+      "englishName": "Daejeon Hanvit Highschool",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35085",
+        "road": "대전광역시 중구 대둔산로 119-37",
+        "detail": "(안영동/대전한빛고등학교)"
+      },
+      "slug": "daejeon-hanvit-highschool-7430138",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430140",
+      "code": "7430140",
+      "name": "우송고등학교",
+      "englishName": "Woosong high school",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34609",
+        "road": "대전광역시 동구 동대전로131번길 53",
+        "detail": "/ 우송고등학교 (자양동)"
+      },
+      "slug": "woosong-high-school-7430140",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430142",
+      "code": "7430142",
+      "name": "대전둔원고등학교",
+      "englishName": "DAejeon Dunwon High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35273",
+        "road": "대전광역시 서구 대덕대로 101",
+        "detail": "(갈마동)"
+      },
+      "slug": "daejeon-dunwon-high-school-7430142",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058200"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430143",
+      "code": "7430143",
+      "name": "대전노은고등학교",
+      "englishName": "Daejeon Noeun High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34091",
+        "road": "대전광역시 유성구 노은동로 99",
+        "detail": "/ 55 (노은동)"
+      },
+      "slug": "daejeon-noeun-high-school-7430143",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430148",
+      "code": "7430148",
+      "name": "대전전민고등학교",
+      "englishName": "Daejeon Jeonmin High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34053",
+        "road": "대전광역시 유성구 전민로 63",
+        "detail": "(전민동/ 대전전민고등학교)"
+      },
+      "slug": "daejeon-jeonmin-high-school-7430148",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430149",
+      "code": "7430149",
+      "name": "대전지족고등학교",
+      "englishName": "Daejeon Jijok High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34082",
+        "road": "대전광역시 유성구 노은서로 202",
+        "detail": "(지족동/ 지족고등학교)"
+      },
+      "slug": "daejeon-jijok-high-school-7430149",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430150",
+      "code": "7430150",
+      "name": "대전구봉고등학교",
+      "englishName": "Daejeon Gubong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35376",
+        "road": "대전광역시 서구 관저서로 36",
+        "detail": "/ 대전구봉고등학교 (관저동)"
+      },
+      "slug": "daejeon-gubong-high-school-7430150",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430237",
+      "code": "7430237",
+      "name": "대전괴정고등학교",
+      "englishName": "Daejeon Goejeong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35291",
+        "road": "대전광역시 서구 가장로 15",
+        "detail": "(괴정동)"
+      },
+      "slug": "daejeon-goejeong-high-school-7430237",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430238",
+      "code": "7430238",
+      "name": "대전반석고등학교",
+      "englishName": "Daejeon Banseok High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34076",
+        "road": "대전광역시 유성구 지족로 332",
+        "detail": "/ 대전반석고등학교 (지족동)"
+      },
+      "slug": "daejeon-banseok-high-school-7430238",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430239",
+      "code": "7430239",
+      "name": "대전용산고등학교",
+      "englishName": "Daejeon Yong-san High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34031",
+        "road": "대전광역시 유성구 용산2로 2-16",
+        "detail": "(용산동/ 대전용산고등학교)"
+      },
+      "slug": "daejeon-yong-san-high-school-7430239",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430240",
+      "code": "7430240",
+      "name": "대전이문고등학교",
+      "englishName": "Daejeon Imun High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34317",
+        "road": "대전광역시 대덕구 석봉로 15",
+        "detail": "(석봉동/대전이문고등학교)"
+      },
+      "slug": "daejeon-imun-high-school-7430240",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430241",
+      "code": "7430241",
+      "name": "대전가오고등학교",
+      "englishName": "Daejeon Gao High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34691",
+        "road": "대전광역시 동구 신기로 71",
+        "detail": "(가오동/ 대전가오고등학교)"
+      },
+      "slug": "daejeon-gao-high-school-7430241",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430242",
+      "code": "7430242",
+      "name": "대전제일고등학교",
+      "englishName": "Daejeon Jeil High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35339",
+        "road": "대전광역시 서구 배재로46번길 77",
+        "detail": "(도마동/ 대전제일고등학교)"
+      },
+      "slug": "daejeon-jeil-high-school-7430242",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430244",
+      "code": "7430244",
+      "name": "동방고등학교",
+      "englishName": "Dongbang High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35380",
+        "road": "대전광역시 서구 계백로 1106",
+        "detail": "(관저동/ 동방고등학교)"
+      },
+      "slug": "dongbang-high-school-7430244",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430252",
+      "code": "7430252",
+      "name": "대전국제통상고등학교",
+      "englishName": "Daejeon International Marketing High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34998",
+        "road": "대전광역시 중구 서문로 47",
+        "detail": "(문화동/ 대전국제통상고등학교)"
+      },
+      "slug": "daejeon-international-marketing-high-school-7430252",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430253",
+      "code": "7430253",
+      "name": "대전복수고등학교",
+      "englishName": "Daejeon Boksu High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35409",
+        "road": "대전광역시 서구 혜천로 66",
+        "detail": "/ 대전복수고등학교 (복수동/ 복수고등학교)"
+      },
+      "slug": "daejeon-boksu-high-school-7430253",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430256",
+      "code": "7430256",
+      "name": "동아마이스터고등학교",
+      "englishName": "DONG-AH MEISTER HIGH SCHOOL",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34511",
+        "road": "대전광역시 동구 충정로 97",
+        "detail": "/ 동아마이스터고등학교 (자양동)"
+      },
+      "slug": "dong-ah-meister-high-school-7430256",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430290",
+      "code": "7430290",
+      "name": "대전도안고등학교",
+      "englishName": "Daejeon Doan High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34194",
+        "road": "대전광역시 유성구 원신흥남로 51",
+        "detail": "(원신흥동)"
+      },
+      "slug": "daejeon-doan-high-school-7430290",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430295",
+      "code": "7430295",
+      "name": "대전동신과학고등학교",
+      "englishName": "Daejeon Dongsin Science High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34500",
+        "road": "대전광역시 동구 옥천로 423",
+        "detail": "(비룡동/ 대전동신과학고등학교)"
+      },
+      "slug": "daejeon-dongsin-science-high-school-7430295",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011072500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430310",
+      "code": "7430310",
+      "name": "대덕소프트웨어마이스터고등학교",
+      "englishName": "Daedeok Software Meister High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34111",
+        "road": "대전광역시 유성구 가정북로 76",
+        "detail": "(장동, 대덕소프트웨어마이스터고등학교)"
+      },
+      "slug": "daedeok-software-meister-high-school-7430310",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430311",
+      "code": "7430311",
+      "name": "대전전자디자인고등학교",
+      "englishName": "Daejeon Electronic Design High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34058",
+        "road": "대전광역시 유성구 대덕대로 939",
+        "detail": "(화암동/ 대전전자디자인고등학교)"
+      },
+      "slug": "daejeon-electronic-design-high-school-7430311",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430324",
+      "code": "7430324",
+      "name": "계룡디지텍고등학교",
+      "englishName": "Kyeryong Digitech High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34613",
+        "road": "대전광역시 동구 소랑길 64",
+        "detail": "(삼성동)"
+      },
+      "slug": "kyeryong-digitech-high-school-7430324",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430325",
+      "code": "7430325",
+      "name": "대전대성고등학교",
+      "englishName": "Daejeon Daeseong High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34825",
+        "road": "대전광역시 중구 목동로 23",
+        "detail": "(목동)"
+      },
+      "slug": "daejeon-daeseong-high-school-7430325",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430326",
+      "code": "7430326",
+      "name": "대전대성여자고등학교",
+      "englishName": "Daejeon Daeseong Girls` High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34601",
+        "road": "대전광역시 동구 대성2길 20",
+        "detail": "(가양동)"
+      },
+      "slug": "daejeon-daeseong-girls-high-school-7430326",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430329",
+      "code": "7430329",
+      "name": "대전생활과학고등학교",
+      "englishName": "Daejeon Practical Science High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34432",
+        "road": "대전광역시 대덕구 동산초교로63번길 12",
+        "detail": "(오정동)"
+      },
+      "slug": "daejeon-practical-science-high-school-7430329",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7430351",
+      "code": "7430351",
+      "name": "대전도시과학고등학교",
+      "englishName": "Daejeon Urban Science High School",
+      "schoolType": "high",
+      "schoolTypeName": "고등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34231",
+        "road": "대전광역시 유성구 진잠로42번길 35",
+        "detail": "(원내동, 대전도시과학고등학교)"
+      },
+      "slug": "daejeon-urban-science-high-school-7430351",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441012",
+      "code": "7441012",
+      "name": "대전가양중학교",
+      "englishName": "Daejeon Gayang Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34531",
+        "road": "대전광역시 동구 비래서로62번길 100",
+        "detail": "(가양동/ 대전가양중학교)"
+      },
+      "slug": "daejeon-gayang-middle-school-7441012",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441013",
+      "code": "7441013",
+      "name": "대전가오중학교",
+      "englishName": "Daejeon Gao Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34680",
+        "road": "대전광역시 동구 은어송로 79",
+        "detail": "(가오동/ 대전가오중학교)"
+      },
+      "slug": "daejeon-gao-middle-school-7441013",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441014",
+      "code": "7441014",
+      "name": "대전글꽃중학교",
+      "englishName": "Daejeon Geulkkot Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34957",
+        "road": "대전광역시 중구 계룡로918번길 103",
+        "detail": "(문화동/ 대전글꽃중학교)"
+      },
+      "slug": "daejeon-geulkkot-middle-school-7441014",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441015",
+      "code": "7441015",
+      "name": "대전대문중학교",
+      "englishName": "Daejeon Daemon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35008",
+        "road": "대전광역시 중구 송리로 33",
+        "detail": "(문화동/ 대전대문중학교)"
+      },
+      "slug": "daejeon-daemon-middle-school-7441015",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014073000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441016",
+      "code": "7441016",
+      "name": "대전대청중학교",
+      "englishName": "Daejeon Daecheong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34308",
+        "road": "대전광역시 대덕구 신탄진동로 81",
+        "detail": "(신탄진동/ 대청중학교)"
+      },
+      "slug": "daejeon-daecheong-middle-school-7441016",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441017",
+      "code": "7441017",
+      "name": "대전대화중학교",
+      "englishName": "Daejeon Daehwa Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34379",
+        "road": "대전광역시 대덕구 대오길 9",
+        "detail": "(오정동/ 대화중학교)"
+      },
+      "slug": "daejeon-daehwa-middle-school-7441017",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441018",
+      "code": "7441018",
+      "name": "대전동산중학교",
+      "englishName": "Daejon Dongsan Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34960",
+        "road": "대전광역시 중구 문화로 183",
+        "detail": "(문화동)"
+      },
+      "slug": "daejon-dongsan-middle-school-7441018",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441019",
+      "code": "7441019",
+      "name": "대전매봉중학교",
+      "englishName": "Daejeon Maebong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34399",
+        "road": "대전광역시 대덕구 선비마을로 165",
+        "detail": "(송촌동/대전매봉중학교)"
+      },
+      "slug": "daejeon-maebong-middle-school-7441019",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441020",
+      "code": "7441020",
+      "name": "대전문화여자중학교",
+      "englishName": "Daejeon Munhwa girls Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35018",
+        "road": "대전광역시 중구 문화로218번길 63",
+        "detail": "/ 대전문화여자중학교 (문화동)"
+      },
+      "slug": "daejeon-munhwa-girls-middle-school-7441020",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441021",
+      "code": "7441021",
+      "name": "대전법동중학교",
+      "englishName": "Daejeon Beopdong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34406",
+        "road": "대전광역시 대덕구 쌍청당로 55",
+        "detail": "(법동)"
+      },
+      "slug": "daejeon-beopdong-middle-school-7441021",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441022",
+      "code": "7441022",
+      "name": "대전송촌중학교",
+      "englishName": "Daejeon Songchon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34404",
+        "road": "대전광역시 대덕구 계족산로 110",
+        "detail": "(송촌동)"
+      },
+      "slug": "daejeon-songchon-middle-school-7441022",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441023",
+      "code": "7441023",
+      "name": "대전여자중학교",
+      "englishName": "Daejeon Girls Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34919",
+        "road": "대전광역시 중구 보문로230번길 69",
+        "detail": "/ 대전여자중학교 (대흥동)"
+      },
+      "slug": "daejeon-girls-middle-school-7441023",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441024",
+      "code": "7441024",
+      "name": "대전용운중학교",
+      "englishName": "Daejeon Yong-un Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34522",
+        "road": "대전광역시 동구 용운로 208",
+        "detail": "(용운동/ 용운중학교)"
+      },
+      "slug": "daejeon-yong-un-middle-school-7441024",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441025",
+      "code": "7441025",
+      "name": "대전용전중학교",
+      "englishName": "Daejeon Yongjeon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34427",
+        "road": "대전광역시 대덕구 한밭대로1146번길 46",
+        "detail": "/ 대전용전중학교 (중리동)"
+      },
+      "slug": "daejeon-yongjeon-middle-school-7441025",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441026",
+      "code": "7441026",
+      "name": "대전은어송중학교",
+      "englishName": "Daejeon Euneosong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34698",
+        "road": "대전광역시 동구 동구청로 26",
+        "detail": "(대성동/ 대전은어송중학교)"
+      },
+      "slug": "daejeon-euneosong-middle-school-7441026",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441028",
+      "code": "7441028",
+      "name": "대전중앙중학교",
+      "englishName": "Daejeon Jung-ang Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34804",
+        "road": "대전광역시 중구 대종로 634",
+        "detail": "(중촌동)"
+      },
+      "slug": "daejeon-jung-ang-middle-school-7441028",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441029",
+      "code": "7441029",
+      "name": "대전중학교",
+      "englishName": "Daejeon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34932",
+        "road": "대전광역시 중구 수도산로 9",
+        "detail": "/ 대전중학교 (대흥동/ 대전중학교)"
+      },
+      "slug": "daejeon-middle-school-7441029",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441030",
+      "code": "7441030",
+      "name": "대전태평중학교",
+      "englishName": "Daejeon Tae-pyeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34877",
+        "road": "대전광역시 중구 수침로111번길 12",
+        "detail": "(태평동)"
+      },
+      "slug": "daejeon-tae-pyeong-middle-school-7441030",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014068000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441031",
+      "code": "7441031",
+      "name": "동대전중학교",
+      "englishName": "Dongdaejeon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34505",
+        "road": "대전광역시 동구 충정로 73-6",
+        "detail": "(가양동/ 동대전중학교)"
+      },
+      "slug": "dongdaejeon-middle-school-7441031",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441032",
+      "code": "7441032",
+      "name": "동명중학교",
+      "englishName": "Dong Myung Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35059",
+        "road": "대전광역시 중구 사득로54번길 29",
+        "detail": "(석교동/ 동명중학교)"
+      },
+      "slug": "dong-myung-middle-school-7441032",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441033",
+      "code": "7441033",
+      "name": "동신중학교",
+      "englishName": "Dongsin Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34674",
+        "road": "대전광역시 동구 동부로 56-22",
+        "detail": "(판암동/ 동신중학교)"
+      },
+      "slug": "dongsin-middle-school-7441033",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011055200"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441034",
+      "code": "7441034",
+      "name": "보문중학교",
+      "englishName": "Bomoon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34619",
+        "road": "대전광역시 동구 우암로 57",
+        "detail": "(삼성동/ 보문중학교)"
+      },
+      "slug": "bomoon-middle-school-7441034",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441036",
+      "code": "7441036",
+      "name": "신탄중앙중학교",
+      "englishName": "SinTanJungAng Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34330",
+        "road": "대전광역시 대덕구 덕암로 233",
+        "detail": "/ 24 (덕암동)"
+      },
+      "slug": "sintanjungang-middle-school-7441036",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441037",
+      "code": "7441037",
+      "name": "신탄진중학교",
+      "englishName": "Sintanjin Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34317",
+        "road": "대전광역시 대덕구 석봉로 15",
+        "detail": "(석봉동/ 신탄진중학교)"
+      },
+      "slug": "sintanjin-middle-school-7441037",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441038",
+      "code": "7441038",
+      "name": "오정중학교",
+      "englishName": "Ojeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34441",
+        "road": "대전광역시 대덕구 한남로150번길 135",
+        "detail": "(오정동/ 오정중학교)"
+      },
+      "slug": "ojeong-middle-school-7441038",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441039",
+      "code": "7441039",
+      "name": "우송중학교",
+      "englishName": "Woosong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34609",
+        "road": "대전광역시 동구 동대전로131번길 53",
+        "detail": "(자양동/ 우송고등학교/우송중학교)"
+      },
+      "slug": "woosong-middle-school-7441039",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441040",
+      "code": "7441040",
+      "name": "중리중학교",
+      "englishName": "Jungni  Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34389",
+        "road": "대전광역시 대덕구 중리동로 85",
+        "detail": "(중리동/ 대전중리중학교)"
+      },
+      "slug": "jungni-middle-school-7441040",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441041",
+      "code": "7441041",
+      "name": "청란여자중학교",
+      "englishName": "CheongRan Girls Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35046",
+        "road": "대전광역시 중구 보문로 95번길40",
+        "detail": "(부사동)"
+      },
+      "slug": "cheongran-girls-middle-school-7441041",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441042",
+      "code": "7441042",
+      "name": "충남여자중학교",
+      "englishName": "Chungnam Girls Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34849",
+        "road": "대전광역시 중구 동서대로 1368",
+        "detail": "(목동/충남여자중학교)"
+      },
+      "slug": "chungnam-girls-middle-school-7441042",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441043",
+      "code": "7441043",
+      "name": "충남중학교",
+      "englishName": "Chungnam Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34641",
+        "road": "대전광역시 동구 계족로 123",
+        "detail": "(신흥동/ 충남중학교)"
+      },
+      "slug": "chungnam-middle-school-7441043",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011054500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441044",
+      "code": "7441044",
+      "name": "한밭여자중학교",
+      "englishName": "Hanbat Girls  Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34654",
+        "road": "대전광역시 동구 동대전로110번길 74-57",
+        "detail": "/ 한밭여자중학교 (대동)"
+      },
+      "slug": "hanbat-girls-middle-school-7441044",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011058500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441045",
+      "code": "7441045",
+      "name": "한밭중학교",
+      "englishName": "HanBat Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34624",
+        "road": "대전광역시 동구 태전로 67",
+        "detail": "/ 한밭중학교 (삼성동)"
+      },
+      "slug": "hanbat-middle-school-7441045",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441046",
+      "code": "7441046",
+      "name": "호수돈여자중학교",
+      "englishName": "Holston Girls Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34859",
+        "road": "대전광역시 중구 선화로 50",
+        "detail": "(용두동/호수돈여자중.고등학교)"
+      },
+      "slug": "holston-girls-middle-school-7441046",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014065500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441047",
+      "code": "7441047",
+      "name": "회덕중학교",
+      "englishName": "Hoedeok Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34346",
+        "road": "대전광역시 대덕구 신탄진로218번길 22",
+        "detail": "(와동/ 대전회덕중학교)"
+      },
+      "slug": "hoedeok-middle-school-7441047",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441048",
+      "code": "7441048",
+      "name": "대전가양초등학교",
+      "englishName": "Daejeon Gayang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34593",
+        "road": "대전광역시 동구 가양로 61",
+        "detail": "(가양동/ 대전가양초등학교)"
+      },
+      "slug": "daejeon-gayang-elementary-school-7441048",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441049",
+      "code": "7441049",
+      "name": "대전가오초등학교",
+      "englishName": "Daejeon Gao Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34680",
+        "road": "대전광역시 동구 신기로 112",
+        "detail": "/ 가오초등학교 (가오동)"
+      },
+      "slug": "daejeon-gao-elementary-school-7441049",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441050",
+      "code": "7441050",
+      "name": "대전글꽃초등학교",
+      "englishName": "Daejeon Geulggot Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34957",
+        "road": "대전광역시 중구 계룡로918번길 97",
+        "detail": "/ 글꽃초등학교 (문화동/ 대전글꽃초등학교)"
+      },
+      "slug": "daejeon-geulggot-elementary-school-7441050",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441051",
+      "code": "7441051",
+      "name": "대전대동초등학교",
+      "englishName": "Daejeon Daedong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34659",
+        "road": "대전광역시 동구 대동초등3길 21",
+        "detail": "(대동/ 대전대동초등학교)"
+      },
+      "slug": "daejeon-daedong-elementary-school-7441051",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011058500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441052",
+      "code": "7441052",
+      "name": "대전대룡초등학교",
+      "englishName": "Daejeon Daeryong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34526",
+        "road": "대전광역시 동구 백룡로 123",
+        "detail": "(용운동/ 대전대룡초등학교)"
+      },
+      "slug": "daejeon-daeryong-elementary-school-7441052",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441053",
+      "code": "7441053",
+      "name": "대전대문초등학교",
+      "englishName": "Daejeon Daemun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35008",
+        "road": "대전광역시 중구 송리로 11",
+        "detail": "(문화동/ 대전대문초등학교)"
+      },
+      "slug": "daejeon-daemun-elementary-school-7441053",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014073000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441054",
+      "code": "7441054",
+      "name": "대전대신초등학교",
+      "englishName": "Daejeon Daesin Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35042",
+        "road": "대전광역시 중구 솔밭로16번길 17",
+        "detail": "(대사동/ 대전대신초등학교)"
+      },
+      "slug": "daejeon-daesin-elementary-school-7441054",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441055",
+      "code": "7441055",
+      "name": "대전대암초등학교",
+      "englishName": "Daejeon Daeam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34664",
+        "road": "대전광역시 동구 동부로 55-61",
+        "detail": "(판암동/ 대전대암초등학교)"
+      },
+      "slug": "daejeon-daeam-elementary-school-7441055",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011055200"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441056",
+      "code": "7441056",
+      "name": "대전대양초등학교",
+      "englishName": "Daejeon Daeyang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34423",
+        "road": "대전광역시 대덕구 송촌로 67",
+        "detail": "(송촌동/ 대전대양초등학교)"
+      },
+      "slug": "daejeon-daeyang-elementary-school-7441056",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441057",
+      "code": "7441057",
+      "name": "대전대화초등학교",
+      "englishName": "Daejeon Daehwa Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34375",
+        "road": "대전광역시 대덕구 대화로 242-36",
+        "detail": "/ 대전대화초등학교 (대화동)"
+      },
+      "slug": "daejeon-daehwa-elementary-school-7441057",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441058",
+      "code": "7441058",
+      "name": "대전대흥초등학교",
+      "englishName": "Daejeon Daehung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34938",
+        "road": "대전광역시 중구 수도산로 12",
+        "detail": "(대흥동/대흥초등학교)"
+      },
+      "slug": "daejeon-daehung-elementary-school-7441058",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441059",
+      "code": "7441059",
+      "name": "대전동광초등학교",
+      "englishName": "Daejeon Dongkoang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34515",
+        "road": "대전 동구 백룡로11번길 20",
+        "detail": "/ 대전동광초등학교 (자양동/대전동광초등학교)"
+      },
+      "slug": "daejeon-dongkoang-elementary-school-7441059",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441060",
+      "code": "7441060",
+      "name": "대전동도초등학교",
+      "englishName": "Daejeon Dongdo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34442",
+        "road": "대전광역시 대덕구 한남로150번길 27",
+        "detail": "(오정동/ 동도초등학교)"
+      },
+      "slug": "daejeon-dongdo-elementary-school-7441060",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441061",
+      "code": "7441061",
+      "name": "대전동문초등학교",
+      "englishName": "Daejon Dongmun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34998",
+        "road": "대전광역시 중구 문화로 200",
+        "detail": "(문화동/ 대전동문초등학교)"
+      },
+      "slug": "daejon-dongmun-elementary-school-7441061",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441062",
+      "code": "7441062",
+      "name": "대전동산초등학교",
+      "englishName": "Daejeon Dongsan Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34432",
+        "road": "대전광역시 대덕구 동산초교로63번길 50",
+        "detail": "/ 대전동산초등학교 (오정동)"
+      },
+      "slug": "daejeon-dongsan-elementary-school-7441062",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441063",
+      "code": "7441063",
+      "name": "대전동서초등학교",
+      "englishName": "Daejeon Dongseo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34569",
+        "road": "대전광역시 동구 동서대로 1522",
+        "detail": "(삼성동/ 대전동서초등학교)"
+      },
+      "slug": "daejeon-dongseo-elementary-school-7441063",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441064",
+      "code": "7441064",
+      "name": "대전매봉초등학교",
+      "englishName": "Daejeon Maebong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34399",
+        "road": "대전광역시 대덕구 선비마을로 155",
+        "detail": "(송촌동/ 대전매봉초등학교)"
+      },
+      "slug": "daejeon-maebong-elementary-school-7441064",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441065",
+      "code": "7441065",
+      "name": "대전목동초등학교",
+      "englishName": "Daejon Mokdong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34816",
+        "road": "대전광역시 중구 목중로 19번길",
+        "detail": "/ 70 (목동)"
+      },
+      "slug": "daejon-mokdong-elementary-school-7441065",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441066",
+      "code": "7441066",
+      "name": "대전목상초등학교",
+      "englishName": "Daejeon Moksang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34323",
+        "road": "대전광역시 대덕구 대덕대로1486번길 117",
+        "detail": "(목상동/ 대전목상초등학교)"
+      },
+      "slug": "daejeon-moksang-elementary-school-7441066",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441067",
+      "code": "7441067",
+      "name": "대전목양초등학교",
+      "englishName": "Daejeon Mokyang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34818",
+        "road": "대전광역시 중구 목동로 69",
+        "detail": "(목동/ 목양초등학교)"
+      },
+      "slug": "daejeon-mokyang-elementary-school-7441067",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441068",
+      "code": "7441068",
+      "name": "대전문성초등학교",
+      "englishName": "Daejeon Munseong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34996",
+        "road": "대전광역시 중구 유등천동로292번길 89-14",
+        "detail": "/ 대전문성초등학교 (산성동)"
+      },
+      "slug": "daejeon-munseong-elementary-school-7441068",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441069",
+      "code": "7441069",
+      "name": "대전문창초등학교",
+      "englishName": "Deajeon Munchang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35027",
+        "road": "대전광역시 중구 문창로 55",
+        "detail": "(부사동/ 대전문창초등학교)"
+      },
+      "slug": "deajeon-munchang-elementary-school-7441069",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441070",
+      "code": "7441070",
+      "name": "대전문화초등학교",
+      "englishName": "Daejeon Munhwa Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34992",
+        "road": "대전광역시 중구 문화로78번안길 70",
+        "detail": "(문화동/ 대전문화초등학교)"
+      },
+      "slug": "daejeon-munhwa-elementary-school-7441070",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014073000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441071",
+      "code": "7441071",
+      "name": "대전버드내초등학교",
+      "englishName": "Daejeon Budnae Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34890",
+        "road": "대전광역시 중구 태평로 21",
+        "detail": "/ 대전버드내초등학교 (태평동)"
+      },
+      "slug": "daejeon-budnae-elementary-school-7441071",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014069000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441072",
+      "code": "7441072",
+      "name": "대전법동초등학교",
+      "englishName": "Daejeon Beopdong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34398",
+        "road": "대전광역시 대덕구 계족로664번길 74",
+        "detail": "(법동/대전법동초등학교)"
+      },
+      "slug": "daejeon-beopdong-elementary-school-7441072",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441073",
+      "code": "7441073",
+      "name": "대전보성초등학교",
+      "englishName": "Daejeon Bosung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35010",
+        "road": "대전광역시 중구 보문산로141번길 34",
+        "detail": "(문화동/ 대전보성초등학교)"
+      },
+      "slug": "daejeon-bosung-elementary-school-7441073",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014073000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441074",
+      "code": "7441074",
+      "name": "대전보운초등학교",
+      "englishName": "Daejeon Boun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35023",
+        "road": "대전광역시 중구 대종로315번길 42",
+        "detail": "(부사동/대전보운초등학교)"
+      },
+      "slug": "daejeon-boun-elementary-school-7441074",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441075",
+      "code": "7441075",
+      "name": "대전비래초등학교",
+      "englishName": "Daejeon Birae Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34414",
+        "road": "대전광역시 대덕구 우암로492번길 65",
+        "detail": "(비래동/ 대전비래초등학교)"
+      },
+      "slug": "daejeon-birae-elementary-school-7441075",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023053300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441076",
+      "code": "7441076",
+      "name": "대전산성초등학교",
+      "englishName": "Daejeon Sanseong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35057",
+        "road": "대전광역시 중구 대둔산로 332",
+        "detail": "(사정동/산성초등학교)"
+      },
+      "slug": "daejeon-sanseong-elementary-school-7441076",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441077",
+      "code": "7441077",
+      "name": "대전삼성초등학교",
+      "englishName": "Daejeon Samsung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34623",
+        "road": "대전광역시 동구 대전로867번길 12",
+        "detail": "(삼성동)"
+      },
+      "slug": "daejeon-samsung-elementary-school-7441077",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441078",
+      "code": "7441078",
+      "name": "대전석교초등학교",
+      "englishName": "Daejeon Seokgyo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35036",
+        "road": "대전광역시 중구 대종로204번길 12",
+        "detail": "(석교동/대전석교초등학교)"
+      },
+      "slug": "daejeon-seokgyo-elementary-school-7441078",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441079",
+      "code": "7441079",
+      "name": "대전석봉초등학교",
+      "englishName": "Daejeon Seokbong elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34313",
+        "road": "대전광역시 대덕구 신탄진남로 20",
+        "detail": "/ 대전석봉초등학교 (신탄진동/ 대전석봉초등학교)"
+      },
+      "slug": "daejeon-seokbong-elementary-school-7441079",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441080",
+      "code": "7441080",
+      "name": "대전선화초등학교",
+      "englishName": "Daejon Seonhwa Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34831",
+        "road": "대전광역시 중구 선화로 159",
+        "detail": "(선화동/ 대전선화초등학교)"
+      },
+      "slug": "daejon-seonhwa-elementary-school-7441080",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014053500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441081",
+      "code": "7441081",
+      "name": "대전성남초등학교",
+      "englishName": "Daejeon Seongnam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34581",
+        "road": "대전광역시 동구 성남로32번길 5",
+        "detail": "(성남동/ 대전성남초등학교)"
+      },
+      "slug": "daejeon-seongnam-elementary-school-7441081",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011066500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441082",
+      "code": "7441082",
+      "name": "대전성모초등학교",
+      "englishName": "Daejeon St Marys Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34943",
+        "road": "대전광역시 중구 대흥로 62",
+        "detail": "(대흥동/대전성모초등학교)"
+      },
+      "slug": "daejeon-st-marys-elementary-school-7441082",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441083",
+      "code": "7441083",
+      "name": "대전송촌초등학교",
+      "englishName": "Daejeon Songchon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34404",
+        "road": "대전광역시 대덕구 동춘당로54번길 35",
+        "detail": "(송촌동/ 대전송촌초등학교)"
+      },
+      "slug": "daejeon-songchon-elementary-school-7441083",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441084",
+      "code": "7441084",
+      "name": "대전신평초등학교",
+      "englishName": "Daejeon Sinpyung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34885",
+        "road": "대전광역시 중구 유등천동로 478",
+        "detail": "/ 대전신평초등학교 (태평동/대전신평초등학교)"
+      },
+      "slug": "daejeon-sinpyung-elementary-school-7441084",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014069000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441085",
+      "code": "7441085",
+      "name": "대전신흥초등학교",
+      "englishName": "Daejeon Sinheung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34637",
+        "road": "대전광역시 동구 동대전로46번길 76",
+        "detail": "/ 대전신흥초등학교 (신흥동/ 대전신흥초등학교)"
+      },
+      "slug": "daejeon-sinheung-elementary-school-7441085",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011054500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441086",
+      "code": "7441086",
+      "name": "대전양지초등학교",
+      "englishName": "Deajeon Yangji Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34406",
+        "road": "대전광역시 대덕구 쌍청당로 45",
+        "detail": "(법동)"
+      },
+      "slug": "deajeon-yangji-elementary-school-7441086",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441087",
+      "code": "7441087",
+      "name": "대전오류초등학교",
+      "englishName": "Daejeon Oryu Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34907",
+        "road": "대전광역시 중구 오류로 46",
+        "detail": "(오류동)"
+      },
+      "slug": "daejeon-oryu-elementary-school-7441087",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014067000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441088",
+      "code": "7441088",
+      "name": "대전옥계초등학교",
+      "englishName": "Daejeon Ok-gye Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35070",
+        "road": "대전광역시 중구 모암로 35",
+        "detail": "/ 대전옥계초등학교 (옥계동/ 대전옥계초등학교)"
+      },
+      "slug": "daejeon-ok-gye-elementary-school-7441088",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441089",
+      "code": "7441089",
+      "name": "대전용운초등학교",
+      "englishName": "Deajeon Yong-oon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34522",
+        "road": "대전광역시 동구 용운로 204",
+        "detail": "(용운동)"
+      },
+      "slug": "deajeon-yong-oon-elementary-school-7441089",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441090",
+      "code": "7441090",
+      "name": "대전용전초등학교",
+      "englishName": "Daejon Yongjon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34541",
+        "road": "대전광역시 동구 계족로505번길 49",
+        "detail": "(용전동/대전용전초등학교)"
+      },
+      "slug": "daejon-yongjon-elementary-school-7441090",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441091",
+      "code": "7441091",
+      "name": "대전원평초등학교",
+      "englishName": "Daejeon Wonpyeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34899",
+        "road": "대전광역시 중구 계백로1615번길 46",
+        "detail": "/ 대전원평초등학교 (유천동)"
+      },
+      "slug": "daejeon-wonpyeong-elementary-school-7441091",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014071000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441092",
+      "code": "7441092",
+      "name": "대전유평초등학교",
+      "englishName": "Daejeon Yupyung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34877",
+        "road": "대전광역시 중구 수침로 123",
+        "detail": "(태평동)"
+      },
+      "slug": "daejeon-yupyung-elementary-school-7441092",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014068000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441093",
+      "code": "7441093",
+      "name": "대전은어송초등학교",
+      "englishName": "Daejeon Euneosong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34696",
+        "road": "대전광역시 동구 대전로 396",
+        "detail": "/ 대전은어송초등학교 (대성동)"
+      },
+      "slug": "daejeon-euneosong-elementary-school-7441093",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441094",
+      "code": "7441094",
+      "name": "대전자양초등학교",
+      "englishName": "Daejeon Jayang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34609",
+        "road": "대전광역시 동구 계족로 184-55",
+        "detail": "(자양동/ 대전자양초등학교)"
+      },
+      "slug": "daejeon-jayang-elementary-school-7441094",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441095",
+      "code": "7441095",
+      "name": "대전중리초등학교",
+      "englishName": "Daejeon JungRi Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34386",
+        "road": "대전광역시 대덕구 중리북로 20",
+        "detail": "(법동/ 대전중리초등학교)"
+      },
+      "slug": "daejeon-jungri-elementary-school-7441095",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441096",
+      "code": "7441096",
+      "name": "대전중앙초등학교",
+      "englishName": "Daejeon Jung-ang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34849",
+        "road": "대전광역시 중구 선화로43번길 99",
+        "detail": "(선화동/ 대전중앙초등학교)"
+      },
+      "slug": "daejeon-jung-ang-elementary-school-7441096",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014053500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441097",
+      "code": "7441097",
+      "name": "대전중원초등학교",
+      "englishName": "Daejeon Jungwon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34389",
+        "road": "대전광역시 대덕구 중리로64번길 45",
+        "detail": "(중리동)"
+      },
+      "slug": "daejeon-jungwon-elementary-school-7441097",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441098",
+      "code": "7441098",
+      "name": "대전중촌초등학교",
+      "englishName": "Daejeon Jungchon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34803",
+        "road": "대전광역시 중구 대종로 684",
+        "detail": "(중촌동/대전중촌초등학교)"
+      },
+      "slug": "daejeon-jungchon-elementary-school-7441098",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441099",
+      "code": "7441099",
+      "name": "대전천동초등학교",
+      "englishName": "Daejeon Cheondong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34684",
+        "road": "대전광역시 동구 안샘로 8",
+        "detail": "(천동) 대전천동초등학교"
+      },
+      "slug": "daejeon-cheondong-elementary-school-7441099",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441100",
+      "code": "7441100",
+      "name": "대전태평초등학교",
+      "englishName": "Daejeon Taepyeoung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34886",
+        "road": "대전광역시 중구 유천로 117",
+        "detail": "(태평동/ 대전태평초등학교)"
+      },
+      "slug": "daejeon-taepyeoung-elementary-school-7441100",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014069000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441101",
+      "code": "7441101",
+      "name": "대전판암초등학교",
+      "englishName": "Daejeon Panam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34676",
+        "road": "대전광역시 동구 옥천로180번길 32",
+        "detail": "/ 판암초등학교 (판암동)"
+      },
+      "slug": "daejeon-panam-elementary-school-7441101",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011055100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441102",
+      "code": "7441102",
+      "name": "대전현암초등학교",
+      "englishName": "Daejeon Hyeonam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34567",
+        "road": "대전광역시 동구 현암로 19",
+        "detail": "/ 대전현암초등학교 (삼성동)"
+      },
+      "slug": "daejeon-hyeonam-elementary-school-7441102",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011069500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441103",
+      "code": "7441103",
+      "name": "대전화정초등학교",
+      "englishName": "Daejeon Hwajeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34437",
+        "road": "대전광역시 대덕구 한밭대로1024번길 20",
+        "detail": "(오정동/ 화정초등학교)"
+      },
+      "slug": "daejeon-hwajeong-elementary-school-7441103",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441104",
+      "code": "7441104",
+      "name": "대전흥룡초등학교",
+      "englishName": "Daejeon Heungryong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34508",
+        "road": "대전광역시 동구 동대전로256번길 21",
+        "detail": "(가양동/ 대전흥룡초등학교)"
+      },
+      "slug": "daejeon-heungryong-elementary-school-7441104",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441105",
+      "code": "7441105",
+      "name": "동대전초등학교",
+      "englishName": "Dongdaejeon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34531",
+        "road": "대전광역시 동구 비래서로62번길 60",
+        "detail": "(가양동/ 동대전초등학교)"
+      },
+      "slug": "dongdaejeon-elementary-school-7441105",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441106",
+      "code": "7441106",
+      "name": "동명초등학교",
+      "englishName": "Dong myung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34500",
+        "road": "대전광역시 동구 천개동로 16",
+        "detail": "/ 동명초등학교 (추동)"
+      },
+      "slug": "dong-myung-elementary-school-7441106",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011072500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441107",
+      "code": "7441107",
+      "name": "산내초등학교",
+      "englishName": "Sannae Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34703",
+        "road": "대전광역시 동구 산내로 1292",
+        "detail": "(낭월동/ 산내초등학교)"
+      },
+      "slug": "sannae-elementary-school-7441107",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441108",
+      "code": "7441108",
+      "name": "산서초등학교",
+      "englishName": "Sanseo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35086",
+        "road": "대전광역시 중구 남달미로 87",
+        "detail": "(목달동/ 산서초등학교)"
+      },
+      "slug": "sanseo-elementary-school-7441108",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441109",
+      "code": "7441109",
+      "name": "산흥초등학교",
+      "englishName": "Sanheung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34712",
+        "road": "대전광역시 동구 산내로 509",
+        "detail": "(상소동/ 산흥초등학교)"
+      },
+      "slug": "sanheung-elementary-school-7441109",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011074000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441110",
+      "code": "7441110",
+      "name": "새일초등학교",
+      "englishName": "Saeil Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34333",
+        "road": "대전광역시 대덕구 덕암로125번길 15",
+        "detail": "(덕암동/ 새일초등학교)"
+      },
+      "slug": "saeil-elementary-school-7441110",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441111",
+      "code": "7441111",
+      "name": "서대전초등학교",
+      "englishName": "Seodaejeon Elementry School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34858",
+        "road": "대전광역시 중구 선화로 17",
+        "detail": "(용두동/서대전초등학교)"
+      },
+      "slug": "seodaejeon-elementry-school-7441111",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014065500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441112",
+      "code": "7441112",
+      "name": "세천초등학교",
+      "englishName": "Sechon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34501",
+        "road": "대전광역시 동구 옥천로 610-12",
+        "detail": "(세천동/세천초등학교)"
+      },
+      "slug": "sechon-elementary-school-7441112",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011072500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441113",
+      "code": "7441113",
+      "name": "신탄진용정초등학교",
+      "englishName": "Sintanjinyongjeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34307",
+        "road": "대전광역시 대덕구 대청로 65",
+        "detail": "/ 신탄진용정초등학교 (신탄진동)"
+      },
+      "slug": "sintanjinyongjeong-elementary-school-7441113",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441114",
+      "code": "7441114",
+      "name": "신탄진초등학교",
+      "englishName": "Sintanjin Elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34317",
+        "road": "대전광역시 대덕구 석봉로3번길 50",
+        "detail": "/ 신탄진초등학교 (석봉동)"
+      },
+      "slug": "sintanjin-elementary-school-7441114",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441115",
+      "code": "7441115",
+      "name": "와동초등학교",
+      "englishName": "wadong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34349",
+        "road": "대전광역시 대덕구 신탄진로 189",
+        "detail": "(신대동/ 와동초등학교)"
+      },
+      "slug": "wadong-elementary-school-7441115",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441116",
+      "code": "7441116",
+      "name": "장동초등학교",
+      "englishName": "Jangdong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34345",
+        "road": "대전광역시 대덕구 장동로 223-37",
+        "detail": "(장동/ 대전장동초등학교)"
+      },
+      "slug": "jangdong-elementary-school-7441116",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441117",
+      "code": "7441117",
+      "name": "회덕초등학교",
+      "englishName": "Hoedeok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34360",
+        "road": "대전광역시 대덕구 대전로 1350",
+        "detail": "(읍내동)"
+      },
+      "slug": "hoedeok-elementary-school-7441117",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023052500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441256",
+      "code": "7441256",
+      "name": "대전새여울초등학교",
+      "englishName": "대전새여울초등학교",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34304",
+        "road": "대전광역시 대덕구 대덕대로 1585",
+        "detail": "/ 대전새여울초등학교"
+      },
+      "slug": "school-7441256",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441263",
+      "code": "7441263",
+      "name": "대전대성여자중학교",
+      "englishName": "Daejeon Daeseong Girls` Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34601",
+        "road": "대전광역시 동구 대성2길 20",
+        "detail": "(가양동)"
+      },
+      "slug": "daejeon-daeseong-girls-middle-school-7441263",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011062000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441264",
+      "code": "7441264",
+      "name": "대전대성중학교",
+      "englishName": "Daejeon Daesung Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34825",
+        "road": "대전광역시 중구 목동로 23",
+        "detail": "(목동)"
+      },
+      "slug": "daejeon-daesung-middle-school-7441264",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441266",
+      "code": "7441266",
+      "name": "대전경덕중학교",
+      "englishName": "Daejeon Gyeongdeok Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34432",
+        "road": "대전광역시 대덕구 동산초교로63번길 12",
+        "detail": "(오정동)"
+      },
+      "slug": "daejeon-gyeongdeok-middle-school-7441266",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7441277",
+      "code": "7441277",
+      "name": "대전신일중학교",
+      "englishName": "Daejeon Shinil Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35058",
+        "road": "대전광역시 중구 부사로32번길 27",
+        "detail": "(부사동/대전신일여자중학교)"
+      },
+      "slug": "daejeon-shinil-middle-school-7441277",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451009",
+      "code": "7451009",
+      "name": "가수원중학교",
+      "englishName": "Gasuwon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35389",
+        "road": "대전광역시 서구 가수원로 26",
+        "detail": "(가수원동)"
+      },
+      "slug": "gasuwon-middle-school-7451009",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451010",
+      "code": "7451010",
+      "name": "갈마중학교",
+      "englishName": "Galma Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35277",
+        "road": "대전광역시 서구 계룡로326번길 138",
+        "detail": "(갈마동/갈마중학교)"
+      },
+      "slug": "galma-middle-school-7451010",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451011",
+      "code": "7451011",
+      "name": "기성중학교",
+      "englishName": "Giseong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35426",
+        "road": "대전광역시 서구 장안로 54",
+        "detail": "/(흑석동)"
+      },
+      "slug": "giseong-middle-school-7451011",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451012",
+      "code": "7451012",
+      "name": "대덕중학교",
+      "englishName": "Daedeok Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34131",
+        "road": "대전광역시 유성구 대덕대로 515",
+        "detail": "(가정동)"
+      },
+      "slug": "daedeok-middle-school-7451012",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451013",
+      "code": "7451013",
+      "name": "대전갑천중학교",
+      "englishName": "Daejeon Gapcheon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35216",
+        "road": "대전광역시 서구 월평동로 80",
+        "detail": "(월평동/ 갑천중학교)"
+      },
+      "slug": "daejeon-gapcheon-middle-school-7451013",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451014",
+      "code": "7451014",
+      "name": "대전관저중학교",
+      "englishName": "Daejeon Gwanjeo Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35359",
+        "road": "대전광역시 서구 관저동로 143",
+        "detail": "(관저동/ 관저중학교)"
+      },
+      "slug": "daejeon-gwanjeo-middle-school-7451014",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451015",
+      "code": "7451015",
+      "name": "대전관평중학교",
+      "englishName": "Daejeon Gwanpyeong middle school",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34021",
+        "road": "대전광역시 유성구 테크노4로 132",
+        "detail": "/ 대전 관평중학교 (관평동/관평중학교)"
+      },
+      "slug": "daejeon-gwanpyeong-middle-school-7451015",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451016",
+      "code": "7451016",
+      "name": "대전괴정중학교",
+      "englishName": "DAEJEON GOEJEONG MIDDLE SCHOOL",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35291",
+        "road": "대전광역시 서구 가장로 15",
+        "detail": "(괴정동/대전괴정중학교)"
+      },
+      "slug": "daejeon-goejeong-middle-school-7451016",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451017",
+      "code": "7451017",
+      "name": "대전구봉중학교",
+      "englishName": "Daejeon Gubong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35372",
+        "road": "대전광역시 서구 관저서로 86",
+        "detail": "(관저동/ 대전구봉중학교)"
+      },
+      "slug": "daejeon-gubong-middle-school-7451017",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451018",
+      "code": "7451018",
+      "name": "대전남선중학교",
+      "englishName": "Daejeon Namseon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35211",
+        "road": "대전광역시 서구 월평북로 41",
+        "detail": "(월평동/ 남선중학교)"
+      },
+      "slug": "daejeon-namseon-middle-school-7451018",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451019",
+      "code": "7451019",
+      "name": "대전내동중학교",
+      "englishName": "Daejeon Naedong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35343",
+        "road": "대전광역시 서구 배재로 263",
+        "detail": "(변동)"
+      },
+      "slug": "daejeon-naedong-middle-school-7451019",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451020",
+      "code": "7451020",
+      "name": "대전노은중학교",
+      "englishName": "Daejeon Noeun Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34084",
+        "road": "대전광역시 유성구 노은동로 104",
+        "detail": "(노은동/ 노은중학교)"
+      },
+      "slug": "daejeon-noeun-middle-school-7451020",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451021",
+      "code": "7451021",
+      "name": "대전느리울중학교",
+      "englishName": "Daejeon Neuriul Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35382",
+        "road": "대전광역시 서구 관저중로64번길 84",
+        "detail": "(관저동)"
+      },
+      "slug": "daejeon-neuriul-middle-school-7451021",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451022",
+      "code": "7451022",
+      "name": "대전대신중학교",
+      "englishName": "Daejeon Daesin Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35406",
+        "road": "대전광역시 서구 오량1길 98",
+        "detail": "/ 대전대신중학교 (복수동/ 대전대신중·고등학교)"
+      },
+      "slug": "daejeon-daesin-middle-school-7451022",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451023",
+      "code": "7451023",
+      "name": "대전도마중학교",
+      "englishName": "Daejeon Doma Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35338",
+        "road": "대전광역시 서구 도솔2길 22",
+        "detail": "(도마동/ 대전도마중학교)"
+      },
+      "slug": "daejeon-doma-middle-school-7451023",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451024",
+      "code": "7451024",
+      "name": "대전동화중학교",
+      "englishName": "Daejeon Donghwa Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34020",
+        "road": "대전광역시 유성구 관평2로 43",
+        "detail": "(관평동)"
+      },
+      "slug": "daejeon-donghwa-middle-school-7451024",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451025",
+      "code": "7451025",
+      "name": "대전두리중학교",
+      "englishName": "Daejeon Duri Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34005",
+        "road": "대전광역시 유성구 와룡로 37",
+        "detail": "(송강동)"
+      },
+      "slug": "daejeon-duri-middle-school-7451025",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451026",
+      "code": "7451026",
+      "name": "대전둔산중학교",
+      "englishName": "Daejeon Dunsan Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35231",
+        "road": "대전광역시 서구 갈마역로25번길 70",
+        "detail": "/ 대전둔산중학교 (갈마동)"
+      },
+      "slug": "daejeon-dunsan-middle-school-7451026",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451027",
+      "code": "7451027",
+      "name": "대전둔원중학교",
+      "englishName": "Daejeon Dunwon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35266",
+        "road": "대전광역시 서구 괴정로11번길 73",
+        "detail": "(갈마동/ 둔원중학교)"
+      },
+      "slug": "daejeon-dunwon-middle-school-7451027",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058200"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451028",
+      "code": "7451028",
+      "name": "대전만년중학교",
+      "englishName": "Daejeon Mannyon Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35200",
+        "road": "대전광역시 서구 만년남로 17",
+        "detail": "(만년동/ 대전만년중학교)"
+      },
+      "slug": "daejeon-mannyon-middle-school-7451028",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451029",
+      "code": "7451029",
+      "name": "대전문정중학교",
+      "englishName": "Daejeon Munjeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35245",
+        "road": "대전광역시 서구 둔산북로 232-11",
+        "detail": "/ 대전문정중학교 (둔산동)"
+      },
+      "slug": "daejeon-munjeong-middle-school-7451029",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451030",
+      "code": "7451030",
+      "name": "대전문지중학교",
+      "englishName": "Daejeon Munji Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34053",
+        "road": "대전광역시 유성구 전민로 53",
+        "detail": "(전민동/  대전문지중학교)"
+      },
+      "slug": "daejeon-munji-middle-school-7451030",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451031",
+      "code": "7451031",
+      "name": "대전버드내중학교",
+      "englishName": "Daejeon Beodeunae Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35332",
+        "road": "대전광역시 서구 유등로 285",
+        "detail": "(도마동)"
+      },
+      "slug": "daejeon-beodeunae-middle-school-7451031",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451032",
+      "code": "7451032",
+      "name": "대전변동중학교",
+      "englishName": "Daejeon Byeondong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35324",
+        "road": "대전광역시 서구 도산로181번길 39",
+        "detail": "(변동)"
+      },
+      "slug": "daejeon-byeondong-middle-school-7451032",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451033",
+      "code": "7451033",
+      "name": "대전봉산중학교",
+      "englishName": "Daejeon Bongsan Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35326",
+        "road": "대전광역시 서구 배재로262번길 60",
+        "detail": "(변동/ 봉산중학교)"
+      },
+      "slug": "daejeon-bongsan-middle-school-7451033",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451034",
+      "code": "7451034",
+      "name": "대전봉우중학교",
+      "englishName": "Daejeon Bongwoo Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35373",
+        "road": "대전광역시 서구 관저로 102",
+        "detail": "(관저동/ 대전봉우중학교)"
+      },
+      "slug": "daejeon-bongwoo-middle-school-7451034",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451035",
+      "code": "7451035",
+      "name": "대전삼육중학교",
+      "englishName": "Daejeon Sahmyook Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35340",
+        "road": "대전광역시 서구 도림1길 15",
+        "detail": "(도마동/ 삼육중학교/ 삼육초등학교)"
+      },
+      "slug": "daejeon-sahmyook-middle-school-7451035",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451036",
+      "code": "7451036",
+      "name": "대전삼천중학교",
+      "englishName": "Daejeon Samchun Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35207",
+        "road": "대전광역시 서구 문정로 271",
+        "detail": "(둔산동/ 삼천중학교)"
+      },
+      "slug": "daejeon-samchun-middle-school-7451036",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451037",
+      "code": "7451037",
+      "name": "대전서중학교",
+      "englishName": "Daejeon Seo Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35286",
+        "road": "대전광역시 서구 동서대로997번길 57",
+        "detail": "(괴정동/ 대전서중학교)"
+      },
+      "slug": "daejeon-seo-middle-school-7451037",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451038",
+      "code": "7451038",
+      "name": "대전송강중학교",
+      "englishName": "Daejeon Songgang Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34008",
+        "road": "대전광역시 유성구 와룡로 122",
+        "detail": "(송강동/ 송강중학교)"
+      },
+      "slug": "daejeon-songgang-middle-school-7451038",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451039",
+      "code": "7451039",
+      "name": "대전신계중학교",
+      "englishName": "Daejeon Singye Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35412",
+        "road": "대전광역시 서구 복수동로 40-30",
+        "detail": "(복수동)"
+      },
+      "slug": "daejeon-singye-middle-school-7451039",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451040",
+      "code": "7451040",
+      "name": "대전어은중학교",
+      "englishName": "Daejeon Eoeun Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34140",
+        "road": "대전광역시 유성구 농대로 56",
+        "detail": "/ 대전어은중학교 (어은동)"
+      },
+      "slug": "daejeon-eoeun-middle-school-7451040",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451041",
+      "code": "7451041",
+      "name": "대전외삼중학교",
+      "englishName": "Daejeon oe-sam Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34067",
+        "road": "대전광역시 유성구 반석동로 75",
+        "detail": "(반석동/ 외삼중학교)"
+      },
+      "slug": "daejeon-oe-sam-middle-school-7451041",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451042",
+      "code": "7451042",
+      "name": "대전월평중학교",
+      "englishName": "Daejeon Wolpyeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35223",
+        "road": "대전광역시 서구 월평동로 21",
+        "detail": "(월평동/ 월평중학교)"
+      },
+      "slug": "daejeon-wolpyeong-middle-school-7451042",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451043",
+      "code": "7451043",
+      "name": "대전자운중학교",
+      "englishName": "Daejeon Jaun Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34059",
+        "road": "대전광역시 유성구 자운로97번길 356",
+        "detail": "(신봉동/ 자운중학교)"
+      },
+      "slug": "daejeon-jaun-middle-school-7451043",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451044",
+      "code": "7451044",
+      "name": "대전장대중학교",
+      "englishName": "Daejeon Jangdae Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34171",
+        "road": "대전광역시 유성구 문화원로 26",
+        "detail": "(장대동/대전장대중학교)"
+      },
+      "slug": "daejeon-jangdae-middle-school-7451044",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451045",
+      "code": "7451045",
+      "name": "대전전민중학교",
+      "englishName": "Daejeon Jeonmin Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34049",
+        "road": "대전광역시 유성구 엑스포로466번길 97",
+        "detail": "(전민동/전민중학교)"
+      },
+      "slug": "daejeon-jeonmin-middle-school-7451045",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451046",
+      "code": "7451046",
+      "name": "대전정림중학교",
+      "englishName": "Daejeon Jeongrim Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35416",
+        "road": "대전광역시 서구 괴곡길 70",
+        "detail": "(괴곡동)"
+      },
+      "slug": "daejeon-jeongrim-middle-school-7451046",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451048",
+      "code": "7451048",
+      "name": "대전지족중학교",
+      "englishName": "Daejeon Jijok Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34083",
+        "road": "대전광역시 유성구 노은동로 193",
+        "detail": "(지족동)"
+      },
+      "slug": "daejeon-jijok-middle-school-7451048",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451049",
+      "code": "7451049",
+      "name": "대전체육중학교",
+      "englishName": "Daejeon Physical Education Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34195",
+        "road": "대전광역시 유성구 원신흥로40번길 6",
+        "detail": "(원신흥동/ 대전체육중고등학교)"
+      },
+      "slug": "daejeon-physical-education-middle-school-7451049",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451050",
+      "code": "7451050",
+      "name": "대전탄방중학교",
+      "englishName": "Daejeon Tanbang Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35249",
+        "road": "대전광역시 서구 문정로 181",
+        "detail": "(둔산동/ 탄방중학교)"
+      },
+      "slug": "daejeon-tanbang-middle-school-7451050",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451051",
+      "code": "7451051",
+      "name": "대전하기중학교",
+      "englishName": "Daejeon Hagi Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34098",
+        "road": "대전광역시 유성구 송림로48번길 6-30",
+        "detail": "/ 대전하기중학교 (하기동/ 대전하기중학교)"
+      },
+      "slug": "daejeon-hagi-middle-school-7451051",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451052",
+      "code": "7451052",
+      "name": "동방여자중학교",
+      "englishName": "Dongbang Girls' Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35404",
+        "road": "대전광역시 서구 복수중로 27",
+        "detail": "(복수동,동방여자중학교)"
+      },
+      "slug": "dongbang-girls-middle-school-7451052",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451053",
+      "code": "7451053",
+      "name": "성덕중학교",
+      "englishName": "Sungduk Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "34106",
+        "road": "대전광역시 유성구 신성로 19",
+        "detail": "(신성동/ 성덕중학교)"
+      },
+      "slug": "sungduk-middle-school-7451053",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451054",
+      "code": "7451054",
+      "name": "유성중학교",
+      "englishName": "Yuseong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34198",
+        "road": "대전광역시 유성구 상대로 33",
+        "detail": "/ 유성중학교 (상대동)"
+      },
+      "slug": "yuseong-middle-school-7451054",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451055",
+      "code": "7451055",
+      "name": "진잠중학교",
+      "englishName": "JinJam Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34231",
+        "road": "대전광역시 유성구 진잠로 60-23",
+        "detail": "(원내동/ 진잠중학교)"
+      },
+      "slug": "jinjam-middle-school-7451055",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451057",
+      "code": "7451057",
+      "name": "가수원초등학교",
+      "englishName": "Gasuwon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35387",
+        "road": "대전광역시 서구 벌곡로 1359",
+        "detail": "(가수원동/ 가수원초등학교)"
+      },
+      "slug": "gasuwon-elementary-school-7451057",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451058",
+      "code": "7451058",
+      "name": "구즉초등학교",
+      "englishName": "Gujeug Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34006",
+        "road": "대전광역시 유성구 구룡달전로 34",
+        "detail": "(봉산동)"
+      },
+      "slug": "gujeug-elementary-school-7451058",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451059",
+      "code": "7451059",
+      "name": "금성초등학교",
+      "englishName": "Geumsung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34116",
+        "road": "대전광역시 유성구 신성로72번길 5",
+        "detail": "(신성동/ 금성초등학교)"
+      },
+      "slug": "geumsung-elementary-school-7451059",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451060",
+      "code": "7451060",
+      "name": "기성초등학교",
+      "englishName": "Giseong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35426",
+        "road": "대전광역시 서구 기성초교길 42",
+        "detail": "(매노동)"
+      },
+      "slug": "giseong-elementary-school-7451060",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451061",
+      "code": "7451061",
+      "name": "기성초등학교길헌분교장",
+      "englishName": "Gilheon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35425",
+        "road": "대전광역시 서구 당고개길 48",
+        "detail": "(평촌동/ 기성초등학교 길헌분교장)"
+      },
+      "slug": "gilheon-elementary-school-7451061",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451062",
+      "code": "7451062",
+      "name": "남선초등학교",
+      "englishName": "Namsun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34204",
+        "road": "대전광역시 유성구 계백로93번길 277-29",
+        "detail": "(송정동/ 남선초등학교)"
+      },
+      "slug": "namsun-elementary-school-7451062",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451063",
+      "code": "7451063",
+      "name": "대덕초등학교",
+      "englishName": "Daedeok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34121",
+        "road": "대전광역시 유성구 대덕대로556번길 102",
+        "detail": "(도룡동)"
+      },
+      "slug": "daedeok-elementary-school-7451063",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451064",
+      "code": "7451064",
+      "name": "대덕초등학교도룡분교장",
+      "englishName": "Daedeok Elementary School Doryong Branch",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34125",
+        "road": "대전광역시 유성구 엑스포로97번길 100",
+        "detail": "(도룡동)"
+      },
+      "slug": "daedeok-elementary-school-doryong-branch-7451064",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451065",
+      "code": "7451065",
+      "name": "대전가장초등학교",
+      "englishName": "Daejeon Gajang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35311",
+        "road": "대전광역시 서구 가장로 150",
+        "detail": "(가장동/ 대전가장초등학교)"
+      },
+      "slug": "daejeon-gajang-elementary-school-7451065",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451066",
+      "code": "7451066",
+      "name": "대전갈마초등학교",
+      "englishName": "Daejeon Galma Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35227",
+        "road": "대전광역시 서구 월평동로 2",
+        "detail": "(갈마동/ 갈마초등학교)"
+      },
+      "slug": "daejeon-galma-elementary-school-7451066",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451067",
+      "code": "7451067",
+      "name": "대전갑천초등학교",
+      "englishName": "Daejeon Gabcheon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35210",
+        "road": "대전광역시 서구 월평동로 61",
+        "detail": "(월평동/ 갑천초등학교)"
+      },
+      "slug": "daejeon-gabcheon-elementary-school-7451067",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451068",
+      "code": "7451068",
+      "name": "대전관저초등학교",
+      "englishName": "Daejeon Kwanjeo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35359",
+        "road": "대전광역시 서구 관저동로 161",
+        "detail": "(관저동/ 관저초등학교)"
+      },
+      "slug": "daejeon-kwanjeo-elementary-school-7451068",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451069",
+      "code": "7451069",
+      "name": "대전관평초등학교",
+      "englishName": "Daejeon Gwan Pyeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34021",
+        "road": "대전광역시 유성구 테크노4로 132",
+        "detail": "(관평동)"
+      },
+      "slug": "daejeon-gwan-pyeong-elementary-school-7451069",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451070",
+      "code": "7451070",
+      "name": "대전교촌초등학교",
+      "englishName": "Daejeon Kyochon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34225",
+        "road": "대전광역시 유성구 진잠로149번길 42",
+        "detail": "(교촌동/대전교촌초등학교)"
+      },
+      "slug": "daejeon-kyochon-elementary-school-7451070",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451071",
+      "code": "7451071",
+      "name": "대전구봉초등학교",
+      "englishName": "Daejeon Gubong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35372",
+        "road": "대전광역시 서구 관저로 75",
+        "detail": "대전구봉초등학교"
+      },
+      "slug": "daejeon-gubong-elementary-school-7451071",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451072",
+      "code": "7451072",
+      "name": "대전금동초등학교",
+      "englishName": "Daejeon Geumdong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35371",
+        "road": "대전광역시 서구 관저로 45",
+        "detail": "(관저동/대전금동초등학교)"
+      },
+      "slug": "daejeon-geumdong-elementary-school-7451072",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451073",
+      "code": "7451073",
+      "name": "대전내동초등학교",
+      "englishName": "Daejeon Naedong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35315",
+        "road": "대전광역시 서구 동서대로1063번길 13",
+        "detail": "(내동/내동초등학교)"
+      },
+      "slug": "daejeon-naedong-elementary-school-7451073",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017057500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451074",
+      "code": "7451074",
+      "name": "대전노은초등학교",
+      "englishName": "Daejeon Noeun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34091",
+        "road": "대전광역시 유성구 노은동로99번길 35",
+        "detail": "/ 대전노은초등학교 (노은동/노은초등학교)"
+      },
+      "slug": "daejeon-noeun-elementary-school-7451074",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451075",
+      "code": "7451075",
+      "name": "대전느리울초등학교",
+      "englishName": "Daejeon Neuriul Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35381",
+        "road": "대전광역시 서구 관저로 196",
+        "detail": "(관저동/ 대전느리울초등학교)"
+      },
+      "slug": "daejeon-neuriul-elementary-school-7451075",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451076",
+      "code": "7451076",
+      "name": "대전대정초등학교",
+      "englishName": "Daejeon Daejeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34219",
+        "road": "대전광역시 유성구 대정로28번길 55",
+        "detail": "(대정동/ 대전대정초등학교)"
+      },
+      "slug": "daejeon-daejeong-elementary-school-7451076",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451077",
+      "code": "7451077",
+      "name": "대전도마초등학교",
+      "englishName": "Daejeon Doma Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35329",
+        "road": "대전광역시 서구 배재로172번길 23",
+        "detail": "(도마동/도마초등학교)"
+      },
+      "slug": "daejeon-doma-elementary-school-7451077",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451078",
+      "code": "7451078",
+      "name": "대전동화초등학교",
+      "englishName": "Daejeon Donghwa Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34020",
+        "road": "대전광역시 유성구 관평2로 43",
+        "detail": "(관평동/ 대전동화초등학교)"
+      },
+      "slug": "daejeon-donghwa-elementary-school-7451078",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451079",
+      "code": "7451079",
+      "name": "대전두리초등학교",
+      "englishName": "Daejeon Duri Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34005",
+        "road": "대전광역시 유성구 와룡로 37",
+        "detail": "(송강동)"
+      },
+      "slug": "daejeon-duri-elementary-school-7451079",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451080",
+      "code": "7451080",
+      "name": "대전둔산초등학교",
+      "englishName": "Daejeon Dunsan Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35234",
+        "road": "대전광역시 서구 둔산로74번길 20",
+        "detail": "(둔산동/둔산초등학교)"
+      },
+      "slug": "daejeon-dunsan-elementary-school-7451080",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451081",
+      "code": "7451081",
+      "name": "대전둔원초등학교",
+      "englishName": "Daejeon Dunwon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35266",
+        "road": "대전광역시 서구 대덕대로 112-10",
+        "detail": "(갈마동)"
+      },
+      "slug": "daejeon-dunwon-elementary-school-7451081",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058200"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451082",
+      "code": "7451082",
+      "name": "대전둔천초등학교",
+      "englishName": "Daejeon Duncheon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35201",
+        "road": "대전광역시 서구 만년로 3",
+        "detail": "/ 대전둔천초등학교 (만년동)"
+      },
+      "slug": "daejeon-duncheon-elementary-school-7451082",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451083",
+      "code": "7451083",
+      "name": "대전만년초등학교",
+      "englishName": "Daejeon Mannyon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35202",
+        "road": "대전광역시 서구 만년남로 14",
+        "detail": "(만년동 280번지)"
+      },
+      "slug": "daejeon-mannyon-elementary-school-7451083",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017065000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451084",
+      "code": "7451084",
+      "name": "대전문정초등학교",
+      "englishName": "Daejeon Munjeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35250",
+        "road": "대전광역시 서구 문정로 180",
+        "detail": "/ 문정초등학교 (둔산동)"
+      },
+      "slug": "daejeon-munjeong-elementary-school-7451084",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451085",
+      "code": "7451085",
+      "name": "대전반석초등학교",
+      "englishName": "Daejeon Banseok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34068",
+        "road": "대전광역시 유성구 반석동로 30",
+        "detail": "(반석동/대전반석초등학교)"
+      },
+      "slug": "daejeon-banseok-elementary-school-7451085",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451086",
+      "code": "7451086",
+      "name": "대전배울초등학교",
+      "englishName": "Daejeon Baeul Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34022",
+        "road": "대전광역시 유성구 배울2로 8",
+        "detail": "(관평동/ 대전배울초등학교)"
+      },
+      "slug": "daejeon-baeul-elementary-school-7451086",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451087",
+      "code": "7451087",
+      "name": "대전백운초등학교",
+      "englishName": "Daejeon Baekwoon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35269",
+        "road": "대전광역시 서구 계룡로576번길 56",
+        "detail": "(괴정동/ 백운초등학교)"
+      },
+      "slug": "daejeon-baekwoon-elementary-school-7451087",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017056000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451088",
+      "code": "7451088",
+      "name": "대전변동초등학교",
+      "englishName": "Daejeon Byeondong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35317",
+        "road": "대전광역시 서구 유등로 373",
+        "detail": "(변동/ 대전변동초등학교)"
+      },
+      "slug": "daejeon-byeondong-elementary-school-7451088",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451089",
+      "code": "7451089",
+      "name": "대전복수초등학교",
+      "englishName": "Daejeon Boksu Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35404",
+        "road": "대전광역시 서구 복수중로34번길 29",
+        "detail": "(복수동/대전복수초등학교)"
+      },
+      "slug": "daejeon-boksu-elementary-school-7451089",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451090",
+      "code": "7451090",
+      "name": "대전봉산초등학교",
+      "englishName": "Daejeon bongsan Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35281",
+        "road": "대전광역시 서구 신갈마로141번길 45",
+        "detail": "/ 대전봉산초등학교 (갈마동)"
+      },
+      "slug": "daejeon-bongsan-elementary-school-7451090",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451091",
+      "code": "7451091",
+      "name": "대전삼육초등학교",
+      "englishName": "Daejeon Sahmyook Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "사립",
+      "address": {
+        "postalCode": "35340",
+        "road": "대전광역시 서구 도림1길 15",
+        "detail": ", 대전삼육초등학교 (도마동, 삼육중학교, 삼육초등학교)"
+      },
+      "slug": "daejeon-sahmyook-elementary-school-7451091",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451092",
+      "code": "7451092",
+      "name": "대전삼천초등학교",
+      "englishName": "Daejeon Samchun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35245",
+        "road": "대전광역시 서구 둔산북로 232-33",
+        "detail": "/ 대전삼천초등학교 (둔산동)"
+      },
+      "slug": "daejeon-samchun-elementary-school-7451092",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017066000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451093",
+      "code": "7451093",
+      "name": "대전상대초등학교",
+      "englishName": "Daejeon Sangdae Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34199",
+        "road": "대전광역시 유성구 월드컵대로 322",
+        "detail": "(상대동/ 상대초등학교)"
+      },
+      "slug": "daejeon-sangdae-elementary-school-7451093",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451094",
+      "code": "7451094",
+      "name": "대전상지초등학교",
+      "englishName": "Daejeon Sangji Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34085",
+        "road": "대전광역시 유성구 노은동로 165",
+        "detail": "(지족동/대전상지초등학교)"
+      },
+      "slug": "daejeon-sangji-elementary-school-7451094",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451095",
+      "code": "7451095",
+      "name": "대전샘머리초등학교",
+      "englishName": "Daejeon Sammeori Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35205",
+        "road": "대전광역시 서구 유등로 879",
+        "detail": "(둔산동)"
+      },
+      "slug": "daejeon-sammeori-elementary-school-7451095",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451096",
+      "code": "7451096",
+      "name": "대전서부초등학교",
+      "englishName": "Daejeon Seobu Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35343",
+        "road": "대전광역시 서구 동서대로 968",
+        "detail": "(변동)"
+      },
+      "slug": "daejeon-seobu-elementary-school-7451096",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451097",
+      "code": "7451097",
+      "name": "대전서원초등학교",
+      "englishName": "Daejeon Seowon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35207",
+        "road": "대전광역시 서구 문정로 279",
+        "detail": "(둔산동/ 서원초등학교)"
+      },
+      "slug": "daejeon-seowon-elementary-school-7451097",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017064000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451098",
+      "code": "7451098",
+      "name": "대전선암초등학교",
+      "englishName": "Daejeon Sunam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35373",
+        "road": "대전광역시 서구 관저중로 61",
+        "detail": "/ 대전선암초등학교 (관저동/대전선암초등학교)"
+      },
+      "slug": "daejeon-sunam-elementary-school-7451098",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451099",
+      "code": "7451099",
+      "name": "대전성룡초등학교",
+      "englishName": "Daejeon Songryong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35216",
+        "road": "대전광역시 서구 갈마역로 125",
+        "detail": "(월평동/ 성룡초등학교)"
+      },
+      "slug": "daejeon-songryong-elementary-school-7451099",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451100",
+      "code": "7451100",
+      "name": "대전성천초등학교",
+      "englishName": "Daejeon Seongchon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35211",
+        "road": "대전광역시 서구 갈마역로 139",
+        "detail": "(월평동/ 성천초등학교)"
+      },
+      "slug": "daejeon-seongchon-elementary-school-7451100",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451101",
+      "code": "7451101",
+      "name": "대전송강초등학교",
+      "englishName": "Daejeon Song-gang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34008",
+        "road": "대전광역시 유성구 송강로42번길 6",
+        "detail": "/ 대전송강초등학교 (송강동)"
+      },
+      "slug": "daejeon-song-gang-elementary-school-7451101",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451102",
+      "code": "7451102",
+      "name": "대전송림초등학교",
+      "englishName": "Daejeon Songlim Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34094",
+        "road": "대전광역시 유성구 노은로410번길 123-14",
+        "detail": "/ 대전송림초등학교 (하기동 548)"
+      },
+      "slug": "daejeon-songlim-elementary-school-7451102",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451103",
+      "code": "7451103",
+      "name": "대전수미초등학교",
+      "englishName": "Daejeon Sumi Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35416",
+        "road": "대전광역시 서구 괴곡길 42",
+        "detail": "(괴곡동/ 대전수미초등학교)"
+      },
+      "slug": "daejeon-sumi-elementary-school-7451103",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451104",
+      "code": "7451104",
+      "name": "대전수정초등학교",
+      "englishName": "Daejeon Sujeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34145",
+        "road": "대전광역시 유성구 노은서로 62",
+        "detail": "(노은동/ 대전수정초등학교)"
+      },
+      "slug": "daejeon-sujeong-elementary-school-7451104",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451105",
+      "code": "7451105",
+      "name": "대전신계초등학교",
+      "englishName": "Daejeon Singye Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35412",
+        "road": "대전광역시 서구 복수동로 26",
+        "detail": "(복수동/ 신계초등학교)"
+      },
+      "slug": "daejeon-singye-elementary-school-7451105",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017051000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451106",
+      "code": "7451106",
+      "name": "대전어은초등학교",
+      "englishName": "Daejeon Eoeun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34140",
+        "road": "대전광역시 유성구 농대로 46",
+        "detail": "(어은동)"
+      },
+      "slug": "daejeon-eoeun-elementary-school-7451106",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451107",
+      "code": "7451107",
+      "name": "대전용산초등학교",
+      "englishName": "Daejeon Yong-san Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34031",
+        "road": "대전광역시 유성구 배울2로 101",
+        "detail": "(용산동)"
+      },
+      "slug": "daejeon-yong-san-elementary-school-7451107",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020060000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451108",
+      "code": "7451108",
+      "name": "대전원앙초등학교",
+      "englishName": "Daejeon Wonang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35358",
+        "road": "대전광역시 서구 관저북로 97",
+        "detail": "/ 대전원앙초등학교 (관저동)"
+      },
+      "slug": "daejeon-wonang-elementary-school-7451108",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451109",
+      "code": "7451109",
+      "name": "대전월평초등학교",
+      "englishName": "Daejeon Woalpyeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35221",
+        "road": "대전광역시 서구 월평서로 22",
+        "detail": "(월평동/월평초등학교)"
+      },
+      "slug": "daejeon-woalpyeong-elementary-school-7451109",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451110",
+      "code": "7451110",
+      "name": "대전유천초등학교",
+      "englishName": "Deajeon Yuchon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35335",
+        "road": "대전광역시 서구 제비네6길 69",
+        "detail": "(도마동)"
+      },
+      "slug": "deajeon-yuchon-elementary-school-7451110",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451111",
+      "code": "7451111",
+      "name": "대전자운초등학교",
+      "englishName": "Daejeon Jaun Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34059",
+        "road": "대전광역시 유성구 자운로97번길 380",
+        "detail": "(신봉동/자운초등학교)"
+      },
+      "slug": "daejeon-jaun-elementary-school-7451111",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020055000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451112",
+      "code": "7451112",
+      "name": "대전장대초등학교",
+      "englishName": "Daejeon Jangdae Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34166",
+        "road": "대전광역시 유성구 문화원로19번길 16",
+        "detail": "(장대동)"
+      },
+      "slug": "daejeon-jangdae-elementary-school-7451112",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451113",
+      "code": "7451113",
+      "name": "대전전민초등학교",
+      "englishName": "Daejeon Jeonmin Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34049",
+        "road": "대전광역시 유성구 엑스포로466번길 42",
+        "detail": "(전민동/전민초등학교)"
+      },
+      "slug": "daejeon-jeonmin-elementary-school-7451113",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451114",
+      "code": "7451114",
+      "name": "대전정림초등학교",
+      "englishName": "Daejeon Jeonglim Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35396",
+        "road": "대전광역시 서구 정림로 32",
+        "detail": "(정림동/정림초등학교)"
+      },
+      "slug": "daejeon-jeonglim-elementary-school-7451114",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017053500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451115",
+      "code": "7451115",
+      "name": "대전지족초등학교",
+      "englishName": "Daejeon Jijok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34080",
+        "road": "대전광역시 유성구 노은서로 238",
+        "detail": "(지족동)"
+      },
+      "slug": "daejeon-jijok-elementary-school-7451115",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451116",
+      "code": "7451116",
+      "name": "대전탄방초등학교",
+      "englishName": "Daejeon Tanbang Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35256",
+        "road": "대전광역시 서구 탄방로 15",
+        "detail": "(탄방동/ 대전탄방초등학교)"
+      },
+      "slug": "daejeon-tanbang-elementary-school-7451116",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017055500"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451117",
+      "code": "7451117",
+      "name": "대전하기초등학교",
+      "englishName": "Daejeon Hagi Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34061",
+        "road": "대전광역시 유성구 송림로19번길 32",
+        "detail": "(하기동)대전하기초등학교"
+      },
+      "slug": "daejeon-hagi-elementary-school-7451117",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451118",
+      "code": "7451118",
+      "name": "덕송초등학교",
+      "englishName": "Duksong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34151",
+        "road": "대전광역시 유성구 현충원로 265",
+        "detail": "(덕명동)"
+      },
+      "slug": "duksong-elementary-school-7451118",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451119",
+      "code": "7451119",
+      "name": "문지초등학교",
+      "englishName": "Munji Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34053",
+        "road": "대전광역시 유성구 전민로 41",
+        "detail": "(문지동)"
+      },
+      "slug": "munji-elementary-school-7451119",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020057000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451120",
+      "code": "7451120",
+      "name": "봉암초등학교",
+      "englishName": "Bongam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34137",
+        "road": "대전광역시 유성구 궁동로 21",
+        "detail": "(궁동/ 봉암초등학교)"
+      },
+      "slug": "bongam-elementary-school-7451120",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451121",
+      "code": "7451121",
+      "name": "외삼초등학교",
+      "englishName": "Oesam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34069",
+        "road": "대전광역시 유성구 반석동로 63",
+        "detail": "(반석동/외삼초등학교)"
+      },
+      "slug": "oesam-elementary-school-7451121",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451122",
+      "code": "7451122",
+      "name": "유성초등학교",
+      "englishName": "Yuseong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34164",
+        "road": "대전광역시 유성구 장대로71번길 12",
+        "detail": "(장대동/ 유성초등학교)"
+      },
+      "slug": "yuseong-elementary-school-7451122",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451123",
+      "code": "7451123",
+      "name": "진잠초등학교",
+      "englishName": "Jin Jam Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34229",
+        "road": "대전광역시 유성구 진잠로59번길 53",
+        "detail": "/ 진잠초등학교 (원내동/ 진잠초등학교)"
+      },
+      "slug": "jin-jam-elementary-school-7451123",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451124",
+      "code": "7451124",
+      "name": "학하초등학교",
+      "englishName": "Hakha Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34212",
+        "road": "대전광역시 유성구 진잠옛로 165",
+        "detail": "/ 학하초등학교 (학하동)"
+      },
+      "slug": "hakha-elementary-school-7451124",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451125",
+      "code": "7451125",
+      "name": "한밭초등학교",
+      "englishName": "Hanbat Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35247",
+        "road": "대전광역시 서구 문정로 221",
+        "detail": "(둔산동)"
+      },
+      "slug": "hanbat-elementary-school-7451125",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017063000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451126",
+      "code": "7451126",
+      "name": "흥도초등학교",
+      "englishName": "Heungdo Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34195",
+        "road": "대전광역시 유성구 원신흥남로 20",
+        "detail": "(원신흥동/ 흥도초등학교)"
+      },
+      "slug": "heungdo-elementary-school-7451126",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451255",
+      "code": "7451255",
+      "name": "대전봉명중학교",
+      "englishName": "Daejeon Bongmyeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34189",
+        "road": "대전광역시 유성구 계룡로132번길 71",
+        "detail": "(봉명동/ 대전봉명중학교)"
+      },
+      "slug": "daejeon-bongmyeong-middle-school-7451255",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451256",
+      "code": "7451256",
+      "name": "대전봉명초등학교",
+      "englishName": "Daejeon Bongmyeong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34188",
+        "road": "대전광역시 유성구 계룡로132번길 62",
+        "detail": "(봉명동)"
+      },
+      "slug": "daejeon-bongmyeong-elementary-school-7451256",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451257",
+      "code": "7451257",
+      "name": "대전원신흥초등학교",
+      "englishName": "Daejeon Wonsinhung Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34193",
+        "road": "대전광역시 유성구 원신흥로55번길 37",
+        "detail": "(원신흥동/ 대전원신흥초등학교)"
+      },
+      "slug": "daejeon-wonsinhung-elementary-school-7451257",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451258",
+      "code": "7451258",
+      "name": "대전도안초등학교",
+      "englishName": "Daejeon Doan Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35355",
+        "road": "대전광역시 서구 원도안로 200",
+        "detail": "(도안동/ 도안초등학교)"
+      },
+      "slug": "daejeon-doan-elementary-school-7451258",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451263",
+      "code": "7451263",
+      "name": "대전상원초등학교",
+      "englishName": "Daejeon Sangwon Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34200",
+        "road": "대전광역시 유성구 상대서로 46",
+        "detail": "/ 대전상원초등학교 (상대동)"
+      },
+      "slug": "daejeon-sangwon-elementary-school-7451263",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451264",
+      "code": "7451264",
+      "name": "대전계산초등학교",
+      "englishName": "Daejeon Gyesan Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34209",
+        "road": "대전광역시 유성구 학하서로 74",
+        "detail": "(계산동)"
+      },
+      "slug": "daejeon-gyesan-elementary-school-7451264",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451265",
+      "code": "7451265",
+      "name": "대전도안중학교",
+      "englishName": "Daejeon Doan Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35355",
+        "road": "대전광역시 서구 원도안로 160",
+        "detail": "(도안동/ 대전도안중학교)"
+      },
+      "slug": "daejeon-doan-middle-school-7451265",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451266",
+      "code": "7451266",
+      "name": "대전덕명중학교",
+      "englishName": "Daejeon Deokmyeong Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34159",
+        "road": "대전광역시 유성구 학하중앙로 61",
+        "detail": "/ 대전덕명중학교 (덕명동/ 대전덕명중학교)"
+      },
+      "slug": "daejeon-deokmyeong-middle-school-7451266",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052600"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451303",
+      "code": "7451303",
+      "name": "대전새미래중학교",
+      "englishName": "Daejeon Saemirae Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34074",
+        "road": "대전광역시 유성구 지족동로 55",
+        "detail": "(지족동)"
+      },
+      "slug": "daejeon-saemirae-middle-school-7451303",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451309",
+      "code": "7451309",
+      "name": "대전도솔초등학교",
+      "englishName": "대전도솔초등학교",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35367",
+        "road": "대전광역시 서구 원도안로 80",
+        "detail": "/ 대전도솔초등학교 (가수원동)"
+      },
+      "slug": "school-7451309",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451311",
+      "code": "7451311",
+      "name": "대전새미래초등학교",
+      "englishName": "Daejeon Saemirae Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34074",
+        "road": "대전광역시 유성구 지족로 168",
+        "detail": "(지족동/ 대전새미래초등학교)"
+      },
+      "slug": "daejeon-saemirae-elementary-school-7451311",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054800"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451324",
+      "code": "7451324",
+      "name": "대전죽동초등학교",
+      "englishName": "Daejeon Jukdong Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34127",
+        "road": "대전광역시 유성구 죽동로 52",
+        "detail": "(죽동)"
+      },
+      "slug": "daejeon-jukdong-elementary-school-7451324",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451327",
+      "code": "7451327",
+      "name": "대전선유초등학교",
+      "englishName": "Daejeon Seonyu Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35384",
+        "road": "대전광역시 서구 관저남로 60",
+        "detail": "(관저동)"
+      },
+      "slug": "daejeon-seonyu-elementary-school-7451327",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451340",
+      "code": "7451340",
+      "name": "대전호수초등학교",
+      "englishName": "Daejeon Hosu Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35353",
+        "road": "대전광역시 서구 도안동로 182-20",
+        "detail": "(도안동)"
+      },
+      "slug": "daejeon-hosu-elementary-school-7451340",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059300"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451342",
+      "code": "7451342",
+      "name": "대전원신흥중학교",
+      "englishName": "Daejeon Wonsinhung Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34195",
+        "road": "대전광역시 유성구 동서대로735번길 20",
+        "detail": "(원신흥동)"
+      },
+      "slug": "daejeon-wonsinhung-middle-school-7451342",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020061000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451344",
+      "code": "7451344",
+      "name": "대전원신흥초등학교복용분교장",
+      "englishName": "대전원신흥초등학교복용분교장(Bogyong Branch School of Daejeon Wonsinhung Elementary Schoo)l",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34197",
+        "road": "대전광역시 유성구 유성대로 600",
+        "detail": "(상대동)"
+      },
+      "slug": "bogyong-branch-school-of-daejeon-wonsinhung-elementary-schoo-l-7451344",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451347",
+      "code": "7451347",
+      "name": "대전복용초등학교",
+      "englishName": "bogyong elementary school",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34202",
+        "road": "대전광역시 유성구 상대복용로65번길 36",
+        "detail": "대전복용초등학교"
+      },
+      "slug": "bogyong-elementary-school-7451347",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020052700"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451349",
+      "code": "7451349",
+      "name": "대전둔곡초등학교",
+      "englishName": "Daejeon Dungok Elementary School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34002",
+        "road": "대전광역시 유성구 과학인재4길 10",
+        "detail": "(둔곡동)"
+      },
+      "slug": "daejeon-dungok-elementary-school-7451349",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451350",
+      "code": "7451350",
+      "name": "대전둔곡중학교",
+      "englishName": "Daejeon Dungok Middle School",
+      "schoolType": "middle",
+      "schoolTypeName": "중학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "34002",
+        "road": "대전광역시 유성구 과학인재4길 10",
+        "detail": "(둔곡동)"
+      },
+      "slug": "daejeon-dungok-middle-school-7451350",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020058000"
+      },
+      "extensions": {}
+    },
+    {
+      "id": "school:7451353",
+      "code": "7451353",
+      "name": "대전탄방초등학교용문분교장",
+      "englishName": "Daejeon Tanbang Elementary SchoolYongmun Branch School",
+      "schoolType": "elementary",
+      "schoolTypeName": "초등학교",
+      "establishmentType": "공립",
+      "address": {
+        "postalCode": "35308",
+        "road": "대전광역시 서구 도솔로 500",
+        "detail": "(용문동)"
+      },
+      "slug": "daejeon-tanbang-elementary-schoolyongmun-branch-school-7451353",
+      "region": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017055000"
+      },
+      "extensions": {}
+    }
+  ],
+  "extensions": {}
+}
