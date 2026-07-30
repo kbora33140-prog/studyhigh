@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { searchableGradeRoutes } from "@/lib/gradeLevels";
 import { regions, slugifyKorean, subjects } from "@/lib/regions";
 import { searchRegions } from "@/lib/searchRegions";
+import { tutoringArticles } from "@/lib/tutoringArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://studyhigh.co.kr";
@@ -38,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    ...tutoringArticles.map((article) => ({
+      url: `${baseUrl}/tutoring/${article.city}/${article.dong}/${article.subject}`,
+      lastModified: new Date("2026-07-31"),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    })),
     ...regions.map((region) => ({
       url: `${baseUrl}/regions/${region.slug}`,
       lastModified: new Date(),
