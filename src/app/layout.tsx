@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://studyhigh.co.kr"),
+  metadataBase: new URL("https://www.studyhigh.co.kr"),
   title: {
     default: "스터디하이 | 아이에게 맞는 선생님을 연결하는 프리미엄 교육 브랜드",
     template: "%s | 스터디하이",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "스터디하이 | 아이에게 맞는 선생님이 성적을 만듭니다",
     description:
       "아이 성향을 먼저 분석하고 가장 잘 맞는 선생님을 연결하는 1:1 맞춤 교육 브랜드입니다.",
-    url: "https://studyhigh.co.kr",
+    url: "https://www.studyhigh.co.kr",
     siteName: "스터디하이",
     locale: "ko_KR",
     type: "website",

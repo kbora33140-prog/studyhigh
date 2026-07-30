@@ -11,7 +11,7 @@ import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
 import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
 
-const SITE_URL = "https://studyhigh.co.kr";
+const SITE_URL = "https://www.studyhigh.co.kr";
 
 type GradeSubjectPageProps = {
   params: Promise<{

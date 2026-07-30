@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://studyhigh.co.kr/sitemap.xml",
+    sitemap: "https://www.studyhigh.co.kr/sitemap.xml",
   };
 }

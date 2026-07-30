@@ -8,7 +8,7 @@ import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
 import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
-const SITE_URL = "https://studyhigh.co.kr";
+const SITE_URL = "https://www.studyhigh.co.kr";
 
 type Props = {
   params: Promise<{ city: string; dong: string; subject: string }>;

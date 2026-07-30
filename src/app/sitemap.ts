@@ -5,7 +5,7 @@ import { searchRegions } from "@/lib/searchRegions";
 import { tutoringArticles } from "@/lib/tutoringArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://studyhigh.co.kr";
+  const baseUrl = "https://www.studyhigh.co.kr";
   const daejeonRegion = searchRegions.find((region) => region.slug === "daejeon");
 
   return [
