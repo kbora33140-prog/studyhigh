@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "스터디하이" }],
   creator: "스터디하이",
+  icons: {
+    icon: [{ url: "/studyhigh-logo.png", type: "image/png" }],
+    shortcut: "/studyhigh-logo.png",
+    apple: "/studyhigh-logo.png",
+  },
   alternates: {
     canonical: "/",
   },
