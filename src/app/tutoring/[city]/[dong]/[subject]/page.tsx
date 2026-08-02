@@ -114,6 +114,18 @@ export default async function TutoringPage({ params }: Props) {
                 <p className="mt-6 max-w-3xl text-lg leading-8 text-black/65">
                   {article.lead}
                 </p>
+                {article.nearbySchools?.length ? (
+                  <div className="mt-6 flex flex-wrap gap-2" aria-label="주변 학교 생활권">
+                    {article.nearbySchools.map((school) => (
+                      <span
+                        key={school}
+                        className="rounded-full border border-[#6736C8]/15 bg-white px-3 py-1.5 text-sm font-bold text-black/65"
+                      >
+                        {school} 생활권
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
                 <OpenConsultationButton
                   className={buttonVariants({
                     size: "lg",
