@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studyhigh.co.kr"),
+  manifest: "/manifest.webmanifest",
   title: {
     default: "스터디하이 | 아이에게 맞는 선생님을 연결하는 프리미엄 교육 브랜드",
     template: "%s | 스터디하이",
