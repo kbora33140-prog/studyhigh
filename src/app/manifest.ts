@@ -12,13 +12,13 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: "ko-KR",
     icons: [
       {
-        src: "/web-app-manifest-192x192.png",
+        src: "/web-app-manifest-192x192.png?v=studyhigh-sh-20260803",
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/web-app-manifest-512x512.png",
+        src: "/web-app-manifest-512x512.png?v=studyhigh-sh-20260803",
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
