@@ -344,7 +344,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
                   무료 상담 신청
                 </OpenConsultationButton>
               </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
+              <div className="relative aspect-square overflow-hidden rounded-[28px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
                 <Image
                   src={articleImage.replace(SITE_URL, "")}
                   alt={articleImageAlt}
@@ -352,7 +352,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
                   priority
                   unoptimized
                   sizes="(min-width: 1024px) 42vw, 100vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>

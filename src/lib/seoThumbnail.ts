@@ -18,6 +18,7 @@ export function getSeoThumbnailUrl(input: ThumbnailInput) {
     grade: input.gradeName,
     subject: input.subjectName,
     seed: input.seed || filename,
+    v: "2",
   });
 
   return `${SITE_URL}/thumbnails/${filename}?${query.toString()}`;

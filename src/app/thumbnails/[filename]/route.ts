@@ -5,6 +5,10 @@ import sharp from "sharp";
 export const runtime = "nodejs";
 export const revalidate = 31536000;
 
+const fontDataPromise = readFile(
+  path.join(process.cwd(), "public", "fonts", "NotoSansKR-VF.ttf"),
+).then((font) => font.toString("base64"));
+
 const subtitles: Record<string, string[]> = {
   수학: [
     "기초부터 심화까지, 1:1 맞춤 수학 수업",
@@ -56,7 +60,7 @@ function escapeXml(value: string) {
 }
 
 function centeredText(text: string, y: number, size: number, fill: string, weight = 800) {
-  return `<text x="627" y="${y}" text-anchor="middle" font-family="Noto Sans KR, sans-serif" font-size="${size}" font-weight="${weight}" fill="${fill}">${escapeXml(text)}</text>`;
+  return `<text x="627" y="${y}" text-anchor="middle" font-family="StudyHighNoto" font-size="${size}" font-weight="${weight}" fill="${fill}">${escapeXml(text)}</text>`;
 }
 
 export async function GET(request: Request, { params }: { params: Promise<{ filename: string }> }) {
@@ -68,6 +72,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ file
   const grade = (url.searchParams.get("grade") || "고등").slice(0, 8);
   const subject = (url.searchParams.get("subject") || "수학").slice(0, 8);
   const seed = url.searchParams.get("seed") || filename;
+  const fontData = await fontDataPromise;
   const variant = hash(seed);
   const subjectKey = subtitles[subject] ? subject : "전과목";
   const subtitle = subtitles[subjectKey][variant % subtitles[subjectKey].length];
@@ -81,13 +86,16 @@ export async function GET(request: Request, { params }: { params: Promise<{ file
   const labels = features.map((lines, index) => {
     const x = [282, 513, 741, 974][index];
     return `<rect x="${x - 105}" y="774" width="210" height="88" fill="#fbf8ff" fill-opacity="0.97"/>
-      <text x="${x}" y="807" text-anchor="middle" font-family="Noto Sans KR, sans-serif" font-size="27" font-weight="700" fill="#170d2e">
+      <text x="${x}" y="807" text-anchor="middle" font-family="StudyHighNoto" font-size="27" font-weight="700" fill="#170d2e">
         <tspan x="${x}">${escapeXml(lines[0])}</tspan><tspan x="${x}" dy="32">${escapeXml(lines[1])}</tspan>
       </text>`;
   }).join("");
 
   const overlay = Buffer.from(`<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
-    <defs><linearGradient id="badge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5421bd"/><stop offset="1" stop-color="#7a35d6"/></linearGradient></defs>
+    <defs>
+      <style>@font-face { font-family: 'StudyHighNoto'; src: url(data:font/ttf;base64,${fontData}) format('truetype'); font-weight: 100 900; }</style>
+      <linearGradient id="badge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5421bd"/><stop offset="1" stop-color="#7a35d6"/></linearGradient>
+    </defs>
     <g transform="scale(0.956937799)">
     <rect x="447" y="84" width="354" height="119" rx="60" fill="url(#badge)"/>
     ${centeredText(place, 158, place.length > 7 ? 46 : 54, "#ffffff", 900)}
@@ -97,7 +105,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ file
     ${centeredText(uniqueSubtitle, 542, subtitleSize, "#24113f", 800)}
     ${labels}
     <rect x="211" y="917" width="402" height="113" rx="4" fill="#6530c8" fill-opacity="0.98"/>
-    <text x="230" y="963" font-family="Noto Sans KR, sans-serif" font-size="25" font-weight="800" fill="#ffffff">
+    <text x="230" y="963" font-family="StudyHighNoto" font-size="25" font-weight="800" fill="#ffffff">
       <tspan x="230">${escapeXml(place)} ${escapeXml(grade)} 학생들의</tspan><tspan x="230" dy="42">${escapeXml(subject)} ${escapeXml(ending[0])} ${escapeXml(ending[1])}</tspan>
     </text></g>
   </svg>`);
