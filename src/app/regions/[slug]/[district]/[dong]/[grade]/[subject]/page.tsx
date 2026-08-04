@@ -10,6 +10,7 @@ import { getSearchableGradeRoute, searchableGradeRoutes } from "@/lib/gradeLevel
 import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
 import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
+import { getSeoThumbnailUrl } from "@/lib/seoThumbnail";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
@@ -94,7 +95,15 @@ export async function generateMetadata({
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
   const targetKeyword = `${region.name} ${dong} ${grade.name} ${subjectKeyword}`;
-  const articleImage = article?.image || "/high-school-math-tutoring.png";
+  const articleImage = getSeoThumbnailUrl({
+    dongSlug: slugifyKorean(dong),
+    dongName: dong,
+    gradeSlug: grade.slug,
+    gradeName: grade.name,
+    subjectSlug: subject.slug,
+    subjectName: subject.name,
+    seed: canonical,
+  });
 
   return {
     title: article?.title || `${region.name} ${district.name} ${pageKeyword} | 스터디하이`,
@@ -121,7 +130,7 @@ export async function generateMetadata({
         `${dong} ${grade.name} 학생을 위한 ${subjectKeyword} 상담 페이지입니다. 학생 수준과 목표에 맞춰 수업 방향을 제안합니다.`,
       url: canonical,
       type: "article",
-      images: [articleImage],
+      images: [{ url: articleImage, width: 1200, height: 1200, alt: pageKeyword }],
     },
     twitter: {
       card: "summary_large_image",
@@ -129,6 +138,7 @@ export async function generateMetadata({
       description:
         article?.metaDescription ||
         `${dong} ${grade.name} ${subjectKeyword} 1:1 맞춤수업 상담`,
+      images: [articleImage],
     },
   };
 }
@@ -142,7 +152,15 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
 
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
-  const articleImage = article?.image || "/high-school-math-tutoring.png";
+  const articleImage = getSeoThumbnailUrl({
+    dongSlug: slugifyKorean(dong),
+    dongName: dong,
+    gradeSlug: grade.slug,
+    gradeName: grade.name,
+    subjectSlug: subject.slug,
+    subjectName: subject.name,
+    seed: canonical,
+  });
   const articleImageAlt =
     article?.imageAlt || `${region.name} ${district.name} ${dong} ${grade.name} ${subject.name}과외 이미지`;
   const faqItems =
@@ -203,7 +221,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
         "@type": "Article",
         headline: article.title,
         description: article.metaDescription,
-        image: `${SITE_URL}${articleImage}`,
+        image: articleImage,
         mainEntityOfPage: `${SITE_URL}${canonical}`,
         author: {
           "@type": "Organization",
@@ -232,6 +250,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
     telephone: "010-2518-9245",
     url: `${SITE_URL}${canonical}`,
     description: article?.metaDescription || `${dong} ${grade.name} ${subjectKeyword} 1:1 맞춤수업 상담`,
+    image: articleImage,
   };
 
   const serviceSchema = {
@@ -251,6 +270,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
     description:
       article?.metaDescription ||
       `${region.name} ${district.name} ${dong} ${grade.name} ${subjectKeyword} 상담 페이지입니다.`,
+    image: articleImage,
     url: `${SITE_URL}${canonical}`,
     offers: {
       "@type": "Offer",
@@ -326,10 +346,11 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
                 <Image
-                  src={articleImage}
+                  src={articleImage.replace(SITE_URL, "")}
                   alt={articleImageAlt}
                   fill
                   priority
+                  unoptimized
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
                 />

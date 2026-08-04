@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
+import { getSeoThumbnailUrl } from "@/lib/seoThumbnail";
 import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
@@ -42,6 +43,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
+  const thumbnail = getSeoThumbnailUrl({
+    dongSlug: dong,
+    dongName: article.dongName,
+    gradeSlug: "high",
+    gradeName: "고등",
+    subjectSlug: subject,
+    subjectName: article.subjectName,
+    seed: canonical,
+  });
   return {
     title: article.title,
     description: article.description,
@@ -52,7 +62,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.description,
       url: `${SITE_URL}${canonical}`,
       type: "article",
-      images: [{ url: article.image, alt: article.imageAlt }],
+      images: [{ url: thumbnail, width: 1200, height: 1200, alt: article.keyword }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [thumbnail],
     },
   };
 }
@@ -64,6 +80,15 @@ export default async function TutoringPage({ params }: Props) {
   const plan = subjectPlans[article.subject as keyof typeof subjectPlans];
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
+  const thumbnail = getSeoThumbnailUrl({
+    dongSlug: dong,
+    dongName: article.dongName,
+    gradeSlug: "high",
+    gradeName: "고등",
+    subjectSlug: subject,
+    subjectName: article.subjectName,
+    seed: canonical,
+  });
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -86,6 +111,7 @@ export default async function TutoringPage({ params }: Props) {
     areaServed: `${article.cityName} ${article.dongName}`,
     description: article.description,
     url: canonical,
+    image: thumbnail,
   };
 
   return (
@@ -137,10 +163,11 @@ export default async function TutoringPage({ params }: Props) {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-[30px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
                 <Image
-                  src={article.image}
-                  alt={article.imageAlt}
+                  src={thumbnail.replace(SITE_URL, "")}
+                  alt={`${article.keyword} 공식 썸네일`}
                   fill
                   priority
+                  unoptimized
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
                 />
