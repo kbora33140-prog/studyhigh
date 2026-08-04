@@ -39,21 +39,21 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon-32x32.png?v=studyhigh-sh-20260803",
+        url: "/favicon-32x32.png?v=provided-studyhigh-logo-20260804",
         sizes: "32x32",
         type: "image/png",
       },
       {
-        url: "/favicon-16x16.png?v=studyhigh-sh-20260803",
+        url: "/favicon-16x16.png?v=provided-studyhigh-logo-20260804",
         sizes: "16x16",
         type: "image/png",
       },
-      { url: "/favicon.ico?v=studyhigh-sh-20260803", sizes: "any" },
+      { url: "/favicon.ico?v=provided-studyhigh-logo-20260804", sizes: "any" },
     ],
-    shortcut: "/favicon-32x32.png?v=studyhigh-sh-20260803",
+    shortcut: "/favicon-32x32.png?v=provided-studyhigh-logo-20260804",
     apple: [
       {
-        url: "/apple-touch-icon.png?v=studyhigh-sh-20260803",
+        url: "/apple-touch-icon.png?v=provided-studyhigh-logo-20260804",
         sizes: "180x180",
         type: "image/png",
       },
