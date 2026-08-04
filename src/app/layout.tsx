@@ -37,27 +37,13 @@ export const metadata: Metadata = {
   authors: [{ name: "스터디하이" }],
   creator: "스터디하이",
   icons: {
-    icon: [
-      {
-        url: "/favicon-32x32.png?v=provided-studyhigh-logo-20260804",
-        sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        url: "/favicon-16x16.png?v=provided-studyhigh-logo-20260804",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      { url: "/favicon.ico?v=provided-studyhigh-logo-20260804", sizes: "any" },
-    ],
-    shortcut: "/favicon-32x32.png?v=provided-studyhigh-logo-20260804",
-    apple: [
-      {
-        url: "/apple-touch-icon.png?v=provided-studyhigh-logo-20260804",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
+    icon: "https://studyhigh.co.kr/favicon.ico",
+    shortcut: "https://studyhigh.co.kr/favicon.ico",
+    apple: {
+      url: "https://studyhigh.co.kr/apple-touch-icon.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
   },
   alternates: {
     canonical: "/",
