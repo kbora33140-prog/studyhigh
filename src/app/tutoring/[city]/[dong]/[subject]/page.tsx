@@ -10,6 +10,13 @@ import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
+function getThumbnailUrl(dong: string, subject: string) {
+  if (dong === "tanbang-dong") {
+    return `${SITE_URL}/thumbnails/studyhigh-official-template.png?v=4`;
+  }
+  return `${SITE_URL}/thumbnails/${dong.replace(/-dong$/, "")}-high-${subject}.webp?v=4`;
+}
+
 type Props = {
   params: Promise<{ city: string; dong: string; subject: string }>;
 };
@@ -42,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
+  const thumbnail = getThumbnailUrl(dong, subject);
   return {
     title: article.title,
     description: article.description,
@@ -71,7 +78,7 @@ export default async function TutoringPage({ params }: Props) {
   const plan = subjectPlans[article.subject as keyof typeof subjectPlans];
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
+  const thumbnail = getThumbnailUrl(dong, subject);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
