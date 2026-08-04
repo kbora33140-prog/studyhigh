@@ -6,7 +6,6 @@ import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
-import { getSeoThumbnailUrl } from "@/lib/seoThumbnail";
 import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
@@ -43,15 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = getSeoThumbnailUrl({
-    dongSlug: dong,
-    dongName: article.dongName,
-    gradeSlug: "high",
-    gradeName: "고등",
-    subjectSlug: subject,
-    subjectName: article.subjectName,
-    seed: canonical,
-  });
+  const thumbnail = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
   return {
     title: article.title,
     description: article.description,
@@ -80,15 +71,7 @@ export default async function TutoringPage({ params }: Props) {
   const plan = subjectPlans[article.subject as keyof typeof subjectPlans];
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = getSeoThumbnailUrl({
-    dongSlug: dong,
-    dongName: article.dongName,
-    gradeSlug: "high",
-    gradeName: "고등",
-    subjectSlug: subject,
-    subjectName: article.subjectName,
-    seed: canonical,
-  });
+  const thumbnail = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
