@@ -12,9 +12,9 @@ const SITE_URL = "https://studyhigh.co.kr";
 
 function getThumbnailUrl(dong: string, subject: string) {
   if (dong === "tanbang-dong") {
-    return `${SITE_URL}/thumbnails/studyhigh-official-template.png?v=4`;
+    return `${SITE_URL}/thumbnails/studyhigh-official-template.png?v=5`;
   }
-  return `${SITE_URL}/thumbnails/${dong.replace(/-dong$/, "")}-high-${subject}.webp?v=4`;
+  return `${SITE_URL}/thumbnails/${dong.replace(/-dong$/, "")}-high-${subject}.webp?v=5`;
 }
 
 type Props = {
@@ -50,13 +50,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
   const thumbnail = getThumbnailUrl(dong, subject);
+  const searchTitle = `${article.dongName} 고등 ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
   return {
-    title: article.title,
+    title: { absolute: searchTitle },
     description: article.description,
     keywords: [article.keyword, `${article.dongName} 고등 ${article.subjectName}과외`],
     alternates: { canonical },
     openGraph: {
-      title: article.title,
+      title: searchTitle,
       description: article.description,
       url: `${SITE_URL}${canonical}`,
       type: "article",
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
+      title: searchTitle,
       description: article.description,
       images: [thumbnail],
     },
