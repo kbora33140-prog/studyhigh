@@ -10,7 +10,6 @@ import { getSearchableGradeRoute, searchableGradeRoutes } from "@/lib/gradeLevel
 import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
 import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
-import { getRegionThumbnailUrl } from "@/lib/regionThumbnail";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
@@ -95,14 +94,7 @@ export async function generateMetadata({
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
   const targetKeyword = `${region.name} ${dong} ${grade.name} ${subjectKeyword}`;
-  const articleImage = getRegionThumbnailUrl({
-    dong,
-    dongSlug: slugifyKorean(dong),
-    grade: grade.name,
-    gradeSlug: grade.slug,
-    subject: subject.name,
-    subjectSlug: subject.slug,
-  });
+  const articleImage = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
 
   return {
     title: article?.title || `${region.name} ${district.name} ${pageKeyword} | 스터디하이`,
@@ -151,14 +143,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
 
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
-  const articleImage = getRegionThumbnailUrl({
-    dong,
-    dongSlug: slugifyKorean(dong),
-    grade: grade.name,
-    gradeSlug: grade.slug,
-    subject: subject.name,
-    subjectSlug: subject.slug,
-  });
+  const articleImage = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
   const articleImageAlt =
     article?.imageAlt || `${region.name} ${district.name} ${dong} ${grade.name} ${subject.name}과외 이미지`;
   const faqItems =
