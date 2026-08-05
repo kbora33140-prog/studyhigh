@@ -146,6 +146,12 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
   const articleImage = `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
   const articleImageAlt =
     article?.imageAlt || `${region.name} ${district.name} ${dong} ${grade.name} ${subject.name}과외 이미지`;
+  const thumbnailHeadline =
+    subject.slug === "all" ? `${grade.name} 전과목과외` : `${grade.name} ${subject.name}과외`;
+  const thumbnailSubtitle =
+    subject.slug === "all"
+      ? "부족한 과목부터 학습 습관까지, 1:1 맞춤 수업"
+      : `${subject.name} 기초부터 내신까지, 1:1 맞춤 수업`;
   const faqItems =
     article?.faq || [
       {
@@ -327,7 +333,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
                   무료 상담 신청
                 </OpenConsultationButton>
               </div>
-              <div className="relative aspect-square overflow-hidden rounded-[28px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
+              <div className="relative aspect-square overflow-hidden rounded-[28px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)] [container-type:inline-size]">
                 <Image
                   src={articleImage.replace(SITE_URL, "")}
                   alt={articleImageAlt}
@@ -337,6 +343,31 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-contain"
                 />
+                <div
+                  className="pointer-events-none absolute z-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#5421bd] to-[#7a35d6] font-black text-white"
+                  style={{ left: "35.7%", top: "6.7%", width: "28.3%", height: "9.5%", fontSize: "clamp(18px, 4.4cqw, 54px)" }}
+                >
+                  {dong}
+                </div>
+                <div
+                  className="pointer-events-none absolute z-10 flex items-center justify-center bg-[#fbf8ff] text-center font-black leading-none text-[#211039]"
+                  style={{ left: "10.7%", top: "17.6%", width: "79.5%", height: "20.4%", fontSize: "clamp(28px, 9.8cqw, 118px)" }}
+                >
+                  {thumbnailHeadline}
+                </div>
+                <div
+                  className="pointer-events-none absolute z-10 flex items-center justify-center bg-[#fbf8ff] px-[2cqw] text-center font-black text-[#211039]"
+                  style={{ left: "18.3%", top: "38.7%", width: "63.8%", height: "6.4%", fontSize: "clamp(11px, 3.1cqw, 37px)" }}
+                >
+                  {thumbnailSubtitle}
+                </div>
+                <div
+                  className="pointer-events-none absolute z-10 flex flex-col justify-center bg-[#6530c8] pl-[1.5cqw] font-black leading-[1.5] text-white"
+                  style={{ left: "17%", top: "73.1%", width: "31.8%", height: "9.3%", fontSize: "clamp(9px, 2.15cqw, 26px)" }}
+                >
+                  <span>{dong} {grade.name} 학생들의</span>
+                  <span>{subject.name} 학습 성장을 함께합니다.</span>
+                </div>
               </div>
             </div>
           </section>
