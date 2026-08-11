@@ -10,11 +10,11 @@ import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
-function getThumbnailUrl(dong: string, subject: string) {
-  if (dong === "tanbang-dong") {
+function getThumbnailUrl(dong: string, subject: string, gradeSlug: string) {
+  if (dong === "tanbang-dong" && subject === "math" && gradeSlug === "high") {
     return `${SITE_URL}/thumbnails/studyhigh-official-template.png?v=5`;
   }
-  return `${SITE_URL}/thumbnails/${dong.replace(/-dong$/, "")}-high-${subject}.webp?v=5`;
+  return `${SITE_URL}/thumbnails/${dong.replace(/-dong$/, "")}-${gradeSlug}-${subject}.webp?v=6`;
 }
 
 type Props = {
@@ -49,12 +49,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = getThumbnailUrl(dong, subject);
-  const searchTitle = `${article.dongName} 고등 ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
+  const gradeName = article.gradeName ?? "고등";
+  const gradeSlug = article.gradeSlug ?? "high";
+  const thumbnail = getThumbnailUrl(dong, subject, gradeSlug);
+  const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
   return {
     title: { absolute: searchTitle },
     description: article.description,
-    keywords: [article.keyword, `${article.dongName} 고등 ${article.subjectName}과외`],
+    keywords: [article.keyword, `${article.dongName} ${gradeName} ${article.subjectName}과외`],
     alternates: { canonical },
     openGraph: {
       title: searchTitle,
@@ -77,9 +79,11 @@ export default async function TutoringPage({ params }: Props) {
   const article = getTutoringArticle(city, dong, subject);
   if (!article) notFound();
   const plan = subjectPlans[article.subject as keyof typeof subjectPlans];
+  const gradeName = article.gradeName ?? "고등";
+  const gradeSlug = article.gradeSlug ?? "high";
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = getThumbnailUrl(dong, subject);
+  const thumbnail = getThumbnailUrl(dong, subject, gradeSlug);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -93,7 +97,7 @@ export default async function TutoringPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: article.keyword,
-    serviceType: `고등 ${article.subjectName}과외 상담`,
+    serviceType: `${gradeName} ${article.subjectName}과외 상담`,
     provider: {
       "@type": "EducationalOrganization",
       name: "StudyHigh",
@@ -123,7 +127,7 @@ export default async function TutoringPage({ params }: Props) {
             <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1fr_0.82fr] lg:items-center lg:px-8">
               <div>
                 <p className="text-sm font-black text-[#6736C8]">
-                  {article.cityName} {article.dongName} · 고등학교 · {article.subjectName}
+                  {article.cityName} {article.dongName} · {gradeName} · {article.subjectName}
                 </p>
                 <h1 className="mt-5 text-4xl font-black leading-tight sm:text-6xl">
                   {article.title}
@@ -218,7 +222,7 @@ export default async function TutoringPage({ params }: Props) {
                 PERSONAL DIAGNOSIS
               </p>
               <h2 className="mt-4 max-w-4xl text-3xl font-black sm:text-5xl">
-                같은 {article.dongName} 고등학생이어도 필요한 수업은 다릅니다
+                같은 {article.dongName} {gradeName} 학생이어도 필요한 수업은 다릅니다
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
                 현재 등급만 보고 진도를 정하지 않습니다. 최근 시험에서 왜 틀렸는지,

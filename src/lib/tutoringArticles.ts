@@ -5,6 +5,8 @@ export type TutoringArticle = {
   dongName: string;
   subject: string;
   subjectName: string;
+  gradeName?: "고등" | "중등";
+  gradeSlug?: "high" | "middle";
   keyword: string;
   title: string;
   description: string;
@@ -20,7 +22,7 @@ export type TutoringArticle = {
   faq: Array<{ question: string; answer: string }>;
 };
 
-export const tutoringArticles: TutoringArticle[] = [
+const highTutoringArticles: TutoringArticle[] = [
   {
     city: "daejeon",
     cityName: "대전",
@@ -731,6 +733,95 @@ export const tutoringArticles: TutoringArticle[] = [
       },
     ],
   },
+];
+
+type MiddleSeed = {
+  dong: string;
+  dongName: string;
+  subject: "math" | "english" | "korean";
+  subjectName: "수학" | "영어" | "국어";
+  focus: string;
+  concern: string;
+  parentConcern: string;
+};
+
+const middleSeeds: MiddleSeed[] = [
+  { dong: "gwanpyeong-dong", dongName: "관평동", subject: "english", subjectName: "영어", focus: "교과서 본문과 어휘 복습", concern: "단어는 외우지만 긴 문장의 구조를 잡지 못해 해석이 끊기는 학생", parentConcern: "영어 공부 시간은 긴데 학교 시험 점수가 안정되지 않는 상황" },
+  { dong: "dunsan-dong", dongName: "둔산동", subject: "math", subjectName: "수학", focus: "개념 연결과 서술형 풀이", concern: "공식은 기억하지만 문제 조건에 맞는 식을 세우기 어려운 학생", parentConcern: "학원 진도를 따라가도 틀린 문제의 원인을 설명하지 못하는 상황" },
+  { dong: "doan-dong", dongName: "도안동", subject: "english", subjectName: "영어", focus: "어휘·문법·독해 연결", concern: "문법 문제는 풀지만 실제 지문 해석에 적용하지 못하는 학생", parentConcern: "중학교 영어 난도가 높아진 뒤 자신감과 학습량이 함께 떨어진 상황" },
+  { dong: "tanbang-dong", dongName: "탄방동", subject: "korean", subjectName: "국어", focus: "지문 근거와 서술형 답안", concern: "감으로 답을 고르고 정답의 근거를 지문에서 찾지 못하는 학생", parentConcern: "국어는 따로 공부하지 않아도 된다고 생각해 복습이 밀리는 상황" },
+  { dong: "noeun-dong", dongName: "노은동", subject: "math", subjectName: "수학", focus: "연산 정확도와 유형 적용", concern: "풀이 방향은 맞지만 부호와 계산 실수로 점수를 잃는 학생", parentConcern: "숙제는 하지만 오답을 다시 풀지 않아 같은 실수가 반복되는 상황" },
+  { dong: "wolpyeong-dong", dongName: "월평동", subject: "korean", subjectName: "국어", focus: "문학 개념과 독해 습관", concern: "문학 용어를 외워도 작품 속 표현과 연결하지 못하는 학생", parentConcern: "책을 읽어도 시험 문제에서는 핵심 내용을 놓치는 상황" },
+  { dong: "jeonmin-dong", dongName: "전민동", subject: "math", subjectName: "수학", focus: "취약 단원 복구와 내신 대비", concern: "앞 단원의 빈틈 때문에 새 단원 문제까지 연속해서 막히는 학생", parentConcern: "진도는 나가지만 기초 부족을 어디서부터 채워야 할지 모르는 상황" },
+  { dong: "songchon-dong", dongName: "송촌동", subject: "english", subjectName: "영어", focus: "본문 암기보다 문장 이해", concern: "교과서 본문을 외워도 변형 문제에서 문장을 알아보지 못하는 학생", parentConcern: "시험 직전 암기에 의존해 영어 성적의 편차가 큰 상황" },
+  { dong: "gao-dong", dongName: "가오동", subject: "korean", subjectName: "국어", focus: "비문학 구조와 핵심 문장", concern: "긴 설명문을 읽고도 문단별 핵심 내용을 정리하기 어려운 학생", parentConcern: "문제 풀이 속도가 느려 시험 후반 문항을 놓치는 상황" },
+  { dong: "munhwa-dong", dongName: "문화동", subject: "math", subjectName: "수학", focus: "개념 확인과 오답 재시험", concern: "해설을 보면 이해하지만 혼자서는 첫 풀이를 시작하지 못하는 학생", parentConcern: "문제집 진도에 비해 실제로 풀 수 있는 문제가 적은 상황" },
+  { dong: "gwanjeo-dong", dongName: "관저동", subject: "english", subjectName: "영어", focus: "학교별 본문과 서술형", concern: "단어 뜻은 알지만 문장 배열과 영작 서술형을 어려워하는 학생", parentConcern: "객관식보다 서술형에서 점수를 많이 잃는 상황" },
+  { dong: "galma-dong", dongName: "갈마동", subject: "korean", subjectName: "국어", focus: "선택지 판단과 오답 설명", concern: "두 개의 선택지 사이에서 자주 흔들리고 판단 기준이 없는 학생", parentConcern: "국어 점수가 시험마다 달라 안정적인 공부법이 필요한 상황" },
+  { dong: "boksu-dong", dongName: "복수동", subject: "math", subjectName: "수학", focus: "중학 수학 개념과 문제 해석", concern: "문제의 문장이 길어지면 무엇을 구해야 하는지 놓치는 학생", parentConcern: "기본 문제는 풀지만 응용 문제에서 바로 포기하는 상황" },
+  { dong: "gayang-dong", dongName: "가양동", subject: "english", subjectName: "영어", focus: "매일 어휘와 짧은 독해", concern: "단어 복습 간격이 불규칙해 외운 내용을 빠르게 잊는 학생", parentConcern: "영어 공부를 시험 직전에만 몰아서 하는 상황" },
+  { dong: "doma-dong", dongName: "도마동", subject: "korean", subjectName: "국어", focus: "교과서 작품과 수행평가", concern: "수업 필기를 외워도 작품의 주제와 표현법을 연결하지 못하는 학생", parentConcern: "지필평가와 수행평가 준비가 동시에 밀리는 상황" },
+  { dong: "daeheung-dong", dongName: "대흥동", subject: "math", subjectName: "수학", focus: "학교 진도와 주간 복습", concern: "수업 시간에는 이해하지만 며칠 뒤 풀이 과정이 떠오르지 않는 학생", parentConcern: "복습 계획이 없어 단원평가 때마다 처음부터 다시 공부하는 상황" },
+  { dong: "jungni-dong", dongName: "중리동", subject: "english", subjectName: "영어", focus: "문장 구조와 내신 어법", concern: "주어와 동사를 찾지 못해 긴 문장을 끝까지 해석하기 어려운 학생", parentConcern: "문법 개념을 배웠지만 실제 시험 문제에 적용하지 못하는 상황" },
+  { dong: "guam-dong", dongName: "구암동", subject: "korean", subjectName: "국어", focus: "독해 속도와 근거 표시", concern: "지문을 여러 번 읽느라 제한 시간 안에 문제를 마치지 못하는 학생", parentConcern: "국어 시험에서 시간 부족과 실수가 반복되는 상황" },
+  { dong: "mok-dong", dongName: "목동", subject: "math", subjectName: "수학", focus: "연산 기초와 단계별 응용", concern: "분수와 문자식 연산이 불안해 이후 단원의 풀이가 자주 끊기는 학생", parentConcern: "중학교 수학의 기초가 부족해 학년이 올라갈수록 부담이 커지는 상황" },
+  { dong: "samseong-dong", dongName: "삼성동", subject: "english", subjectName: "영어", focus: "듣기·어휘·본문 균형", concern: "듣기와 독해 중 한 영역에만 치우쳐 전체 점수가 오르지 않는 학생", parentConcern: "영어 영역별 수준 차이가 커서 학습 우선순위를 정하기 어려운 상황" },
+];
+
+const subjectDetails = {
+  math: {
+    detailTopic: "중학 수학의 개념 빈틈을 찾아 내신으로 연결하는 방법",
+    detailBody: "최근 시험과 교재에서 틀린 문제를 개념 부족, 문제 해석, 계산 실수로 나눕니다. 필요한 선수 개념을 짧게 복구한 뒤 기본 문제와 학교 시험형 문제를 순서대로 풀어 혼자 설명할 수 있는지 확인합니다.",
+    method: "주 1회 취약 개념을 점검하고 같은 유형을 1일, 3일, 7일 간격으로 다시 풉니다.",
+  },
+  english: {
+    detailTopic: "중학 영어의 어휘·문장·본문을 함께 공부하는 방법",
+    detailBody: "학교 교과서와 부교재를 기준으로 핵심 어휘를 익히고 문장의 주어와 동사를 표시합니다. 본문을 의미 단위로 해석한 뒤 어법과 서술형 변형 문제로 연결해 암기만으로 끝나지 않게 합니다.",
+    method: "매일 짧은 어휘 복습과 문장 두 개 분석을 하고 주말에 본문 변형 문제로 확인합니다.",
+  },
+  korean: {
+    detailTopic: "중학 국어의 지문 이해와 답의 근거를 만드는 방법",
+    detailBody: "교과서 작품과 설명문을 읽고 문단별 핵심을 한 문장으로 정리합니다. 선택지의 맞고 틀린 이유를 지문에서 표시하고 서술형은 핵심어가 포함됐는지 직접 점검합니다.",
+    method: "지문 하나마다 중심 내용, 답의 근거, 틀린 이유를 기록하고 다음 주에 다시 설명합니다.",
+  },
+} as const;
+
+const middleTutoringArticles: TutoringArticle[] = middleSeeds.map((seed, index) => {
+  const detail = subjectDetails[seed.subject];
+  const nearby = ["학교 진도 확인", "최근 시험 분석", "수행평가 일정", "학습 습관 점검"];
+  return {
+    city: "daejeon",
+    cityName: "대전",
+    ...seed,
+    gradeName: "중등",
+    gradeSlug: "middle",
+    keyword: `${seed.dongName} 중등 ${seed.subjectName}과외`,
+    title: `${seed.dongName} 중등 ${seed.subjectName}과외 | ${seed.focus}`,
+    description: `대전 ${seed.dongName} 중학생을 위한 ${seed.subjectName}과외 상담 정보입니다. ${seed.focus}, 학교 내신 대비, 취약 부분 보완과 학습 관리를 안내합니다.`,
+    lead: `${seed.dongName} 중등 ${seed.subjectName}과외는 진도를 먼저 정하기보다 최근 시험과 교재를 살펴 학생이 막히는 지점을 찾는 것에서 시작합니다. 중학교 시기는 개념과 공부 습관을 함께 잡아야 다음 학년에서도 흔들리지 않습니다.`,
+    detailTopic: detail.detailTopic,
+    detailBody: `${detail.detailBody} ${seed.dongName} 학생의 학교 진도와 시험 일정을 반영해 학습량을 조절합니다.`,
+    concern: seed.concern,
+    parentConcern: seed.parentConcern,
+    method: `${detail.method} ${nearby[index % nearby.length]} 결과를 다음 수업 계획에 반영합니다.`,
+    image: seed.subject === "math" ? "/high-school-math-tutoring.png" : seed.subject === "english" ? "/hero-tutor.png" : "/hero-background-premium.png",
+    imageAlt: `${seed.dongName} 중학생 ${seed.subjectName}과외와 ${seed.focus} 학습 장면`,
+    faq: [
+      {
+        question: `${seed.dongName} 중등 ${seed.subjectName}과외 상담 전에 무엇을 준비하나요?`,
+        answer: `최근 ${seed.subjectName} 시험지나 오답, 사용하는 교과서와 문제집, 학교 진도와 가장 어려운 부분을 알려주시면 학생 상황을 구체적으로 확인할 수 있습니다.`,
+      },
+      {
+        question: `중등 ${seed.subjectName} 내신과 기초 보완을 함께 할 수 있나요?`,
+        answer: `가능합니다. 시험 일정을 기준으로 내신 범위를 준비하면서 반복해서 막히는 선수 개념은 별도 복습 계획으로 보완합니다.`,
+      },
+    ],
+  };
+});
+
+export const tutoringArticles: TutoringArticle[] = [
+  ...highTutoringArticles,
+  ...middleTutoringArticles,
 ];
 
 export function getTutoringArticle(city: string, dong: string, subject: string) {
