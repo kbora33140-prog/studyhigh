@@ -766,6 +766,42 @@ const middleSeeds: MiddleSeed[] = [
   { dong: "guam-dong", dongName: "구암동", subject: "korean", subjectName: "국어", focus: "독해 속도와 근거 표시", concern: "지문을 여러 번 읽느라 제한 시간 안에 문제를 마치지 못하는 학생", parentConcern: "국어 시험에서 시간 부족과 실수가 반복되는 상황" },
   { dong: "mok-dong", dongName: "목동", subject: "math", subjectName: "수학", focus: "연산 기초와 단계별 응용", concern: "분수와 문자식 연산이 불안해 이후 단원의 풀이가 자주 끊기는 학생", parentConcern: "중학교 수학의 기초가 부족해 학년이 올라갈수록 부담이 커지는 상황" },
   { dong: "samseong-dong", dongName: "삼성동", subject: "english", subjectName: "영어", focus: "듣기·어휘·본문 균형", concern: "듣기와 독해 중 한 영역에만 치우쳐 전체 점수가 오르지 않는 학생", parentConcern: "영어 영역별 수준 차이가 커서 학습 우선순위를 정하기 어려운 상황" },
+  ...[
+    ["mannyeon-dong", "만년동"],
+    ["sinseong-dong", "신성동"],
+    ["wonsinheung-dong", "원신흥동"],
+    ["gasuwon-dong", "가수원동"],
+    ["jeongnim-dong", "정림동"],
+    ["goejeong-dong", "괴정동"],
+    ["yongjeon-dong", "용전동"],
+    ["taepyeong-dong", "태평동"],
+    ["sintanjin-dong", "신탄진동"],
+    ["birae-dong", "비래동"],
+  ].flatMap(([dong, dongName], dongIndex) =>
+    ([
+      {
+        subject: "math" as const,
+        subjectName: "수학" as const,
+        focus: ["개념 연결과 서술형 풀이", "함수와 도형 유형 분석", "계산 정확도와 시험 시간 관리"][dongIndex % 3],
+        concern: ["개념은 알지만 조건이 달라지면 풀이를 시작하지 못하는 학생", "계산 실수가 반복되어 아는 문제에서도 점수를 잃는 학생", "응용문제에서 필요한 공식을 고르기 어려운 학생"][dongIndex % 3],
+        parentConcern: ["공부 시간에 비해 수학 내신 점수가 오르지 않는 상황", "오답을 다시 풀어도 같은 실수가 반복되는 상황", "중학교 수학 기초가 부족해 다음 단원까지 흔들리는 상황"][dongIndex % 3],
+      },
+      {
+        subject: "english" as const,
+        subjectName: "영어" as const,
+        focus: ["교과서 본문과 어휘 복습", "문장 구조와 서술형 대비", "독해 속도와 학교 내신 관리"][dongIndex % 3],
+        concern: ["단어는 외우지만 긴 문장의 구조를 잡지 못하는 학생", "본문은 외웠지만 변형 문제에서 정답을 찾기 어려운 학생", "독해 시간이 오래 걸려 시험 문제를 끝까지 풀지 못하는 학생"][dongIndex % 3],
+        parentConcern: ["영어 공부 시간은 긴데 학교 시험 점수가 불안정한 상황", "문법과 독해 중 어느 부분부터 보완할지 모르는 상황", "시험 직전에만 본문을 외워 학습 내용이 오래 남지 않는 상황"][dongIndex % 3],
+      },
+      {
+        subject: "korean" as const,
+        subjectName: "국어" as const,
+        focus: ["지문 근거와 선택지 판단", "문학 개념과 서술형 답안", "비문학 독해와 시험 시간 관리"][dongIndex % 3],
+        concern: ["감으로 답을 골라 정답의 근거를 설명하기 어려운 학생", "문학 개념을 외워도 작품에 적용하지 못하는 학생", "긴 지문을 읽고 핵심 내용을 정리하기 어려운 학생"][dongIndex % 3],
+        parentConcern: ["국어는 따로 공부하지 않아도 된다고 생각하는 상황", "시험마다 국어 점수 차이가 커 학습 방향이 필요한 상황", "독서량에 비해 학교 국어 성적이 오르지 않는 상황"][dongIndex % 3],
+      },
+    ]).map((subject) => ({ dong, dongName, ...subject })),
+  ),
 ];
 
 const subjectDetails = {
