@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...tutoringArticles.map((article) => ({
       url: `${baseUrl}/tutoring/${article.city}/${article.dong}/${article.subject}`,
-      lastModified: new Date("2026-07-31"),
+      lastModified: new Date("2026-08-12"),
       changeFrequency: "weekly" as const,
       priority: 0.9,
     })),

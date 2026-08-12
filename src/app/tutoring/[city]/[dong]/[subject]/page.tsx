@@ -21,6 +21,10 @@ type Props = {
   params: Promise<{ city: string; dong: string; subject: string }>;
 };
 
+// Keep pre-rendering known pages, while allowing newly added article data to be
+// rendered on demand before the next full build has generated its static HTML.
+export const dynamicParams = true;
+
 export function generateStaticParams() {
   return tutoringArticles.map(({ city, dong, subject }) => ({ city, dong, subject }));
 }
@@ -52,15 +56,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const gradeName = article.gradeName ?? "고등";
   const gradeSlug = article.gradeSlug ?? "high";
   const thumbnail = getThumbnailUrl(dong, subject, gradeSlug);
-  const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
+  const searchTitle = `${article.dongName} ${article.subjectName}과외 | 내신 1:1 맞춤수업 | 스터디하이`;
+  const searchDescription = `${article.dongName} ${article.subjectName}과외를 찾는 학생을 위한 1:1 맞춤수업입니다. 학교별 내신 분석, 시험 대비, 학습관리와 무료 테스트 수업을 제공합니다.`;
   return {
     title: { absolute: searchTitle },
-    description: article.description,
+    description: searchDescription,
     keywords: [article.keyword, `${article.dongName} ${gradeName} ${article.subjectName}과외`],
     alternates: { canonical },
     openGraph: {
       title: searchTitle,
-      description: article.description,
+      description: searchDescription,
       url: `${SITE_URL}${canonical}`,
       type: "article",
       images: [{ url: thumbnail, width: 1200, height: 1200, alt: article.keyword }],
@@ -68,7 +73,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: searchTitle,
-      description: article.description,
+      description: searchDescription,
       images: [thumbnail],
     },
   };
