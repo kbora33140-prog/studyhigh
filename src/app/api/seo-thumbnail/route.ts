@@ -12,52 +12,70 @@ const fontPromise = readFile(
   path.join(process.cwd(), "public", "fonts", "malgunbd-subset.ttf"),
 );
 
-const gradeNames: Record<string, string> = {
-  elementary: "초등", middle: "중등", high: "고등",
-  "high-1": "고1", "high-2": "고2", "high-3": "고3",
-};
 const subjectNames: Record<string, string> = {
-  math: "수학", english: "영어", korean: "국어", all: "전과목",
+  math: "수학",
+  english: "영어",
+  korean: "국어",
+  science: "과학",
+  social: "사회",
+  all: "전과목",
 };
 
 function escapeXml(value: string) {
-  return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
 }
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const dong = escapeXml((searchParams.get("dong") || "스터디하이").slice(0, 12));
-  const grade = gradeNames[searchParams.get("grade") || ""] || "맞춤";
-  const subject = subjectNames[searchParams.get("subject") || ""] || "과목";
-  const headline = `${grade} ${subject}과외`;
-  const headlineSize = headline.length >= 9 ? 84 : headline.length >= 7 ? 96 : 108;
-  const subjectLine = subject === "전과목"
-    ? "부족한 과목부터 내신까지, 1:1 맞춤 수업"
-    : `${subject} 기초부터 내신까지, 1:1 맞춤 ${subject} 수업`;
-  const skill = subject === "수학" ? "수학 실력" : subject === "영어" ? "영어 독해" : subject === "국어" ? "국어 독해력" : "전과목 실력";
+  const subjectKey = searchParams.get("subject") || "math";
+  const subject = subjectNames[subjectKey] || "과목";
   const [template, font] = await Promise.all([templatePromise, fontPromise]);
   const fontData = font.toString("base64");
+
+  // 원본 템플릿의 아이콘·설명·배치에는 손대지 않는다. 아래 SVG는
+  // 지역명, 과목명, 부제목의 과목 단어, 하단 지역명 문구만 교체한다.
+  const subjectOverlays = subjectKey === "math" ? "" : `
+    <rect x="125" y="222" width="960" height="225" fill="url(#paperPurple)"/>
+    <text x="605" y="392" text-anchor="middle" font-size="174" fill="url(#headlinePurple)">${subject}과외</text>
+    <rect x="205" y="470" width="790" height="72" fill="url(#paperPurple)"/>
+    <text x="600" y="520" text-anchor="middle" font-size="38" fill="#1b0b38">기초부터 심화까지, 1:1 맞춤 ${subject} 수업</text>`;
+
   const overlay = Buffer.from(`<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="topPurple" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#5524be"/><stop offset="1" stop-color="#7834d6"/>
+      </linearGradient>
+      <linearGradient id="bottomPurple" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#6931c5"/><stop offset="1" stop-color="#5d29b8"/>
+      </linearGradient>
+      <radialGradient id="paperPurple"><stop offset="0" stop-color="#f5effa"/><stop offset="1" stop-color="#f1e8f8"/></radialGradient>
+      <linearGradient id="headlinePurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5421bd"/><stop offset="0.55" stop-color="#281144"/><stop offset="1" stop-color="#170b2f"/></linearGradient>
+    </defs>
     <style>@font-face{font-family:Malgun;src:url(data:font/ttf;base64,${fontData})} text{font-family:Malgun,sans-serif;font-weight:700}</style>
-    <rect x="410" y="78" width="380" height="120" rx="60" fill="#6929d8"/><text x="600" y="157" text-anchor="middle" font-size="52" fill="white">${dong}</text>
-    <rect x="130" y="210" width="950" height="245" fill="#fbf9ff"/><text x="605" y="369" text-anchor="middle" font-size="${headlineSize}" fill="#1b0b38">${headline}</text>
-    <rect x="205" y="467" width="790" height="74" fill="#fbf9ff"/><text x="600" y="518" text-anchor="middle" font-size="34" fill="#1b0b38">${subjectLine}</text>
-    <rect x="168" y="740" width="205" height="85" fill="#fbf9ff"/><text x="270" y="777" text-anchor="middle" font-size="23" fill="#1b0b38">필수 개념</text><text x="270" y="810" text-anchor="middle" font-size="23" fill="#1b0b38">완벽 정리</text>
-    <rect x="388" y="740" width="205" height="85" fill="#fbf9ff"/><text x="490" y="777" text-anchor="middle" font-size="23" fill="#1b0b38">학교 내신</text><text x="490" y="810" text-anchor="middle" font-size="23" fill="#1b0b38">집중 대비</text>
-    <rect x="608" y="740" width="205" height="85" fill="#fbf9ff"/><text x="710" y="777" text-anchor="middle" font-size="23" fill="#1b0b38">${skill}</text><text x="710" y="810" text-anchor="middle" font-size="23" fill="#1b0b38">단계별 향상</text>
-    <rect x="828" y="740" width="205" height="85" fill="#fbf9ff"/><text x="930" y="777" text-anchor="middle" font-size="23" fill="#1b0b38">1:1 맞춤 지도</text><text x="930" y="810" text-anchor="middle" font-size="23" fill="#1b0b38">성향 맞춤 케어</text>
-    <rect x="198" y="864" width="420" height="110" fill="#6929d8"/><text x="220" y="907" font-size="27" fill="white">${dong} ${grade} 학생들의</text><text x="220" y="950" font-size="27" fill="white">${subject} 실력 향상을 도와드립니다.</text>
+    <rect x="426" y="80" width="350" height="114" rx="57" fill="url(#topPurple)"/>
+    <text x="601" y="157" text-anchor="middle" font-size="52" fill="white">${dong}</text>
+    ${subjectOverlays}
+    <rect x="205" y="886" width="395" height="100" rx="2" fill="url(#bottomPurple)"/>
+    <text x="221" y="925" font-size="27" fill="white">${dong} 학생들의</text>
+    <text x="221" y="966" font-size="27" fill="white">성적 향상을 책임집니다.</text>
   </svg>`);
+
   const image = await sharp(template)
     .resize(1200, 1200)
     .composite([{ input: overlay, top: 0, left: 0 }])
-    .webp({ quality: 84 })
+    .webp({ quality: 88 })
     .toBuffer();
 
   return new Response(new Uint8Array(image), {
     headers: {
       "Content-Type": "image/webp",
-      "Cache-Control": "public, max-age=31536000, immutable",
+      "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
       "Content-Length": String(image.byteLength),
     },
   });

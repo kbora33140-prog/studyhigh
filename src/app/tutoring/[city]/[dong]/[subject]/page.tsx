@@ -10,11 +10,9 @@ import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
-function getThumbnailUrl(dong: string, subject: string, gradeSlug: string) {
-  if (dong === "tanbang-dong" && subject === "math" && gradeSlug === "high") {
-    return `${SITE_URL}/thumbnails/studyhigh-official-template.png?v=5`;
-  }
-  return `${SITE_URL}/thumbnails/${dong.replace(/-dong$/, "")}-${gradeSlug}-${subject}.webp?v=6`;
+function getThumbnailUrl(dongName: string, subject: string, gradeSlug: string) {
+  const params = new URLSearchParams({ dong: dongName, subject, grade: gradeSlug, v: "8" });
+  return `${SITE_URL}/api/seo-thumbnail?${params.toString()}`;
 }
 
 type Props = {
@@ -55,8 +53,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
   const gradeName = article.gradeName ?? "고등";
   const gradeSlug = article.gradeSlug ?? "high";
-  const thumbnail = getThumbnailUrl(dong, subject, gradeSlug);
-  const searchTitle = `${article.dongName} ${article.subjectName}과외 | 내신 1:1 맞춤수업 | 스터디하이`;
+  const thumbnail = getThumbnailUrl(article.dongName, subject, gradeSlug);
+  const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
   const searchDescription = `${article.dongName} ${article.subjectName}과외를 찾는 학생을 위한 1:1 맞춤수업입니다. 학교별 내신 분석, 시험 대비, 학습관리와 무료 테스트 수업을 제공합니다.`;
   return {
     title: { absolute: searchTitle },
@@ -88,7 +86,7 @@ export default async function TutoringPage({ params }: Props) {
   const gradeSlug = article.gradeSlug ?? "high";
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = getThumbnailUrl(dong, subject, gradeSlug);
+  const thumbnail = getThumbnailUrl(article.dongName, subject, gradeSlug);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
