@@ -14,7 +14,7 @@ import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
 const SITE_URL = "https://studyhigh.co.kr";
 
 function getArticleImageUrl(dong: string, grade: string, subject: string) {
-  const query = new URLSearchParams({ dong, grade, subject, v: "8" });
+  const query = new URLSearchParams({ dong, grade, subject, v: "9" });
   return `${SITE_URL}/api/seo-thumbnail?${query.toString()}`;
 }
 

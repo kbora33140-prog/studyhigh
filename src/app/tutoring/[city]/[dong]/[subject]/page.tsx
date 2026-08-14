@@ -11,7 +11,7 @@ import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 const SITE_URL = "https://studyhigh.co.kr";
 
 function getThumbnailUrl(dongName: string, subject: string, gradeSlug: string) {
-  const params = new URLSearchParams({ dong: dongName, subject, grade: gradeSlug, v: "8" });
+  const params = new URLSearchParams({ dong: dongName, subject, grade: gradeSlug, v: "9" });
   return `${SITE_URL}/api/seo-thumbnail?${params.toString()}`;
 }
 
