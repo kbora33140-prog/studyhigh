@@ -100,9 +100,10 @@ export async function generateMetadata({
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
   const targetKeyword = `${region.name} ${dong} ${grade.name} ${subjectKeyword}`;
   const articleImage = getArticleImageUrl(dong, grade.slug, subject.slug);
+  const searchTitle = `${dong} ${grade.name} ${subjectKeyword}, 내신/학습관리 1:1 맞춤 수업`;
 
   return {
-    title: article?.title || `${region.name} ${district.name} ${pageKeyword} | 스터디하이`,
+    title: { absolute: searchTitle },
     description:
       article?.metaDescription ||
       `${region.name} ${district.name} ${pageKeyword}를 찾는 학생을 위해 내신대비, 정시 대비, 학습관리, 방문과외와 화상과외를 1:1 맞춤으로 상담합니다.`,
@@ -120,7 +121,7 @@ export async function generateMetadata({
       canonical,
     },
     openGraph: {
-      title: article?.title || `${region.name} ${district.name} ${pageKeyword}`,
+      title: searchTitle,
       description:
         article?.metaDescription ||
         `${dong} ${grade.name} 학생을 위한 ${subjectKeyword} 상담 페이지입니다. 학생 수준과 목표에 맞춰 수업 방향을 제안합니다.`,
@@ -130,7 +131,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: article?.title || `${dong} ${grade.name} ${subjectKeyword}`,
+      title: searchTitle,
       description:
         article?.metaDescription ||
         `${dong} ${grade.name} ${subjectKeyword} 1:1 맞춤수업 상담`,
