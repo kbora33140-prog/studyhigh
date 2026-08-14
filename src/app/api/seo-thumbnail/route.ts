@@ -40,11 +40,9 @@ export async function GET(request: Request) {
 
   // 원본 템플릿의 아이콘·설명·배치에는 손대지 않는다. 아래 SVG는
   // 지역명, 과목명, 부제목의 과목 단어, 하단 지역명 문구만 교체한다.
-  const subjectOverlays = subjectKey === "math" ? "" : `
+  const subjectOverlay = subjectKey === "math" ? "" : `
     <rect x="125" y="222" width="960" height="225" fill="url(#paperPurple)"/>
-    <text x="605" y="392" text-anchor="middle" font-size="174" fill="url(#headlinePurple)">${subject}과외</text>
-    <rect x="205" y="470" width="790" height="72" fill="url(#paperPurple)"/>
-    <text x="600" y="520" text-anchor="middle" font-size="38" fill="#1b0b38">기초부터 심화까지, 1:1 맞춤 ${subject} 수업</text>`;
+    <text x="605" y="392" text-anchor="middle" font-size="174" fill="url(#headlinePurple)">${subject}과외</text>`;
 
   const overlay = Buffer.from(`<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -60,7 +58,7 @@ export async function GET(request: Request) {
     <style>@font-face{font-family:Malgun;src:url(data:font/ttf;base64,${fontData})} text{font-family:Malgun,sans-serif;font-weight:700}</style>
     <rect x="426" y="80" width="350" height="114" rx="57" fill="url(#topPurple)"/>
     <text x="601" y="157" text-anchor="middle" font-size="52" fill="white">${dong}</text>
-    ${subjectOverlays}
+    ${subjectOverlay}
     <rect x="205" y="886" width="395" height="100" rx="2" fill="url(#bottomPurple)"/>
     <text x="221" y="925" font-size="27" fill="white">${dong} 학생들의</text>
     <text x="221" y="966" font-size="27" fill="white">성적 향상을 책임집니다.</text>

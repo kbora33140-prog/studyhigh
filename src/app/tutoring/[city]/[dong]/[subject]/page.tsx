@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { existsSync } from "node:fs";
+import path from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -10,8 +12,17 @@ import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
-function getThumbnailUrl(dongName: string, subject: string, gradeSlug: string) {
-  const params = new URLSearchParams({ dong: dongName, subject, grade: gradeSlug, v: "9" });
+function getThumbnailUrl(dongSlug: string, dongName: string, subject: string, gradeSlug: string) {
+  if (dongSlug === "tanbang-dong" && subject === "math" && gradeSlug === "high") {
+    return `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
+  }
+
+  const filename = `${dongSlug.replace(/-dong$/, "")}-${gradeSlug}-${subject}.webp`;
+  if (existsSync(path.join(process.cwd(), "public", "thumbnails", filename))) {
+    return `${SITE_URL}/thumbnails/${filename}`;
+  }
+
+  const params = new URLSearchParams({ dong: dongName, subject, grade: gradeSlug, v: "10" });
   return `${SITE_URL}/api/seo-thumbnail?${params.toString()}`;
 }
 
@@ -53,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
   const gradeName = article.gradeName ?? "고등";
   const gradeSlug = article.gradeSlug ?? "high";
-  const thumbnail = getThumbnailUrl(article.dongName, subject, gradeSlug);
+  const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug);
   const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
   const searchDescription = `${article.dongName} ${article.subjectName}과외를 찾는 학생을 위한 1:1 맞춤수업입니다. 학교별 내신 분석, 시험 대비, 학습관리와 무료 테스트 수업을 제공합니다.`;
   return {
@@ -86,7 +97,7 @@ export default async function TutoringPage({ params }: Props) {
   const gradeSlug = article.gradeSlug ?? "high";
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
-  const thumbnail = getThumbnailUrl(article.dongName, subject, gradeSlug);
+  const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

@@ -13,9 +13,8 @@ import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
-function getArticleImageUrl(dong: string, grade: string, subject: string) {
-  const query = new URLSearchParams({ dong, grade, subject, v: "9" });
-  return `${SITE_URL}/api/seo-thumbnail?${query.toString()}`;
+function getArticleImageUrl() {
+  return `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
 }
 
 type GradeSubjectPageProps = {
@@ -99,7 +98,7 @@ export async function generateMetadata({
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
   const targetKeyword = `${region.name} ${dong} ${grade.name} ${subjectKeyword}`;
-  const articleImage = getArticleImageUrl(dong, grade.slug, subject.slug);
+  const articleImage = getArticleImageUrl();
   const searchTitle = `${dong} ${grade.name} ${subjectKeyword}, 내신/학습관리 1:1 맞춤 수업`;
 
   return {
@@ -152,7 +151,7 @@ export default async function GradeSubjectPage({ params }: GradeSubjectPageProps
 
   const { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article } = data;
   const canonical = `/regions/${region.slug}/${district.slug}/${slugifyKorean(dong)}/${grade.slug}/${subject.slug}`;
-  const articleImage = getArticleImageUrl(dong, grade.slug, subject.slug);
+  const articleImage = getArticleImageUrl();
   const articleImageAlt =
     article?.imageAlt || `${region.name} ${district.name} ${dong} ${grade.name} ${subject.name}과외 이미지`;
   const thumbnailHeadline =
