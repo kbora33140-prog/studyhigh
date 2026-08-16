@@ -12,18 +12,31 @@ import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
+type ThumbnailSource = {
+  url: string;
+  showPageLabels: boolean;
+};
+
 function getThumbnailUrl(dongSlug: string, dongName: string, subject: string, gradeSlug: string) {
   if (dongSlug === "tanbang-dong" && subject === "math" && gradeSlug === "high") {
-    return `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
+    return {
+      url: `${SITE_URL}/thumbnails/studyhigh-official-template.png`,
+      showPageLabels: false,
+    } satisfies ThumbnailSource;
   }
 
   const filename = `${dongSlug.replace(/-dong$/, "")}-${gradeSlug}-${subject}.webp`;
   if (existsSync(path.join(process.cwd(), "public", "thumbnails", filename))) {
-    return `${SITE_URL}/thumbnails/${filename}`;
+    return {
+      url: `${SITE_URL}/thumbnails/${filename}`,
+      showPageLabels: false,
+    } satisfies ThumbnailSource;
   }
 
-  const params = new URLSearchParams({ dong: dongName, subject, grade: gradeSlug, v: "10" });
-  return `${SITE_URL}/api/seo-thumbnail?${params.toString()}`;
+  return {
+    url: `${SITE_URL}/thumbnails/studyhigh-official-template.png`,
+    showPageLabels: true,
+  } satisfies ThumbnailSource;
 }
 
 type Props = {
@@ -64,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `/tutoring/${city}/${dong}/${subject}`;
   const gradeName = article.gradeName ?? "고등";
   const gradeSlug = article.gradeSlug ?? "high";
-  const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug);
+  const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug).url;
   const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외, 내신/학습관리 1:1 맞춤 수업`;
   const searchDescription = `${article.dongName} ${article.subjectName}과외를 찾는 학생을 위한 1:1 맞춤수업입니다. 학교별 내신 분석, 시험 대비, 학습관리와 무료 테스트 수업을 제공합니다.`;
   return {
@@ -120,7 +133,7 @@ export default async function TutoringPage({ params }: Props) {
     areaServed: `${article.cityName} ${article.dongName}`,
     description: article.description,
     url: canonical,
-    image: thumbnail,
+    image: thumbnail.url,
   };
 
   return (
@@ -170,9 +183,9 @@ export default async function TutoringPage({ params }: Props) {
                   무료 상담 신청
                 </OpenConsultationButton>
               </div>
-              <div className="relative aspect-square overflow-hidden rounded-[30px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)]">
+              <div className="relative aspect-square overflow-hidden rounded-[30px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)] [container-type:inline-size]">
                 <Image
-                  src={thumbnail.replace(SITE_URL, "")}
+                  src={thumbnail.url.replace(SITE_URL, "")}
                   alt={`${article.keyword} 공식 썸네일`}
                   fill
                   priority
@@ -180,6 +193,22 @@ export default async function TutoringPage({ params }: Props) {
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-contain"
                 />
+                {thumbnail.showPageLabels ? (
+                  <>
+                    <div
+                      className="pointer-events-none absolute z-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#5421bd] to-[#7a35d6] font-black text-white"
+                      style={{ left: "35.7%", top: "6.7%", width: "28.3%", height: "9.5%", fontSize: "clamp(18px, 4.4cqw, 54px)" }}
+                    >
+                      {article.dongName}
+                    </div>
+                    <div
+                      className="pointer-events-none absolute z-10 flex items-center justify-center bg-[#fbf8ff] text-center font-black leading-none text-[#211039]"
+                      style={{ left: "10.7%", top: "17.6%", width: "79.5%", height: "20.4%", fontSize: "clamp(28px, 9.8cqw, 118px)" }}
+                    >
+                      {article.subjectName}과외
+                    </div>
+                  </>
+                ) : null}
               </div>
             </div>
           </section>

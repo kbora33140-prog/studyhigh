@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 import { ConsultationTimeline, SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
-import { getSearchableGradeRoute, searchableGradeRoutes } from "@/lib/gradeLevels";
+import { getSearchableGradeRoute } from "@/lib/gradeLevels";
 import { getLocalSeoArticle } from "@/lib/localSeoArticles";
 import { searchRegions } from "@/lib/searchRegions";
 import { normalizeKoreanSlug, slugifyKorean, subjects } from "@/lib/regions";
@@ -62,28 +62,6 @@ function getPageData({
   });
 
   return { region, district, dong, grade, subject, subjectKeyword, pageKeyword, article };
-}
-
-export function generateStaticParams() {
-  const daejeon = searchRegions.find((region) => region.slug === "daejeon");
-
-  if (!daejeon) {
-    return [];
-  }
-
-  return daejeon.districts.flatMap((district) =>
-    district.dongs.flatMap((dong) =>
-      searchableGradeRoutes.flatMap((grade) =>
-        subjects.map((subject) => ({
-          slug: daejeon.slug,
-          district: district.slug,
-          dong: slugifyKorean(dong),
-          grade: grade.slug,
-          subject: subject.slug,
-        })),
-      ),
-    ),
-  );
 }
 
 export async function generateMetadata({
