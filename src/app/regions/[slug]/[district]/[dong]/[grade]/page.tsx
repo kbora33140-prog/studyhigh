@@ -9,8 +9,6 @@ import {
   findDong,
   getDistrict,
   getRegionBySlug,
-  regions,
-  slugifyKorean,
   subjects,
 } from "@/lib/regions";
 
@@ -18,20 +16,7 @@ type SubjectShortcutPageProps = {
   params: Promise<{ slug: string; district: string; dong: string; grade: string }>;
 };
 
-export function generateStaticParams() {
-  return regions.flatMap((region) =>
-    region.districts.flatMap((district) =>
-      district.dongs.flatMap((dong) =>
-        subjects.map((subject) => ({
-          slug: region.slug,
-          district: district.slug,
-          dong: slugifyKorean(dong),
-          grade: subject.slug,
-        })),
-      ),
-    ),
-  );
-}
+export const revalidate = 86400;
 
 export async function generateMetadata({
   params,

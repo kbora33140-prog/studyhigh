@@ -8,48 +8,31 @@ import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
-import { getTutoringArticle, tutoringArticles } from "@/lib/tutoringArticles";
+import { getTutoringArticle } from "@/lib/tutoringArticles";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
-type ThumbnailSource = {
-  url: string;
-  showPageLabels: boolean;
-};
-
 function getThumbnailUrl(dongSlug: string, dongName: string, subject: string, gradeSlug: string) {
   if (dongSlug === "tanbang-dong" && subject === "math" && gradeSlug === "high") {
-    return {
-      url: `${SITE_URL}/thumbnails/studyhigh-official-template.png`,
-      showPageLabels: false,
-    } satisfies ThumbnailSource;
+    return `${SITE_URL}/thumbnails/studyhigh-official-template.png`;
   }
 
   const filename = `${dongSlug.replace(/-dong$/, "")}-${gradeSlug}-${subject}.webp`;
   if (existsSync(path.join(process.cwd(), "public", "thumbnails", filename))) {
-    return {
-      url: `${SITE_URL}/thumbnails/${filename}`,
-      showPageLabels: false,
-    } satisfies ThumbnailSource;
+    return `${SITE_URL}/thumbnails/${filename}`;
   }
 
-  return {
-    url: `${SITE_URL}/thumbnails/studyhigh-official-template.png`,
-    showPageLabels: true,
-  } satisfies ThumbnailSource;
+  return `${SITE_URL}/api/seo-thumbnail?dong=${encodeURIComponent(dongName)}&subject=${encodeURIComponent(subject)}`;
 }
 
 type Props = {
   params: Promise<{ city: string; dong: string; subject: string }>;
 };
 
-// Keep pre-rendering known pages, while allowing newly added article data to be
-// rendered on demand before the next full build has generated its static HTML.
+// Generate pages on demand and cache them so nationwide expansion does not make
+// build time grow in direct proportion to every region/subject combination.
 export const dynamicParams = true;
-
-export function generateStaticParams() {
-  return tutoringArticles.map(({ city, dong, subject }) => ({ city, dong, subject }));
-}
+export const revalidate = 86400;
 
 const subjectPlans = {
   math: {
@@ -78,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalUrl = `${SITE_URL}${canonical}`;
   const gradeName = article.gradeName ?? "고등";
   const gradeSlug = article.gradeSlug ?? "high";
-  const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug).url;
+  const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug);
   const imageAlt = `${article.dongName} ${gradeName} ${article.subjectName}과외 대표 이미지`;
   const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외 | 내신/학습관리 1:1 맞춤 수업 | 스터디하이`;
   const searchDescription = article.description;
@@ -135,7 +118,7 @@ export default async function TutoringPage({ params }: Props) {
     areaServed: `${article.cityName} ${article.dongName}`,
     description: article.description,
     url: canonical,
-    image: thumbnail.url,
+    image: thumbnail,
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -215,7 +198,7 @@ export default async function TutoringPage({ params }: Props) {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-[30px] bg-white shadow-[0_24px_80px_rgba(43,16,95,0.16)] [container-type:inline-size]">
                 <Image
-                  src={thumbnail.url.replace(SITE_URL, "")}
+                  src={thumbnail.replace(SITE_URL, "")}
                   alt={`${article.keyword} 공식 썸네일`}
                   fill
                   priority
@@ -223,22 +206,6 @@ export default async function TutoringPage({ params }: Props) {
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-contain"
                 />
-                {thumbnail.showPageLabels ? (
-                  <>
-                    <div
-                      className="pointer-events-none absolute z-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#5421bd] to-[#7a35d6] font-black text-white"
-                      style={{ left: "35.7%", top: "6.7%", width: "28.3%", height: "9.5%", fontSize: "clamp(18px, 4.4cqw, 54px)" }}
-                    >
-                      {article.dongName}
-                    </div>
-                    <div
-                      className="pointer-events-none absolute z-10 flex items-center justify-center bg-[#fbf8ff] text-center font-black leading-none text-[#211039]"
-                      style={{ left: "10.7%", top: "17.6%", width: "79.5%", height: "20.4%", fontSize: "clamp(28px, 9.8cqw, 118px)" }}
-                    >
-                      {article.subjectName}과외
-                    </div>
-                  </>
-                ) : null}
               </div>
             </div>
           </section>

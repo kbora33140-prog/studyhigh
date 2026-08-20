@@ -4,7 +4,6 @@ import Module from "node:module";
 import ts from "typescript";
 
 const root = process.cwd();
-const siteUrl = "https://studyhigh.co.kr";
 const sourcePath = path.join(root, "src", "lib", "tutoringArticles.ts");
 const pagePath = path.join(root, "src", "app", "tutoring", "[city]", "[dong]", "[subject]", "page.tsx");
 const sitemapPath = path.join(root, "src", "app", "sitemap.ts");
@@ -127,7 +126,7 @@ for (let i = 0; i < requiredArticles.length; i += 1) {
   }
 }
 
-for (const fragment of ["article.description", "alternates: { canonical: canonicalUrl }", "type: \"website\"", "BreadcrumbList", "FAQPage", "Service", "image: thumbnail.url"]) {
+for (const fragment of ["article.description", "alternates: { canonical: canonicalUrl }", "type: \"website\"", "BreadcrumbList", "FAQPage", "Service", "image: thumbnail", "src={thumbnail.replace(SITE_URL, \"\")}", "/api/seo-thumbnail?dong="]) {
   if (!pageSource.includes(fragment)) fail(`페이지 SEO/JSON-LD 코드 누락: ${fragment}`);
 }
 if (!sitemapSource.includes("tutoringArticles.map")) fail("sitemap의 tutoringArticles 자동 반영 코드 누락");

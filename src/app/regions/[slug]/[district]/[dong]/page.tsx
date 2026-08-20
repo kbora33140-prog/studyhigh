@@ -8,8 +8,6 @@ import {
   findDong,
   getDistrict,
   getRegionBySlug,
-  regions,
-  slugifyKorean,
   subjects,
 } from "@/lib/regions";
 
@@ -17,17 +15,7 @@ type DongPageProps = {
   params: Promise<{ slug: string; district: string; dong: string }>;
 };
 
-export function generateStaticParams() {
-  return regions.flatMap((region) =>
-    region.districts.flatMap((district) =>
-      district.dongs.map((dong) => ({
-        slug: region.slug,
-        district: district.slug,
-        dong: slugifyKorean(dong),
-      })),
-    ),
-  );
-}
+export const revalidate = 86400;
 
 export async function generateMetadata({ params }: DongPageProps): Promise<Metadata> {
   const { slug, district: districtSlug, dong: dongSlug } = await params;

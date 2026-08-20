@@ -41,8 +41,10 @@ export async function GET(request: Request) {
   // 원본 템플릿의 아이콘·설명·배치에는 손대지 않는다. 아래 SVG는
   // 지역명, 과목명, 부제목의 과목 단어, 하단 지역명 문구만 교체한다.
   const subjectOverlay = subjectKey === "math" ? "" : `
-    <rect x="125" y="222" width="960" height="225" fill="url(#paperPurple)"/>
-    <text x="605" y="392" text-anchor="middle" font-size="174" fill="url(#headlinePurple)">${subject}과외</text>`;
+    <rect x="120" y="215" width="970" height="250" fill="url(#paperPurple)"/>
+    <text x="605" y="392" text-anchor="middle" font-size="174" fill="url(#headlinePurple)">${subject}과외</text>
+    <rect x="200" y="465" width="840" height="75" fill="url(#paperPurple)"/>
+    <text x="600" y="512" text-anchor="middle" font-size="40" fill="#211039">기초부터 심화까지, 1:1 맞춤 ${subject} 수업</text>`;
 
   const overlay = Buffer.from(`<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
     <defs>
