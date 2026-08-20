@@ -743,15 +743,46 @@ type MiddleSeed = {
   focus: string;
   concern: string;
   parentConcern: string;
+  custom?: {
+    detailTopic: string;
+    detailBody: string;
+    method: string;
+    faq: { question: string; answer: string }[];
+  };
 };
 
 const middleSeeds: MiddleSeed[] = [
-  { dong: "gwanpyeong-dong", dongName: "관평동", subject: "english", subjectName: "영어", focus: "교과서 본문과 어휘 복습", concern: "단어는 외우지만 긴 문장의 구조를 잡지 못해 해석이 끊기는 학생", parentConcern: "영어 공부 시간은 긴데 학교 시험 점수가 안정되지 않는 상황" },
-  { dong: "dunsan-dong", dongName: "둔산동", subject: "math", subjectName: "수학", focus: "개념 연결과 서술형 풀이", concern: "공식은 기억하지만 문제 조건에 맞는 식을 세우기 어려운 학생", parentConcern: "학원 진도를 따라가도 틀린 문제의 원인을 설명하지 못하는 상황" },
+  { dong: "gwanpyeong-dong", dongName: "관평동", subject: "english", subjectName: "영어", focus: "교과서 본문과 어휘 복습", concern: "단어는 외우지만 긴 문장의 구조를 잡지 못해 해석이 끊기는 학생", parentConcern: "영어 공부 시간은 긴데 학교 시험 점수가 안정되지 않는 상황", custom: {
+    detailTopic: "관평동 중학생의 영어 본문을 문장 구조로 이해하는 순서",
+    detailBody: "외운 본문을 그대로 말하는 것과 낯선 변형 문장을 해석하는 것은 다릅니다. 먼저 한 문장에서 주어와 동사를 표시하고 수식어를 묶은 뒤, 핵심 어휘가 문맥에서 어떤 뜻으로 쓰였는지 확인합니다. 학교별 자료가 있다면 실제 범위와 수업 필기를 기준으로 다시 정리합니다.",
+    method: "하루 분량을 어휘 확인, 두 문장 구조 분석, 짧은 영작으로 나누고 다음 수업에서 막힌 단계부터 보완합니다.",
+    faq: [
+      { question: "관평동 중등 영어과외는 본문 암기만 진행하나요?", answer: "본문 암기만 반복하지 않습니다. 문장의 뼈대를 찾고 핵심 표현을 다른 문장에 적용해 보면서 변형 문제와 서술형에 대응할 수 있는지 확인합니다." },
+      { question: "관평동 중학생이 단어를 외워도 독해가 안 되면 무엇부터 하나요?", answer: "단어량과 문장 구조 중 어디에서 해석이 끊기는지 구분합니다. 짧은 문장부터 주어와 동사를 찾고 의미 단위로 읽는 연습을 한 뒤 긴 지문으로 확장합니다." },
+    ],
+  } },
+  { dong: "dunsan-dong", dongName: "둔산동", subject: "math", subjectName: "수학", focus: "개념 연결과 서술형 풀이", concern: "공식은 기억하지만 문제 조건에 맞는 식을 세우기 어려운 학생", parentConcern: "학원 진도를 따라가도 틀린 문제의 원인을 설명하지 못하는 상황", custom: {
+    detailTopic: "둔산동 중학생의 수학 풀이를 말과 식으로 연결하는 연습",
+    detailBody: "정답을 맞힌 문제도 왜 그 공식을 선택했는지 설명하지 못하면 조건이 바뀔 때 다시 막힐 수 있습니다. 문제에서 주어진 값과 구할 것을 분리하고, 사용한 개념을 한 문장으로 말한 다음 식을 세웁니다. 확인되지 않은 학교별 경향을 단정하지 않고 실제 시험지와 범위를 받은 뒤 대비 순서를 정합니다.",
+    method: "오답마다 계산, 조건 해석, 개념 선택 중 원인을 하나로 표시하고 같은 원인의 새 문제를 혼자 설명하며 다시 풉니다.",
+    faq: [
+      { question: "둔산동 중등 수학과외에서 서술형 풀이는 어떻게 점검하나요?", answer: "답만 확인하지 않고 문제 조건, 선택한 개념, 계산 과정이 이어지는지 봅니다. 빠진 근거를 학생이 직접 말로 보충한 뒤 식과 문장으로 정리합니다." },
+      { question: "둔산동 중학생이 진도는 빠른데 응용문제를 못 풀면 어떻게 하나요?", answer: "새 진도를 늘리기 전에 최근 오답을 유형별로 나눕니다. 개념을 모르는지, 조건을 해석하지 못하는지 확인하고 필요한 단계만 돌아가 보완합니다." },
+    ],
+  } },
   { dong: "doan-dong", dongName: "도안동", subject: "english", subjectName: "영어", focus: "어휘·문법·독해 연결", concern: "문법 문제는 풀지만 실제 지문 해석에 적용하지 못하는 학생", parentConcern: "중학교 영어 난도가 높아진 뒤 자신감과 학습량이 함께 떨어진 상황" },
   { dong: "tanbang-dong", dongName: "탄방동", subject: "korean", subjectName: "국어", focus: "지문 근거와 서술형 답안", concern: "감으로 답을 고르고 정답의 근거를 지문에서 찾지 못하는 학생", parentConcern: "국어는 따로 공부하지 않아도 된다고 생각해 복습이 밀리는 상황" },
   { dong: "noeun-dong", dongName: "노은동", subject: "math", subjectName: "수학", focus: "연산 정확도와 유형 적용", concern: "풀이 방향은 맞지만 부호와 계산 실수로 점수를 잃는 학생", parentConcern: "숙제는 하지만 오답을 다시 풀지 않아 같은 실수가 반복되는 상황" },
   { dong: "wolpyeong-dong", dongName: "월평동", subject: "korean", subjectName: "국어", focus: "문학 개념과 독해 습관", concern: "문학 용어를 외워도 작품 속 표현과 연결하지 못하는 학생", parentConcern: "책을 읽어도 시험 문제에서는 핵심 내용을 놓치는 상황" },
+  { dong: "wolpyeong-dong", dongName: "월평동", subject: "english", subjectName: "영어", focus: "학교 본문 분석과 서술형 영작", concern: "본문의 뜻은 이해하지만 핵심 문장을 직접 쓰거나 어법에 맞게 바꾸기 어려운 학생", parentConcern: "단어와 본문을 반복해서 외워도 서술형 답안에서 점수를 잃는 상황", custom: {
+    detailTopic: "월평동 중학생의 영어 서술형 답안을 스스로 고치는 방법",
+    detailBody: "영작은 완성 문장을 통째로 외우기보다 전달할 내용과 필수 표현을 먼저 정하는 것이 좋습니다. 초안을 쓴 뒤 동사의 형태, 주어와 수의 일치, 철자, 빠진 단어를 순서대로 확인합니다. 학교 시험은 제공된 교과서·프린트·시험 범위를 확인한 뒤 그 자료 안에서 준비합니다.",
+    method: "주간 복습 때 틀린 영작을 정답과 바로 바꾸지 않고 오류 표시만 보고 한 번 더 고친 뒤 개인 실수 목록에 기록합니다.",
+    faq: [
+      { question: "월평동 중등 영어과외에서 서술형 영작도 준비할 수 있나요?", answer: "가능합니다. 현재 시험 범위의 핵심 표현을 확인하고, 문장 배열과 빈칸 영작부터 완전한 문장 쓰기까지 학생 수준에 맞춰 단계적으로 연습합니다." },
+      { question: "월평동 중학생의 영어 오답은 어떻게 관리하나요?", answer: "어휘 부족, 문장 구조, 어법, 철자처럼 원인을 나눕니다. 정답을 베끼는 대신 같은 오류를 스스로 고친 문장을 남겨 다음 복습에서 다시 확인합니다." },
+    ],
+  } },
   { dong: "jeonmin-dong", dongName: "전민동", subject: "math", subjectName: "수학", focus: "취약 단원 복구와 내신 대비", concern: "앞 단원의 빈틈 때문에 새 단원 문제까지 연속해서 막히는 학생", parentConcern: "진도는 나가지만 기초 부족을 어디서부터 채워야 할지 모르는 상황" },
   { dong: "songchon-dong", dongName: "송촌동", subject: "english", subjectName: "영어", focus: "본문 암기보다 문장 이해", concern: "교과서 본문을 외워도 변형 문제에서 문장을 알아보지 못하는 학생", parentConcern: "시험 직전 암기에 의존해 영어 성적의 편차가 큰 상황" },
   { dong: "gao-dong", dongName: "가오동", subject: "korean", subjectName: "국어", focus: "비문학 구조와 핵심 문장", concern: "긴 설명문을 읽고도 문단별 핵심 내용을 정리하기 어려운 학생", parentConcern: "문제 풀이 속도가 느려 시험 후반 문항을 놓치는 상황" },
@@ -835,14 +866,14 @@ const middleTutoringArticles: TutoringArticle[] = middleSeeds.map((seed, index) 
     title: `${seed.dongName} 중등 ${seed.subjectName}과외 | ${seed.focus}`,
     description: `대전 ${seed.dongName} 중학생을 위한 ${seed.subjectName}과외 상담 정보입니다. ${seed.focus}, 학교 내신 대비, 취약 부분 보완과 학습 관리를 안내합니다.`,
     lead: `${seed.dongName} 중등 ${seed.subjectName}과외는 진도를 먼저 정하기보다 최근 시험과 교재를 살펴 학생이 막히는 지점을 찾는 것에서 시작합니다. 중학교 시기는 개념과 공부 습관을 함께 잡아야 다음 학년에서도 흔들리지 않습니다.`,
-    detailTopic: detail.detailTopic,
-    detailBody: `${detail.detailBody} ${seed.dongName} 학생의 학교 진도와 시험 일정을 반영해 학습량을 조절합니다.`,
+    detailTopic: seed.custom?.detailTopic ?? detail.detailTopic,
+    detailBody: seed.custom?.detailBody ?? `${detail.detailBody} ${seed.dongName} 학생의 학교 진도와 시험 일정을 반영해 학습량을 조절합니다.`,
     concern: seed.concern,
     parentConcern: seed.parentConcern,
-    method: `${detail.method} ${nearby[index % nearby.length]} 결과를 다음 수업 계획에 반영합니다.`,
+    method: seed.custom?.method ?? `${detail.method} ${nearby[index % nearby.length]} 결과를 다음 수업 계획에 반영합니다.`,
     image: seed.subject === "math" ? "/high-school-math-tutoring.png" : seed.subject === "english" ? "/hero-tutor.png" : "/hero-background-premium.png",
     imageAlt: `${seed.dongName} 중학생 ${seed.subjectName}과외와 ${seed.focus} 학습 장면`,
-    faq: [
+    faq: seed.custom?.faq ?? [
       {
         question: `${seed.dongName} 중등 ${seed.subjectName}과외 상담 전에 무엇을 준비하나요?`,
         answer: `최근 ${seed.subjectName} 시험지나 오답, 사용하는 교과서와 문제집, 학교 진도와 가장 어려운 부분을 알려주시면 학생 상황을 구체적으로 확인할 수 있습니다.`,

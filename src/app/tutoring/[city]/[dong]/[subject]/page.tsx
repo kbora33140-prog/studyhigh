@@ -81,7 +81,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug).url;
   const imageAlt = `${article.dongName} ${gradeName} ${article.subjectName}과외 대표 이미지`;
   const searchTitle = `${article.dongName} ${gradeName} ${article.subjectName}과외 | 내신/학습관리 1:1 맞춤 수업 | 스터디하이`;
-  const searchDescription = `${article.dongName} ${article.subjectName}과외를 찾는 학생을 위한 1:1 맞춤수업입니다. 학교별 내신 분석, 시험 대비, 학습관리와 무료 테스트 수업을 제공합니다.`;
+  const searchDescription = article.description;
   return {
     title: { absolute: searchTitle },
     description: searchDescription,
@@ -137,6 +137,30 @@ export default async function TutoringPage({ params }: Props) {
     url: canonical,
     image: thumbnail.url,
   };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "스터디하이",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: `${article.cityName} 수업 지역`,
+        item: `${SITE_URL}/regions/${city}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.keyword,
+        item: canonical,
+      },
+    ],
+  };
 
   return (
     <>
@@ -149,6 +173,10 @@ export default async function TutoringPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
         <article>

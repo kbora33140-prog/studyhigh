@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "data:generate": "node scripts/generate-seo-data.mjs",
-    "data:validate": "node scripts/validate-seo-data.mjs && node scripts/validate-content-data.mjs",
+    "data:validate": "node scripts/validate-seo-data.mjs && node scripts/validate-content-data.mjs && node scripts/validate-tutoring-seo.mjs",
     "content:validate": "node scripts/validate-content-data.mjs",
+    "seo:validate": "node scripts/validate-tutoring-seo.mjs",
     "indexnow:submit": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
