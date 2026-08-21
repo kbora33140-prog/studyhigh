@@ -1,0 +1,472 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studyhigh.co.kr/schemas/national-seo-page.schema.json",
+  "title": "StudyHigh National SEO Page Record",
+  "description": "전국 지역·학교·학년·과목 SEO 페이지 한 건의 원본 참조와 생성 결과를 정의한다. 이 스키마는 페이지를 생성하지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "status",
+    "identity",
+    "region",
+    "school",
+    "page",
+    "content",
+    "seo",
+    "aeo",
+    "geo",
+    "image",
+    "sourceRefs",
+    "quality"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "$ref": "#/$defs/pageId" },
+    "status": {
+      "enum": ["draft", "validated", "approved", "published", "retired"]
+    },
+    "identity": { "$ref": "#/$defs/identity" },
+    "region": { "$ref": "#/$defs/region" },
+    "school": {
+      "oneOf": [
+        { "$ref": "#/$defs/school" },
+        { "type": "null" }
+      ]
+    },
+    "page": { "$ref": "#/$defs/page" },
+    "content": { "$ref": "#/$defs/content" },
+    "seo": { "$ref": "#/$defs/seo" },
+    "aeo": { "$ref": "#/$defs/aeo" },
+    "geo": { "$ref": "#/$defs/geo" },
+    "image": { "$ref": "#/$defs/image" },
+    "sourceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/sourceRef" }
+    },
+    "legacyCompatibility": { "$ref": "#/$defs/legacyCompatibility" },
+    "quality": { "$ref": "#/$defs/quality" },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {}
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "page": {
+            "properties": { "pageType": { "const": "school" } },
+            "required": ["pageType"]
+          }
+        }
+      },
+      "then": {
+        "properties": { "school": { "$ref": "#/$defs/school" } }
+      }
+    }
+  ],
+  "$defs": {
+    "nonEmptyText": {
+      "type": "string",
+      "minLength": 1
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9가-힣]+(?:-[a-z0-9가-힣]+)*$"
+    },
+    "entityId": {
+      "type": "string",
+      "pattern": "^(province|district|town|school|grade|subject|student|parent|exam|study|faq):[A-Za-z0-9._:-]+$"
+    },
+    "pageId": {
+      "type": "string",
+      "pattern": "^page:[A-Za-z0-9._:-]+$"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provinceId",
+        "districtId",
+        "townId",
+        "schoolId",
+        "gradeId",
+        "subjectId",
+        "contentVariantId"
+      ],
+      "properties": {
+        "provinceId": { "$ref": "#/$defs/entityId" },
+        "districtId": { "$ref": "#/$defs/entityId" },
+        "townId": { "$ref": "#/$defs/entityId" },
+        "schoolId": {
+          "oneOf": [
+            { "$ref": "#/$defs/entityId" },
+            { "type": "null" }
+          ]
+        },
+        "gradeId": { "$ref": "#/$defs/entityId" },
+        "subjectId": { "$ref": "#/$defs/entityId" },
+        "contentVariantId": {
+          "type": "string",
+          "pattern": "^variant:[A-Za-z0-9._:-]+$"
+        }
+      }
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sido", "sigungu", "eupmyeondong", "regionSlug"],
+      "properties": {
+        "sido": { "$ref": "#/$defs/nonEmptyText" },
+        "sigungu": { "$ref": "#/$defs/nonEmptyText" },
+        "eupmyeondong": { "$ref": "#/$defs/nonEmptyText" },
+        "regionSlug": { "$ref": "#/$defs/slug" },
+        "provinceSlug": { "$ref": "#/$defs/slug" },
+        "districtSlug": { "$ref": "#/$defs/slug" },
+        "townSlug": { "$ref": "#/$defs/slug" }
+      }
+    },
+    "school": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schoolName",
+        "schoolSlug",
+        "schoolType",
+        "sido",
+        "sigungu",
+        "eupmyeondong",
+        "relatedGrades"
+      ],
+      "properties": {
+        "schoolName": { "$ref": "#/$defs/nonEmptyText" },
+        "schoolSlug": { "$ref": "#/$defs/slug" },
+        "schoolType": {
+          "enum": ["elementary", "middle", "high"]
+        },
+        "sido": { "$ref": "#/$defs/nonEmptyText" },
+        "sigungu": { "$ref": "#/$defs/nonEmptyText" },
+        "eupmyeondong": { "$ref": "#/$defs/nonEmptyText" },
+        "relatedGrades": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/entityId" }
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject",
+        "grade",
+        "pageType",
+        "url",
+        "title",
+        "description",
+        "canonical"
+      ],
+      "properties": {
+        "subject": { "$ref": "#/$defs/nonEmptyText" },
+        "grade": { "$ref": "#/$defs/nonEmptyText" },
+        "pageType": {
+          "enum": ["region", "school", "tutoring"]
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^/(regions|schools|tutoring)/[^?#]+$"
+        },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "description": {
+          "type": "string",
+          "minLength": 40,
+          "maxLength": 300
+        },
+        "canonical": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://studyhigh\\.co\\.kr/"
+        }
+      }
+    },
+    "contentBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "sourceRefIds", "factStatus"],
+      "properties": {
+        "text": { "$ref": "#/$defs/nonEmptyText" },
+        "sourceRefIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "factStatus": {
+          "enum": ["verified", "general-guidance", "needs-verification"]
+        }
+      }
+    },
+    "faqItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "question", "answer", "sourceRefIds", "factStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/entityId" },
+        "question": { "$ref": "#/$defs/nonEmptyText" },
+        "answer": { "$ref": "#/$defs/nonEmptyText" },
+        "sourceRefIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "factStatus": {
+          "enum": ["verified", "general-guidance", "needs-verification"]
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "regionIntro",
+        "schoolAnalysis",
+        "examCharacteristics",
+        "difficultUnits",
+        "learningConcerns",
+        "studyMethod",
+        "consultationType",
+        "faq"
+      ],
+      "properties": {
+        "regionIntro": { "$ref": "#/$defs/contentBlock" },
+        "schoolAnalysis": {
+          "oneOf": [
+            { "$ref": "#/$defs/contentBlock" },
+            { "type": "null" }
+          ]
+        },
+        "examCharacteristics": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/contentBlock" }
+        },
+        "difficultUnits": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/contentBlock" }
+        },
+        "learningConcerns": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/contentBlock" }
+        },
+        "studyMethod": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/contentBlock" }
+        },
+        "consultationType": { "$ref": "#/$defs/contentBlock" },
+        "faq": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": { "$ref": "#/$defs/faqItem" }
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "keywords",
+        "title",
+        "description",
+        "canonical",
+        "ogTitle",
+        "ogDescription",
+        "ogImage"
+      ],
+      "properties": {
+        "keywords": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nonEmptyText" }
+        },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "description": { "$ref": "#/$defs/nonEmptyText" },
+        "canonical": { "type": "string", "format": "uri" },
+        "ogTitle": { "$ref": "#/$defs/nonEmptyText" },
+        "ogDescription": { "$ref": "#/$defs/nonEmptyText" },
+        "ogImage": { "type": "string", "format": "uri" }
+      }
+    },
+    "aeo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["questions", "answers", "faqPageSchema"],
+      "properties": {
+        "questions": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nonEmptyText" }
+        },
+        "answers": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/nonEmptyText" }
+        },
+        "faqPageSchema": {
+          "type": "object",
+          "required": ["@context", "@type", "mainEntity"],
+          "properties": {
+            "@context": { "const": "https://schema.org" },
+            "@type": { "const": "FAQPage" },
+            "mainEntity": { "type": "array", "minItems": 2 }
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "geo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["region", "school", "grade", "subject", "localLearningContext"],
+      "properties": {
+        "region": { "$ref": "#/$defs/nonEmptyText" },
+        "school": {
+          "oneOf": [
+            { "$ref": "#/$defs/nonEmptyText" },
+            { "type": "null" }
+          ]
+        },
+        "grade": { "$ref": "#/$defs/nonEmptyText" },
+        "subject": { "$ref": "#/$defs/nonEmptyText" },
+        "localLearningContext": { "$ref": "#/$defs/contentBlock" }
+      }
+    },
+    "thumbnailText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["eupmyeondong", "subject", "grade", "optionalSchoolOrTopic"],
+      "properties": {
+        "eupmyeondong": { "$ref": "#/$defs/nonEmptyText" },
+        "subject": { "$ref": "#/$defs/nonEmptyText" },
+        "grade": { "$ref": "#/$defs/nonEmptyText" },
+        "optionalSchoolOrTopic": {
+          "oneOf": [
+            { "$ref": "#/$defs/nonEmptyText" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["masterImage", "masterSha256", "thumbnailText", "imagePath", "imageUrl", "alt"],
+      "properties": {
+        "masterImage": {
+          "const": "/thumbnails/studyhigh-official-template.png"
+        },
+        "masterSha256": {
+          "const": "FBD599FE2121CF5EEF8138316B5BF1E44718CFE72A5F83366986C4ADF639F4C6"
+        },
+        "thumbnailText": { "$ref": "#/$defs/thumbnailText" },
+        "imagePath": {
+          "type": "string",
+          "pattern": "^/(thumbnails|seo-images|api/seo-thumbnail)[^?#]*"
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://studyhigh\\.co\\.kr/"
+        },
+        "alt": { "$ref": "#/$defs/nonEmptyText" }
+      }
+    },
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "path", "recordId", "verifiedAt"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^source:[A-Za-z0-9._:-]+$"
+        },
+        "kind": {
+          "enum": [
+            "region",
+            "school",
+            "school-feature",
+            "exam-pattern",
+            "student-concern",
+            "parent-concern",
+            "study-method",
+            "faq",
+            "legacy-page"
+          ]
+        },
+        "path": { "$ref": "#/$defs/nonEmptyText" },
+        "recordId": { "$ref": "#/$defs/nonEmptyText" },
+        "verifiedAt": {
+          "oneOf": [
+            { "type": "string", "format": "date-time" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "legacyCompatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["isExistingPage", "existingUrl", "mustPreserve"],
+      "properties": {
+        "isExistingPage": { "type": "boolean" },
+        "existingUrl": {
+          "oneOf": [
+            { "type": "string", "pattern": "^/" },
+            { "type": "null" }
+          ]
+        },
+        "mustPreserve": { "type": "boolean" }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "similarityThreshold",
+        "maximumSimilarity",
+        "duplicateChecksPassed",
+        "factualChecksPassed",
+        "imageChecksPassed",
+        "indexable"
+      ],
+      "properties": {
+        "similarityThreshold": { "const": 0.2 },
+        "maximumSimilarity": {
+          "oneOf": [
+            { "type": "number", "minimum": 0, "maximum": 1 },
+            { "type": "null" }
+          ]
+        },
+        "duplicateChecksPassed": { "type": "boolean" },
+        "factualChecksPassed": { "type": "boolean" },
+        "imageChecksPassed": { "type": "boolean" },
+        "indexable": { "type": "boolean" },
+        "validationErrors": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nonEmptyText" },
+          "default": []
+        }
+      }
+    }
+  }
+}

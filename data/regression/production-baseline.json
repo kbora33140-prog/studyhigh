@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "siteUrl": "https://studyhigh.co.kr",
+  "minimumSitemapUrls": 8802,
+  "masterImage": {
+    "url": "/thumbnails/studyhigh-official-template.png",
+    "sha256": "FBD599FE2121CF5EEF8138316B5BF1E44718CFE72A5F83366986C4ADF639F4C6",
+    "contentType": "image/png"
+  },
+  "criticalPages": [
+    {
+      "category": "region",
+      "url": "/regions/daejeon/seo/%EB%91%94%EC%82%B0%EB%8F%99",
+      "title": "대전 서구 둔산동 과외 | 과목별 1:1 맞춤과외 | 스터디하이",
+      "canonical": "https://studyhigh.co.kr/regions/daejeon/seo/%EB%91%94%EC%82%B0%EB%8F%99",
+      "requiredText": ["둔산동", "과목 선택"]
+    },
+    {
+      "category": "subject",
+      "url": "/regions/daejeon/seo/%EB%91%94%EC%82%B0%EB%8F%99/math",
+      "title": "대전 서구 둔산동 수학 과외 | 스터디하이",
+      "canonical": "https://studyhigh.co.kr/regions/daejeon/seo/%EB%91%94%EC%82%B0%EB%8F%99/math",
+      "requiredText": ["둔산동", "수학 과외", "상담 과정"]
+    },
+    {
+      "category": "tutoring-master",
+      "url": "/tutoring/daejeon/tanbang-dong/math",
+      "title": "탄방동 고등 수학과외 | 내신/학습관리 1:1 맞춤 수업 | 스터디하이",
+      "canonical": "https://studyhigh.co.kr/tutoring/daejeon/tanbang-dong/math",
+      "ogImage": "https://studyhigh.co.kr/thumbnails/studyhigh-official-template.png",
+      "requiredText": ["탄방동", "고등", "수학", "무료상담은 이렇게 진행됩니다"]
+    },
+    {
+      "category": "tutoring-static-image",
+      "url": "/tutoring/daejeon/gwanpyeong-dong/math",
+      "title": "관평동 고등 수학과외 | 내신/학습관리 1:1 맞춤 수업 | 스터디하이",
+      "canonical": "https://studyhigh.co.kr/tutoring/daejeon/gwanpyeong-dong/math",
+      "ogImage": "https://studyhigh.co.kr/thumbnails/gwanpyeong-high-math.webp",
+      "requiredText": ["관평동", "고등", "수학", "자주 묻는 질문"]
+    },
+    {
+      "category": "tutoring-dynamic-image",
+      "url": "/tutoring/daejeon/wolpyeong-dong/english",
+      "title": "월평동 중등 영어과외 | 내신/학습관리 1:1 맞춤 수업 | 스터디하이",
+      "canonical": "https://studyhigh.co.kr/tutoring/daejeon/wolpyeong-dong/english",
+      "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%9B%94%ED%8F%89%EB%8F%99&subject=english",
+      "requiredText": ["월평동", "중등", "영어", "자주 묻는 질문"]
+    }
+  ]
+}

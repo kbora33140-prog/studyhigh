@@ -3,6 +3,7 @@ import { searchableGradeRoutes } from "@/lib/gradeLevels";
 import { regions, slugifyKorean, subjects } from "@/lib/regions";
 import { searchRegions } from "@/lib/searchRegions";
 import { tutoringArticles } from "@/lib/tutoringArticles";
+import { validatedTestSeoRecords } from "@/lib/testSeoManifest";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://studyhigh.co.kr";
@@ -44,6 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-08-12"),
       changeFrequency: "weekly" as const,
       priority: 0.9,
+    })),
+    ...validatedTestSeoRecords.map((record) => ({
+      url: record.page.canonical,
+      lastModified: new Date("2026-08-21"),
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
     })),
     ...regions.map((region) => ({
       url: `${baseUrl}/regions/${region.slug}`,

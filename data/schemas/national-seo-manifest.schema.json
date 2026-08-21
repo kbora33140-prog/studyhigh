@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studyhigh.co.kr/schemas/national-seo-manifest.schema.json",
+  "title": "StudyHigh National SEO Manifest",
+  "description": "검증 및 승인 단위별 페이지 레코드 묶음. 원본 데이터와 렌더링 결과를 분리한다.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "manifestId",
+    "scope",
+    "status",
+    "sourceSnapshot",
+    "records",
+    "summary"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "manifestId": {
+      "type": "string",
+      "pattern": "^manifest:[A-Za-z0-9._:-]+$"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provinceIds", "districtIds", "batchName"],
+      "properties": {
+        "provinceIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^province:" }
+        },
+        "districtIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^district:" }
+        },
+        "batchName": { "type": "string", "minLength": 1 }
+      }
+    },
+    "status": {
+      "enum": ["draft", "validated", "approved", "published", "retired"]
+    },
+    "sourceSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["regionSchemaVersion", "schoolSchemaVersion", "contentSchemaVersion", "createdAt"],
+      "properties": {
+        "regionSchemaVersion": { "type": "string" },
+        "schoolSchemaVersion": { "type": "string" },
+        "contentSchemaVersion": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "$ref": "national-seo-page.schema.json"
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recordCount",
+        "urlDuplicateCount",
+        "titleDuplicateCount",
+        "descriptionDuplicateCount",
+        "imageDuplicateCount",
+        "maximumSimilarity",
+        "validationErrors"
+      ],
+      "properties": {
+        "recordCount": { "type": "integer", "minimum": 0, "maximum": 500 },
+        "urlDuplicateCount": { "type": "integer", "minimum": 0 },
+        "titleDuplicateCount": { "type": "integer", "minimum": 0 },
+        "descriptionDuplicateCount": { "type": "integer", "minimum": 0 },
+        "imageDuplicateCount": { "type": "integer", "minimum": 0 },
+        "maximumSimilarity": {
+          "oneOf": [
+            { "type": "number", "minimum": 0, "maximum": 1 },
+            { "type": "null" }
+          ]
+        },
+        "validationErrors": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
