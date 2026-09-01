@@ -9,6 +9,7 @@ import json
 import hashlib
 import subprocess
 import tempfile
+import time
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -27,7 +28,7 @@ source = np.asarray(original).copy()
 # Existing glyph bounds, not whole banners. Bottom branding is never touched.
 REGION = (517, 108, 735, 180)
 SUBJECT = (154, 237, 649, 476)
-BOTTOM = (229, 938, 336, 972)
+BOTTOM = (229, 938, 448, 972)
 SUBTITLE = (823, 496, 928, 550)
 ICON_SUBJECT = (687, 788, 742, 815)
 
@@ -43,24 +44,32 @@ def erase(im, box):
     pixels[y0:y1,x0:x1] = np.asarray(patch)
     return Image.fromarray(pixels)
 
-def text(im, label, box, size, fill=None, gradient=False, stroke=0):
+def text(im, label, box, size, fill=None, gradient=False, stroke=0, preserve=False):
     font = ImageFont.truetype(str(FONT), size)
     font.set_variation_by_axes([900 if gradient else 700])
     bounds = font.getbbox(label, stroke_width=stroke)
     mask = Image.new('L', (bounds[2]-bounds[0]+4,bounds[3]-bounds[1]+4))
     ImageDraw.Draw(mask).text((2-bounds[0],2-bounds[1]), label, font=font, fill=255, stroke_width=stroke)
     x0,y0,x1,y1 = box
-    mask = mask.resize((x1-x0,y1-y0), Image.Resampling.LANCZOS)
+    target=(x1-x0,y1-y0)
+    if preserve:
+        ratio=min(target[0]/mask.width,target[1]/mask.height)
+        scaled=(max(1,round(mask.width*ratio)),max(1,round(mask.height*ratio)))
+        mask=mask.resize(scaled,Image.Resampling.LANCZOS)
+        offset=((target[0]-scaled[0])//2,(target[1]-scaled[1])//2)
+    else:
+        mask = mask.resize(target, Image.Resampling.LANCZOS)
+        offset=(0,0)
     if gradient:
         # Sample the original purple glyph colour from solid internal pixels.
-        a = np.zeros((y1-y0,x1-x0,3), dtype='uint8')
-        for y in range(y1-y0):
-            t=y/max(1,y1-y0-1)
+        a = np.zeros((mask.height,mask.width,3), dtype='uint8')
+        for y in range(mask.height):
+            t=y/max(1,mask.height-1)
             a[y,:,:]=np.array([103,44,197])*(1-t)+np.array([79,31,169])*t
         color=Image.fromarray(a)
     else:
         color=Image.new('RGB',mask.size,fill or (255,255,255))
-    im.paste(color,(x0,y0),mask)
+    im.paste(color,(x0+offset[0],y0+offset[1]),mask)
 
 records=json.loads((ROOT/'data/manifests/daejeon/additional-50-20260901.json').read_text(encoding='utf-8'))['records']
 report=[]
@@ -70,9 +79,9 @@ for r in records:
     town=r['image']['regionText']
     if town!='탄방동':
         im=erase(im,REGION); boxes.append(REGION)
-        text(im,town,(523,112,729,176),90)
+        text(im,town,(523,112,729,176),90,preserve=True)
         im=erase(im,BOTTOM); boxes.append(BOTTOM)
-        text(im,town,(232,941,332,970),36)
+        text(im,f"{town} 학생들의",(232,941,442,970),36,preserve=True)
     if r['page']['subject']!='수학':
         im=erase(im,SUBJECT); boxes.append(SUBJECT)
         text(im,r['page']['subject'],(164,245,641,470),280,gradient=True)
@@ -87,7 +96,13 @@ for r in records:
     assert not np.any(diff & ~allowed), r['id']
     out=ROOT/'public'/r['image']['imagePath'].lstrip('/')
     out.parent.mkdir(parents=True,exist_ok=True)
-    im.save(out,format='PNG',compress_level=6)
+    for attempt in range(10):
+        try:
+            im.save(out,format='PNG',compress_level=6)
+            break
+        except OSError:
+            if attempt == 9: raise
+            time.sleep(0.25 * (attempt + 1))
     assert Image.open(out).size==(1254,1254)
     report.append({'url':r['image']['imagePath'],'outsideTextChangedPixels':int(np.sum(diff & ~allowed))})
     print('Image',len(report),r['image']['imagePath'],flush=True)

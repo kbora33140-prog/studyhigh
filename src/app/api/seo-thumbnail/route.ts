@@ -35,6 +35,20 @@ export async function GET(request: Request) {
   const dong = escapeXml((searchParams.get("dong") || "스터디하이").slice(0, 12));
   const subjectKey = searchParams.get("subject") || "math";
   const subject = subjectNames[subjectKey] || "과목";
+  // Preserve the published legacy URL while serving a deterministic raster.
+  // The MASTER and all existing thumbnail files remain untouched.
+  if (dong === "월평동" && subjectKey === "english") {
+    const image = await readFile(
+      path.join(process.cwd(), "public", "seo-images", "stable-existing", "legacy-wolpyeong-english.webp"),
+    );
+    return new Response(new Uint8Array(image), {
+      headers: {
+        "Content-Type": "image/webp",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Content-Length": String(image.byteLength),
+      },
+    });
+  }
   const [template, font] = await Promise.all([templatePromise, fontPromise]);
   const fontData = font.toString("base64");
 
