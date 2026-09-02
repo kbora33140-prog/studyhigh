@@ -92,10 +92,8 @@ const finalImageResults = await pool(finalImageUrls, async (url) => {
 
 const productionMap = await request("https://studyhigh.co.kr/sitemap.xml");
 const productionTutoring = [...productionMap.body.toString().matchAll(/<loc>(https:\/\/studyhigh\.co\.kr\/tutoring\/[^<]+)<\/loc>/g)].map((match) => match[1]);
-const aliasSources = new Set(aliases.map((alias) => `https://studyhigh.co.kr${alias.source}`));
-const unaffected = productionTutoring.filter((url) => !aliasSources.has(url));
-const regression = await pool(unaffected, async (url) => (await request(url.replace("https://studyhigh.co.kr", base))).response.status);
-if (productionTutoring.length !== 151 || unaffected.length !== 117 || regression.some((status) => status !== 200)) errors.push("existing regression");
+const regression = await pool(productionTutoring, async (url) => (await request(url.replace("https://studyhigh.co.kr", base))).response.status);
+if (productionTutoring.length !== 132 || regression.some((status) => status !== 200)) errors.push("existing regression");
 
 const fields = ["title", "description", "canonical"];
 const duplicates = Object.fromEntries(fields.map((field) => {
