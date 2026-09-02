@@ -1,0 +1,2198 @@
+{
+  "version": 1,
+  "batch": "canonical-regions-20260902",
+  "records": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:001",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30230",
+        "townId": "town:3023061000",
+        "schoolId": "school:7441021",
+        "gradeId": "grade:middle-2",
+        "subjectId": "subject:english",
+        "contentVariantId": "variant:daejeon-test-014"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "대덕구",
+        "eupmyeondong": "법동",
+        "regionSlug": "daejeon-daedeok-gu-beop2-i-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "daedeok-gu",
+        "townSlug": "beop-dong",
+        "townId": "canonical:daedeok-gu:beop-dong"
+      },
+      "school": {
+        "id": "daejeon-beopdong-middle-school-7441021",
+        "name": "대전법동중학교",
+        "type": "middle",
+        "typeName": "중학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "영어",
+        "grade": "중등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/daedeok-gu/beop-dong/english",
+        "title": "법동 중등 영어과외 | 어휘 누적과 간격 복습 | 스터디하이",
+        "description": "대전광역시 대덕구 법동의 중등 영어 학습에서 단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 문제를 살피고, 하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/daedeok-gu/beop-dong/english"
+      },
+      "content": {
+        "theme": "어휘 누적과 간격 복습",
+        "introduction": "법동에서 대전법동중학교에 다니는 중등 학생의 영어 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "법동의 대전법동중학교 중등 학생이 단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다.",
+        "schoolAnalysis": "대전법동중학교은 프로젝트 원본 학교 데이터에서 대덕구 법동 소재 중학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "중등 영어의 공통 학습 요소를 점검하되, 대전법동중학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함",
+        "difficultUnit": "어휘 누적과 간격 복습 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다.",
+        "parentConcern": "법동 수업 가능 시간, 대전법동중학교의 현재 진도, 최근 영어 풀이 기록을 함께 확인해 단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "중등 영어의 공통 학습 요소를 점검하되, 대전법동중학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다.",
+        "lesson": "하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다.",
+        "faq": [
+          {
+            "question": "법동 중등 영어과외에서 대전법동중학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전법동중학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 어휘 누적과 간격 복습 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 학생은 영어 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "법동 중등 영어과외",
+          "대전법동중학교 영어 학습",
+          "대덕구 중등 내신 관리",
+          "어휘 누적과 간격 복습 1:1 과외"
+        ],
+        "title": "법동 중등 영어과외 | 어휘 누적과 간격 복습 | 스터디하이",
+        "description": "대전광역시 대덕구 법동의 중등 영어 학습에서 단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 문제를 살피고, 하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/daedeok-gu/beop-dong/english",
+        "ogTitle": "법동 중등 영어과외 | 어휘 누적과 간격 복습 | 스터디하이",
+        "ogDescription": "대전광역시 대덕구 법동의 중등 영어 학습에서 단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 문제를 살피고, 하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%B2%95%EB%8F%99&subject=english"
+      },
+      "aeo": {
+        "questions": [
+          "법동 중등 영어과외에서 대전법동중학교 학습 자료는 어떻게 활용하나요?",
+          "단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 학생은 영어 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전법동중학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 어휘 누적과 간격 복습 계획에 필요한 범위만 반영합니다.",
+          "하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "법동 중등 영어과외에서 대전법동중학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전법동중학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 어휘 누적과 간격 복습 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 학생은 영어 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 대덕구 법동",
+        "school": "대전법동중학교",
+        "grade": "중등",
+        "subject": "영어",
+        "localLearningContext": {
+          "text": "법동의 대전법동중학교 중등 학생이 단어 암기량은 늘지만 철자와 뜻을 오래 유지하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 하루 분량을 발음·철자·예문 세 단계로 확인하고 누적 간격 복습표에 따라 다시 테스트합니다.",
+          "sourceRefIds": [
+            "source:region:3023061000",
+            "source:school:7441021",
+            "source:student:014",
+            "source:study:014"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EB%B2%95%EB%8F%99&subject=english",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%B2%95%EB%8F%99&subject=english",
+        "alt": "법동 중등 영어과외 — 어휘 누적과 간격 복습",
+        "regionText": "법동",
+        "subjectText": "영어과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3023061000",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3023061000",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7441021",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7441021",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:014",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:014",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:014",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:014",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:014",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:014",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/daedeok-gu/beop2-i-dong/english"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:002",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011063000",
+        "schoolId": "school:7441012",
+        "gradeId": "grade:middle-2",
+        "subjectId": "subject:korean",
+        "contentVariantId": "variant:daejeon-test-011"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "동구",
+        "eupmyeondong": "가양동",
+        "regionSlug": "daejeon-dong-gu-gayang2-i-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "dong-gu",
+        "townSlug": "gayang-dong",
+        "townId": "canonical:dong-gu:gayang-dong"
+      },
+      "school": {
+        "id": "daejeon-gayang-middle-school-7441012",
+        "name": "대전가양중학교",
+        "type": "middle",
+        "typeName": "중학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "국어",
+        "grade": "중등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/dong-gu/gayang-dong/korean",
+        "title": "가양동 중등 국어과외 | 문학 표현과 효과 분석 | 스터디하이",
+        "description": "대전광역시 동구 가양동의 중등 국어 학습에서 문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 문제를 살피고, 표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/dong-gu/gayang-dong/korean"
+      },
+      "content": {
+        "theme": "문학 표현과 효과 분석",
+        "introduction": "가양동에서 대전가양중학교에 다니는 중등 학생의 국어 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "가양동의 대전가양중학교 중등 학생이 문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다.",
+        "schoolAnalysis": "대전가양중학교은 프로젝트 원본 학교 데이터에서 동구 가양동 소재 중학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "중등 국어의 공통 학습 요소를 점검하되, 대전가양중학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함",
+        "difficultUnit": "문학 표현과 효과 분석 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다.",
+        "parentConcern": "가양동 수업 가능 시간, 대전가양중학교의 현재 진도, 최근 국어 풀이 기록을 함께 확인해 문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "중등 국어의 공통 학습 요소를 점검하되, 대전가양중학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다.",
+        "lesson": "표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다.",
+        "faq": [
+          {
+            "question": "가양동 중등 국어과외에서 대전가양중학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전가양중학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 문학 표현과 효과 분석 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "가양동 중등 국어과외",
+          "대전가양중학교 국어 학습",
+          "동구 중등 내신 관리",
+          "문학 표현과 효과 분석 1:1 과외"
+        ],
+        "title": "가양동 중등 국어과외 | 문학 표현과 효과 분석 | 스터디하이",
+        "description": "대전광역시 동구 가양동의 중등 국어 학습에서 문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 문제를 살피고, 표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/dong-gu/gayang-dong/korean",
+        "ogTitle": "가양동 중등 국어과외 | 문학 표현과 효과 분석 | 스터디하이",
+        "ogDescription": "대전광역시 동구 가양동의 중등 국어 학습에서 문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 문제를 살피고, 표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B0%80%EC%96%91%EB%8F%99&subject=korean"
+      },
+      "aeo": {
+        "questions": [
+          "가양동 중등 국어과외에서 대전가양중학교 학습 자료는 어떻게 활용하나요?",
+          "문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전가양중학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 문학 표현과 효과 분석 계획에 필요한 범위만 반영합니다.",
+          "표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "가양동 중등 국어과외에서 대전가양중학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전가양중학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 문학 표현과 효과 분석 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 동구 가양동",
+        "school": "대전가양중학교",
+        "grade": "중등",
+        "subject": "국어",
+        "localLearningContext": {
+          "text": "가양동의 대전가양중학교 중등 학생이 문학 작품의 표현법을 이름만 외워 작품 효과를 설명하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 표현이 드러난 구절과 독자에게 주는 효과를 짝지어 한 문장으로 설명합니다.",
+          "sourceRefIds": [
+            "source:region:3011063000",
+            "source:school:7441012",
+            "source:student:011",
+            "source:study:011"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EA%B0%80%EC%96%91%EB%8F%99&subject=korean",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B0%80%EC%96%91%EB%8F%99&subject=korean",
+        "alt": "가양동 중등 국어과외 — 문학 표현과 효과 분석",
+        "regionText": "가양동",
+        "subjectText": "국어과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3011063000",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3011063000",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7441012",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7441012",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:011",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:011",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:011",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:011",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:011",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:011",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/dong-gu/gayang2-i-dong/korean"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:003",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30110",
+        "townId": "town:3011055200",
+        "schoolId": "school:7441055",
+        "gradeId": "grade:elementary-5",
+        "subjectId": "subject:science",
+        "contentVariantId": "variant:daejeon-test-008"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "동구",
+        "eupmyeondong": "판암동",
+        "regionSlug": "daejeon-dong-gu-panam2-i-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "dong-gu",
+        "townSlug": "panam-dong",
+        "townId": "canonical:dong-gu:panam-dong"
+      },
+      "school": {
+        "id": "daejeon-daeam-elementary-school-7441055",
+        "name": "대전대암초등학교",
+        "type": "elementary",
+        "typeName": "초등학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "과학",
+        "grade": "초등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/dong-gu/panam-dong/science",
+        "title": "판암동 초등 과학과외 | 자료 해석과 개념 적용 | 스터디하이",
+        "description": "대전광역시 동구 판암동의 초등 과학 학습에서 단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 문제를 살피고, 축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/dong-gu/panam-dong/science"
+      },
+      "content": {
+        "theme": "자료 해석과 개념 적용",
+        "introduction": "판암동에서 대전대암초등학교에 다니는 초등 학생의 과학 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "판암동의 대전대암초등학교 초등 학생이 단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다.",
+        "schoolAnalysis": "대전대암초등학교은 프로젝트 원본 학교 데이터에서 동구 판암동 소재 초등학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "초등 과학의 공통 학습 요소를 점검하되, 대전대암초등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함",
+        "difficultUnit": "자료 해석과 개념 적용 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다.",
+        "parentConcern": "판암동 수업 가능 시간, 대전대암초등학교의 현재 진도, 최근 과학 풀이 기록을 함께 확인해 단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "초등 과학의 공통 학습 요소를 점검하되, 대전대암초등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다.",
+        "lesson": "축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다.",
+        "faq": [
+          {
+            "question": "판암동 초등 과학과외에서 대전대암초등학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전대암초등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 자료 해석과 개념 적용 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "판암동 초등 과학과외",
+          "대전대암초등학교 과학 학습",
+          "동구 초등 내신 관리",
+          "자료 해석과 개념 적용 1:1 과외"
+        ],
+        "title": "판암동 초등 과학과외 | 자료 해석과 개념 적용 | 스터디하이",
+        "description": "대전광역시 동구 판암동의 초등 과학 학습에서 단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 문제를 살피고, 축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/dong-gu/panam-dong/science",
+        "ogTitle": "판암동 초등 과학과외 | 자료 해석과 개념 적용 | 스터디하이",
+        "ogDescription": "대전광역시 동구 판암동의 초등 과학 학습에서 단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 문제를 살피고, 축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%ED%8C%90%EC%95%94%EB%8F%99&subject=science"
+      },
+      "aeo": {
+        "questions": [
+          "판암동 초등 과학과외에서 대전대암초등학교 학습 자료는 어떻게 활용하나요?",
+          "단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전대암초등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 자료 해석과 개념 적용 계획에 필요한 범위만 반영합니다.",
+          "축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "판암동 초등 과학과외에서 대전대암초등학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전대암초등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 자료 해석과 개념 적용 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 동구 판암동",
+        "school": "대전대암초등학교",
+        "grade": "초등",
+        "subject": "과학",
+        "localLearningContext": {
+          "text": "판암동의 대전대암초등학교 초등 학생이 단원별 용어를 암기해도 그래프와 표를 만나면 적용하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 축과 단위를 먼저 읽고 변화 구간을 말로 설명한 다음 관련 개념식을 연결합니다.",
+          "sourceRefIds": [
+            "source:region:3011055200",
+            "source:school:7441055",
+            "source:student:008",
+            "source:study:008"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%ED%8C%90%EC%95%94%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%ED%8C%90%EC%95%94%EB%8F%99&subject=science",
+        "alt": "판암동 초등 과학과외 — 자료 해석과 개념 적용",
+        "regionText": "판암동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3011055200",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3011055200",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7441055",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7441055",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:008",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:008",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:008",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:008",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:008",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:008",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/dong-gu/panam2-i-dong/science"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:004",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30140",
+        "townId": "town:3014072000",
+        "schoolId": "school:7441050",
+        "gradeId": "grade:elementary-5",
+        "subjectId": "subject:korean",
+        "contentVariantId": "variant:daejeon-test-003"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "중구",
+        "eupmyeondong": "문화동",
+        "regionSlug": "daejeon-jung-gu-munhwa1-il-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "jung-gu",
+        "townSlug": "munhwa-dong",
+        "townId": "canonical:jung-gu:munhwa-dong"
+      },
+      "school": {
+        "id": "daejeon-geulggot-elementary-school-7441050",
+        "name": "대전글꽃초등학교",
+        "type": "elementary",
+        "typeName": "초등학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "국어",
+        "grade": "초등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/jung-gu/munhwa-dong/korean",
+        "title": "문화동 초등 국어과외 | 독해 근거와 요약 훈련 | 스터디하이",
+        "description": "대전광역시 중구 문화동의 초등 국어 학습에서 긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 문제를 살피고, 문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/jung-gu/munhwa-dong/korean"
+      },
+      "content": {
+        "theme": "독해 근거와 요약 훈련",
+        "introduction": "문화동에서 대전글꽃초등학교에 다니는 초등 학생의 국어 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "문화동의 대전글꽃초등학교 초등 학생이 긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다.",
+        "schoolAnalysis": "대전글꽃초등학교은 프로젝트 원본 학교 데이터에서 중구 문화동 소재 초등학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "초등 국어의 공통 학습 요소를 점검하되, 대전글꽃초등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함",
+        "difficultUnit": "독해 근거와 요약 훈련 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다.",
+        "parentConcern": "문화동 수업 가능 시간, 대전글꽃초등학교의 현재 진도, 최근 국어 풀이 기록을 함께 확인해 긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "초등 국어의 공통 학습 요소를 점검하되, 대전글꽃초등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다.",
+        "lesson": "문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다.",
+        "faq": [
+          {
+            "question": "문화동 초등 국어과외에서 대전글꽃초등학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전글꽃초등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 독해 근거와 요약 훈련 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "문화동 초등 국어과외",
+          "대전글꽃초등학교 국어 학습",
+          "중구 초등 내신 관리",
+          "독해 근거와 요약 훈련 1:1 과외"
+        ],
+        "title": "문화동 초등 국어과외 | 독해 근거와 요약 훈련 | 스터디하이",
+        "description": "대전광역시 중구 문화동의 초등 국어 학습에서 긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 문제를 살피고, 문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/jung-gu/munhwa-dong/korean",
+        "ogTitle": "문화동 초등 국어과외 | 독해 근거와 요약 훈련 | 스터디하이",
+        "ogDescription": "대전광역시 중구 문화동의 초등 국어 학습에서 긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 문제를 살피고, 문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%AC%B8%ED%99%94%EB%8F%99&subject=korean"
+      },
+      "aeo": {
+        "questions": [
+          "문화동 초등 국어과외에서 대전글꽃초등학교 학습 자료는 어떻게 활용하나요?",
+          "긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전글꽃초등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 독해 근거와 요약 훈련 계획에 필요한 범위만 반영합니다.",
+          "문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "문화동 초등 국어과외에서 대전글꽃초등학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전글꽃초등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 독해 근거와 요약 훈련 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 중구 문화동",
+        "school": "대전글꽃초등학교",
+        "grade": "초등",
+        "subject": "국어",
+        "localLearningContext": {
+          "text": "문화동의 대전글꽃초등학교 초등 학생이 긴 지문에서 핵심 근거와 자신의 추측을 구분하지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 문단마다 중심 문장을 한 줄로 요약하고 정답 근거에는 문장 번호를 붙여 검토합니다.",
+          "sourceRefIds": [
+            "source:region:3014072000",
+            "source:school:7441050",
+            "source:student:003",
+            "source:study:003"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EB%AC%B8%ED%99%94%EB%8F%99&subject=korean",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%AC%B8%ED%99%94%EB%8F%99&subject=korean",
+        "alt": "문화동 초등 국어과외 — 독해 근거와 요약 훈련",
+        "regionText": "문화동",
+        "subjectText": "국어과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3014072000",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3014072000",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7441050",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7441050",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:003",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:003",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:003",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:003",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:003",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:003",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/jung-gu/munhwa1-il-dong/korean"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:005",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "중구",
+        "eupmyeondong": "태평동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "jung-gu",
+        "townSlug": "taepyeong-dong",
+        "townId": "canonical:jung-gu:taepyeong-dong"
+      },
+      "school": {
+        "id": "school:7441030",
+        "name": "대전태평중학교",
+        "type": "middle",
+        "typeName": "중학교",
+        "address": "대전광역시 중구 수침로111번길 12",
+        "addressDetail": "(태평동)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/jung-gu/taepyeong-dong/science",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/jung-gu/taepyeong-dong/science",
+        "title": "태평동 중등 과학과외 | 전류와 전압의 구별 | 스터디하이",
+        "description": "태평동 중등 과학과외에서 전류와 전압의 구별 과정을 살펴봅니다. 전류계와 전압계를 같은 방식으로 연결하려고 합니다. 대전태평중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "중등",
+        "subject": "과학",
+        "subjectSlug": "science"
+      },
+      "content": {
+        "theme": "전류와 전압의 구별",
+        "introduction": "태평동 중등 과학: 전류계와 전압계를 같은 방식으로 연결하려고 합니다. 회로에서 흐름을 측정하는 값과 두 지점의 차이를 측정하는 값을 분리합니다.",
+        "regionContext": "중구 태평동 · 대전태평중학교 학생을 위한 학습 제안입니다. 전기 단원을 무서워하는 학생에게는 복잡한 계산보다 간단한 회로 그림을 읽는 순서를 제공합니다.",
+        "schoolAnalysis": "대전태평중학교 (중학교) · 대전광역시 중구 수침로111번길 12. 학교 기본정보 기준: 2026-02.",
+        "exam": "평가 범위 회로도를 보고 계기의 연결 위치와 측정 대상을 먼저 설명하게 합니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "전류계와 전압계를 같은 방식으로 연결하려고 합니다.",
+        "difficultUnit": "회로에서 흐름을 측정하는 값과 두 지점의 차이를 측정하는 값을 분리합니다.",
+        "studyMethod": "전류의 경로를 한 색으로 따라가고 전압계 양 끝이 닿는 지점을 표시합니다. 실제 실험은 교사의 안전 안내 안에서 진행합니다.",
+        "parentConcern": "전기 단원을 무서워하는 학생에게는 복잡한 계산보다 간단한 회로 그림을 읽는 순서를 제공합니다.",
+        "workedExample": "건전지와 전구 하나로 된 회로를 그린 뒤 전구를 지나는 경로와 전구 양 끝의 두 점을 따로 표시합니다. 전류를 확인하는 목적과 전압을 확인하는 목적이 다르다는 점을 말로 설명하게 합니다. 계기의 단자나 측정 범위 같은 실제 조작은 안전 지침을 확인하고 진행하며, 위험한 임의 연결은 과제로 주지 않습니다.",
+        "lesson": "전류의 경로를 한 색으로 따라가고 전압계 양 끝이 닿는 지점을 표시합니다. 실제 실험은 교사의 안전 안내 안에서 진행합니다.",
+        "faq": [
+          {
+            "question": "태평동 중등 과학 학습 상담: 전압계를 직렬로 연결하면 안 되는 이유도 알아야 하나요?",
+            "answer": "연결 규칙만 외우기보다 두 지점 사이의 전압을 측정한다는 목적을 이해해야 합니다. 회로도에서 측정할 두 점을 먼저 찾으면 연결이 쉬워집니다."
+          },
+          {
+            "question": "대전태평중학교 과학 상담에서 전류와 전압의 구별 과제는 어떻게 살펴보나요?",
+            "answer": "평가 범위 회로도를 보고 계기의 연결 위치와 측정 대상을 먼저 설명하게 합니다. 전기 단원을 무서워하는 학생에게는 복잡한 계산보다 간단한 회로 그림을 읽는 순서를 제공합니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "태평동 중등 과학과외 | 전류와 전압의 구별 | 스터디하이",
+        "description": "태평동 중등 과학과외에서 전류와 전압의 구별 과정을 살펴봅니다. 전류계와 전압계를 같은 방식으로 연결하려고 합니다. 대전태평중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/jung-gu/taepyeong-dong/science",
+        "ogTitle": "태평동 중등 과학과외 | 전류와 전압의 구별 | 스터디하이",
+        "ogDescription": "태평동 중등 과학과외에서 전류와 전압의 구별 과정을 살펴봅니다. 전류계와 전압계를 같은 방식으로 연결하려고 합니다. 대전태평중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%ED%83%9C%ED%8F%89%EB%8F%99&subject=science",
+        "keywords": [
+          "태평동 중등 과학과외",
+          "대전태평중학교 과학",
+          "전류와 전압의 구별"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%ED%83%9C%ED%8F%89%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%ED%83%9C%ED%8F%89%EB%8F%99&subject=science",
+        "alt": "태평동 중등 과학과외 — 전류와 전압의 구별",
+        "regionText": "태평동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7441030",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/jung-gu/taepyeong1-il-dong/science"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:006",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "eupmyeondong": "도마동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "seo-gu",
+        "townSlug": "doma-dong",
+        "townId": "canonical:seo-gu:doma-dong"
+      },
+      "school": {
+        "id": "school:7451031",
+        "name": "대전버드내중학교",
+        "type": "middle",
+        "typeName": "중학교",
+        "address": "대전광역시 서구 유등로 285",
+        "addressDetail": "(도마동)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/seo-gu/doma-dong/math",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/doma-dong/math",
+        "title": "도마동 중등 수학과외 | 비례식과 단위 환산 | 스터디하이",
+        "description": "도마동 중등 수학과외에서 비례식과 단위 환산 과정을 살펴봅니다. 속력 문제에서 분과 시간을 섞어 계산합니다. 대전버드내중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "중등",
+        "subject": "수학",
+        "subjectSlug": "math"
+      },
+      "content": {
+        "theme": "비례식과 단위 환산",
+        "introduction": "도마동 중등 수학: 속력 문제에서 분과 시간을 섞어 계산합니다. 비례 관계를 식으로 나타내기 전에 각 수량의 단위를 통일합니다.",
+        "regionContext": "서구 도마동 · 대전버드내중학교 학생을 위한 학습 제안입니다. 응용 문제를 읽자마자 계산부터 하는 경우 구해야 할 양과 이미 아는 양을 분리하도록 안내합니다.",
+        "schoolAnalysis": "대전버드내중학교 (중학교) · 대전광역시 서구 유등로 285. 학교 기본정보 기준: 2026-02.",
+        "exam": "학교 교재의 거리와 시간 자료를 단위가 같은 표로 옮겨 정답의 단위까지 채점합니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "속력 문제에서 분과 시간을 섞어 계산합니다.",
+        "difficultUnit": "비례 관계를 식으로 나타내기 전에 각 수량의 단위를 통일합니다.",
+        "studyMethod": "숫자 옆에 단위를 생략하지 않고 쓰며 한 시간과 육십 분의 대응을 비례표로 만듭니다. 답의 크기가 현실적인지도 어림합니다.",
+        "parentConcern": "응용 문제를 읽자마자 계산부터 하는 경우 구해야 할 양과 이미 아는 양을 분리하도록 안내합니다.",
+        "workedExample": "시속 60km로 30분 동안 이동한 거리를 계산할 때 30분을 0.5시간으로 바꾸면 30km가 됩니다. 숫자 60과 30을 곧바로 곱한 답은 단위에서 오류를 발견할 수 있습니다. 시간의 표현을 바꿔도 거리는 같아야 한다는 점을 이용해 분 단위 속력으로 계산한 결과와 교차 검산합니다.",
+        "lesson": "숫자 옆에 단위를 생략하지 않고 쓰며 한 시간과 육십 분의 대응을 비례표로 만듭니다. 답의 크기가 현실적인지도 어림합니다.",
+        "faq": [
+          {
+            "question": "도마동 중등 수학 학습 상담: 비례식 계산은 맞는데 답이 다르면 무엇을 봐야 하나요?",
+            "answer": "단위와 대응 순서를 먼저 확인하세요. 같은 줄에는 같은 종류의 양을 두고 분과 시간을 섞지 않은 상태에서 비율을 비교해야 합니다."
+          },
+          {
+            "question": "대전버드내중학교 수학 상담에서 비례식과 단위 환산 과제는 어떻게 살펴보나요?",
+            "answer": "학교 교재의 거리와 시간 자료를 단위가 같은 표로 옮겨 정답의 단위까지 채점합니다. 응용 문제를 읽자마자 계산부터 하는 경우 구해야 할 양과 이미 아는 양을 분리하도록 안내합니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "도마동 중등 수학과외 | 비례식과 단위 환산 | 스터디하이",
+        "description": "도마동 중등 수학과외에서 비례식과 단위 환산 과정을 살펴봅니다. 속력 문제에서 분과 시간을 섞어 계산합니다. 대전버드내중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/doma-dong/math",
+        "ogTitle": "도마동 중등 수학과외 | 비례식과 단위 환산 | 스터디하이",
+        "ogDescription": "도마동 중등 수학과외에서 비례식과 단위 환산 과정을 살펴봅니다. 속력 문제에서 분과 시간을 섞어 계산합니다. 대전버드내중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%8F%84%EB%A7%88%EB%8F%99&subject=math",
+        "keywords": [
+          "도마동 중등 수학과외",
+          "대전버드내중학교 수학",
+          "비례식과 단위 환산"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EB%8F%84%EB%A7%88%EB%8F%99&subject=math",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%8F%84%EB%A7%88%EB%8F%99&subject=math",
+        "alt": "도마동 중등 수학과외 — 비례식과 단위 환산",
+        "regionText": "도마동",
+        "subjectText": "수학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7451031",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/seo-gu/doma1-il-dong/math"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:007",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "eupmyeondong": "도마동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "seo-gu",
+        "townSlug": "doma-dong",
+        "townId": "canonical:seo-gu:doma-dong"
+      },
+      "school": {
+        "id": "school:7430060",
+        "name": "서대전여자고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "대전광역시 서구 배재로197번길 20",
+        "addressDetail": "(도마동, 서대전여자고등학교)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/seo-gu/doma-dong/science",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/doma-dong/science",
+        "title": "도마동 고등 과학과외 | 운동 그래프의 면적과 기울기 | 스터디하이",
+        "description": "도마동 고등 과학과외에서 운동 그래프의 면적과 기울기 과정을 살펴봅니다. 속도 그래프의 높이와 이동 거리를 같은 값으로 해석합니다. 서대전여자고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "고등",
+        "subject": "과학",
+        "subjectSlug": "science"
+      },
+      "content": {
+        "theme": "운동 그래프의 면적과 기울기",
+        "introduction": "도마동 고등 과학: 속도 그래프의 높이와 이동 거리를 같은 값으로 해석합니다. 시간에 따른 속도 변화와 구간별 이동량을 그림에서 구분합니다.",
+        "regionContext": "서구 도마동 · 서대전여자고등학교 학생을 위한 학습 제안입니다. 공식은 외웠지만 그래프가 나오면 멈추는 학생에게 시각 자료를 말로 설명하는 연습을 제안합니다.",
+        "schoolAnalysis": "서대전여자고등학교 (고등학교) · 대전광역시 서구 배재로197번길 20. 학교 기본정보 기준: 2026-02.",
+        "exam": "배운 범위의 그래프에서 축의 물리량과 단위를 적고 각 구간의 의미를 문장으로 바꿉니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "속도 그래프의 높이와 이동 거리를 같은 값으로 해석합니다.",
+        "difficultUnit": "시간에 따른 속도 변화와 구간별 이동량을 그림에서 구분합니다.",
+        "studyMethod": "그래프 아래를 직사각형과 삼각형으로 나누고 단위를 곱해 봅니다. 기울기를 구할 때와 면적을 구할 때 답하는 질문을 따로 적습니다.",
+        "parentConcern": "공식은 외웠지만 그래프가 나오면 멈추는 학생에게 시각 자료를 말로 설명하는 연습을 제안합니다.",
+        "workedExample": "속도가 2m/s로 3초 동안 일정하다면 속도·시간 그래프 아래 면적은 6m에 해당합니다. 높이 2를 그대로 거리로 쓰는 오류를 단위 계산으로 확인합니다. 다음에는 속도가 일정하게 증가하는 구간을 삼각형으로 나눠 보고, 넓이를 구하는 이유를 공식을 쓰기 전에 한 문장으로 설명하게 합니다.",
+        "lesson": "그래프 아래를 직사각형과 삼각형으로 나누고 단위를 곱해 봅니다. 기울기를 구할 때와 면적을 구할 때 답하는 질문을 따로 적습니다.",
+        "faq": [
+          {
+            "question": "도마동 고등 과학 학습 상담: 속도 그래프가 내려가면 뒤로 움직이는 건가요?",
+            "answer": "그래프의 값이 양수인지 음수인지와 기울기를 구별해야 합니다. 값이 양수인 채 감소하면 같은 방향으로 움직이면서 느려지는 상황일 수 있습니다."
+          },
+          {
+            "question": "서대전여자고등학교 과학 상담에서 운동 그래프의 면적과 기울기 과제는 어떻게 살펴보나요?",
+            "answer": "배운 범위의 그래프에서 축의 물리량과 단위를 적고 각 구간의 의미를 문장으로 바꿉니다. 공식은 외웠지만 그래프가 나오면 멈추는 학생에게 시각 자료를 말로 설명하는 연습을 제안합니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "도마동 고등 과학과외 | 운동 그래프의 면적과 기울기 | 스터디하이",
+        "description": "도마동 고등 과학과외에서 운동 그래프의 면적과 기울기 과정을 살펴봅니다. 속도 그래프의 높이와 이동 거리를 같은 값으로 해석합니다. 서대전여자고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/doma-dong/science",
+        "ogTitle": "도마동 고등 과학과외 | 운동 그래프의 면적과 기울기 | 스터디하이",
+        "ogDescription": "도마동 고등 과학과외에서 운동 그래프의 면적과 기울기 과정을 살펴봅니다. 속도 그래프의 높이와 이동 거리를 같은 값으로 해석합니다. 서대전여자고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%8F%84%EB%A7%88%EB%8F%99&subject=science",
+        "keywords": [
+          "도마동 고등 과학과외",
+          "서대전여자고등학교 과학",
+          "운동 그래프의 면적과 기울기"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EB%8F%84%EB%A7%88%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%8F%84%EB%A7%88%EB%8F%99&subject=science",
+        "alt": "도마동 고등 과학과외 — 운동 그래프의 면적과 기울기",
+        "regionText": "도마동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7430060",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/seo-gu/doma2-i-dong/science"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:008",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017058100",
+        "schoolId": "school:7430034",
+        "gradeId": "grade:high-2",
+        "subjectId": "subject:science",
+        "contentVariantId": "variant:daejeon-test-024"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "eupmyeondong": "갈마동",
+        "regionSlug": "daejeon-seo-gu-galma1-il-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "seo-gu",
+        "townSlug": "galma-dong",
+        "townId": "canonical:seo-gu:galma-dong"
+      },
+      "school": {
+        "id": "daejeon-dunsan-girls-high-school-7430034",
+        "name": "대전둔산여자고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "과학",
+        "grade": "고등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/seo-gu/galma-dong/science",
+        "title": "갈마동 고등 과학과외 | 단위 환산과 결과 점검 | 스터디하이",
+        "description": "대전광역시 서구 갈마동의 고등 과학 학습에서 단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 문제를 살피고, 모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/galma-dong/science"
+      },
+      "content": {
+        "theme": "단위 환산과 결과 점검",
+        "introduction": "갈마동에서 대전둔산여자고등학교에 다니는 고등 학생의 과학 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "갈마동의 대전둔산여자고등학교 고등 학생이 단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다.",
+        "schoolAnalysis": "대전둔산여자고등학교은 프로젝트 원본 학교 데이터에서 서구 갈마동 소재 고등학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "고등 과학의 공통 학습 요소를 점검하되, 대전둔산여자고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "단위 환산을 생략해 계산형 문항의 최종 값이 어긋남",
+        "difficultUnit": "단위 환산과 결과 점검 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다.",
+        "parentConcern": "갈마동 수업 가능 시간, 대전둔산여자고등학교의 현재 진도, 최근 과학 풀이 기록을 함께 확인해 단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "고등 과학의 공통 학습 요소를 점검하되, 대전둔산여자고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다.",
+        "lesson": "모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다.",
+        "faq": [
+          {
+            "question": "갈마동 고등 과학과외에서 대전둔산여자고등학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전둔산여자고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 단위 환산과 결과 점검 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "갈마동 고등 과학과외",
+          "대전둔산여자고등학교 과학 학습",
+          "서구 고등 내신 관리",
+          "단위 환산과 결과 점검 1:1 과외"
+        ],
+        "title": "갈마동 고등 과학과외 | 단위 환산과 결과 점검 | 스터디하이",
+        "description": "대전광역시 서구 갈마동의 고등 과학 학습에서 단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 문제를 살피고, 모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/galma-dong/science",
+        "ogTitle": "갈마동 고등 과학과외 | 단위 환산과 결과 점검 | 스터디하이",
+        "ogDescription": "대전광역시 서구 갈마동의 고등 과학 학습에서 단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 문제를 살피고, 모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B0%88%EB%A7%88%EB%8F%99&subject=science"
+      },
+      "aeo": {
+        "questions": [
+          "갈마동 고등 과학과외에서 대전둔산여자고등학교 학습 자료는 어떻게 활용하나요?",
+          "단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전둔산여자고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 단위 환산과 결과 점검 계획에 필요한 범위만 반영합니다.",
+          "모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "갈마동 고등 과학과외에서 대전둔산여자고등학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전둔산여자고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 단위 환산과 결과 점검 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 서구 갈마동",
+        "school": "대전둔산여자고등학교",
+        "grade": "고등",
+        "subject": "과학",
+        "localLearningContext": {
+          "text": "갈마동의 대전둔산여자고등학교 고등 학생이 단위 환산을 생략해 계산형 문항의 최종 값이 어긋남 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 모든 수치 옆에 단위를 쓰고 계산 전에 기준 단위로 통일한 뒤 결과의 크기를 추정합니다.",
+          "sourceRefIds": [
+            "source:region:3017058100",
+            "source:school:7430034",
+            "source:student:024",
+            "source:study:024"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EA%B0%88%EB%A7%88%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B0%88%EB%A7%88%EB%8F%99&subject=science",
+        "alt": "갈마동 고등 과학과외 — 단위 환산과 결과 점검",
+        "regionText": "갈마동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3017058100",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3017058100",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7430034",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7430034",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:024",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:024",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:024",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:024",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:024",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:024",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/seo-gu/galma1-il-dong/science"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:009",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "eupmyeondong": "갈마동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "seo-gu",
+        "townSlug": "galma-dong",
+        "townId": "canonical:seo-gu:galma-dong"
+      },
+      "school": {
+        "id": "school:7430142",
+        "name": "대전둔원고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "대전광역시 서구 대덕대로 101",
+        "addressDetail": "(갈마동)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/seo-gu/galma-dong/math",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/galma-dong/math",
+        "title": "갈마동 고등 수학과외 | 로그의 정의역 점검 | 스터디하이",
+        "description": "갈마동 고등 수학과외에서 로그의 정의역 점검 과정을 살펴봅니다. 로그 식의 변형은 빠르지만 진수가 양수라는 조건을 빼먹습니다. 대전둔원고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "고등",
+        "subject": "수학",
+        "subjectSlug": "math"
+      },
+      "content": {
+        "theme": "로그의 정의역 점검",
+        "introduction": "갈마동 고등 수학: 로그 식의 변형은 빠르지만 진수가 양수라는 조건을 빼먹습니다. 밑과 진수의 조건을 해의 검증 과정까지 유지합니다.",
+        "regionContext": "서구 갈마동 · 대전둔원고등학교 학생을 위한 학습 제안입니다. 사소한 조건 누락으로 감점되는 경우 풀이 마지막의 검산만 강조하지 않고 시작 단계의 조건 기록을 습관화합니다.",
+        "schoolAnalysis": "대전둔원고등학교 (고등학교) · 대전광역시 서구 대덕대로 101. 학교 기본정보 기준: 2026-02.",
+        "exam": "학교 시험 범위의 로그방정식을 풀기 전에 허용 범위를 적고 마지막 후보 해를 대입합니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "로그 식의 변형은 빠르지만 진수가 양수라는 조건을 빼먹습니다.",
+        "difficultUnit": "밑과 진수의 조건을 해의 검증 과정까지 유지합니다.",
+        "studyMethod": "금지되는 값을 먼저 수직선에 표시합니다. 곱을 합으로 바꾸는 변형 전후에 정의되는 범위가 같은지도 비교합니다.",
+        "parentConcern": "사소한 조건 누락으로 감점되는 경우 풀이 마지막의 검산만 강조하지 않고 시작 단계의 조건 기록을 습관화합니다.",
+        "workedExample": "log2(x-1)=3을 풀 때 진수 조건은 x>1이고 후보 해는 x=9입니다. 계산 결과를 원래 식에 넣어 진수가 8이 되는지 확인합니다. 조금 더 복잡한 식에서도 조건을 마지막에 기억해 내려고 하지 않고 첫 줄에 적어 두며, 변형 도중 생긴 후보를 허용 구간과 비교하는 습관을 만듭니다.",
+        "lesson": "금지되는 값을 먼저 수직선에 표시합니다. 곱을 합으로 바꾸는 변형 전후에 정의되는 범위가 같은지도 비교합니다.",
+        "faq": [
+          {
+            "question": "갈마동 고등 수학 학습 상담: 로그방정식을 풀고 답을 대입해야 하는 이유는요?",
+            "answer": "계산 중 얻은 후보가 원래 식의 진수를 양수로 만들지 않을 수 있습니다. 변형된 식뿐 아니라 처음 주어진 식의 조건을 통과해야 해가 됩니다."
+          },
+          {
+            "question": "대전둔원고등학교 수학 상담에서 로그의 정의역 점검 과제는 어떻게 살펴보나요?",
+            "answer": "학교 시험 범위의 로그방정식을 풀기 전에 허용 범위를 적고 마지막 후보 해를 대입합니다. 사소한 조건 누락으로 감점되는 경우 풀이 마지막의 검산만 강조하지 않고 시작 단계의 조건 기록을 습관화합니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "갈마동 고등 수학과외 | 로그의 정의역 점검 | 스터디하이",
+        "description": "갈마동 고등 수학과외에서 로그의 정의역 점검 과정을 살펴봅니다. 로그 식의 변형은 빠르지만 진수가 양수라는 조건을 빼먹습니다. 대전둔원고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/galma-dong/math",
+        "ogTitle": "갈마동 고등 수학과외 | 로그의 정의역 점검 | 스터디하이",
+        "ogDescription": "갈마동 고등 수학과외에서 로그의 정의역 점검 과정을 살펴봅니다. 로그 식의 변형은 빠르지만 진수가 양수라는 조건을 빼먹습니다. 대전둔원고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B0%88%EB%A7%88%EB%8F%99&subject=math",
+        "keywords": [
+          "갈마동 고등 수학과외",
+          "대전둔원고등학교 수학",
+          "로그의 정의역 점검"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EA%B0%88%EB%A7%88%EB%8F%99&subject=math",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B0%88%EB%A7%88%EB%8F%99&subject=math",
+        "alt": "갈마동 고등 수학과외 — 로그의 정의역 점검",
+        "regionText": "갈마동",
+        "subjectText": "수학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7430142",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/seo-gu/galma2-i-dong/math"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:010",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30170",
+        "townId": "town:3017059600",
+        "schoolId": "school:7430033",
+        "gradeId": "grade:high-2",
+        "subjectId": "subject:korean",
+        "contentVariantId": "variant:daejeon-test-023"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "eupmyeondong": "관저동",
+        "regionSlug": "daejeon-seo-gu-gwanjeo1-il-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "seo-gu",
+        "townSlug": "gwanjeo-dong",
+        "townId": "canonical:seo-gu:gwanjeo-dong"
+      },
+      "school": {
+        "id": "daejeon-gwanjeo-high-school-7430033",
+        "name": "대전관저고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "국어",
+        "grade": "고등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/seo-gu/gwanjeo-dong/korean",
+        "title": "관저동 고등 국어과외 | 낯선 지문과 의미 추론 | 스터디하이",
+        "description": "대전광역시 서구 관저동의 고등 국어 학습에서 배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 문제를 살피고, 제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/gwanjeo-dong/korean"
+      },
+      "content": {
+        "theme": "낯선 지문과 의미 추론",
+        "introduction": "관저동에서 대전관저고등학교에 다니는 고등 학생의 국어 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "관저동의 대전관저고등학교 고등 학생이 배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다.",
+        "schoolAnalysis": "대전관저고등학교은 프로젝트 원본 학교 데이터에서 서구 관저동 소재 고등학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "고등 국어의 공통 학습 요소를 점검하되, 대전관저고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음",
+        "difficultUnit": "낯선 지문과 의미 추론 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다.",
+        "parentConcern": "관저동 수업 가능 시간, 대전관저고등학교의 현재 진도, 최근 국어 풀이 기록을 함께 확인해 배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "고등 국어의 공통 학습 요소를 점검하되, 대전관저고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다.",
+        "lesson": "제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다.",
+        "faq": [
+          {
+            "question": "관저동 고등 국어과외에서 대전관저고등학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전관저고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 낯선 지문과 의미 추론 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "관저동 고등 국어과외",
+          "대전관저고등학교 국어 학습",
+          "서구 고등 내신 관리",
+          "낯선 지문과 의미 추론 1:1 과외"
+        ],
+        "title": "관저동 고등 국어과외 | 낯선 지문과 의미 추론 | 스터디하이",
+        "description": "대전광역시 서구 관저동의 고등 국어 학습에서 배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 문제를 살피고, 제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/gwanjeo-dong/korean",
+        "ogTitle": "관저동 고등 국어과외 | 낯선 지문과 의미 추론 | 스터디하이",
+        "ogDescription": "대전광역시 서구 관저동의 고등 국어 학습에서 배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 문제를 살피고, 제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B4%80%EC%A0%80%EB%8F%99&subject=korean"
+      },
+      "aeo": {
+        "questions": [
+          "관저동 고등 국어과외에서 대전관저고등학교 학습 자료는 어떻게 활용하나요?",
+          "배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전관저고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 낯선 지문과 의미 추론 계획에 필요한 범위만 반영합니다.",
+          "제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "관저동 고등 국어과외에서 대전관저고등학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전관저고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 낯선 지문과 의미 추론 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 학생은 국어 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 서구 관저동",
+        "school": "대전관저고등학교",
+        "grade": "고등",
+        "subject": "국어",
+        "localLearningContext": {
+          "text": "관저동의 대전관저고등학교 고등 학생이 배경지식이 없는 주제의 지문을 만나면 이해를 포기하는 경향이 있음 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 제목과 반복어로 주제 범위를 예측하고 낯선 개념은 앞뒤 정의 문장만으로 임시 의미를 세웁니다.",
+          "sourceRefIds": [
+            "source:region:3017059600",
+            "source:school:7430033",
+            "source:student:023",
+            "source:study:023"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EA%B4%80%EC%A0%80%EB%8F%99&subject=korean",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EA%B4%80%EC%A0%80%EB%8F%99&subject=korean",
+        "alt": "관저동 고등 국어과외 — 낯선 지문과 의미 추론",
+        "regionText": "관저동",
+        "subjectText": "국어과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3017059600",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3017059600",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7430033",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7430033",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:023",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:023",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:023",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:023",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:023",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:023",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/seo-gu/gwanjeo1-il-dong/korean"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:011",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "eupmyeondong": "월평동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "seo-gu",
+        "townSlug": "wolpyeong-dong",
+        "townId": "canonical:seo-gu:wolpyeong-dong"
+      },
+      "school": {
+        "id": "school:7451042",
+        "name": "대전월평중학교",
+        "type": "middle",
+        "typeName": "중학교",
+        "address": "대전광역시 서구 월평동로 21",
+        "addressDetail": "(월평동/ 월평중학교)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/seo-gu/wolpyeong-dong/science",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/wolpyeong-dong/science",
+        "title": "월평동 중등 과학과외 | 상태 변화와 온도 | 스터디하이",
+        "description": "월평동 중등 과학과외에서 상태 변화와 온도 과정을 살펴봅니다. 가열 중 온도가 일정하면 열을 받지 않는다고 생각합니다. 대전월평중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "중등",
+        "subject": "과학",
+        "subjectSlug": "science"
+      },
+      "content": {
+        "theme": "상태 변화와 온도",
+        "introduction": "월평동 중등 과학: 가열 중 온도가 일정하면 열을 받지 않는다고 생각합니다. 상태 변화 구간에서 에너지가 쓰이는 방식을 온도 변화와 분리합니다.",
+        "regionContext": "서구 월평동 · 대전월평중학교 학생을 위한 학습 제안입니다. 과학 설명을 통째로 외우려는 학생에게는 그래프 한 구간을 자기 말로 표현하는 과제를 줍니다.",
+        "schoolAnalysis": "대전월평중학교 (중학교) · 대전광역시 서구 월평동로 21. 학교 기본정보 기준: 2026-02.",
+        "exam": "가열 곡선의 구간별 상태와 온도 변화를 채워 넣고 평평한 구간의 의미를 설명합니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "가열 중 온도가 일정하면 열을 받지 않는다고 생각합니다.",
+        "difficultUnit": "상태 변화 구간에서 에너지가 쓰이는 방식을 온도 변화와 분리합니다.",
+        "studyMethod": "얼음, 물, 수증기 입자 모형을 단계별로 그립니다. 온도계 숫자가 같아도 상태가 달라질 수 있음을 관찰 기록으로 연결합니다.",
+        "parentConcern": "과학 설명을 통째로 외우려는 학생에게는 그래프 한 구간을 자기 말로 표현하는 과제를 줍니다.",
+        "workedExample": "얼음이 녹는 구간을 생각할 때 온도가 오르지 않는다고 입자 사이의 변화까지 없는 것은 아닙니다. 상태 변화가 진행되는 동안 공급되는 에너지의 쓰임을 말로 설명하게 합니다. 그래프에서 물질이 한 가지 상태인 구간과 두 상태가 함께 있는 구간을 나누어 색칠하면 평평한 부분을 해석하는 데 도움이 됩니다.",
+        "lesson": "얼음, 물, 수증기 입자 모형을 단계별로 그립니다. 온도계 숫자가 같아도 상태가 달라질 수 있음을 관찰 기록으로 연결합니다.",
+        "faq": [
+          {
+            "question": "월평동 중등 과학 학습 상담: 끓는 동안 온도가 멈추면 가열을 중단한 건가요?",
+            "answer": "반드시 그렇지는 않습니다. 공급된 에너지가 상태 변화에 쓰이는 동안 온도가 일정할 수 있으므로 상태와 온도를 함께 읽어야 합니다."
+          },
+          {
+            "question": "대전월평중학교 과학 상담에서 상태 변화와 온도 과제는 어떻게 살펴보나요?",
+            "answer": "가열 곡선의 구간별 상태와 온도 변화를 채워 넣고 평평한 구간의 의미를 설명합니다. 과학 설명을 통째로 외우려는 학생에게는 그래프 한 구간을 자기 말로 표현하는 과제를 줍니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "월평동 중등 과학과외 | 상태 변화와 온도 | 스터디하이",
+        "description": "월평동 중등 과학과외에서 상태 변화와 온도 과정을 살펴봅니다. 가열 중 온도가 일정하면 열을 받지 않는다고 생각합니다. 대전월평중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/seo-gu/wolpyeong-dong/science",
+        "ogTitle": "월평동 중등 과학과외 | 상태 변화와 온도 | 스터디하이",
+        "ogDescription": "월평동 중등 과학과외에서 상태 변화와 온도 과정을 살펴봅니다. 가열 중 온도가 일정하면 열을 받지 않는다고 생각합니다. 대전월평중학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%9B%94%ED%8F%89%EB%8F%99&subject=science",
+        "keywords": [
+          "월평동 중등 과학과외",
+          "대전월평중학교 과학",
+          "상태 변화와 온도"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EC%9B%94%ED%8F%89%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%9B%94%ED%8F%89%EB%8F%99&subject=science",
+        "alt": "월평동 중등 과학과외 — 상태 변화와 온도",
+        "regionText": "월평동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7451042",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/seo-gu/wolpyeong1-il-dong/science"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:012",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "유성구",
+        "eupmyeondong": "노은동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "yuseong-gu",
+        "townSlug": "noeun-dong",
+        "townId": "canonical:yuseong-gu:noeun-dong"
+      },
+      "school": {
+        "id": "school:7430143",
+        "name": "대전노은고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "대전광역시 유성구 노은동로 99",
+        "addressDetail": "/ 55 (노은동)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/yuseong-gu/noeun-dong/korean",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/noeun-dong/korean",
+        "title": "노은동 고등 국어과외 | 독서 지문의 개념 비교 | 스터디하이",
+        "description": "노은동 고등 국어과외에서 독서 지문의 개념 비교 과정을 살펴봅니다. 비슷한 전문 용어를 같은 뜻으로 읽어 비교 선지에서 흔들립니다. 대전노은고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "고등",
+        "subject": "국어",
+        "subjectSlug": "korean"
+      },
+      "content": {
+        "theme": "독서 지문의 개념 비교",
+        "introduction": "노은동 고등 국어: 비슷한 전문 용어를 같은 뜻으로 읽어 비교 선지에서 흔들립니다. 정의의 조건과 적용 범위를 기준으로 두 개념의 공통점과 차이를 구분합니다.",
+        "regionContext": "유성구 노은동 · 대전노은고등학교 학생을 위한 학습 제안입니다. 고등 독서에서 배경지식이 부족하다는 상담에는 지문 안의 정의를 활용하는 능력도 함께 점검합니다.",
+        "schoolAnalysis": "대전노은고등학교 (고등학교) · 대전광역시 유성구 노은동로 99. 학교 기본정보 기준: 2026-02.",
+        "exam": "범위 지문의 용어를 정의, 예시, 예외로 나누고 비교표의 빈칸을 채웁니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "비슷한 전문 용어를 같은 뜻으로 읽어 비교 선지에서 흔들립니다.",
+        "difficultUnit": "정의의 조건과 적용 범위를 기준으로 두 개념의 공통점과 차이를 구분합니다.",
+        "studyMethod": "용어마다 반드시 필요한 조건을 한 줄로 적습니다. 새로운 사례를 두 개념에 각각 넣어 성립하는지 검사합니다.",
+        "parentConcern": "고등 독서에서 배경지식이 부족하다는 상담에는 지문 안의 정의를 활용하는 능력도 함께 점검합니다.",
+        "workedExample": "두 개념이 모두 정보를 전달하지만 하나는 반드시 특정 조건을 요구한다고 가정합니다. 정의 문장에서 그 조건을 찾아 비교표에 적고, 조건이 없는 사례를 넣어 분류해 봅니다. 이름이 비슷하다는 이유로 같은 범주에 넣지 않고 필수 조건과 부가적인 특징을 구별하는 것이 낯선 전문 지문을 읽는 출발점입니다.",
+        "lesson": "용어마다 반드시 필요한 조건을 한 줄로 적습니다. 새로운 사례를 두 개념에 각각 넣어 성립하는지 검사합니다.",
+        "faq": [
+          {
+            "question": "노은동 고등 국어 학습 상담: 낯선 용어가 많은 독서 지문은 미리 지식을 외워야 하나요?",
+            "answer": "배경지식이 도움이 될 수 있지만 지문이 제시한 정의가 우선입니다. 조건을 정리하고 용어를 익숙한 말로 바꿔 관계를 확인하는 훈련부터 시작합니다."
+          },
+          {
+            "question": "대전노은고등학교 국어 상담에서 독서 지문의 개념 비교 과제는 어떻게 살펴보나요?",
+            "answer": "범위 지문의 용어를 정의, 예시, 예외로 나누고 비교표의 빈칸을 채웁니다. 고등 독서에서 배경지식이 부족하다는 상담에는 지문 안의 정의를 활용하는 능력도 함께 점검합니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "노은동 고등 국어과외 | 독서 지문의 개념 비교 | 스터디하이",
+        "description": "노은동 고등 국어과외에서 독서 지문의 개념 비교 과정을 살펴봅니다. 비슷한 전문 용어를 같은 뜻으로 읽어 비교 선지에서 흔들립니다. 대전노은고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/noeun-dong/korean",
+        "ogTitle": "노은동 고등 국어과외 | 독서 지문의 개념 비교 | 스터디하이",
+        "ogDescription": "노은동 고등 국어과외에서 독서 지문의 개념 비교 과정을 살펴봅니다. 비슷한 전문 용어를 같은 뜻으로 읽어 비교 선지에서 흔들립니다. 대전노은고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%85%B8%EC%9D%80%EB%8F%99&subject=korean",
+        "keywords": [
+          "노은동 고등 국어과외",
+          "대전노은고등학교 국어",
+          "독서 지문의 개념 비교"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EB%85%B8%EC%9D%80%EB%8F%99&subject=korean",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%85%B8%EC%9D%80%EB%8F%99&subject=korean",
+        "alt": "노은동 고등 국어과외 — 독서 지문의 개념 비교",
+        "regionText": "노은동",
+        "subjectText": "국어과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7430143",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/yuseong-gu/noeun1-il-dong/korean"
+      }
+    },
+    {
+      "id": "page:daejeon:canonical:013",
+      "status": "validated",
+      "createdAt": "2026-09-02",
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "유성구",
+        "eupmyeondong": "노은동",
+        "provinceSlug": "daejeon",
+        "districtSlug": "yuseong-gu",
+        "townSlug": "noeun-dong",
+        "townId": "canonical:yuseong-gu:noeun-dong"
+      },
+      "school": {
+        "id": "school:7430143",
+        "name": "대전노은고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "대전광역시 유성구 노은동로 99",
+        "addressDetail": "/ 55 (노은동)",
+        "source": "교육부 나이스 학교기본정보 (Esri Korea Living Atlas 재배포)",
+        "sourceDate": "2026-02"
+      },
+      "page": {
+        "url": "/tutoring/daejeon/yuseong-gu/noeun-dong/science",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/noeun-dong/science",
+        "title": "노은동 고등 과학과외 | 산화 환원의 전자 이동 | 스터디하이",
+        "description": "노은동 고등 과학과외에서 산화 환원의 전자 이동 과정을 살펴봅니다. 산소의 유무만 보고 모든 반응의 산화와 환원을 판단합니다. 대전노은고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "grade": "고등",
+        "subject": "과학",
+        "subjectSlug": "science"
+      },
+      "content": {
+        "theme": "산화 환원의 전자 이동",
+        "introduction": "노은동 고등 과학: 산소의 유무만 보고 모든 반응의 산화와 환원을 판단합니다. 배운 범위에서 전자의 이동과 산화수 변화를 연결해 반응을 해석합니다.",
+        "regionContext": "유성구 노은동 · 대전노은고등학교 학생을 위한 학습 제안입니다. 화학 계산보다 개념 구분에서 어려움을 겪는 경우 반응식 한 줄을 변화 전후로 나누어 상담합니다.",
+        "schoolAnalysis": "대전노은고등학교 (고등학교) · 대전광역시 유성구 노은동로 99. 학교 기본정보 기준: 2026-02.",
+        "exam": "학교가 다룬 반응 사례를 기준으로 누가 전자를 잃고 얻는지 짝을 맞춰 확인합니다.",
+        "examCaveat": "학교별 출제 경향은 미확인입니다. 실제 범위표로 아래 학습 제안을 조정합니다.",
+        "concern": "산소의 유무만 보고 모든 반응의 산화와 환원을 판단합니다.",
+        "difficultUnit": "배운 범위에서 전자의 이동과 산화수 변화를 연결해 반응을 해석합니다.",
+        "studyMethod": "반응 전후의 전하와 산화수를 표로 적습니다. 산화되는 물질과 환원되는 물질을 동시에 표시해 한쪽만 판단하는 습관을 줄입니다.",
+        "parentConcern": "화학 계산보다 개념 구분에서 어려움을 겪는 경우 반응식 한 줄을 변화 전후로 나누어 상담합니다.",
+        "workedExample": "전자 두 개를 잃는 입자와 그 전자를 얻는 상대를 함께 표시해 봅니다. 산화되는 대상만 찾고 끝내면 반응 전체의 전자 이동을 놓칠 수 있습니다. 반응 전후를 비교하는 표에서 변화량의 균형을 확인하고, 교과에서 아직 다루지 않은 판단법을 억지로 적용하지 않고 배운 정의의 범위 안에서 설명합니다.",
+        "lesson": "반응 전후의 전하와 산화수를 표로 적습니다. 산화되는 물질과 환원되는 물질을 동시에 표시해 한쪽만 판단하는 습관을 줄입니다.",
+        "faq": [
+          {
+            "question": "노은동 고등 과학 학습 상담: 산소가 없는 반응도 산화 환원일 수 있나요?",
+            "answer": "배운 정의에 따라 전자 이동이나 산화수 변화로 판단할 수 있습니다. 산소가 붙고 떨어지는 사례만 외우지 말고 전후 변화를 확인해야 합니다."
+          },
+          {
+            "question": "대전노은고등학교 과학 상담에서 산화 환원의 전자 이동 과제는 어떻게 살펴보나요?",
+            "answer": "학교가 다룬 반응 사례를 기준으로 누가 전자를 잃고 얻는지 짝을 맞춰 확인합니다. 화학 계산보다 개념 구분에서 어려움을 겪는 경우 반응식 한 줄을 변화 전후로 나누어 상담합니다."
+          }
+        ]
+      },
+      "seo": {
+        "title": "노은동 고등 과학과외 | 산화 환원의 전자 이동 | 스터디하이",
+        "description": "노은동 고등 과학과외에서 산화 환원의 전자 이동 과정을 살펴봅니다. 산소의 유무만 보고 모든 반응의 산화와 환원을 판단합니다. 대전노은고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/noeun-dong/science",
+        "ogTitle": "노은동 고등 과학과외 | 산화 환원의 전자 이동 | 스터디하이",
+        "ogDescription": "노은동 고등 과학과외에서 산화 환원의 전자 이동 과정을 살펴봅니다. 산소의 유무만 보고 모든 반응의 산화와 환원을 판단합니다. 대전노은고등학교의 실제 진도와 학생 기록을 바탕으로 1:1 학습 방향을 상담합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%85%B8%EC%9D%80%EB%8F%99&subject=science",
+        "keywords": [
+          "노은동 고등 과학과외",
+          "대전노은고등학교 과학",
+          "산화 환원의 전자 이동"
+        ]
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EB%85%B8%EC%9D%80%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EB%85%B8%EC%9D%80%EB%8F%99&subject=science",
+        "alt": "노은동 고등 과학과외 — 산화 환원의 전자 이동",
+        "regionText": "노은동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "provenance": {
+        "regionFile": "data/regions/daejeon.json",
+        "schoolFile": "data/schools/daejeon.json",
+        "schoolId": "school:7430143",
+        "teachingAdvice": "editorial-general-guidance",
+        "verifiedSchoolExamPattern": false,
+        "canonicalizedFrom": "/tutoring/daejeon/yuseong-gu/noeun1-il-dong/science"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:014",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020053000",
+        "schoolId": "school:7430042",
+        "gradeId": "grade:high-2",
+        "subjectId": "subject:science",
+        "contentVariantId": "variant:daejeon-test-028"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "유성구",
+        "eupmyeondong": "온천동",
+        "regionSlug": "daejeon-yuseong-gu-oncheon1-il-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "yuseong-gu",
+        "townSlug": "oncheon-dong",
+        "townId": "canonical:yuseong-gu:oncheon-dong"
+      },
+      "school": {
+        "id": "yu-seong-high-school-7430042",
+        "name": "유성고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "과학",
+        "grade": "고등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/yuseong-gu/oncheon-dong/science",
+        "title": "온천동 고등 과학과외 | 핵심 질문과 압축 노트 | 스터디하이",
+        "description": "대전광역시 유성구 온천동의 고등 과학 학습에서 개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 문제를 살피고, 단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/oncheon-dong/science"
+      },
+      "content": {
+        "theme": "핵심 질문과 압축 노트",
+        "introduction": "온천동에서 유성고등학교에 다니는 고등 학생의 과학 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "온천동의 유성고등학교 고등 학생이 개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다.",
+        "schoolAnalysis": "유성고등학교은 프로젝트 원본 학교 데이터에서 유성구 온천동 소재 고등학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "고등 과학의 공통 학습 요소를 점검하되, 유성고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함",
+        "difficultUnit": "핵심 질문과 압축 노트 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다.",
+        "parentConcern": "온천동 수업 가능 시간, 유성고등학교의 현재 진도, 최근 과학 풀이 기록을 함께 확인해 개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "고등 과학의 공통 학습 요소를 점검하되, 유성고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다.",
+        "lesson": "단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다.",
+        "faq": [
+          {
+            "question": "온천동 고등 과학과외에서 유성고등학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "유성고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 핵심 질문과 압축 노트 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "온천동 고등 과학과외",
+          "유성고등학교 과학 학습",
+          "유성구 고등 내신 관리",
+          "핵심 질문과 압축 노트 1:1 과외"
+        ],
+        "title": "온천동 고등 과학과외 | 핵심 질문과 압축 노트 | 스터디하이",
+        "description": "대전광역시 유성구 온천동의 고등 과학 학습에서 개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 문제를 살피고, 단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/oncheon-dong/science",
+        "ogTitle": "온천동 고등 과학과외 | 핵심 질문과 압축 노트 | 스터디하이",
+        "ogDescription": "대전광역시 유성구 온천동의 고등 과학 학습에서 개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 문제를 살피고, 단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%98%A8%EC%B2%9C%EB%8F%99&subject=science"
+      },
+      "aeo": {
+        "questions": [
+          "온천동 고등 과학과외에서 유성고등학교 학습 자료는 어떻게 활용하나요?",
+          "개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "유성고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 핵심 질문과 압축 노트 계획에 필요한 범위만 반영합니다.",
+          "단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "온천동 고등 과학과외에서 유성고등학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "유성고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 핵심 질문과 압축 노트 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 학생은 과학 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 유성구 온천동",
+        "school": "유성고등학교",
+        "grade": "고등",
+        "subject": "과학",
+        "localLearningContext": {
+          "text": "온천동의 유성고등학교 고등 학생이 개념 노트가 길어져 시험 직전 핵심 내용을 빠르게 찾지 못함 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 단원별 핵심 질문 다섯 개와 그림 한 개로 압축하고 틀린 질문만 별도 카드로 이동합니다.",
+          "sourceRefIds": [
+            "source:region:3020053000",
+            "source:school:7430042",
+            "source:student:028",
+            "source:study:028"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EC%98%A8%EC%B2%9C%EB%8F%99&subject=science",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%98%A8%EC%B2%9C%EB%8F%99&subject=science",
+        "alt": "온천동 고등 과학과외 — 핵심 질문과 압축 노트",
+        "regionText": "온천동",
+        "subjectText": "과학과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3020053000",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3020053000",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7430042",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7430042",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:028",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:028",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:028",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:028",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:028",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:028",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/yuseong-gu/oncheon1-il-dong/science"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "page:daejeon:canonical:015",
+      "status": "validated",
+      "identity": {
+        "provinceId": "province:30",
+        "districtId": "district:30200",
+        "townId": "town:3020054000",
+        "schoolId": "school:7430032",
+        "gradeId": "grade:high-2",
+        "subjectId": "subject:english",
+        "contentVariantId": "variant:daejeon-test-022"
+      },
+      "region": {
+        "sido": "대전광역시",
+        "sigungu": "유성구",
+        "eupmyeondong": "온천동",
+        "regionSlug": "daejeon-yuseong-gu-oncheon2-i-dong",
+        "provinceSlug": "daejeon",
+        "districtSlug": "yuseong-gu",
+        "townSlug": "oncheon-dong",
+        "townId": "canonical:yuseong-gu:oncheon-dong"
+      },
+      "school": {
+        "id": "daejeon-science-high-school-7430032",
+        "name": "대전과학고등학교",
+        "type": "high",
+        "typeName": "고등학교",
+        "address": "",
+        "addressDetail": "",
+        "source": "프로젝트 검증 학교 데이터"
+      },
+      "page": {
+        "subject": "영어",
+        "grade": "고등",
+        "pageType": "tutoring",
+        "url": "/tutoring/daejeon/yuseong-gu/oncheon-dong/english",
+        "title": "온천동 고등 영어과외 | 영작 어순과 문장 확장 | 스터디하이",
+        "description": "대전광역시 유성구 온천동의 고등 영어 학습에서 영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 문제를 살피고, 핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/oncheon-dong/english"
+      },
+      "content": {
+        "theme": "영작 어순과 문장 확장",
+        "introduction": "온천동에서 대전과학고등학교에 다니는 고등 학생의 영어 계획은 실제 학교 진도와 이동 가능한 수업 시간을 확인한 뒤 세웁니다.",
+        "regionContext": "온천동의 대전과학고등학교 고등 학생이 영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다.",
+        "schoolAnalysis": "대전과학고등학교은 프로젝트 원본 학교 데이터에서 유성구 온천동 소재 고등학교로 연결됩니다. 공개되지 않은 시험 난이도나 출제 비율은 임의로 만들지 않습니다.",
+        "exam": "고등 영어의 공통 학습 요소를 점검하되, 대전과학고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다.",
+        "examCaveat": "학교별 출제 경향은 단정하지 않고 실제 시험 범위와 학생 자료를 확인해 조정합니다.",
+        "concern": "영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움",
+        "difficultUnit": "영작 어순과 문장 확장 과정에서 현재 교재의 어느 지점부터 이해가 끊겼는지 진단하고 학년보다 학생의 실제 수행 수준을 우선합니다.",
+        "studyMethod": "핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다.",
+        "parentConcern": "온천동 수업 가능 시간, 대전과학고등학교의 현재 진도, 최근 영어 풀이 기록을 함께 확인해 영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 원인을 구분하는 진단 상담입니다.",
+        "workedExample": "고등 영어의 공통 학습 요소를 점검하되, 대전과학고등학교의 최근 시험 범위와 학생이 가진 실제 자료가 확인된 경우에만 학교별 대비에 반영합니다. 핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다.",
+        "lesson": "핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다.",
+        "faq": [
+          {
+            "question": "온천동 고등 영어과외에서 대전과학고등학교 학습 자료는 어떻게 활용하나요?",
+            "answer": "대전과학고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 영작 어순과 문장 확장 계획에 필요한 범위만 반영합니다."
+          },
+          {
+            "question": "영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 학생은 영어 공부를 어디서부터 다시 시작해야 하나요?",
+            "answer": "핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+          }
+        ]
+      },
+      "seo": {
+        "keywords": [
+          "온천동 고등 영어과외",
+          "대전과학고등학교 영어 학습",
+          "유성구 고등 내신 관리",
+          "영작 어순과 문장 확장 1:1 과외"
+        ],
+        "title": "온천동 고등 영어과외 | 영작 어순과 문장 확장 | 스터디하이",
+        "description": "대전광역시 유성구 온천동의 고등 영어 학습에서 영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 문제를 살피고, 핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "canonical": "https://studyhigh.co.kr/tutoring/daejeon/yuseong-gu/oncheon-dong/english",
+        "ogTitle": "온천동 고등 영어과외 | 영작 어순과 문장 확장 | 스터디하이",
+        "ogDescription": "대전광역시 유성구 온천동의 고등 영어 학습에서 영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 문제를 살피고, 핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다. 학교 자료를 확인한 뒤 학생별 1:1 학습 순서를 제안합니다.",
+        "ogImage": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%98%A8%EC%B2%9C%EB%8F%99&subject=english"
+      },
+      "aeo": {
+        "questions": [
+          "온천동 고등 영어과외에서 대전과학고등학교 학습 자료는 어떻게 활용하나요?",
+          "영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 학생은 영어 공부를 어디서부터 다시 시작해야 하나요?"
+        ],
+        "answers": [
+          "대전과학고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 영작 어순과 문장 확장 계획에 필요한 범위만 반영합니다.",
+          "핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+        ],
+        "faqPageSchema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "온천동 고등 영어과외에서 대전과학고등학교 학습 자료는 어떻게 활용하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "대전과학고등학교의 현재 교과서, 학교가 안내한 시험 범위와 학생이 보유한 학습 자료를 먼저 확인합니다. 확인되지 않은 출제 경향은 단정하지 않고 영작 어순과 문장 확장 계획에 필요한 범위만 반영합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 학생은 영어 공부를 어디서부터 다시 시작해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다. 상담에서는 최근 풀이 기록과 현재 진도를 함께 살펴 무리하게 앞서가지 않고 다음 확인 시점까지 정합니다."
+              }
+            }
+          ]
+        }
+      },
+      "geo": {
+        "region": "대전광역시 유성구 온천동",
+        "school": "대전과학고등학교",
+        "grade": "고등",
+        "subject": "영어",
+        "localLearningContext": {
+          "text": "온천동의 대전과학고등학교 고등 학생이 영작에서 한국어 어순을 그대로 옮겨 문장이 부자연스러움 상황을 보일 때 실제 통학·수업 가능 시간과 학교 진도를 확인하고 핵심 주어와 동사를 먼저 세우고 필수 성분을 붙인 뒤 수식어를 마지막에 배치합니다.",
+          "sourceRefIds": [
+            "source:region:3020054000",
+            "source:school:7430032",
+            "source:student:022",
+            "source:study:022"
+          ],
+          "factStatus": "general-guidance"
+        }
+      },
+      "image": {
+        "masterImage": "/thumbnails/studyhigh-official-template.png",
+        "imagePath": "/api/seo-thumbnail?dong=%EC%98%A8%EC%B2%9C%EB%8F%99&subject=english",
+        "imageUrl": "https://studyhigh.co.kr/api/seo-thumbnail?dong=%EC%98%A8%EC%B2%9C%EB%8F%99&subject=english",
+        "alt": "온천동 고등 영어과외 — 영작 어순과 문장 확장",
+        "regionText": "온천동",
+        "subjectText": "영어과외",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRefs": [
+        {
+          "id": "source:region:3020054000",
+          "kind": "region",
+          "path": "data/regions/daejeon.json",
+          "recordId": "town:3020054000",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:school:7430032",
+          "kind": "school",
+          "path": "data/schools/daejeon.json",
+          "recordId": "school:7430032",
+          "verifiedAt": "2026-07-24T00:00:00.000Z"
+        },
+        {
+          "id": "source:exam:022",
+          "kind": "exam-pattern",
+          "path": "data/content/examPatterns.json",
+          "recordId": "draft-reference:022",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:student:022",
+          "kind": "student-concern",
+          "path": "data/content/students.json",
+          "recordId": "draft-reference:022",
+          "verifiedAt": null
+        },
+        {
+          "id": "source:study:022",
+          "kind": "study-method",
+          "path": "data/content/studyMethods.json",
+          "recordId": "draft-reference:022",
+          "verifiedAt": null
+        }
+      ],
+      "legacyCompatibility": {
+        "isExistingPage": false,
+        "existingUrl": null,
+        "mustPreserve": false
+      },
+      "quality": {
+        "similarityThreshold": 0.2,
+        "maximumSimilarity": 0.027027,
+        "duplicateChecksPassed": true,
+        "factualChecksPassed": true,
+        "imageChecksPassed": true,
+        "indexable": true,
+        "validationErrors": []
+      },
+      "extensions": {
+        "imageTemplate": "MASTER",
+        "imageVariant": "지역·학년·과목 텍스트 변경"
+      },
+      "createdAt": "2026-09-02",
+      "provenance": {
+        "canonicalizedFrom": "/tutoring/daejeon/yuseong-gu/oncheon2-i-dong/english"
+      }
+    }
+  ]
+}

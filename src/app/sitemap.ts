@@ -5,6 +5,8 @@ import { searchRegions } from "@/lib/searchRegions";
 import { tutoringArticles } from "@/lib/tutoringArticles";
 import { validatedTestSeoRecords } from "@/lib/testSeoManifest";
 import { additionalTutoringRecords } from "@/lib/additionalTutoring";
+import { consolidatedTutoringRecords } from "@/lib/consolidatedTutoring";
+import { isNumericTutoringAlias } from "@/lib/regionNormalization";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://studyhigh.co.kr";
@@ -47,15 +49,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.9,
     })),
-    ...validatedTestSeoRecords.map((record) => ({
+    ...validatedTestSeoRecords.filter((record) => !isNumericTutoringAlias(record.page.url)).map((record) => ({
       url: record.page.canonical,
       lastModified: new Date("2026-08-21"),
       changeFrequency: "weekly" as const,
       priority: 0.85,
     })),
-    ...additionalTutoringRecords.map((record) => ({
+    ...additionalTutoringRecords.filter((record) => !isNumericTutoringAlias(record.page.url)).map((record) => ({
       url: record.page.canonical,
       lastModified: new Date("2026-09-01"),
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
+    ...consolidatedTutoringRecords.map((record) => ({
+      url: record.page.canonical,
+      lastModified: new Date("2026-09-02"),
       changeFrequency: "weekly" as const,
       priority: 0.85,
     })),

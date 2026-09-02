@@ -7,7 +7,9 @@ import { SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
 import { AdditionalTutoringPage } from "@/components/AdditionalTutoringPage";
-import { additionalTutoringRecords, additionalTutoringMetadata, getAdditionalTutoringRecord } from "@/lib/additionalTutoring";
+import { additionalTutoringRecords, additionalTutoringMetadata, getAdditionalTutoringRecord, type AdditionalTutoringRecord } from "@/lib/additionalTutoring";
+import { consolidatedTutoringRecords, consolidatedTutoringMetadata, getConsolidatedTutoringRecord } from "@/lib/consolidatedTutoring";
+import { isNumericTutoringAlias } from "@/lib/regionNormalization";
 import {
   getValidatedTestSeoRecord,
   validatedTestSeoRecords,
@@ -21,7 +23,11 @@ export const dynamicParams = true;
 export const revalidate = 86400;
 
 export function generateStaticParams() {
-  return [...validatedTestSeoRecords, ...additionalTutoringRecords].map((record) => {
+  return [
+    ...validatedTestSeoRecords.filter((record) => !isNumericTutoringAlias(record.page.url)),
+    ...additionalTutoringRecords.filter((record) => !isNumericTutoringAlias(record.page.url)),
+    ...consolidatedTutoringRecords,
+  ].map((record) => {
     const [, , city, district, dong, subject] = record.page.url.split("/");
     return { city, dong: district, subject: dong, detail: subject };
   });
@@ -29,6 +35,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city, dong: district, subject: dong, detail: subject } = await params;
+  const consolidated = getConsolidatedTutoringRecord(city, district, dong, subject);
+  if (consolidated) return consolidatedTutoringMetadata(consolidated);
   const additional = getAdditionalTutoringRecord(city, district, dong, subject);
   if (additional) return additionalTutoringMetadata(additional);
   const record = getValidatedTestSeoRecord(city, district, dong, subject);
@@ -62,6 +70,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ManifestTutoringPage({ params }: Props) {
   const { city, dong: district, subject: dong, detail: subject } = await params;
+  const consolidated = getConsolidatedTutoringRecord(city, district, dong, subject);
+  if (consolidated) {
+    return <AdditionalTutoringPage record={consolidated as AdditionalTutoringRecord} />;
+  }
   const additional = getAdditionalTutoringRecord(city, district, dong, subject);
   if (additional) return <AdditionalTutoringPage record={additional} />;
   const record = getValidatedTestSeoRecord(city, district, dong, subject);
