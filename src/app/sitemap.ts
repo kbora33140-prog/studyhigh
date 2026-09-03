@@ -7,6 +7,7 @@ import { validatedTestSeoRecords } from "@/lib/testSeoManifest";
 import { additionalTutoringRecords } from "@/lib/additionalTutoring";
 import { consolidatedTutoringRecords } from "@/lib/consolidatedTutoring";
 import { isNumericTutoringAlias } from "@/lib/regionNormalization";
+import { nationalTutoringRecords } from "@/lib/nationalTutoring";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://studyhigh.co.kr";
@@ -64,6 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...consolidatedTutoringRecords.map((record) => ({
       url: record.page.canonical,
       lastModified: new Date("2026-09-02"),
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
+    ...nationalTutoringRecords.map((record) => ({
+      url: record.page.canonical,
+      lastModified: new Date("2026-09-03"),
       changeFrequency: "weekly" as const,
       priority: 0.85,
     })),

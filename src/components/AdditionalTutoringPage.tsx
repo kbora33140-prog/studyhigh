@@ -7,13 +7,23 @@ import { buttonVariants } from "@/components/ui/button";
 import { additionalTutoringRecords, type AdditionalTutoringRecord } from "@/lib/additionalTutoring";
 
 // This component is exclusively for the new batch. Existing page markup is unchanged.
-export function AdditionalTutoringPage({ record: r }: { record: AdditionalTutoringRecord }) {
+export function AdditionalTutoringPage({
+  record: r,
+  relatedRecords = additionalTutoringRecords,
+  regionHref = "/regions/daejeon",
+  regionLabel = "대전",
+}: {
+  record: AdditionalTutoringRecord;
+  relatedRecords?: readonly AdditionalTutoringRecord[];
+  regionHref?: string;
+  regionLabel?: string;
+}) {
   const c = r.content;
   const faq = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: c.faq.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
   const service = { "@context": "https://schema.org", "@type": "Service", name: r.page.title, description: r.page.description, url: r.page.canonical, image: r.image.imageUrl,
     areaServed: `${r.region.sido} ${r.region.sigungu} ${r.region.eupmyeondong}`, provider: { "@type": "EducationalOrganization", name: "StudyHigh", url: "https://studyhigh.co.kr" } };
-  const index = additionalTutoringRecords.findIndex(x => x.id === r.id);
-  const related = [1, 2, 3].map(offset => additionalTutoringRecords[(index + offset) % additionalTutoringRecords.length]);
+  const index = relatedRecords.findIndex(x => x.id === r.id);
+  const related = [1, 2, 3].map(offset => relatedRecords[(index + offset) % relatedRecords.length]);
   return <><Header /><main className="bg-white text-black">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq).replace(/</g, "\\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(service).replace(/</g, "\\u003c") }} />
@@ -62,7 +72,7 @@ export function AdditionalTutoringPage({ record: r }: { record: AdditionalTutori
         <ol className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">{[["상담 신청", c.parentConcern], ["학습 기록 확인", c.difficultUnit], ["보완 순서 제안", c.studyMethod], ["가능한 수업 안내", `${r.school.name}의 진도와 ${c.theme} 목표를 확인하고 일정·방문 또는 화상·비용을 안내합니다.`]].map(([title, body], i) => <li key={title} className="rounded-[26px] bg-white p-7 shadow-sm shadow-black/5"><span className="text-sm font-black text-[#6736C8]">STEP {i + 1}</span><h3 className="mt-3 text-xl font-black">{title}</h3><p className="mt-3 leading-7 text-black/60">{body}</p></li>)}</ol>
       </div></section>
       <section className="py-20 lg:py-28"><div className="mx-auto max-w-6xl px-5 lg:px-8"><h2 className="text-3xl font-black sm:text-5xl">자주 묻는 질문</h2><div className="mt-10 grid gap-5 md:grid-cols-2">{c.faq.map(f => <section key={f.question} className="rounded-[28px] bg-[#faf8ff] p-7"><h3 className="text-xl font-black">{f.question}</h3><p className="mt-4 leading-8 text-black/62">{f.answer}</p></section>)}</div></div></section>
-      <section className="bg-[#16072f] py-20 text-white"><div className="mx-auto max-w-6xl px-5 lg:px-8"><h2 className="text-3xl font-black sm:text-5xl">{r.region.eupmyeondong} {r.page.grade} {r.page.subject} 학습 상담</h2><p className="mt-5 max-w-3xl leading-8 text-white/70">실제 학습 기록을 바탕으로 필요한 도움부터 정리합니다.</p><div className="mt-8 flex flex-wrap gap-3"><OpenConsultationButton className={buttonVariants({ size: "lg", className: "bg-white text-black hover:bg-white/90" })}>무료 상담 신청</OpenConsultationButton><Link href="/regions/daejeon" className={buttonVariants({ size: "lg", className: "border-white/30 bg-transparent text-white hover:bg-white/10" })}>대전 지역 보기</Link></div><nav aria-label="관련 학습 안내" className="mt-8 flex flex-wrap gap-4">{related.map(x => <Link key={x.id} href={x.page.url} className="underline">{x.region.eupmyeondong} {x.page.grade} {x.page.subject} 학습 안내</Link>)}</nav></div></section>
+      <section className="bg-[#16072f] py-20 text-white"><div className="mx-auto max-w-6xl px-5 lg:px-8"><h2 className="text-3xl font-black sm:text-5xl">{r.region.eupmyeondong} {r.page.grade} {r.page.subject} 학습 상담</h2><p className="mt-5 max-w-3xl leading-8 text-white/70">실제 학습 기록을 바탕으로 필요한 도움부터 정리합니다.</p><div className="mt-8 flex flex-wrap gap-3"><OpenConsultationButton className={buttonVariants({ size: "lg", className: "bg-white text-black hover:bg-white/90" })}>무료 상담 신청</OpenConsultationButton><Link href={regionHref} className={buttonVariants({ size: "lg", className: "border-white/30 bg-transparent text-white hover:bg-white/10" })}>{regionLabel} 지역 보기</Link></div><nav aria-label="관련 학습 안내" className="mt-8 flex flex-wrap gap-4">{related.map(x => <Link key={x.id} href={x.page.url} className="underline">{x.region.eupmyeondong} {x.page.grade} {x.page.subject} 학습 안내</Link>)}</nav></div></section>
     </article>
   </main><SiteFooter /></>;
 }

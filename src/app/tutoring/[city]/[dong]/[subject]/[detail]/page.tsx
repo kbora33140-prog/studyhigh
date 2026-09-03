@@ -10,6 +10,7 @@ import { AdditionalTutoringPage } from "@/components/AdditionalTutoringPage";
 import { additionalTutoringRecords, additionalTutoringMetadata, getAdditionalTutoringRecord, type AdditionalTutoringRecord } from "@/lib/additionalTutoring";
 import { consolidatedTutoringRecords, consolidatedTutoringMetadata, getConsolidatedTutoringRecord } from "@/lib/consolidatedTutoring";
 import { isNumericTutoringAlias } from "@/lib/regionNormalization";
+import { getNationalTutoringRecord, nationalTutoringMetadata, nationalTutoringRecords } from "@/lib/nationalTutoring";
 import {
   getValidatedTestSeoRecord,
   validatedTestSeoRecords,
@@ -27,6 +28,7 @@ export function generateStaticParams() {
     ...validatedTestSeoRecords.filter((record) => !isNumericTutoringAlias(record.page.url)),
     ...additionalTutoringRecords.filter((record) => !isNumericTutoringAlias(record.page.url)),
     ...consolidatedTutoringRecords,
+    ...nationalTutoringRecords,
   ].map((record) => {
     const [, , city, district, dong, subject] = record.page.url.split("/");
     return { city, dong: district, subject: dong, detail: subject };
@@ -35,6 +37,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city, dong: district, subject: dong, detail: subject } = await params;
+  const national = getNationalTutoringRecord(city, district, dong, subject);
+  if (national) return nationalTutoringMetadata(national);
   const consolidated = getConsolidatedTutoringRecord(city, district, dong, subject);
   if (consolidated) return consolidatedTutoringMetadata(consolidated);
   const additional = getAdditionalTutoringRecord(city, district, dong, subject);
@@ -70,6 +74,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ManifestTutoringPage({ params }: Props) {
   const { city, dong: district, subject: dong, detail: subject } = await params;
+  const national = getNationalTutoringRecord(city, district, dong, subject);
+  if (national) {
+    const label = national.region.sido.replace(/특별시|광역시|특별자치시|특별자치도|도$/, "");
+    return <AdditionalTutoringPage record={national as AdditionalTutoringRecord} relatedRecords={nationalTutoringRecords as readonly AdditionalTutoringRecord[]} regionHref={`/regions/${national.region.provinceSlug}`} regionLabel={label} />;
+  }
   const consolidated = getConsolidatedTutoringRecord(city, district, dong, subject);
   if (consolidated) {
     return <AdditionalTutoringPage record={consolidated as AdditionalTutoringRecord} />;

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-09-03",
+  "batchSize": 50,
+  "currentBatch": "national-expansion-50-20260903",
+  "completedDistribution": {
+    "seoul": 25,
+    "gyeonggi": 15,
+    "busan": 7,
+    "ulsan": 3
+  },
+  "subjectDistribution": {
+    "math": 10,
+    "english": 10,
+    "korean": 10,
+    "science": 10,
+    "social": 10
+  },
+  "nextPriority": [
+    "daegu",
+    "incheon",
+    "gwangju-jeonnam",
+    "sejong",
+    "gyeongnam",
+    "gyeongbuk",
+    "chungnam",
+    "chungbuk",
+    "jeonbuk",
+    "gangwon",
+    "jeju"
+  ],
+  "rules": {
+    "excludeExistingUrl": true,
+    "excludeNumericAdministrativeDong": true,
+    "balanceSubjects": true,
+    "deprioritizeCoveredRegions": true,
+    "requireVerifiedRegionAndSchoolIds": true
+  }
+}
