@@ -61,12 +61,24 @@ if (aliasesChecked.some((status) => status !== 301)) errors.push("alias redirect
 
 const allPages = await pool(tutoring, async (absoluteUrl) => parse((await request(absoluteUrl.replace("https://studyhigh.co.kr", base))).body.toString()));
 for (const field of ["title", "description", "canonical"]) if (new Set(allPages.map((page) => page[field])).size !== allPages.length) errors.push(`${field} duplicates`);
+allPages.forEach((page, index) => {
+  if (!page.title || !page.description || page.canonical !== tutoring[index] || !page.ogTitle || !page.ogDescription || !page.ogImage) errors.push(`all-page SEO ${tutoring[index]}`);
+  if (!page.schemas.some((schema) => schema?.["@type"] === "FAQPage" && schema.mainEntity?.length)) errors.push(`all-page AEO ${tutoring[index]}`);
+  if (!page.schemas.some((schema) => schema?.["@type"] === "Service" && schema.areaServed)) errors.push(`all-page GEO ${tutoring[index]}`);
+});
+const finalImageUrls = [...new Set(allPages.map((page) => page.ogImage).filter(Boolean))];
+const finalImageResults = await pool(finalImageUrls, async (url) => {
+  const image = await request(url.replaceAll("&amp;", "&").replace("https://studyhigh.co.kr", base));
+  const mime = image.response.headers.get("content-type") || "";
+  if (image.response.status !== 200 || !mime.startsWith("image/")) errors.push(`final image ${url}`);
+  return image.response.status;
+});
 
 let regression200 = productionMode ? 132 : 0;
 if (!productionMode) {
   const productionMap = await request("https://studyhigh.co.kr/sitemap.xml");
   const productionTutoring = [...productionMap.body.toString().matchAll(/<loc>(https:\/\/studyhigh\.co\.kr\/tutoring\/[^<]+)<\/loc>/g)].map((match) => match[1]);
-  if (productionTutoring.length !== 132) errors.push(`production baseline ${productionTutoring.length}`);
+  if (productionTutoring.length !== 182) errors.push(`production baseline ${productionTutoring.length}`);
   const regression = await pool(productionTutoring, async (url) => {
     const [remote, local] = await Promise.all([request(url), request(url.replace("https://studyhigh.co.kr", base))]);
     const remotePage = parse(remote.body.toString());
@@ -76,7 +88,7 @@ if (!productionMode) {
     return true;
   });
   regression200 = regression.filter(Boolean).length;
-  if (regression200 !== 132) errors.push(`existing regression ${regression200}`);
+  if (regression200 !== productionTutoring.length) errors.push(`existing regression ${regression200}`);
 }
 
 const labels = [...new Set(manifest.records.flatMap((record) => [record.region.eupmyeondong, record.school.name, record.region.sigungu]))].sort((a, b) => b.length - a.length);
@@ -103,5 +115,5 @@ const master = await fs.readFile("public/thumbnails/studyhigh-official-template.
 const masterSha256 = crypto.createHash("sha256").update(master).digest("hex");
 if (masterSha256 !== expectedMaster) errors.push("MASTER changed");
 
-console.log(JSON.stringify({ mode: productionMode ? "production" : "local", newPages: pages.length, newHttp200: pages.filter((page) => page.status === 200).length, newImages200: pages.filter((page) => page.imageStatus === 200).length, sitemap: sitemap.length, tutoring: tutoring.length, redirects301: aliasesChecked.filter((status) => status === 301).length, regression200, duplicates: Object.fromEntries(["title", "description", "canonical"].map((field) => [field, allPages.length - new Set(allPages.map((page) => page[field])).size])), maximumSimilarity, mostSimilarPair, masterSha256, naverTokenPresent: Boolean(process.env.NAVER_SEARCH_ADVISOR_ACCESS_TOKEN), errors }, null, 2));
+console.log(JSON.stringify({ mode: productionMode ? "production" : "local", newPages: pages.length, newHttp200: pages.filter((page) => page.status === 200).length, newImages200: pages.filter((page) => page.imageStatus === 200).length, allImages200: finalImageResults.filter((status) => status === 200).length, uniqueImages: finalImageUrls.length, sitemap: sitemap.length, tutoring: tutoring.length, redirects301: aliasesChecked.filter((status) => status === 301).length, regression200, duplicates: Object.fromEntries(["title", "description", "canonical"].map((field) => [field, allPages.length - new Set(allPages.map((page) => page[field])).size])), maximumSimilarity, mostSimilarPair, masterSha256, naverTokenPresent: Boolean(process.env.NAVER_SEARCH_ADVISOR_ACCESS_TOKEN), errors }, null, 2));
 if (errors.length) process.exitCode = 1;

@@ -9,6 +9,7 @@ import { SiteFooter } from "@/components/Marketing";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
 import { getTutoringArticle } from "@/lib/tutoringArticles";
+import { getTutoringNarrative } from "@/lib/tutoringNarrative";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
@@ -96,6 +97,15 @@ export default async function TutoringPage({ params }: Props) {
 
   const canonical = `${SITE_URL}/tutoring/${city}/${dong}/${subject}`;
   const thumbnail = getThumbnailUrl(dong, article.dongName, subject, gradeSlug);
+  const narrative = getTutoringNarrative({
+    key: canonical,
+    region: `${article.cityName} ${article.dongName}`,
+    school: article.nearbySchools?.[0],
+    grade: gradeName,
+    subject: article.subjectName,
+    concern: article.concern,
+    method: article.method,
+  });
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -219,19 +229,17 @@ export default async function TutoringPage({ params }: Props) {
                 {article.keyword}, 무엇을 먼저 확인해야 할까요?
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
-                최근 시험과 오답, 사용하는 교재, 가능한 수업 시간과 목표를 먼저
-                정리합니다. 학생마다 막히는 지점이 다르므로 상담 후 실제 수업 가능
-                지역과 방식, 비용을 확인해야 합니다.
+                {narrative.diagnosis}
               </p>
 
               <div className="mt-12 grid gap-5 md:grid-cols-2">
                 <section className="rounded-[28px] bg-[#faf8ff] p-7">
                   <h3 className="text-2xl font-black">학생이 자주 겪는 어려움</h3>
-                  <p className="mt-4 leading-8 text-black/62">{article.concern}</p>
+                  <p className="mt-4 leading-8 text-black/62">{article.concern} {narrative.habit}</p>
                 </section>
                 <section className="rounded-[28px] bg-[#16072f] p-7 text-white">
                   <h3 className="text-2xl font-black">학부모가 확인할 부분</h3>
-                  <p className="mt-4 leading-8 text-white/70">{article.parentConcern}</p>
+                  <p className="mt-4 leading-8 text-white/70">{article.parentConcern} {narrative.parentCommunication}</p>
                 </section>
               </div>
             </div>
@@ -248,9 +256,9 @@ export default async function TutoringPage({ params }: Props) {
                 </h2>
               </div>
               <div className="space-y-6 text-lg leading-8 text-black/65">
-                <p>{article.detailBody}</p>
+                <p>{article.detailBody} {narrative.schoolContext} {narrative.subject}</p>
                 <p className="rounded-2xl bg-white p-6 font-bold text-black">
-                  실천 방법: {article.method}
+                  실천 방법: {article.method} {narrative.selfStudy}
                 </p>
               </div>
             </div>
@@ -265,27 +273,24 @@ export default async function TutoringPage({ params }: Props) {
                 같은 {article.dongName} {gradeName} 학생이어도 필요한 수업은 다릅니다
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
-                현재 등급만 보고 진도를 정하지 않습니다. 최근 시험에서 왜 틀렸는지,
-                어느 단원부터 이해가 끊겼는지, 혼자 공부할 때 무엇을 미루는지까지
-                확인해야 실제로 성적을 바꿀 수 있는 수업 방향이 나옵니다. 학생의 상황이
-                먼저이고 교재와 진도는 그다음입니다.
+                {narrative.teacherFit}
               </p>
 
               <div className="mt-12 grid gap-5 md:grid-cols-3">
                 <section className="rounded-[28px] border border-black/8 p-7">
                   <p className="text-sm font-black text-[#6736C8]">01 · 현재 상태 진단</p>
                   <h3 className="mt-3 text-2xl font-black">어디에서 막히는지 찾기</h3>
-                  <p className="mt-4 leading-8 text-black/62">{plan.diagnosis}</p>
+                  <p className="mt-4 leading-8 text-black/62">{plan.diagnosis} {narrative.habit}</p>
                 </section>
                 <section className="rounded-[28px] border border-black/8 p-7">
                   <p className="text-sm font-black text-[#6736C8]">02 · 내신 대비</p>
                   <h3 className="mt-3 text-2xl font-black">학교 시험 범위에 맞추기</h3>
-                  <p className="mt-4 leading-8 text-black/62">{plan.exam}</p>
+                  <p className="mt-4 leading-8 text-black/62">{plan.exam} {narrative.schoolContext}</p>
                 </section>
                 <section className="rounded-[28px] bg-[#f1ebff] p-7">
                   <p className="text-sm font-black text-[#6736C8]">03 · 부족한 부분 보완</p>
                   <h3 className="mt-3 text-2xl font-black">기초부터 다시 연결하기</h3>
-                  <p className="mt-4 leading-8 text-black/62">{plan.recovery}</p>
+                  <p className="mt-4 leading-8 text-black/62">{plan.recovery} {narrative.selfStudy}</p>
                 </section>
               </div>
 
@@ -294,9 +299,7 @@ export default async function TutoringPage({ params }: Props) {
                   {article.concern}이라면 수업 방향부터 확인해보세요
                 </h3>
                 <p className="mt-4 max-w-4xl leading-8 text-white/72">
-                  무조건 수업을 권하기보다 현재 공부 방식과 목표, 시험 일정, 가능한
-                  수업 시간을 먼저 듣습니다. 상담만으로도 지금 가장 먼저 바꿔야 할
-                  학습 우선순위를 정리할 수 있습니다.
+                  {narrative.consultation}
                 </p>
                 <OpenConsultationButton
                   className={buttonVariants({
@@ -319,15 +322,14 @@ export default async function TutoringPage({ params }: Props) {
                 무료상담은 이렇게 진행됩니다
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
-                상담 신청을 남기면 학생의 상황을 먼저 확인하고, {article.dongName}에서
-                가능한 수업 방식과 {article.subjectName} 학습 방향을 순서대로 안내합니다.
+                {narrative.consultation}
               </p>
               <ol className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
                 {[
-                  ["상담 신청", "이름, 연락처, 학교와 학년, 희망 과목과 현재 고민을 남깁니다."],
+                  ["상담 신청", narrative.parentCommunication],
                   ["학생 상황 확인", "현재 성적, 최근 시험, 목표, 공부 습관과 부족한 부분을 구체적으로 확인합니다."],
-                  ["수업 방향 제안", `${article.subjectName} 내신 대비와 기초 보완 중 무엇을 우선할지 정리합니다.`],
-                  ["선생님·수업 안내", "방문 또는 화상 가능 여부, 일정과 비용을 안내하고 동의 후 수업을 연결합니다."],
+                  ["수업 방향 제안", `${article.subjectName} 내신 대비와 기초 보완 중 무엇을 우선할지 정리합니다. ${narrative.selfStudy}`],
+                  ["선생님·수업 안내", `${narrative.teacherFit} 방문 또는 화상 가능 여부, 일정과 비용을 안내하고 동의 후 수업을 연결합니다.`],
                 ].map(([title, body], index) => (
                   <li key={title} className="rounded-[26px] bg-white p-7 shadow-sm shadow-black/5">
                     <span className="text-sm font-black text-[#6736C8]">STEP {index + 1}</span>
@@ -372,8 +374,7 @@ export default async function TutoringPage({ params }: Props) {
                 {article.keyword} 상담이 필요하신가요?
               </h2>
               <p className="mt-5 max-w-3xl leading-8 text-white/70">
-                학생의 현재 상태와 목표를 확인한 뒤 필요한 학습 방향과 수업 가능
-                여부를 안내합니다.
+                {narrative.consultation}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <OpenConsultationButton

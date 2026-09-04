@@ -11,6 +11,7 @@ import { additionalTutoringRecords, additionalTutoringMetadata, getAdditionalTut
 import { consolidatedTutoringRecords, consolidatedTutoringMetadata, getConsolidatedTutoringRecord } from "@/lib/consolidatedTutoring";
 import { isNumericTutoringAlias } from "@/lib/regionNormalization";
 import { getNationalTutoringRecord, nationalTutoringMetadata, nationalTutoringRecords } from "@/lib/nationalTutoring";
+import { getTutoringNarrative } from "@/lib/tutoringNarrative";
 import {
   getValidatedTestSeoRecord,
   validatedTestSeoRecords,
@@ -87,6 +88,15 @@ export default async function ManifestTutoringPage({ params }: Props) {
   if (additional) return <AdditionalTutoringPage record={additional} />;
   const record = getValidatedTestSeoRecord(city, district, dong, subject);
   if (!record) notFound();
+  const narrative = getTutoringNarrative({
+    key: record.page.url,
+    region: record.geo.region,
+    school: record.school.schoolName,
+    grade: record.page.grade,
+    subject: record.page.subject,
+    concern: record.content.learningConcerns[0].text,
+    method: record.content.studyMethod[0].text,
+  });
 
   const faqSchema = record.aeo.faqPageSchema;
   const serviceSchema = {
@@ -165,22 +175,20 @@ export default async function ManifestTutoringPage({ params }: Props) {
                 {record.image.thumbnailText.eupmyeondong} {record.page.grade} {record.page.subject}과외, 무엇을 먼저 확인해야 할까요?
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
-                최근 시험과 오답, 사용하는 교재, 가능한 수업 시간과 목표를 먼저
-                정리합니다. 학생마다 막히는 지점이 다르므로 상담 후 실제 수업 가능
-                지역과 방식, 비용을 확인해야 합니다.
+                {narrative.diagnosis}
               </p>
 
               <div className="mt-12 grid gap-5 md:grid-cols-2">
                 <section className="rounded-[28px] bg-[#faf8ff] p-7">
                   <h3 className="text-2xl font-black">학생이 자주 겪는 어려움</h3>
                   <p className="mt-4 leading-8 text-black/62">
-                    {record.content.learningConcerns[0].text}
+                    {record.content.learningConcerns[0].text} {narrative.habit}
                   </p>
                 </section>
                 <section className="rounded-[28px] bg-[#16072f] p-7 text-white">
                   <h3 className="text-2xl font-black">학부모가 확인할 부분</h3>
                   <p className="mt-4 leading-8 text-white/70">
-                    {record.content.consultationType.text}
+                    {record.content.consultationType.text} {narrative.parentCommunication}
                   </p>
                 </section>
               </div>
@@ -199,10 +207,10 @@ export default async function ManifestTutoringPage({ params }: Props) {
               </div>
               <div className="space-y-6 text-lg leading-8 text-black/65">
                 <p>
-                  {record.content.examCharacteristics[0].text}
+                  {record.content.examCharacteristics[0].text} {narrative.schoolContext} {narrative.subject}
                 </p>
                 <p className="rounded-2xl bg-white p-6 font-bold text-black">
-                  실천 방법: {record.content.studyMethod[0].text}
+                  실천 방법: {record.content.studyMethod[0].text} {narrative.selfStudy}
                 </p>
               </div>
             </div>
@@ -217,8 +225,7 @@ export default async function ManifestTutoringPage({ params }: Props) {
                 같은 {record.region.eupmyeondong} {record.page.grade} 학생이어도 필요한 수업은 다릅니다
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
-                {record.geo.localLearningContext.text} 현재 등급만으로 진도를 정하지 않고,
-                학교 진도와 최근 풀이 기록을 함께 확인해 학생에게 필요한 순서를 찾습니다.
+                {record.geo.localLearningContext.text} {narrative.teacherFit}
               </p>
 
               <div className="mt-12 grid gap-5 md:grid-cols-3">
@@ -226,21 +233,21 @@ export default async function ManifestTutoringPage({ params }: Props) {
                   <p className="text-sm font-black text-[#6736C8]">01 · 현재 상태 진단</p>
                   <h3 className="mt-3 text-2xl font-black">어디에서 막히는지 찾기</h3>
                   <p className="mt-4 leading-8 text-black/62">
-                    {record.content.learningConcerns[0].text}
+                    {record.content.learningConcerns[0].text} {narrative.habit}
                   </p>
                 </section>
                 <section className="rounded-[28px] border border-black/8 p-7">
                   <p className="text-sm font-black text-[#6736C8]">02 · 내신 대비</p>
                   <h3 className="mt-3 text-2xl font-black">학교 시험 범위에 맞추기</h3>
                   <p className="mt-4 leading-8 text-black/62">
-                    {record.content.schoolAnalysis?.text} {record.content.examCharacteristics[0].text}
+                    {record.content.schoolAnalysis?.text} {record.content.examCharacteristics[0].text} {narrative.schoolContext}
                   </p>
                 </section>
                 <section className="rounded-[28px] bg-[#f1ebff] p-7">
                   <p className="text-sm font-black text-[#6736C8]">03 · 부족한 부분 보완</p>
                   <h3 className="mt-3 text-2xl font-black">기초부터 다시 연결하기</h3>
                   <p className="mt-4 leading-8 text-black/62">
-                    {record.content.studyMethod[0].text}
+                    {record.content.studyMethod[0].text} {narrative.selfStudy}
                   </p>
                 </section>
               </div>
@@ -250,9 +257,7 @@ export default async function ManifestTutoringPage({ params }: Props) {
                   {record.content.learningConcerns[0].text} 상황이라면 수업 방향부터 확인해보세요
                 </h3>
                 <p className="mt-4 max-w-4xl leading-8 text-white/72">
-                  무조건 수업을 권하기보다 현재 공부 방식과 목표, 시험 일정, 가능한
-                  수업 시간을 먼저 듣습니다. 상담만으로도 지금 가장 먼저 바꿔야 할
-                  학습 우선순위를 정리할 수 있습니다.
+                  {narrative.consultation}
                 </p>
                 <OpenConsultationButton
                   className={buttonVariants({
@@ -275,15 +280,14 @@ export default async function ManifestTutoringPage({ params }: Props) {
                 무료상담은 이렇게 진행됩니다
               </h2>
               <p className="mt-6 max-w-4xl text-lg leading-8 text-black/65">
-                상담 신청을 남기면 학생의 상황을 먼저 확인하고, {record.region.eupmyeondong}에서
-                가능한 수업 방식과 {record.page.subject} 학습 방향을 순서대로 안내합니다.
+                {narrative.consultation}
               </p>
               <ol className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
                 {[
-                  ["상담 신청", "이름, 연락처, 학교와 학년, 희망 과목과 현재 고민을 남깁니다."],
+                  ["상담 신청", narrative.parentCommunication],
                   ["학생 상황 확인", "현재 성적, 최근 시험, 목표, 공부 습관과 부족한 부분을 구체적으로 확인합니다."],
-                  ["수업 방향 제안", `${record.page.subject} 내신 대비와 기초 보완 중 무엇을 우선할지 정리합니다.`],
-                  ["선생님·수업 안내", "방문 또는 화상 가능 여부, 일정과 비용을 안내하고 동의 후 수업을 연결합니다."],
+                  ["수업 방향 제안", `${record.page.subject} 내신 대비와 기초 보완 중 무엇을 우선할지 정리합니다. ${narrative.selfStudy}`],
+                  ["선생님·수업 안내", `${narrative.teacherFit} 방문 또는 화상 가능 여부, 일정과 비용을 안내하고 동의 후 수업을 연결합니다.`],
                 ].map(([title, body], index) => (
                   <li key={title} className="rounded-[26px] bg-white p-7 shadow-sm shadow-black/5">
                     <span className="text-sm font-black text-[#6736C8]">STEP {index + 1}</span>
@@ -328,7 +332,7 @@ export default async function ManifestTutoringPage({ params }: Props) {
                 {record.image.thumbnailText.eupmyeondong} {record.page.grade} {record.page.subject}과외 상담
               </h2>
               <p className="mt-5 max-w-3xl leading-8 text-white/70">
-                학생의 현재 상태와 학교 진도를 확인한 뒤 필요한 학습 방향과 수업 가능 여부를 안내합니다.
+                {narrative.consultation}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <OpenConsultationButton
