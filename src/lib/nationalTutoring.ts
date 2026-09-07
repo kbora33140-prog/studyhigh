@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import batch from "../../data/manifests/national/expansion-50-20260903.json";
+import firstBatch from "../../data/manifests/national/expansion-50-20260903.json";
+import secondBatch from "../../data/manifests/national/expansion-50-20260907.json";
 
-export const nationalTutoringRecords = batch.records;
-export type NationalTutoringRecord = (typeof batch.records)[number];
+export const nationalTutoringRecords = [...firstBatch.records, ...secondBatch.records];
+export type NationalTutoringRecord = (typeof nationalTutoringRecords)[number];
 
 export function getNationalTutoringRecord(city: string, district: string, dong: string, subject: string) {
   return nationalTutoringRecords.find(

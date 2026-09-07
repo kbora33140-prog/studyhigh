@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...nationalTutoringRecords.map((record) => ({
       url: record.page.canonical,
-      lastModified: new Date("2026-09-03"),
+      lastModified: new Date(record.createdAt),
       changeFrequency: "weekly" as const,
       priority: 0.85,
     })),

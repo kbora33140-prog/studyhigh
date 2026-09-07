@@ -1,13 +1,15 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-07",
   "batchSize": 50,
-  "currentBatch": "national-expansion-50-20260903",
+  "currentBatch": "national-expansion-50-20260907",
   "completedDistribution": {
     "seoul": 25,
     "gyeonggi": 15,
     "busan": 7,
-    "ulsan": 3
+    "ulsan": 3,
+    "daegu": 25,
+    "incheon": 25
   },
   "subjectDistribution": {
     "math": 10,
@@ -17,8 +19,6 @@
     "social": 10
   },
   "nextPriority": [
-    "daegu",
-    "incheon",
     "gwangju-jeonnam",
     "sejong",
     "gyeongnam",
