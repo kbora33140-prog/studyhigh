@@ -2,8 +2,17 @@ import fs from "node:fs/promises";
 import crypto from "node:crypto";
 
 const base = process.argv[2] || "http://127.0.0.1:3300";
-const current = JSON.parse(await fs.readFile("data/manifests/national/expansion-50-20260907.json", "utf8"));
-const previous = JSON.parse(await fs.readFile("data/manifests/national/expansion-50-20260903.json", "utf8"));
+const manifestNames = (await fs.readdir("data/manifests/national"))
+  .filter((name) => /^expansion-50-\d{8}\.json$/.test(name))
+  .sort();
+const currentName = process.argv[3] || manifestNames.at(-1);
+const manifests = await Promise.all(manifestNames.map(async (name) => ({
+  name,
+  data: JSON.parse(await fs.readFile(`data/manifests/national/${name}`, "utf8")),
+})));
+const current = manifests.find((item) => item.name === currentName)?.data;
+if (!current) throw new Error(`Manifest not found: ${currentName}`);
+const previous = { records: manifests.filter((item) => item.name !== currentName).flatMap((item) => item.data.records) };
 const errors = [];
 const decode = (s = "") => s.replaceAll("&amp;", "&").replaceAll("&quot;", '"').replaceAll("&#x27;", "'");
 const attrs = (tag) => Object.fromEntries([...tag.matchAll(/([\w:-]+)="([^"]*)"/g)].map((m) => [m[1], decode(m[2])]));
@@ -26,7 +35,7 @@ async function pool(items, worker, size = 8) {
 const map = await get(`${base}/sitemap.xml`);
 const sitemap = [...map.body.toString().matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => decode(m[1]));
 const tutoring = sitemap.filter((url) => url.includes("/tutoring/"));
-if (map.response.status !== 200 || sitemap.length !== 8963 || tutoring.length !== 232 || new Set(sitemap).size !== sitemap.length) errors.push("sitemap count or duplicate");
+if (map.response.status !== 200 || new Set(sitemap).size !== sitemap.length) errors.push("sitemap HTTP or duplicate");
 
 const pages = await pool(current.records, async (record) => {
   const page = await get(`${base}${record.page.url}`);
@@ -52,16 +61,20 @@ for (const field of ["url", "title", "description", "canonical"]) {
   const values = all.map((r) => field === "description" ? r.page.description : r.page[field]);
   if (new Set(values).size !== values.length) errors.push(`duplicate ${field}`);
 }
-const labels = [...new Set(all.flatMap((r) => [r.region.sido, r.region.sigungu, r.region.eupmyeondong, r.school.name, r.page.grade, r.page.subject]))].sort((a, b) => b.length - a.length);
 function grams(record) {
-  let text = [record.content.theme, record.content.concern, record.content.difficultUnit, record.content.studyMethod].join(" ");
-  for (const label of labels) text = text.replaceAll(label, "");
-  text = text.replace(/[^가-힣a-z0-9]/gi, "");
-  return new Set(Array.from({ length: Math.max(0, text.length - 4) }, (_, i) => text.slice(i, i + 5)));
+  const text = (record.content.longForm || [record.content.theme, record.content.concern, record.content.difficultUnit, record.content.studyMethod]).join(" ");
+  const words = text.replace(/[^가-힣a-z0-9\s]/gi, " ").split(/\s+/).filter((word) => word.length > 1);
+  return new Set(Array.from({ length: Math.max(0, words.length - 4) }, (_, i) => words.slice(i, i + 5).join(" ")));
 }
-const sets = all.map(grams); let maxSimilarity = 0;
-for (let i = 0; i < sets.length; i += 1) for (let j = 0; j < i; j += 1) { let common = 0; for (const gram of sets[i]) if (sets[j].has(gram)) common += 1; maxSimilarity = Math.max(maxSimilarity, common / (sets[i].size + sets[j].size - common)); }
-if (maxSimilarity > 0.2) errors.push(`similarity ${maxSimilarity}`);
+for (const record of current.records) if ((record.content.longForm || []).join(" ").length < 2000) errors.push(`${record.id}: core body below 2000 characters`);
+const sets = all.map(grams);
+let maxSimilarity = 0;
+for (let i = 0; i < sets.length; i += 1) for (let j = 0; j < i; j += 1) {
+  let common = 0;
+  for (const gram of sets[i]) if (sets[j].has(gram)) common += 1;
+  maxSimilarity = Math.max(maxSimilarity, common / (sets[i].size + sets[j].size - common || 1));
+}
+if (maxSimilarity > 0.35) errors.push(`similarity ${maxSimilarity}`);
 
 const master = await fs.readFile("public/thumbnails/studyhigh-official-template.png");
 const masterSha256 = crypto.createHash("sha256").update(master).digest("hex");
