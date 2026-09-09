@@ -6,11 +6,14 @@ const manifestNames = (await fs.readdir("data/manifests/national"))
   .filter((name) => /^expansion-50-\d{8}\.json$/.test(name))
   .sort();
 const currentName = process.argv[3] || manifestNames.at(-1);
+const currentPath = currentName.includes("/") || currentName.includes("\\") ? currentName : `data/manifests/national/${currentName}`;
 const manifests = await Promise.all(manifestNames.map(async (name) => ({
   name,
   data: JSON.parse(await fs.readFile(`data/manifests/national/${name}`, "utf8")),
 })));
-const current = manifests.find((item) => item.name === currentName)?.data;
+const current = currentName.includes("/") || currentName.includes("\\")
+  ? JSON.parse(await fs.readFile(currentPath, "utf8"))
+  : manifests.find((item) => item.name === currentName)?.data;
 if (!current) throw new Error(`Manifest not found: ${currentName}`);
 const previous = { records: manifests.filter((item) => item.name !== currentName).flatMap((item) => item.data.records) };
 const errors = [];

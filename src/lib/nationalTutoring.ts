@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import firstBatch from "../../data/manifests/national/expansion-50-20260903.json";
 import secondBatch from "../../data/manifests/national/expansion-50-20260907.json";
 import thirdBatch from "../../data/manifests/national/expansion-50-20260908.json";
+import dailyBatch20260909 from "../../data/manifests/daily-50-20260909.json";
 
-export const nationalTutoringRecords = [...firstBatch.records, ...secondBatch.records, ...thirdBatch.records];
+export const nationalTutoringRecords = [
+  ...firstBatch.records,
+  ...secondBatch.records,
+  ...thirdBatch.records,
+  ...dailyBatch20260909.records,
+];
 export type NationalTutoringRecord = (typeof nationalTutoringRecords)[number];
 
 export function getNationalTutoringRecord(city: string, district: string, dong: string, subject: string) {

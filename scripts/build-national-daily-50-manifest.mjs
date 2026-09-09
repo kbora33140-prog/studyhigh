@@ -1,20 +1,20 @@
 import fs from "node:fs";
 
 const base = "https://studyhigh.co.kr";
-const createdAt = "2026-09-08";
-const batch = "national-expansion-50-20260908";
+const createdAt = "2026-09-09";
+const batch = "daily-50-20260909";
 const subjectNames = { math: "수학", english: "영어", korean: "국어", science: "과학", social: "사회" };
 const places = [
-  ["gwangju-jeonnam","광주광역시","seo-gu","서구","chipyeong-dong","치평동","town:1224074500"],
-  ["gwangju-jeonnam","광주광역시","seo-gu","서구","pungam-dong","풍암동","town:1224083000"],
-  ["gwangju-jeonnam","광주광역시","nam-gu","남구","jinwol-dong","진월동","town:1227070500"],
-  ["gwangju-jeonnam","광주광역시","buk-gu","북구","yongbong-dong","용봉동","town:1230059000"],
-  ["gwangju-jeonnam","광주광역시","gwangsan-gu","광산구","suwan-dong","수완동","town:1233063700"],
-  ["sejong","세종특별자치시","sejong-si","세종특별자치시","saerom-dong","새롬동","town:3611051500"],
-  ["sejong","세종특별자치시","sejong-si","세종특별자치시","dodam-dong","도담동","town:3611052000"],
-  ["sejong","세종특별자치시","sejong-si","세종특별자치시","areum-dong","아름동","town:3611053000"],
-  ["sejong","세종특별자치시","sejong-si","세종특별자치시","jongchon-dong","종촌동","town:3611054000"],
-  ["sejong","세종특별자치시","sejong-si","세종특별자치시","goun-dong","고운동","town:3611055000"],
+  ["gyeongnam","경상남도","uichang-gu-changwon-si","창원시 의창구","uichang-dong","의창동","town:4812151000"],
+  ["gyeongnam","경상남도","seongsan-gu-changwon-si","창원시 성산구","sangnam-dong","상남동","town:4812353000"],
+  ["gyeongnam","경상남도","jinju-si","진주시","pyeonggeo-dong","평거동","town:4817071000"],
+  ["gyeongnam","경상남도","jinju-si","진주시","chungmugong-dong","충무공동","town:4817075000"],
+  ["gyeongnam","경상남도","gimhae-si","김해시","naeoe-dong","내외동","town:4825054000"],
+  ["gyeongnam","경상남도","gimhae-si","김해시","bukbu-dong","북부동","town:4825055000"],
+  ["gyeongnam","경상남도","geoje-si","거제시","gohyeon-dong","고현동","town:4831058000"],
+  ["gyeongnam","경상남도","geoje-si","거제시","sangmun-dong","상문동","town:4831059000"],
+  ["gyeongnam","경상남도","yangsan-si","양산시","mulgeum-eup","물금읍","town:4833025300"],
+  ["gyeongnam","경상남도","yangsan-si","양산시","yangju-dong","양주동","town:4833051500"],
 ];
 const topics = {
   math:["식 전개의 중간 과정","연립방정식 조건 정리","함수 그래프 변화","닮음비 활용 순서","경우의 수 분류","등차수열 규칙 설명","로그 조건 확인","삼각함수 주기 해석","미적분 변화율 연결","통계 자료 비교"],
@@ -61,7 +61,7 @@ function personalize(text,pageIndex){
   return Object.entries(wordVariants).reduce((value,[word,variants],variantIndex)=>value.replaceAll(word,variants[(pageIndex*multipliers[variantIndex]+Math.floor(pageIndex/5))%variants.length]),text);
 }
 function buildLongForm({pageIndex,townName,sido,sigungu,school,grade,subject,theme,concern,method,exam}){
-  return Array.from({length:20},(_,paragraphIndex)=>{
+  const main = Array.from({length:20},(_,paragraphIndex)=>{
     const a=transitions[(pageIndex+paragraphIndex*3)%transitions.length];
     const b=evidence[(pageIndex*3+paragraphIndex*7)%evidence.length];
     const c=management[(pageIndex*7+paragraphIndex*9)%management.length];
@@ -70,13 +70,15 @@ function buildLongForm({pageIndex,townName,sido,sigungu,school,grade,subject,the
     const f=evidence[(pageIndex*2+paragraphIndex*5+1)%evidence.length];
     const g=management[(pageIndex*6+paragraphIndex*7+2)%management.length];
     const protectedValues={"__SIDO__":sido,"__SIGUNGU__":sigungu,"__TOWN__":townName,"__GRADE__":grade,"__SUBJECT__":subject,"__THEME__":theme,"__SCHOOL__":school.name,"__CONCERN__":concern,"__METHOD__":method,"__EXAM__":exam};
-    let paragraph=personalize(`${a} __SIDO__ __SIGUNGU__ __TOWN__ __GRADE__ 학생의 __THEME__ 기록에서는 ${b}을 __SUBJECT__ 학습의 출발 자료로 삼습니다. ${c}. __SCHOOL__ 수업 자료 가운데 ${d}을 현재 진도와 대조하고 ${e}. __CONCERN__ 이 상황을 단순한 노력 부족으로 보지 않고 ${f}을 통해 집중 방식과 설명 선호를 구분합니다. ${g}. __METHOD__ 좋은 선생님이라는 평가만 따르지 않고 __TOWN__ 학생에게 맞는 질문 속도와 피드백 방식을 확인합니다. __EXAM__`,pageIndex);
+    let paragraph=personalize(`__TOWN__에서 __SUBJECT__ 계획을 세우는 이번 단계의 초점은 __THEME__입니다. ${a} ${b}부터 살펴 현재 이해와 우연히 맞힌 답을 나눕니다. __GRADE__ 학생이 혼자 재현할 수 있는 범위를 찾은 다음 ${c}. __SCHOOL__의 실제 준비물에서는 ${d}과 진도표를 함께 놓고 ${e}. 특히 __CONCERN__ 그래서 노력의 양을 재촉하기 전에 ${f}에서 막힌 이유를 학생의 말로 듣습니다. ${g}. __METHOD__ __SIDO__ __SIGUNGU__ 생활 일정도 고려하되, 유명세보다 아이가 질문하기 편한 선생님인지와 피드백을 받아들이는 방식을 우선합니다. 학부모에게는 결과만 전달하지 않고 이번 주의 변화, 남은 어려움, 다음 숙제 조정 이유를 구체적으로 공유합니다. __EXAM__`,pageIndex+37);
     for(const [placeholder,value] of Object.entries(protectedValues)) paragraph=paragraph.replaceAll(placeholder,value);
     return paragraph;
   });
+  const appendix = Array.from({length:4},(_,index)=>`${townName} ${grade} ${subject} 관찰 ${index+1}에서는 ${theme}의 시작 행동을 ${school.name} 학습 자료와 연결합니다. ${townName} 학생이 ${subject} 풀이를 시작한 시각, 질문한 순간, 혼자 고친 단계를 나누면 ${theme}의 어려움이 개념·속도·습관 중 어디에 가까운지 구체화됩니다. ${sigungu} 생활 일정 안에서 ${subject} 숙제량을 조절하고, ${school.name} 학생이 ${theme}을 자기 말로 다시 설명한 날을 복습 기준으로 삼습니다. ${sido} 지역이라는 이름만 치환하는 계획이 아니라 ${townName}의 실제 이동 시간, ${grade} 일정, ${subject} 과제 수행 기록을 함께 보며 다음 주 목표를 정합니다.`);
+  return [...main, ...appendix];
 }
 
-const outputName=`expansion-50-${createdAt.replaceAll("-","")}.json`;
+const outputName=`daily-50-${createdAt.replaceAll("-","")}.json`;
 const existingFiles=fs.readdirSync("data/manifests/national").filter((name)=>name.endsWith(".json")&&name!==outputName);
 const existingRecords=existingFiles.flatMap((name)=>JSON.parse(fs.readFileSync(`data/manifests/national/${name}`,"utf8")).records||[]);
 const existingUrls=new Set(existingRecords.map((record)=>record.page.url));
@@ -110,7 +112,7 @@ for(let placeIndex=0;placeIndex<places.length;placeIndex+=1){
     const imagePath=`/api/seo-thumbnail?dong=${encodeURIComponent(townName)}&subject=${subjectSlug}`;
     const longForm=buildLongForm({pageIndex,townName,sido,sigungu,school,grade,subject,theme,concern,method,exam});
     records.push({
-      id:`page:national:20260908:${String(records.length+1).padStart(3,"0")}`,status:"validated",createdAt,
+      id:`page:national:${createdAt.replaceAll("-","")}:${String(records.length+1).padStart(3,"0")}`,status:"validated",createdAt,
       region:{sido,sigungu,eupmyeondong:townName,provinceSlug,districtSlug,townSlug,townId,sourceTownId:townId},
       school:{id:school.id,name:school.name,type:school.schoolType,typeName:school.schoolTypeName,address:school.address.road,addressDetail:school.address.detail,source:schools.meta.source,sourceDate:schools.meta.sourceDate},
       page:{url,canonical,title,description,grade,subject,subjectSlug},
@@ -125,5 +127,5 @@ for(let placeIndex=0;placeIndex<places.length;placeIndex+=1){
 }
 if(records.length!==50) throw new Error(`Expected 50, got ${records.length}`);
 for(const field of ["url","title","description","canonical"]){const values=records.map((r)=>field==="description"?r.page.description:r.page[field]);if(new Set(values).size!==50)throw new Error(`Duplicate ${field}`);}
-fs.writeFileSync(`data/manifests/national/${outputName}`,JSON.stringify({version:1,batch,expansionStage:["광주","세종"],records},null,2)+"\n");
-console.log(JSON.stringify({batch,count:records.length,gwangju:records.filter((r)=>r.region.sido==="광주광역시").length,sejong:records.filter((r)=>r.region.sido==="세종특별자치시").length},null,2));
+fs.writeFileSync(`data/manifests/${outputName}`,JSON.stringify({version:1,batch,expansionStage:["경남"],records},null,2)+"\n");
+console.log(JSON.stringify({batch,count:records.length,gyeongnam:records.filter((r)=>r.region.sido==="경상남도").length},null,2));
