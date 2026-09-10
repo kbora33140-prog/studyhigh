@@ -3,12 +3,14 @@ import firstBatch from "../../data/manifests/national/expansion-50-20260903.json
 import secondBatch from "../../data/manifests/national/expansion-50-20260907.json";
 import thirdBatch from "../../data/manifests/national/expansion-50-20260908.json";
 import dailyBatch20260909 from "../../data/manifests/daily-50-20260909.json";
+import dailyBatch20260910 from "../../data/manifests/daily-50-20260910.json";
 
 export const nationalTutoringRecords = [
   ...firstBatch.records,
   ...secondBatch.records,
   ...thirdBatch.records,
   ...dailyBatch20260909.records,
+  ...dailyBatch20260910.records,
 ];
 export type NationalTutoringRecord = (typeof nationalTutoringRecords)[number];
 

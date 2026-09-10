@@ -1,27 +1,27 @@
 import fs from "node:fs";
 
 const base = "https://studyhigh.co.kr";
-const createdAt = "2026-09-09";
-const batch = "daily-50-20260909";
+const createdAt = "2026-09-10";
+const batch = "daily-50-20260910";
 const subjectNames = { math: "수학", english: "영어", korean: "국어", science: "과학", social: "사회" };
 const places = [
-  ["gyeongnam","경상남도","uichang-gu-changwon-si","창원시 의창구","uichang-dong","의창동","town:4812151000"],
-  ["gyeongnam","경상남도","seongsan-gu-changwon-si","창원시 성산구","sangnam-dong","상남동","town:4812353000"],
-  ["gyeongnam","경상남도","jinju-si","진주시","pyeonggeo-dong","평거동","town:4817071000"],
-  ["gyeongnam","경상남도","jinju-si","진주시","chungmugong-dong","충무공동","town:4817075000"],
-  ["gyeongnam","경상남도","gimhae-si","김해시","naeoe-dong","내외동","town:4825054000"],
-  ["gyeongnam","경상남도","gimhae-si","김해시","bukbu-dong","북부동","town:4825055000"],
-  ["gyeongnam","경상남도","geoje-si","거제시","gohyeon-dong","고현동","town:4831058000"],
-  ["gyeongnam","경상남도","geoje-si","거제시","sangmun-dong","상문동","town:4831059000"],
-  ["gyeongnam","경상남도","yangsan-si","양산시","mulgeum-eup","물금읍","town:4833025300"],
-  ["gyeongnam","경상남도","yangsan-si","양산시","yangju-dong","양주동","town:4833051500"],
+  ["seoul","서울특별시","jongno-gu","종로구","cheongunhyoja-dong","청운효자동","town:1111051500"],
+  ["seoul","서울특별시","jongno-gu","종로구","samcheong-dong","삼청동","town:1111054000"],
+  ["seoul","서울특별시","jongno-gu","종로구","buam-dong","부암동","town:1111055000"],
+  ["seoul","서울특별시","jongno-gu","종로구","gyonam-dong","교남동","town:1111058000"],
+  ["seoul","서울특별시","jongno-gu","종로구","gahoe-dong","가회동","town:1111060000"],
+  ["seoul","서울특별시","jongno-gu","종로구","ihwa-dong","이화동","town:1111064000"],
+  ["seoul","서울특별시","jung-gu","중구","sogong-dong","소공동","town:1114052000"],
+  ["seoul","서울특별시","jung-gu","중구","gwanghui-dong","광희동","town:1114059000"],
+  ["seoul","서울특별시","jung-gu","중구","sindang-dong","신당동","town:1114061500"],
+  ["seoul","서울특별시","jung-gu","중구","jungnim-dong","중림동","town:1114068000"],
 ];
 const topics = {
-  math:["식 전개의 중간 과정","연립방정식 조건 정리","함수 그래프 변화","닮음비 활용 순서","경우의 수 분류","등차수열 규칙 설명","로그 조건 확인","삼각함수 주기 해석","미적분 변화율 연결","통계 자료 비교"],
-  english:["핵심 어휘 반복 회상","긴 문장 호흡 나누기","지시어 대상 추적","문단 전환 신호","교과서 변형 문장","서술형 문장 완성","빈칸 앞뒤 논리","요약문 핵심어","듣기 메모 선택","시험 독해 속도"],
-  korean:["비문학 구조 표시","시어의 정서 근거","소설 갈등 변화","고전 어휘 문맥","문법 예외 구별","선택지 과잉 해석","매체 표현 효과","서술형 근거 배열","주장과 근거 연결","독서 어휘 추론"],
-  science:["탐구 가설과 변인","그래프 기울기 의미","화학 반응식 계수","힘의 합력 판단","유전 가계도 표시","전기 회로 전류","지층 선후 관계","용액 농도 계산","산염기 중화 과정","파동 진폭과 주기"],
-  social:["지도 축척 거리","인구 구조 변화","합리적 선택 기준","국가기관 견제","역사 사건 흐름","윤리 관점 논증","법률 사례 판단","기후 산업 관계","문화 상대주의","통계 조사 해석"],
+  math:["다항식 조건 역추적","방정식 해 검산","도형 보조선 선택","확률 표본공간 정리","수열 규칙 일반화","지수식 정의역 점검","함수 교점 해석","벡터 성분 연결","미분 그래프 독해","정적분 넓이 구분"],
+  english:["문맥 어휘 선택","관계사 수식 범위","문장 삽입 단서","글의 순서 연결","교과서 서술형 전환","어법 오류 근거","빈칸 논리 압축","장문 핵심 문장","듣기 선택지 예측","모의고사 시간 배분"],
+  korean:["독서 정보 위계","현대시 이미지 해석","소설 시점 효과","고전 산문 인물 관계","음운 변동 판별","선택지 근거 대조","화법 태도 분석","작문 자료 활용","논증 구조 요약","문학 서술형 표현"],
+  science:["탐구 통제 변인","운동 그래프 변환","몰 개념 계산","에너지 보존 적용","생태계 상호작용","전압 전류 관계","천체 위치 변화","기체 법칙 자료","반응 속도 조건","파동 중첩 해석"],
+  social:["지도 정보 종합","도시 구조 변화","시장 실패 사례","헌법 기본권 판단","근현대 사건 연결","윤리 쟁점 비교","민법 사례 적용","산업 입지 분석","다문화 관점 구분","자료 비판적 해석"],
 };
 const concerns=[
   "문제를 읽자마자 계산부터 시작해 중요한 조건을 빠뜨립니다.","배운 개념을 말로 설명하지 못해 새로운 유형에서 멈춥니다.","오답의 원인을 적지 않고 답만 고쳐 같은 실수를 반복합니다.","시험 범위를 늦게 시작해 취약 단원에 시간을 충분히 쓰지 못합니다.","혼자 공부할 때 질문할 지점을 찾지 못하고 오래 멈춰 있습니다.","쉬운 문항에 시간을 과하게 사용해 검토 시간이 부족합니다.","학교 자료와 문제집을 따로 외워 개념 사이의 연결이 약합니다.","수업 직후에는 이해하지만 며칠 뒤 풀이 순서를 재현하지 못합니다.","여러 자료가 나오면 핵심 정보와 보조 정보를 구분하기 어렵습니다.","목표는 있지만 주간 계획과 실제 수행량을 비교하지 않습니다."
@@ -70,7 +70,7 @@ function buildLongForm({pageIndex,townName,sido,sigungu,school,grade,subject,the
     const f=evidence[(pageIndex*2+paragraphIndex*5+1)%evidence.length];
     const g=management[(pageIndex*6+paragraphIndex*7+2)%management.length];
     const protectedValues={"__SIDO__":sido,"__SIGUNGU__":sigungu,"__TOWN__":townName,"__GRADE__":grade,"__SUBJECT__":subject,"__THEME__":theme,"__SCHOOL__":school.name,"__CONCERN__":concern,"__METHOD__":method,"__EXAM__":exam};
-    let paragraph=personalize(`__TOWN__에서 __SUBJECT__ 계획을 세우는 이번 단계의 초점은 __THEME__입니다. ${a} ${b}부터 살펴 현재 이해와 우연히 맞힌 답을 나눕니다. __GRADE__ 학생이 혼자 재현할 수 있는 범위를 찾은 다음 ${c}. __SCHOOL__의 실제 준비물에서는 ${d}과 진도표를 함께 놓고 ${e}. 특히 __CONCERN__ 그래서 노력의 양을 재촉하기 전에 ${f}에서 막힌 이유를 학생의 말로 듣습니다. ${g}. __METHOD__ __SIDO__ __SIGUNGU__ 생활 일정도 고려하되, 유명세보다 아이가 질문하기 편한 선생님인지와 피드백을 받아들이는 방식을 우선합니다. 학부모에게는 결과만 전달하지 않고 이번 주의 변화, 남은 어려움, 다음 숙제 조정 이유를 구체적으로 공유합니다. __EXAM__`,pageIndex+37);
+    let paragraph=personalize(`__TOWN__의 __GRADE__ __SUBJECT__ 학습에서 이번 관찰 주제는 __THEME__입니다. ${a} ${b}을 펼쳐 정답 여부보다 판단이 흔들린 순간을 찾습니다. 그 뒤 혼자 다시 해낼 수 있는 가장 작은 단계를 정하고 ${c}. __SCHOOL__에서 사용하는 실제 학습물은 ${d}과 범위표를 나란히 두어 ${e}. __CONCERN__ 이 문제를 단순한 노력 부족으로 보지 않고 ${f}에 남은 선택 과정을 학생과 함께 되짚습니다. ${g}. __METHOD__ __SIDO__ __SIGUNGU__의 통학과 주간 일정도 수업 계획에 반영합니다. 유명한 선생님이라는 이유보다 질문을 받아들이는 말투와 설명 속도가 아이 성향에 맞는지를 먼저 확인합니다. 학부모에게는 점수만 알리지 않고 수행한 숙제, 되살아난 개념, 다음 주 조정 사항을 근거와 함께 공유합니다. __EXAM__`,pageIndex+173);
     for(const [placeholder,value] of Object.entries(protectedValues)) paragraph=paragraph.replaceAll(placeholder,value);
     return paragraph;
   });
@@ -127,5 +127,5 @@ for(let placeIndex=0;placeIndex<places.length;placeIndex+=1){
 }
 if(records.length!==50) throw new Error(`Expected 50, got ${records.length}`);
 for(const field of ["url","title","description","canonical"]){const values=records.map((r)=>field==="description"?r.page.description:r.page[field]);if(new Set(values).size!==50)throw new Error(`Duplicate ${field}`);}
-fs.writeFileSync(`data/manifests/${outputName}`,JSON.stringify({version:1,batch,expansionStage:["경남"],records},null,2)+"\n");
-console.log(JSON.stringify({batch,count:records.length,gyeongnam:records.filter((r)=>r.region.sido==="경상남도").length},null,2));
+fs.writeFileSync(`data/manifests/${outputName}`,JSON.stringify({version:1,batch,expansionStage:["서울"],records},null,2)+"\n");
+console.log(JSON.stringify({batch,count:records.length,seoul:records.filter((r)=>r.region.sido==="서울특별시").length},null,2));

@@ -2,20 +2,22 @@ import fs from "node:fs/promises";
 import crypto from "node:crypto";
 
 const base = process.argv[2] || "http://127.0.0.1:3300";
-const manifestNames = (await fs.readdir("data/manifests/national"))
+const nationalPaths = (await fs.readdir("data/manifests/national"))
   .filter((name) => /^expansion-50-\d{8}\.json$/.test(name))
-  .sort();
-const currentName = process.argv[3] || manifestNames.at(-1);
-const currentPath = currentName.includes("/") || currentName.includes("\\") ? currentName : `data/manifests/national/${currentName}`;
-const manifests = await Promise.all(manifestNames.map(async (name) => ({
-  name,
-  data: JSON.parse(await fs.readFile(`data/manifests/national/${name}`, "utf8")),
+  .map((name) => `data/manifests/national/${name}`);
+const dailyPaths = (await fs.readdir("data/manifests"))
+  .filter((name) => /^daily-50-\d{8}\.json$/.test(name))
+  .map((name) => `data/manifests/${name}`);
+const manifestPaths = [...nationalPaths, ...dailyPaths].sort();
+const requestedPath = process.argv[3]?.replaceAll("\\", "/");
+const currentPath = requestedPath || manifestPaths.at(-1);
+const manifests = await Promise.all(manifestPaths.map(async (path) => ({
+  path,
+  data: JSON.parse(await fs.readFile(path, "utf8")),
 })));
-const current = currentName.includes("/") || currentName.includes("\\")
-  ? JSON.parse(await fs.readFile(currentPath, "utf8"))
-  : manifests.find((item) => item.name === currentName)?.data;
-if (!current) throw new Error(`Manifest not found: ${currentName}`);
-const previous = { records: manifests.filter((item) => item.name !== currentName).flatMap((item) => item.data.records) };
+const current = manifests.find((item) => item.path === currentPath)?.data;
+if (!current) throw new Error(`Manifest not found: ${currentPath}`);
+const previous = { records: manifests.filter((item) => item.path !== currentPath).flatMap((item) => item.data.records) };
 const errors = [];
 const decode = (s = "") => s.replaceAll("&amp;", "&").replaceAll("&quot;", '"').replaceAll("&#x27;", "'");
 const attrs = (tag) => Object.fromEntries([...tag.matchAll(/([\w:-]+)="([^"]*)"/g)].map((m) => [m[1], decode(m[2])]));
