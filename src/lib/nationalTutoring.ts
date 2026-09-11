@@ -4,6 +4,7 @@ import secondBatch from "../../data/manifests/national/expansion-50-20260907.jso
 import thirdBatch from "../../data/manifests/national/expansion-50-20260908.json";
 import dailyBatch20260909 from "../../data/manifests/daily-50-20260909.json";
 import dailyBatch20260910 from "../../data/manifests/daily-50-20260910.json";
+import dailyBatch20260911 from "../../data/manifests/daily-50-20260911.json";
 
 export const nationalTutoringRecords = [
   ...firstBatch.records,
@@ -11,6 +12,7 @@ export const nationalTutoringRecords = [
   ...thirdBatch.records,
   ...dailyBatch20260909.records,
   ...dailyBatch20260910.records,
+  ...dailyBatch20260911.records,
 ];
 export type NationalTutoringRecord = (typeof nationalTutoringRecords)[number];
 

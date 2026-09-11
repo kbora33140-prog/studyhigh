@@ -1,27 +1,27 @@
 import fs from "node:fs";
 
 const base = "https://studyhigh.co.kr";
-const createdAt = "2026-09-10";
-const batch = "daily-50-20260910";
+const createdAt = "2026-09-11";
+const batch = "daily-50-20260911";
 const subjectNames = { math: "수학", english: "영어", korean: "국어", science: "과학", social: "사회" };
 const places = [
-  ["seoul","서울특별시","jongno-gu","종로구","cheongunhyoja-dong","청운효자동","town:1111051500"],
-  ["seoul","서울특별시","jongno-gu","종로구","samcheong-dong","삼청동","town:1111054000"],
-  ["seoul","서울특별시","jongno-gu","종로구","buam-dong","부암동","town:1111055000"],
-  ["seoul","서울특별시","jongno-gu","종로구","gyonam-dong","교남동","town:1111058000"],
-  ["seoul","서울특별시","jongno-gu","종로구","gahoe-dong","가회동","town:1111060000"],
-  ["seoul","서울특별시","jongno-gu","종로구","ihwa-dong","이화동","town:1111064000"],
-  ["seoul","서울특별시","jung-gu","중구","sogong-dong","소공동","town:1114052000"],
-  ["seoul","서울특별시","jung-gu","중구","gwanghui-dong","광희동","town:1114059000"],
-  ["seoul","서울특별시","jung-gu","중구","sindang-dong","신당동","town:1114061500"],
-  ["seoul","서울특별시","jung-gu","중구","jungnim-dong","중림동","town:1114068000"],
+  ["seoul","서울특별시","yongsan-gu","용산구","cheongpa-dong","청파동","town:1117055500"],
+  ["seoul","서울특별시","yongsan-gu","용산구","seobinggo-dong","서빙고동","town:1117069000"],
+  ["seoul","서울특별시","yongsan-gu","용산구","bogwang-dong","보광동","town:1117070000"],
+  ["seoul","서울특별시","seongdong-gu","성동구","wangsimnidoseon-dong","왕십리도선동","town:1120053500"],
+  ["seoul","서울특별시","seongdong-gu","성동구","majang-dong","마장동","town:1120054000"],
+  ["seoul","서울특별시","seongdong-gu","성동구","sageun-dong","사근동","town:1120055000"],
+  ["seoul","서울특별시","seongdong-gu","성동구","eungbong-dong","응봉동","town:1120058000"],
+  ["seoul","서울특별시","seongdong-gu","성동구","oksu-dong","옥수동","town:1120064500"],
+  ["seoul","서울특별시","gwangjin-gu","광진구","hwayang-dong","화양동","town:1121571000"],
+  ["seoul","서울특별시","gwangjin-gu","광진구","gwangjang-dong","광장동","town:1121581000"],
 ];
 const topics = {
-  math:["다항식 조건 역추적","방정식 해 검산","도형 보조선 선택","확률 표본공간 정리","수열 규칙 일반화","지수식 정의역 점검","함수 교점 해석","벡터 성분 연결","미분 그래프 독해","정적분 넓이 구분"],
-  english:["문맥 어휘 선택","관계사 수식 범위","문장 삽입 단서","글의 순서 연결","교과서 서술형 전환","어법 오류 근거","빈칸 논리 압축","장문 핵심 문장","듣기 선택지 예측","모의고사 시간 배분"],
-  korean:["독서 정보 위계","현대시 이미지 해석","소설 시점 효과","고전 산문 인물 관계","음운 변동 판별","선택지 근거 대조","화법 태도 분석","작문 자료 활용","논증 구조 요약","문학 서술형 표현"],
-  science:["탐구 통제 변인","운동 그래프 변환","몰 개념 계산","에너지 보존 적용","생태계 상호작용","전압 전류 관계","천체 위치 변화","기체 법칙 자료","반응 속도 조건","파동 중첩 해석"],
-  social:["지도 정보 종합","도시 구조 변화","시장 실패 사례","헌법 기본권 판단","근현대 사건 연결","윤리 쟁점 비교","민법 사례 적용","산업 입지 분석","다문화 관점 구분","자료 비판적 해석"],
+  math:["이차함수 축과 꼭짓점","부등식 해의 범위","삼각형 닮음 조건","순열 조합 기준","수열 점화식 해석","로그 밑 조건","유리함수 점근선","공간벡터 좌표화","도함수 증가 감소","정적분 부호 판단"],
+  english:["다의어 문맥 판별","분사구문 의미 관계","무관한 문장 찾기","연결사 논리 전개","영작 핵심어 배열","가정법 시제 일치","요지와 빈칸 연결","복합 지문 정보","듣기 숫자 정보","독해 검토 순서"],
+  korean:["독서 문단 기능","시적 화자 태도","서사 전개 방식","고전시가 화자 상황","문장 성분 구별","오답 선택지 범위","토론 논거 평가","작문 조건 점검","비판적 읽기 근거","갈래별 표현 효과"],
+  science:["실험군 대조군 구분","속도 시간 그래프","화학식 양적 관계","운동량 보존 판단","세포 분열 단계","저항 연결 계산","별의 밝기 비교","상태 변화 열출입","화학 평형 이동","빛의 굴절 경로"],
+  social:["지형도 등고선 해석","인구 이동 원인","수요 공급 변화","권력 분립 사례","세계사 시대 연결","윤리 원칙 적용","형사 절차 이해","무역 자료 분석","사회화 기관 비교","여론 조사 판단"],
 };
 const concerns=[
   "문제를 읽자마자 계산부터 시작해 중요한 조건을 빠뜨립니다.","배운 개념을 말로 설명하지 못해 새로운 유형에서 멈춥니다.","오답의 원인을 적지 않고 답만 고쳐 같은 실수를 반복합니다.","시험 범위를 늦게 시작해 취약 단원에 시간을 충분히 쓰지 못합니다.","혼자 공부할 때 질문할 지점을 찾지 못하고 오래 멈춰 있습니다.","쉬운 문항에 시간을 과하게 사용해 검토 시간이 부족합니다.","학교 자료와 문제집을 따로 외워 개념 사이의 연결이 약합니다.","수업 직후에는 이해하지만 며칠 뒤 풀이 순서를 재현하지 못합니다.","여러 자료가 나오면 핵심 정보와 보조 정보를 구분하기 어렵습니다.","목표는 있지만 주간 계획과 실제 수행량을 비교하지 않습니다."
@@ -70,12 +70,23 @@ function buildLongForm({pageIndex,townName,sido,sigungu,school,grade,subject,the
     const f=evidence[(pageIndex*2+paragraphIndex*5+1)%evidence.length];
     const g=management[(pageIndex*6+paragraphIndex*7+2)%management.length];
     const protectedValues={"__SIDO__":sido,"__SIGUNGU__":sigungu,"__TOWN__":townName,"__GRADE__":grade,"__SUBJECT__":subject,"__THEME__":theme,"__SCHOOL__":school.name,"__CONCERN__":concern,"__METHOD__":method,"__EXAM__":exam};
-    let paragraph=personalize(`__TOWN__의 __GRADE__ __SUBJECT__ 학습에서 이번 관찰 주제는 __THEME__입니다. ${a} ${b}을 펼쳐 정답 여부보다 판단이 흔들린 순간을 찾습니다. 그 뒤 혼자 다시 해낼 수 있는 가장 작은 단계를 정하고 ${c}. __SCHOOL__에서 사용하는 실제 학습물은 ${d}과 범위표를 나란히 두어 ${e}. __CONCERN__ 이 문제를 단순한 노력 부족으로 보지 않고 ${f}에 남은 선택 과정을 학생과 함께 되짚습니다. ${g}. __METHOD__ __SIDO__ __SIGUNGU__의 통학과 주간 일정도 수업 계획에 반영합니다. 유명한 선생님이라는 이유보다 질문을 받아들이는 말투와 설명 속도가 아이 성향에 맞는지를 먼저 확인합니다. 학부모에게는 점수만 알리지 않고 수행한 숙제, 되살아난 개념, 다음 주 조정 사항을 근거와 함께 공유합니다. __EXAM__`,pageIndex+173);
+    let paragraph=personalize(`__THEME__을 다루는 __TOWN__ __GRADE__ __SUBJECT__ 수업은 결과표보다 학습 행동을 읽는 데서 출발합니다. ${a} ${b}에 남은 흔적을 통해 어디까지 스스로 판단했는지 구분하고, 다음 시도에서는 ${c}. __SCHOOL__ 관련 준비는 공개 정보로 단정하지 않고 학생이 가져온 ${d}, 교과 범위와 실제 진도를 기준으로 ${e}. __CONCERN__ 따라서 양을 늘리기 전에 ${f}을 말로 설명하도록 하여 막힘의 성격을 찾습니다. 이어서 ${g}. __METHOD__ 생활 리듬은 __SIDO__ __SIGUNGU__ 통학 시간과 주중 일정에 맞춰 조절합니다. 선생님의 경력만 비교하지 않고 아이가 질문을 꺼낼 수 있는 분위기, 피드백을 이해하는 속도, 숙제를 수행하는 방식의 궁합을 함께 봅니다. 보호자와는 완료한 과제와 남은 오답, 다음 목표를 구분해 소통합니다. __EXAM__`,pageIndex+317);
     for(const [placeholder,value] of Object.entries(protectedValues)) paragraph=paragraph.replaceAll(placeholder,value);
     return paragraph;
   });
-  const appendix = Array.from({length:4},(_,index)=>`${townName} ${grade} ${subject} 관찰 ${index+1}에서는 ${theme}의 시작 행동을 ${school.name} 학습 자료와 연결합니다. ${townName} 학생이 ${subject} 풀이를 시작한 시각, 질문한 순간, 혼자 고친 단계를 나누면 ${theme}의 어려움이 개념·속도·습관 중 어디에 가까운지 구체화됩니다. ${sigungu} 생활 일정 안에서 ${subject} 숙제량을 조절하고, ${school.name} 학생이 ${theme}을 자기 말로 다시 설명한 날을 복습 기준으로 삼습니다. ${sido} 지역이라는 이름만 치환하는 계획이 아니라 ${townName}의 실제 이동 시간, ${grade} 일정, ${subject} 과제 수행 기록을 함께 보며 다음 주 목표를 정합니다.`);
-  return [...main, ...appendix];
+  const appendix = Array.from({length:14},(_,index)=>{
+    const observed=evidence[(pageIndex+index*3)%evidence.length];
+    const managed=management[(pageIndex*2+index*7)%management.length];
+    const opening=transitions[(pageIndex*5+index*2)%transitions.length];
+    const followup=evidence[(pageIndex*7+index*5+4)%evidence.length];
+    return `${townName} ${grade} ${subject}의 ${theme} 점검 ${index+1}에서는 ${observed}을 출발점으로 삼습니다. ${school.name} ${subject} 준비 자료를 볼 때는 ${managed}. ${townName} 학생이 남긴 ${theme} 풀이에서 ${opening} ${followup}을 다시 설명하게 하여 개념 이해와 습관 문제를 나눕니다. ${townName} ${subject} 과제는 학생의 실제 집중 시간에 맞춰 조정하고, ${theme} 복습 결과는 맞힌 개수와 혼자 해결한 단계를 구분해 기록합니다. ${school.name}의 시험 특성을 추측하지 않으며 ${grade} 학생이 제공한 최신 범위와 자료만 사용합니다. ${townName} 생활권 일정, ${subject} 질문 방식, ${theme} 오답 회수 속도를 함께 살펴 다음 목표를 정합니다.`;
+  });
+  const distinctive = Array.from({length:12},(_,index)=>{
+    const observed=evidence[(pageIndex*11+index*7)%evidence.length];
+    const next=evidence[(pageIndex*13+index*3+2)%evidence.length];
+    return `${townName} ${theme} 루틴 ${index+1}은 ${school.name} ${subject} 자료의 ${observed}에서 시작합니다. ${townName} ${grade} 학생은 ${theme} 판단을 말로 남기고 ${townName} ${subject} 복습표에 ${next}을 표시합니다. ${school.name} ${theme} 진도는 학생이 제시한 범위만 따르며 ${townName} 생활 일정에 맞춰 ${subject} 숙제를 나눕니다. ${townName} ${theme} 피드백은 보호자에게 수행 사실과 다음 행동을 구분해 전달합니다.`;
+  });
+  return [...main, ...appendix, ...distinctive];
 }
 
 const outputName=`daily-50-${createdAt.replaceAll("-","")}.json`;
