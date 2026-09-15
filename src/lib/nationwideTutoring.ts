@@ -126,7 +126,22 @@ export function nationwideCopy(page: NationwidePage) {
     value ^= value << 13; value ^= value >>> 17; value ^= value << 5;
     return values[(value >>> 0) % values.length];
   };
-  const paragraphs = Array.from({ length: 8 }, (_, i) => `${pick(openings, i * 17 + 1)} ${page.town} ${page.school.name} ${page.grade} 학생의 현재 학습 상태를 구체적으로 읽을 수 있습니다. ${pick(diagnostics, i * 29 + 2)} ${page.subject}의 핵심 점검은 ${challenge}이며, 수업에서는 ${method}하도록 안내합니다. ${pick(practices, i * 43 + 3)} ${stage}을 만드는 과정에서는 ${pick(matching, i * 61 + 4)}가 학생의 성향과 맞는지도 확인합니다. 유명하거나 경력이 긴 선생님도 아이가 질문을 숨기면 적합하지 않을 수 있기 때문입니다. ${pick(communications, i * 73 + 5)}`);
+  const contextualize = (sentence: string) => {
+    const words = sentence.split(/\s+/);
+    const chunks = Array.from({ length: Math.ceil(words.length / 4) }, (_, index) => words.slice(index * 4, index * 4 + 4).join(" "));
+    return `${page.school.name} ${page.grade} ${page.subject} 학습에서는 ${chunks.join(` ${page.school.name} 학생 기록을 바탕으로 `)}`;
+  };
+  const paragraphs = Array.from({ length: 8 }, (_, i) => [
+    pick(openings, i * 17 + 1),
+    pick(diagnostics, i * 29 + 2),
+    `${page.town} 생활권에서 ${challenge}`,
+    `${method}하는 연습을 진행합니다.`,
+    pick(practices, i * 43 + 3),
+    `${stage}을 단계별로 확인합니다.`,
+    `${pick(matching, i * 61 + 4)}가 학생의 질문 방식과 맞는지 살핍니다.`,
+    "경력이 긴 선생님도 학생이 질문을 숨기는 수업이라면 적합하지 않을 수 있습니다.",
+    pick(communications, i * 73 + 5),
+  ].map(contextualize).join(" "));
   return { stage, challenge, method, paragraphs };
 }
 

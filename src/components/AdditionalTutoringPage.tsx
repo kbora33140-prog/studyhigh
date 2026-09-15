@@ -63,7 +63,7 @@ export function AdditionalTutoringPage({
       </div></section>
       <section className="bg-[#faf8ff] py-20 lg:py-28"><div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-2 lg:px-8">
         <div><p className="text-xs font-black uppercase tracking-[0.28em] text-[#6736C8]">STUDY GUIDE</p><h2 className="mt-4 text-3xl font-black sm:text-5xl">학교 자료와 연결하는 {c.theme}</h2></div>
-        <div className="space-y-6 text-lg leading-8 text-black/65"><p>{c.schoolAnalysis} {narrative.schoolContext}</p><p>{c.examCaveat}</p><p>{c.exam} {narrative.subject}</p><p className="rounded-2xl bg-white p-6 font-bold text-black">{c.studyMethod} {narrative.selfStudy}</p>{longForm.map((paragraph, paragraphIndex) => <p key={`${r.id}-long-${paragraphIndex}`}>{paragraph}</p>)}<h3 className="text-2xl font-black text-black">학습 예시: {c.theme}</h3><p>{c.workedExample}</p></div>
+        <div className="space-y-6 text-lg leading-8 text-black/65"><p>{c.schoolAnalysis} {narrative.schoolContext}</p><p>{c.examCaveat}</p><p>{c.exam} {narrative.subject}</p><p className="rounded-2xl bg-white p-6 font-bold text-black">{c.studyMethod} {narrative.selfStudy}</p>{longForm.map((paragraph, paragraphIndex) => <p data-core-content="true" key={`${r.id}-long-${paragraphIndex}`}>{paragraph}</p>)}<h3 className="text-2xl font-black text-black">학습 예시: {c.theme}</h3><p>{c.workedExample}</p></div>
       </div></section>
       <section className="py-20 lg:py-28"><div className="mx-auto max-w-6xl px-5 lg:px-8">
         <p className="text-xs font-black uppercase tracking-[0.28em] text-[#6736C8]">PERSONAL DIAGNOSIS</p>
