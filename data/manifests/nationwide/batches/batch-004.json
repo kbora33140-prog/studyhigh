@@ -1,0 +1,656 @@
+{
+  "batchId": "batch-004",
+  "generatedAt": "2026-09-15T08:05:25.893Z",
+  "records": [
+    {
+      "url": "/tutoring/seoul/gangnam-gu/gaepo-dong/gugak-national-high-school-1371661/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangnam-gu",
+        "town": "gaepo-dong",
+        "school": "gugak-national-high-school-1371661",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangnam-gu\\gaepo-dong\\gugak-national-high-school-1371661\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/geumcheon-gu/siheung-dong/national-high-school-of-traditional-korean-arts-1371663/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "geumcheon-gu",
+        "town": "siheung-dong",
+        "school": "national-high-school-of-traditional-korean-arts-1371663",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\geumcheon-gu\\siheung-dong\\national-high-school-of-traditional-korean-arts-1371663\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/songpa-gu/songpa-dong/garak-high-school-7010057/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "songpa-gu",
+        "town": "songpa-dong",
+        "school": "garak-high-school-7010057",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\songpa-gu\\songpa-dong\\garak-high-school-7010057\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangnam-gu/gaepo-dong/gaepo-high-school-7010058/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangnam-gu",
+        "town": "gaepo-dong",
+        "school": "gaepo-high-school-7010058",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangnam-gu\\gaepo-dong\\gaepo-high-school-7010058\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangnam-gu/samseong-dong/kyunggi-high-school-7010059/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangnam-gu",
+        "town": "samseong-dong",
+        "school": "kyunggi-high-school-7010059",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangnam-gu\\samseong-dong\\kyunggi-high-school-7010059\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangnam-gu/gaepo-dong/kyunggi-girlshigh-school-7010060/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangnam-gu",
+        "town": "gaepo-dong",
+        "school": "kyunggi-girlshigh-school-7010060",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangnam-gu\\gaepo-dong\\kyunggi-girlshigh-school-7010060\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seongbuk-gu/samseon-dong/kyungdong-high-school-7010061/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seongbuk-gu",
+        "town": "samseon-dong",
+        "school": "kyungdong-high-school-7010061",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seongbuk-gu\\samseon-dong\\kyungdong-high-school-7010061\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jongno-gu/cheongunhyoja-dong/kyungbock-high-school-7010062/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "jongno-gu",
+        "town": "cheongunhyoja-dong",
+        "school": "kyungbock-high-school-7010062",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jongno-gu\\cheongunhyoja-dong\\kyungbock-high-school-7010062\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/guro-gu/gocheok-dong/gocheok-high-school-7010063/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "guro-gu",
+        "town": "gocheok-dong",
+        "school": "gocheok-high-school-7010063",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\guro-gu\\gocheok-dong\\gocheok-high-school-7010063\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/banghwa-dong/konghang-high-school-7010064/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "banghwa-dong",
+        "school": "konghang-high-school-7010064",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\banghwa-dong\\konghang-high-school-7010064\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yeongdeungpo-gu/yangpyeong--dong/kwanak-high-school-7010065/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yeongdeungpo-gu",
+        "town": "yangpyeong--dong",
+        "school": "kwanak-high-school-7010065",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yeongdeungpo-gu\\yangpyeong--dong\\kwanak-high-school-7010065\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/gwangjang-dong/gwangnam-high-school-7010066/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "gwangjang-dong",
+        "school": "gwangnam-high-school-7010066",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\gwangjang-dong\\gwangnam-high-school-7010066\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/jayang-dong/gwangyang-high-school-7010067/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "jayang-dong",
+        "school": "gwangyang-high-school-7010067",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\jayang-dong\\gwangyang-high-school-7010067\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/guro-gu/guro-dong/guro-high-school-7010068/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "guro-gu",
+        "town": "guro-dong",
+        "school": "guro-high-school-7010068",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\guro-gu\\guro-dong\\guro-high-school-7010068\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/guro-gu/guro-dong/guil-high-school-7010069/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "guro-gu",
+        "town": "guro-dong",
+        "school": "guil-high-school-7010069",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\guro-gu\\guro-dong\\guil-high-school-7010069\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yangcheon-gu/sinjeong-dong/geumok-girls-high-school-7010071/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yangcheon-gu",
+        "town": "sinjeong-dong",
+        "school": "geumok-girls-high-school-7010071",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yangcheon-gu\\sinjeong-dong\\geumok-girls-high-school-7010071\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/geumcheon-gu/siheung-dong/geumcheon-high-school-7010072/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "geumcheon-gu",
+        "town": "siheung-dong",
+        "school": "geumcheon-high-school-7010072",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\geumcheon-gu\\siheung-dong\\geumcheon-high-school-7010072\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/boramae-dong/dang-gok-high-school-7010073/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "boramae-dong",
+        "school": "dang-gok-high-school-7010073",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\boramae-dong\\dang-gok-high-school-7010073\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yeongdeungpo-gu/singil--dong/daeyeong-high-school-7010074/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yeongdeungpo-gu",
+        "town": "singil--dong",
+        "school": "daeyeong-high-school-7010074",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yeongdeungpo-gu\\singil--dong\\daeyeong-high-school-7010074\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongjak-gu/sadangje--dong/dongjak-high-school-7010075/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "dongjak-gu",
+        "town": "sadangje--dong",
+        "school": "dongjak-high-school-7010075",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongjak-gu\\sadangje--dong\\dongjak-high-school-7010075\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangdong-gu/dunchon-dong/doonchon-high-school-7010076/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangdong-gu",
+        "town": "dunchon-dong",
+        "school": "doonchon-high-school-7010076",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangdong-gu\\dunchon-dong\\doonchon-high-school-7010076\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jungnang-gu/myeonmok3--dong/myeonmok-high-school-7010077/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "jungnang-gu",
+        "town": "myeonmok3--dong",
+        "school": "myeonmok-high-school-7010077",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jungnang-gu\\myeonmok3--dong\\myeonmok-high-school-7010077\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangdong-gu/myeongil-dong/myungil-girls-high-school-7010078/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gangdong-gu",
+        "town": "myeongil-dong",
+        "school": "myungil-girls-high-school-7010078",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangdong-gu\\myeongil-dong\\myungil-girls-high-school-7010078\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seongdong-gu/haengdang-dong/muhak-girls-high-school-7010079/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seongdong-gu",
+        "town": "haengdang-dong",
+        "school": "muhak-girls-high-school-7010079",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seongdong-gu\\haengdang-dong\\muhak-girls-high-school-7010079\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seocho-gu/banpo-dong/banpo-high-school-7010080/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seocho-gu",
+        "town": "banpo-dong",
+        "school": "banpo-high-school-7010080",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seocho-gu\\banpo-dong\\banpo-high-school-7010080\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/sillim-dong/samsung-high-school-7010081/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "sillim-dong",
+        "school": "samsung-high-school-7010081",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\sillim-dong\\samsung-high-school-7010081\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/nowon-gu/sanggye6--dong/sang-gye-high-school-7010082/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "nowon-gu",
+        "town": "sanggye6--dong",
+        "school": "sang-gye-high-school-7010082",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\nowon-gu\\sanggye6--dong\\sang-gye-high-school-7010082\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seocho-gu/seocho-dong/seoul-high-school-7010083/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seocho-gu",
+        "town": "seocho-dong",
+        "school": "seoul-high-school-7010083",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seocho-gu\\seocho-dong\\seoul-high-school-7010083\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jongno-gu/hyehwa-dong/seoul-science-high-school-7010084/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "jongno-gu",
+        "town": "hyehwa-dong",
+        "school": "seoul-science-high-school-7010084",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jongno-gu\\hyehwa-dong\\seoul-science-high-school-7010084\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/mapo-gu/yeomni-dong/seoul-girls-high-school-7010085/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "mapo-gu",
+        "town": "yeomni-dong",
+        "school": "seoul-girls-high-school-7010085",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\mapo-gu\\yeomni-dong\\seoul-girls-high-school-7010085\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/songpa-gu/oryun-dong/seoul-physical-education-high-school-7010086/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "songpa-gu",
+        "town": "oryun-dong",
+        "school": "seoul-physical-education-high-school-7010086",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\songpa-gu\\oryun-dong\\seoul-physical-education-high-school-7010086\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seocho-gu/seocho-dong/seocho-high-school-7010087/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seocho-gu",
+        "town": "seocho-dong",
+        "school": "seocho-high-school-7010087",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seocho-gu\\seocho-dong\\seocho-high-school-7010087\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seongbuk-gu/seokgwan-dong/seokgwan-high-school-7010088/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seongbuk-gu",
+        "town": "seokgwan-dong",
+        "school": "seokgwan-high-school-7010088",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seongbuk-gu\\seokgwan-dong\\seokgwan-high-school-7010088\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jung-gu/sindang-dong/sungdong-high-school-7010089/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "jung-gu",
+        "town": "sindang-dong",
+        "school": "sungdong-high-school-7010089",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jung-gu\\sindang-dong\\sungdong-high-school-7010089\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongjak-gu/siindaebangje--dong/sudo-girls-high-school-7010090/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "dongjak-gu",
+        "town": "siindaebangje--dong",
+        "school": "sudo-girls-high-school-7010090",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongjak-gu\\siindaebangje--dong\\sudo-girls-high-school-7010090\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/sillim-dong/sillim-high-school-7010092/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "sillim-dong",
+        "school": "sillim-high-school-7010092",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\sillim-dong\\sillim-high-school-7010092\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yangcheon-gu/sinjeong-dong/shinmok-high-school-7010093/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yangcheon-gu",
+        "town": "sinjeong-dong",
+        "school": "shinmok-high-school-7010093",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yangcheon-gu\\sinjeong-dong\\shinmok-high-school-7010093\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seocho-gu/seocho-dong/yangjae-high-school-7010094/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seocho-gu",
+        "town": "seocho-dong",
+        "school": "yangjae-high-school-7010094",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seocho-gu\\seocho-dong\\yangjae-high-school-7010094\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seocho-gu/yangjae-dong/eonnam-high-school-7010095/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "seocho-gu",
+        "town": "yangjae-dong",
+        "school": "eonnam-high-school-7010095",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seocho-gu\\yangjae-dong\\eonnam-high-school-7010095\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yeongdeungpo-gu/yeoui-dong/yeouido-high-school-7010096/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yeongdeungpo-gu",
+        "town": "yeoui-dong",
+        "school": "yeouido-high-school-7010096",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yeongdeungpo-gu\\yeoui-dong\\yeouido-high-school-7010096\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yeongdeungpo-gu/yeoui-dong/yeouido-girlshigh-school-7010097/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yeongdeungpo-gu",
+        "town": "yeoui-dong",
+        "school": "yeouido-girlshigh-school-7010097",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yeongdeungpo-gu\\yeoui-dong\\yeouido-girlshigh-school-7010097\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongjak-gu/daebangdong/youngdeungpo-high-school-7010098/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "dongjak-gu",
+        "town": "daebangdong",
+        "school": "youngdeungpo-high-school-7010098",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongjak-gu\\daebangdong\\youngdeungpo-high-school-7010098\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yeongdeungpo-gu/yeongdeungpobon-dong/yeongdeungpo-girls-high-school-7010099/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yeongdeungpo-gu",
+        "town": "yeongdeungpobon-dong",
+        "school": "yeongdeungpo-girls-high-school-7010099",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yeongdeungpo-gu\\yeongdeungpobon-dong\\yeongdeungpo-girls-high-school-7010099\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yeongdeungpo-gu/singil-dong/youngshin-high-school-7010100/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yeongdeungpo-gu",
+        "town": "singil-dong",
+        "school": "youngshin-high-school-7010100",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yeongdeungpo-gu\\singil-dong\\youngshin-high-school-7010100\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/songpa-gu/ogeum-dong/ogeum-high-school-7010101/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "songpa-gu",
+        "town": "ogeum-dong",
+        "school": "ogeum-high-school-7010101",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\songpa-gu\\ogeum-dong\\ogeum-high-school-7010101\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yongsan-gu/yongsan-dong-2-i-ga-dong/yongsan-high-school-7010103/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "yongsan-gu",
+        "town": "yongsan-dong-2-i-ga-dong",
+        "school": "yongsan-high-school-7010103",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yongsan-gu\\yongsan-dong-2-i-ga-dong\\yongsan-high-school-7010103\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/inheon-dong/inhun-high-school-7010104/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "inheon-dong",
+        "school": "inhun-high-school-7010104",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\inheon-dong\\inhun-high-school-7010104\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/jayang-dong/jayang-high-school-7010105/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "jayang-dong",
+        "school": "jayang-high-school-7010105",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\jayang-dong\\jayang-high-school-7010105\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/songpa-gu/jamsil-dong/jamsin-high-school-7010106/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "songpa-gu",
+        "town": "jamsil-dong",
+        "school": "jamsin-high-school-7010106",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\songpa-gu\\jamsil-dong\\jamsin-high-school-7010106\\high-1\\science\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/songpa-gu/jamsil-dong/jamsil-high-school-7010107/high-1/science",
+      "route": {
+        "province": "seoul",
+        "district": "songpa-gu",
+        "town": "jamsil-dong",
+        "school": "jamsil-high-school-7010107",
+        "grade": "high-1",
+        "subject": "science"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\songpa-gu\\jamsil-dong\\jamsil-high-school-7010107\\high-1\\science\\page.tsx",
+      "status": "validated"
+    }
+  ]
+}
