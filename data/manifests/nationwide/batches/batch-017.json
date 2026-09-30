@@ -1,0 +1,656 @@
+{
+  "batchId": "batch-017",
+  "generatedAt": "2026-09-30T06:34:25.163Z",
+  "records": [
+    {
+      "url": "/tutoring/seoul/yongsan-gu/ichon-je1-ii-dong/jungkyung-high-school-7010108/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "yongsan-gu",
+        "town": "ichon-je1-ii-dong",
+        "school": "jungkyung-high-school-7010108",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yongsan-gu\\ichon-je1-ii-dong\\jungkyung-high-school-7010108\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jungnang-gu/junghwa-dong/junghwa-high-school-7010109/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "jungnang-gu",
+        "town": "junghwa-dong",
+        "school": "junghwa-high-school-7010109",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jungnang-gu\\junghwa-dong\\junghwa-high-school-7010109\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/songpa-gu/oryun-dong/changduk-girls-high-school-7010110/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "songpa-gu",
+        "town": "oryun-dong",
+        "school": "changduk-girls-high-school-7010110",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\songpa-gu\\oryun-dong\\changduk-girls-high-school-7010110\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangnam-gu/apgujeong-dong/chungdam-high-school-7010112/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangnam-gu",
+        "town": "apgujeong-dong",
+        "school": "chungdam-high-school-7010112",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangnam-gu\\apgujeong-dong\\chungdam-high-school-7010112\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongdaemun-gu/cheongnyangni-dong/chungryang-high-school-7010113/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "dongdaemun-gu",
+        "town": "cheongnyangni-dong",
+        "school": "chungryang-high-school-7010113",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongdaemun-gu\\cheongnyangni-dong\\chungryang-high-school-7010113\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jungnang-gu/muk-dong/taereung-high-school-7010114/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "jungnang-gu",
+        "town": "muk-dong",
+        "school": "taereung-high-school-7010114",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jungnang-gu\\muk-dong\\taereung-high-school-7010114\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seodaemun-gu/cheonyeon-dong/hansung-science-high-school-7010115/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "seodaemun-gu",
+        "town": "cheonyeon-dong",
+        "school": "hansung-science-high-school-7010115",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seodaemun-gu\\cheonyeon-dong\\hansung-science-high-school-7010115\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangbuk-gu/suyu-dong/hyehwa-girls-high-school-7010116/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangbuk-gu",
+        "town": "suyu-dong",
+        "school": "hyehwa-girls-high-school-7010116",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangbuk-gu\\suyu-dong\\hyehwa-girls-high-school-7010116\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangdong-gu/sangil-dong/kangdong-high-school-7010117/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangdong-gu",
+        "town": "sangil-dong",
+        "school": "kangdong-high-school-7010117",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangdong-gu\\sangil-dong\\kangdong-high-school-7010117\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yangcheon-gu/mok-dong/gangseo-high-school-7010118/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "yangcheon-gu",
+        "town": "mok-dong",
+        "school": "gangseo-high-school-7010118",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yangcheon-gu\\mok-dong\\gangseo-high-school-7010118\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/hwayang-dong/konkuk-university-high-school-7010119/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "hwayang-dong",
+        "school": "konkuk-university-high-school-7010119",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\hwayang-dong\\konkuk-university-high-school-7010119\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongjak-gu/sadangje--dong/kyungmoon-high-school-7010120/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "dongjak-gu",
+        "town": "sadangje--dong",
+        "school": "kyungmoon-high-school-7010120",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongjak-gu\\sadangje--dong\\kyungmoon-high-school-7010120\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/deungchon-dong/kyungbok-girls-high-school-7010122/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "deungchon-dong",
+        "school": "kyungbok-girls-high-school-7010122",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\deungchon-dong\\kyungbok-girls-high-school-7010122\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/mapo-gu/yeonnam-dong/gyeongseong-high-school-7010124/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "mapo-gu",
+        "town": "yeonnam-dong",
+        "school": "gyeongseong-high-school-7010124",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\mapo-gu\\yeonnam-dong\\gyeongseong-high-school-7010124\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jongno-gu/hyehwa-dong/kyungshin-high-school-7010125/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "jongno-gu",
+        "town": "hyehwa-dong",
+        "school": "kyungshin-high-school-7010125",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jongno-gu\\hyehwa-dong\\kyungshin-high-school-7010125\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongdaemun-gu/hoegi-dong/kyunghee-high-school-7010126/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "dongdaemun-gu",
+        "town": "hoegi-dong",
+        "school": "kyunghee-high-school-7010126",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongdaemun-gu\\hoegi-dong\\kyunghee-high-school-7010126\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongdaemun-gu/imun-dong/kyung-hee-girls-high-school-7010127/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "dongdaemun-gu",
+        "town": "imun-dong",
+        "school": "kyung-hee-girls-high-school-7010127",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongdaemun-gu\\imun-dong\\kyung-hee-girls-high-school-7010127\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangdong-gu/godeok-dong/gwangmun-high-school-7010131/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangdong-gu",
+        "town": "godeok-dong",
+        "school": "gwangmun-high-school-7010131",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangdong-gu\\godeok-dong\\gwangmun-high-school-7010131\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/mapo-gu/sinsu-dong/kwangsung-high-school-7010132/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "mapo-gu",
+        "town": "sinsu-dong",
+        "school": "kwangsung-high-school-7010132",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\mapo-gu\\sinsu-dong\\kwangsung-high-school-7010132\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/sillim-dong/kwangshin-high-school-7010133/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "sillim-dong",
+        "school": "kwangshin-high-school-7010133",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\sillim-dong\\kwangshin-high-school-7010133\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yangcheon-gu/sinwol-dong/kwangyoung-high-school-7010134/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "yangcheon-gu",
+        "town": "sinwol-dong",
+        "school": "kwangyoung-high-school-7010134",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yangcheon-gu\\sinwol-dong\\kwangyoung-high-school-7010134\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/yangcheon-gu/sinwol-dong/kwang-young-girls-high-school-7010135/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "yangcheon-gu",
+        "town": "sinwol-dong",
+        "school": "kwang-young-girls-high-school-7010135",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\yangcheon-gu\\sinwol-dong\\kwang-young-girls-high-school-7010135\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/sillim-dong/namkang-high-school-7010136/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "sillim-dong",
+        "school": "namkang-high-school-7010136",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\sillim-dong\\namkang-high-school-7010136\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangnam-gu/daechi-dong/dankook-university-high-school-7010137/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangnam-gu",
+        "town": "daechi-dong",
+        "school": "dankook-university-high-school-7010137",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangnam-gu\\daechi-dong\\dankook-university-high-school-7010137\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongdaemun-gu/sinseol-dong/daegwang-high-school-7010138/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "dongdaemun-gu",
+        "town": "sinseol-dong",
+        "school": "daegwang-high-school-7010138",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongdaemun-gu\\sinseol-dong\\daegwang-high-school-7010138\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/eunpyeong-gu/galhyeon-dong/daesung-high-school-7010139/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "eunpyeong-gu",
+        "town": "galhyeon-dong",
+        "school": "daesung-high-school-7010139",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\eunpyeong-gu\\galhyeon-dong\\daesung-high-school-7010139\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jongno-gu/gyonam-dong/daeshin-high-school-7010140/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "jongno-gu",
+        "town": "gyonam-dong",
+        "school": "daeshin-high-school-7010140",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jongno-gu\\gyonam-dong\\daeshin-high-school-7010140\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/junggok-dong/daewon-high-school-7010141/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "junggok-dong",
+        "school": "daewon-high-school-7010141",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\junggok-dong\\daewon-high-school-7010141\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/junggok-dong/daewon-girls-high-school-7010142/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "junggok-dong",
+        "school": "daewon-girls-high-school-7010142",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\junggok-dong\\daewon-girls-high-school-7010142\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwangjin-gu/junggok-dong/daewon-foreign-language-high-school-7010143/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwangjin-gu",
+        "town": "junggok-dong",
+        "school": "daewon-foreign-language-high-school-7010143",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwangjin-gu\\junggok-dong\\daewon-foreign-language-high-school-7010143\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/deungchon-dong/daeil-high-school-7010144/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "deungchon-dong",
+        "school": "daeil-high-school-7010144",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\deungchon-dong\\daeil-high-school-7010144\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seongbuk-gu/jeongneung-dong/daeil-foreign-language-high-school-7010145/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "seongbuk-gu",
+        "town": "jeongneung-dong",
+        "school": "daeil-foreign-language-high-school-7010145",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seongbuk-gu\\jeongneung-dong\\daeil-foreign-language-high-school-7010145\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/nowon-gu/hagye-dong/daejin-high-school-7010146/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "nowon-gu",
+        "town": "hagye-dong",
+        "school": "daejin-high-school-7010146",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\nowon-gu\\hagye-dong\\daejin-high-school-7010146\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/nowon-gu/junggye2--dong/daejin-girls-high-school-7010147/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "nowon-gu",
+        "town": "junggye2--dong",
+        "school": "daejin-girls-high-school-7010147",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\nowon-gu\\junggye2--dong\\daejin-girls-high-school-7010147\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jongno-gu/samcheong-dong/duksung-girls-high-school-7010148/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "jongno-gu",
+        "town": "samcheong-dong",
+        "school": "duksung-girls-high-school-7010148",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jongno-gu\\samcheong-dong\\duksung-girls-high-school-7010148\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/balsan-dong/deokwon-girls-high-school-7010149/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "balsan-dong",
+        "school": "deokwon-girls-high-school-7010149",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\balsan-dong\\deokwon-girls-high-school-7010149\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/balsan-dong/deokwon-arts-high-school-7010150/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "balsan-dong",
+        "school": "deokwon-arts-high-school-7010150",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\balsan-dong\\deokwon-arts-high-school-7010150\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/dongdaemun-gu/jangan-dong/high-school-attached-to-college-of-education-dongguk-university-7010151/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "dongdaemun-gu",
+        "town": "jangan-dong",
+        "school": "high-school-attached-to-college-of-education-dongguk-university-7010151",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\dongdaemun-gu\\jangan-dong\\high-school-attached-to-college-of-education-dongguk-university-7010151\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seocho-gu/bangbae-dong/dongduk-girls-high-school-7010152/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "seocho-gu",
+        "town": "bangbae-dong",
+        "school": "dongduk-girls-high-school-7010152",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seocho-gu\\bangbae-dong\\dongduk-girls-high-school-7010152\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/eunpyeong-gu/daejo-dong/dongmyung-girls-high-school-7010153/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "eunpyeong-gu",
+        "town": "daejo-dong",
+        "school": "dongmyung-girls-high-school-7010153",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\eunpyeong-gu\\daejo-dong\\dongmyung-girls-high-school-7010153\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangdong-gu/dunchon-dong/dongbuk-high-school-7010154/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangdong-gu",
+        "town": "dunchon-dong",
+        "school": "dongbuk-high-school-7010154",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangdong-gu\\dunchon-dong\\dongbuk-high-school-7010154\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/jongno-gu/hyehwa-dong/dongsung-high-school-7010155/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "jongno-gu",
+        "town": "hyehwa-dong",
+        "school": "dongsung-high-school-7010155",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\jongno-gu\\hyehwa-dong\\dongsung-high-school-7010155\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/geumcheon-gu/siheung-dong/dong-il-girls-high-school-7010156/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "geumcheon-gu",
+        "town": "siheung-dong",
+        "school": "dong-il-girls-high-school-7010156",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\geumcheon-gu\\siheung-dong\\dong-il-girls-high-school-7010156\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/deungchon-dong/mapo-high-school-7010157/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "deungchon-dong",
+        "school": "mapo-high-school-7010157",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\deungchon-dong\\mapo-high-school-7010157\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/balsan-dong/myungduk-high-school-7010158/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "balsan-dong",
+        "school": "myungduk-high-school-7010158",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\balsan-dong\\myungduk-high-school-7010158\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/balsan-dong/myungduk-girls-high-school-7010159/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "balsan-dong",
+        "school": "myungduk-girls-high-school-7010159",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\balsan-dong\\myungduk-girls-high-school-7010159\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gangseo-gu/balsan-dong/myungduk-foreign-language-high-school-7010160/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gangseo-gu",
+        "town": "balsan-dong",
+        "school": "myungduk-foreign-language-high-school-7010160",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gangseo-gu\\balsan-dong\\myungduk-foreign-language-high-school-7010160\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/seodaemun-gu/hongeun-dong/myongji-high-school-7010163/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "seodaemun-gu",
+        "town": "hongeun-dong",
+        "school": "myongji-high-school-7010163",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\seodaemun-gu\\hongeun-dong\\myongji-high-school-7010163\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/geumcheon-gu/siheung-dong/moonil-high-school-7010166/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "geumcheon-gu",
+        "town": "siheung-dong",
+        "school": "moonil-high-school-7010166",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\geumcheon-gu\\siheung-dong\\moonil-high-school-7010166\\high-1\\english\\page.tsx",
+      "status": "validated"
+    },
+    {
+      "url": "/tutoring/seoul/gwanak-gu/sillim-dong/mirim-girls-high-school-7010167/high-1/english",
+      "route": {
+        "province": "seoul",
+        "district": "gwanak-gu",
+        "town": "sillim-dong",
+        "school": "mirim-girls-high-school-7010167",
+        "grade": "high-1",
+        "subject": "english"
+      },
+      "pageFile": "src\\app\\tutoring\\seoul\\gwanak-gu\\sillim-dong\\mirim-girls-high-school-7010167\\high-1\\english\\page.tsx",
+      "status": "validated"
+    }
+  ]
+}
