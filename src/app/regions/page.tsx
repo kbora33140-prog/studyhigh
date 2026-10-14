@@ -113,7 +113,7 @@ export default function RegionsPage() {
       "@type": "ListItem",
       position: index + 1,
       name: `${region.name} 지역별 수업`,
-      url: `https://studyhigh.example.com/regions/${region.slug}`,
+      url: `https://studyhigh.co.kr/regions/${region.slug}`,
     })),
   };
 
@@ -125,13 +125,13 @@ export default function RegionsPage() {
         "@type": "ListItem",
         position: 1,
         name: "홈",
-        item: "https://studyhigh.example.com",
+        item: "https://studyhigh.co.kr",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "지역별 수업",
-        item: "https://studyhigh.example.com/regions",
+        item: "https://studyhigh.co.kr/regions",
       },
     ],
   };

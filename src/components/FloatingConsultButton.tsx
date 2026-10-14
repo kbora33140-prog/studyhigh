@@ -9,7 +9,7 @@ export function FloatingConsultButton() {
     <div className="fixed bottom-[calc(18px+env(safe-area-inset-bottom))] right-4 z-[100] flex flex-col items-end gap-2 sm:right-6 lg:right-8">
       <motion.button
         type="button"
-        onClick={openConsultationModal}
+        onClick={() => openConsultationModal()}
         whileHover={{ scale: 1.035 }}
         whileTap={{ scale: 0.97 }}
         className="h-14 rounded-full bg-[#2b105f] px-6 text-base font-black text-white shadow-2xl shadow-black/25 transition-colors hover:bg-[#3b176f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6736C8] focus-visible:ring-offset-2"

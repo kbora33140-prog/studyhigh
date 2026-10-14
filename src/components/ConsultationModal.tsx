@@ -2,8 +2,12 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import { CheckCircle2, Loader2, X } from "lucide-react";
+import type { ConsultationPrefill } from "@/components/OpenConsultationButton";
 
 const grades = [
+  "초등",
+  "중등",
+  "고등",
   "초등 1학년",
   "초등 2학년",
   "초등 3학년",
@@ -29,9 +33,11 @@ export function ConsultationModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
   const [message, setMessage] = useState("");
+  const [prefill, setPrefill] = useState<ConsultationPrefill>({});
 
   useEffect(() => {
-    const openModal = () => {
+    const openModal = (event: Event) => {
+      setPrefill((event as CustomEvent<ConsultationPrefill>).detail || {});
       setIsOpen(true);
       setSubmitState("idle");
       setMessage("");
@@ -101,7 +107,7 @@ export function ConsultationModal() {
 
       event.currentTarget.reset();
       setSubmitState("success");
-      setMessage("상담 신청이 접수되었습니다. 빠르게 연락드리겠습니다.");
+      setMessage("상담 요청을 전송했습니다. 실제 접수 여부는 담당자 연락으로 확인해 주세요.");
     } catch {
       setSubmitState("error");
       setMessage("전송 중 문제가 발생했습니다. 잠시 후 다시 신청해주세요.");
@@ -162,10 +168,10 @@ export function ConsultationModal() {
           <div className="grid gap-4 sm:grid-cols-2">
             <FormInput label="학생 이름" name="이름" placeholder="이름을 입력하세요" required />
             <FormInput label="연락처" name="연락처" placeholder="010-0000-0000" required />
-            <FormInput label="지역" name="지역" placeholder="예: 대전 서구 둔산동" required />
+            <FormInput label="지역" name="지역" placeholder="예: 대전 서구 둔산동" required defaultValue={prefill.region} />
             <FormInput label="학교명" name="학교명" placeholder="학교명을 입력하세요" />
-            <FormSelect label="학년" name="학년" options={grades} required />
-            <FormSelect label="희망 과목" name="희망 과목" options={subjects} required />
+            <FormSelect label="학년" name="학년" options={grades} required defaultValue={prefill.grade} />
+            <FormSelect label="희망 과목" name="희망 과목" options={subjects} required defaultValue={prefill.subject} />
             <FormSelect label="수업 방식" name="수업 방식" options={classTypes} required />
             <FormSelect label="요청 수업" name="요청 수업" options={goals} required />
           </div>
@@ -178,6 +184,17 @@ export function ConsultationModal() {
               placeholder="학생의 현재 상황, 희망 수업, 고민되는 부분을 적어주세요."
               className="resize-none rounded-2xl bg-[#f7f7fa] px-4 py-3 text-sm font-semibold text-black outline-none transition placeholder:text-black/35 focus:bg-white focus:ring-2 focus:ring-[#6736C8]"
             />
+          </label>
+
+          <label className="flex items-start gap-3 rounded-2xl border border-[#E7DDF8] bg-[#FBF9FF] p-4 text-sm font-semibold leading-6 text-[#403A48]">
+            <input
+              type="checkbox"
+              name="개인정보 수집 이용 동의"
+              value="동의"
+              required
+              className="mt-1 h-4 w-4 accent-[#6736C8]"
+            />
+            <span>상담 안내를 위한 개인정보 수집·이용에 동의합니다. 입력한 정보는 상담 목적으로만 사용됩니다.</span>
           </label>
 
           {message ? (
@@ -215,11 +232,13 @@ function FormInput({
   name,
   placeholder,
   required,
+  defaultValue,
 }: {
   label: string;
   name: string;
   placeholder: string;
   required?: boolean;
+  defaultValue?: string;
 }) {
   return (
     <label className="grid gap-2 text-sm font-bold text-black">
@@ -228,6 +247,7 @@ function FormInput({
         name={name}
         placeholder={placeholder}
         required={required}
+        defaultValue={defaultValue}
         className="h-12 rounded-2xl bg-[#f7f7fa] px-4 text-sm font-semibold text-black outline-none transition placeholder:text-black/35 focus:bg-white focus:ring-2 focus:ring-[#6736C8]"
       />
     </label>
@@ -239,11 +259,13 @@ function FormSelect({
   name,
   options,
   required,
+  defaultValue,
 }: {
   label: string;
   name: string;
   options: string[];
   required?: boolean;
+  defaultValue?: string;
 }) {
   return (
     <label className="grid gap-2 text-sm font-bold text-black">
@@ -251,7 +273,7 @@ function FormSelect({
       <select
         name={name}
         required={required}
-        defaultValue=""
+        defaultValue={defaultValue || ""}
         className="h-12 rounded-2xl bg-[#f7f7fa] px-4 text-sm font-semibold text-black outline-none transition focus:bg-white focus:ring-2 focus:ring-[#6736C8]"
       >
         <option value="" disabled>

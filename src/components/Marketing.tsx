@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Phone, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { OpenConsultationButton } from "@/components/OpenConsultationButton";
+import { footerLinks } from "@/lib/siteNavigation";
 
 export function SectionTitle({
   eyebrow,
@@ -82,20 +85,16 @@ export function ConsultationTimeline() {
       description: "학년, 과목, 현재 수준과 목표를 듣고 필요한 수업 조건을 정리합니다.",
     },
     {
-      title: "학습 진단",
-      description: "학습 습관과 취약 단원, 질문 방식과 집중 패턴을 확인해 우선순위를 정합니다.",
-    },
-    {
       title: "선생님 매칭",
-      description: "학생의 성향, 목표, 일정과 원하는 수업 방식에 맞는 선생님을 추천합니다.",
+      description: "학습 진단에서 확인한 성향, 목표, 일정과 원하는 수업 방식에 맞는 선생님을 추천합니다.",
     },
     {
       title: "체험 수업",
       description: "실제 수업 방식으로 설명을 이해하기 쉬운지, 학생과 호흡이 맞는지 확인합니다.",
     },
     {
-      title: "정식 수업 · 피드백",
-      description: "맞춤 커리큘럼으로 수업을 시작하고 학습 진행 상황과 다음 계획을 공유합니다.",
+      title: "정규 수업",
+      description: "맞춤 커리큘럼으로 수업을 시작하고 학습 진행 상황과 다음 계획을 피드백으로 공유합니다.",
     },
   ];
 
@@ -169,27 +168,26 @@ export function SiteFooter() {
   return (
     <footer className="bg-[#0f172a] px-5 py-14 text-sm text-white/62 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-10">
-        <div className="flex flex-col items-start gap-4">
-          <Image
-            src="/studyhigh-logo-transparent.png"
-            alt="스터디하이 로고"
-            width={62}
-            height={62}
-            className="h-16 w-16 object-contain"
-          />
-          <div>
-            <p className="text-2xl font-black tracking-normal text-white">스터디하이</p>
-            <div className="mt-3 flex flex-col gap-3 text-base font-bold text-white sm:flex-row sm:items-center sm:gap-5">
-              <p>전문 1:1 맞춤 과외</p>
-              <a
-                href="tel:01025189245"
-                className="inline-flex items-center gap-2 text-white/82 transition hover:text-white"
-              >
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                010-2518-9245
+        <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
+          <div className="flex flex-col items-start gap-4">
+            <Link href="/" className="rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+              <Image src="/studyhigh-logo-transparent.png" alt="스터디하이 로고" width={62} height={62} className="h-16 w-16 object-contain" />
+            </Link>
+            <div>
+              <p className="text-2xl font-black tracking-normal text-white">스터디하이</p>
+              <p className="mt-3 text-base font-bold text-white">전문 1:1 맞춤 과외</p>
+              <a href="tel:01025189245" className="mt-3 inline-flex items-center gap-2 text-base font-bold text-white/82 transition hover:text-white">
+                <Phone className="h-4 w-4" aria-hidden="true" />010-2518-9245
               </a>
             </div>
           </div>
+          <nav aria-label="하단 사이트맵">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-white/45">SITEMAP</p>
+            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {footerLinks.map((item) => <Link key={item.href} href={item.href} className="rounded-lg px-2 py-2 font-bold text-white/75 transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-white">{item.label}</Link>)}
+              <OpenConsultationButton className="rounded-lg px-2 py-2 text-left font-bold text-[#CBB7FF] transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-white">무료 상담 신청</OpenConsultationButton>
+            </div>
+          </nav>
         </div>
 
         <div className="flex flex-col gap-4 border-t border-white/10 pt-7 md:flex-row md:items-center md:justify-between">
