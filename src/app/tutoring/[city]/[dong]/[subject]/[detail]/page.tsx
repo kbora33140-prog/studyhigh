@@ -12,6 +12,7 @@ import { consolidatedTutoringRecords, consolidatedTutoringMetadata, getConsolida
 import { isNumericTutoringAlias } from "@/lib/regionNormalization";
 import { getNationalTutoringRecord, nationalTutoringMetadata, nationalTutoringRecords } from "@/lib/nationalTutoring";
 import { getTutoringNarrative } from "@/lib/tutoringNarrative";
+import { SeoInternalLinksContent } from "@/components/SeoInternalLinksContent";
 import {
   getValidatedTestSeoRecord,
   validatedTestSeoRecords,
@@ -349,6 +350,7 @@ export default async function ManifestTutoringPage({ params }: Props) {
               </div>
             </div>
           </section>
+          <SeoInternalLinksContent path={record.page.url} />
         </article>
       </main>
       <SiteFooter />

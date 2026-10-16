@@ -10,6 +10,7 @@ import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
 import { getTutoringArticle } from "@/lib/tutoringArticles";
 import { getTutoringNarrative } from "@/lib/tutoringNarrative";
+import { SeoInternalLinksContent } from "@/components/SeoInternalLinksContent";
 
 const SITE_URL = "https://studyhigh.co.kr";
 
@@ -397,6 +398,7 @@ export default async function TutoringPage({ params }: Props) {
               </div>
             </div>
           </section>
+          <SeoInternalLinksContent path={`/tutoring/${city}/${dong}/${subject}`} />
         </article>
       </main>
       <SiteFooter />
