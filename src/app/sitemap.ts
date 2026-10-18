@@ -8,6 +8,7 @@ import { additionalTutoringRecords } from "@/lib/additionalTutoring";
 import { consolidatedTutoringRecords } from "@/lib/consolidatedTutoring";
 import { isNumericTutoringAlias } from "@/lib/regionNormalization";
 import { nationalTutoringRecords } from "@/lib/nationalTutoring";
+import schoolSeoSitemapPaths from "@/data/school-seo-sitemap.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://studyhigh.co.kr";
@@ -96,6 +97,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(record.createdAt),
       changeFrequency: "weekly" as const,
       priority: 0.85,
+    })),
+    ...schoolSeoSitemapPaths.map((path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: new Date("2026-10-18"),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
     })),
     ...regions.map((region) => ({
       url: `${baseUrl}/regions/${region.slug}`,

@@ -121,28 +121,56 @@ export function nationwideCopy(page: NationwidePage) {
   const practices = ["첫 과제는 열 문제보다 두 문제의 근거를 끝까지 기록하는 방식으로 제시합니다.", "다음 날에는 해설을 가리고 핵심 판단을 한 줄로 복원하게 합니다.", "유사 문항과 조건이 달라진 문항을 번갈아 풀어 전이를 확인합니다.", "교사의 힌트는 단계별로 줄이고 마지막에는 학생 혼자 설명하게 합니다.", "정답률과 함께 풀이를 시작하기까지 걸린 시간을 기록합니다.", "복습 카드는 정의, 예시, 반례가 한 장 안에 들어가도록 만듭니다.", "숙제는 통학일과 비통학일의 가능한 시간을 따로 반영해 나눕니다.", "오답 노트에는 정답 대신 처음 잘못 읽은 조건과 다음 확인 행동을 적습니다.", "주말에는 새 진도보다 평일 기록 중 반복된 한 가지 문제를 정리합니다.", "말로 설명한 뒤 글과 식, 표 중 과목에 맞는 형태로 다시 표현합니다.", "한 단원을 짧은 회상, 적용, 누적 점검의 세 단계로 순환합니다.", "수행 여부와 정확도를 분리해 계획이 무리했는지도 함께 판단합니다."];
   const communications = ["보호자에게는 수행 사실과 다음 주 행동 목표를 구분해 전달합니다.", "점수보다 질문 빈도와 재풀이 결과를 포함해 상담합니다.", "이해한 부분과 아직 도움을 받는 부분을 나눠 공유합니다.", "막힌 지점과 도움을 요청한 방식을 짧은 기록으로 남깁니다.", "숙제 미완료를 의지로 단정하지 않고 분량과 일정부터 조정합니다.", "수업 참여 변화와 혼자 시작한 과제의 수를 함께 알립니다.", "진도 변경 이유를 학생과 보호자에게 같은 표현으로 설명합니다.", "주간 피드백은 잘한 행동 하나와 다음 실천 하나에 집중합니다.", "시험 뒤에는 결과보다 준비 과정에서 재사용할 방법을 정리합니다.", "학부모의 우려와 학생이 느끼는 어려움이 다를 때 각각 확인합니다.", "교체가 필요한 경우 경력보다 소통 방식의 불일치를 먼저 살핍니다.", "상담 내용은 확인된 학교 자료와 일반 학습 조언을 명확히 구분합니다."];
   const matching = ["질문을 기다려 주는 교사", "짧고 자주 확인하는 교사", "원리를 말로 풀어 주는 교사", "풀이 기록을 꼼꼼히 보는 교사", "학습 속도를 유연하게 조절하는 교사", "학생의 설명을 끝까지 듣는 교사", "작은 과제의 완결을 중시하는 교사", "시험 계획을 역산해 주는 교사", "시각 자료와 예시를 잘 활용하는 교사", "오답 이유를 함께 분류하는 교사", "학부모와 간결하게 소통하는 교사", "진로 목표와 과목 계획을 연결하는 교사"];
+  const subjectObjects: Record<NationwideSubjectSlug, string[]> = {
+    math: ["풀이 근거를", "계산 순서를", "조건 관계를", "개념 연결을", "식의 의미를", "그래프 변화를", "서술 과정을", "문제 해석을", "단위 확인을", "유형 판단을", "검산 습관을", "시간 배분을"],
+    english: ["어휘 회상을", "문장 구조를", "문단 요지를", "근거 표현을", "어법 판단을", "듣기 단서를", "서술 표현을", "해석 순서를", "접속 관계를", "지문 흐름을", "요약 문장을", "복습 간격을"],
+    korean: ["발문 조건을", "근거 문장을", "선택지 판단을", "문단 관계를", "작품 맥락을", "표현 효과를", "화자의 태도를", "자료 해석을", "독서 속도를", "서술 근거를", "어휘 문맥을", "오답 반례를"],
+    science: ["개념 관계를", "실험 조건을", "변인 통제를", "자료 변화를", "그래프 축을", "단위 관계를", "탐구 순서를", "관찰 근거를", "계산 과정을", "현상 원리를", "용어 구분을", "서술 결론을"],
+    social: ["핵심 용어를", "원인 관계를", "시간 흐름을", "공간 분포를", "자료 근거를", "사례 적용을", "제도 차이를", "지도 정보를", "도표 변화를", "쟁점 관점을", "서술 구조를", "개념 비교를"],
+  };
+  const studyMoments = ["수업을 시작하며", "짧은 회상 뒤", "교과서를 펼쳐", "최근 답안을 놓고", "주간 계획 전에", "혼자 다시 풀며", "설명을 마친 뒤", "과제를 정하기 전", "누적 복습에서", "시험 범위를 보며", "질문 기록으로", "오답을 분류하며", "다음 날 복습에서", "제한 시간을 두고", "힌트를 줄인 뒤", "학습을 마치며"];
+  const approachParts = ["자기 말로 먼저", "표와 식으로 바꿔", "핵심 조건부터", "앞 단계와 연결해", "도움 없이 다시", "짧은 메모로 남겨", "예시와 반례로", "순서를 소리 내어", "교과서 표현으로", "다른 조건에 맞춰", "틀린 이유와 함께", "한 문장으로 줄여", "시간을 표시하며", "질문 형태로 바꿔", "기억을 가린 채", "선택 근거를 붙여"];
+  const learningVerbs = ["설명하게 합니다", "복원하도록 합니다", "비교하게 합니다", "적용하도록 돕습니다", "분류하게 합니다", "확인하도록 합니다", "기록하게 합니다", "다시 구성합니다", "점검하게 합니다", "연결하도록 합니다", "요약하게 합니다", "수정하도록 합니다", "말하게 합니다", "선택하게 합니다", "재현하도록 합니다", "검토하게 합니다"];
+  const observationStarts = ["교사는 이 과정에서", "학생과 함께", "첫 진단에서는", "재풀이 결과로", "학습 기록에서는", "주간 점검 때", "과제 확인에서는", "질문이 멈춘 곳에서", "설명 순서를 보며", "답안의 흔적으로", "복습 간격을 두고", "수행 시간을 비교해", "도움 요청을 살펴", "정확도와 별도로", "오래된 오답에서", "다음 계획을 세우며"];
+  const observationEnds = ["이해와 암기를 나눕니다", "실수의 시작점을 찾습니다", "도움이 필요한 단계를 정합니다", "가능한 과제량을 계산합니다", "다음 연습의 순서를 고릅니다", "혼자 해결한 범위를 표시합니다", "반복되는 원인을 묶습니다", "설명 수준을 다시 맞춥니다", "속도와 정확도를 구분합니다", "계획의 무리 여부를 판단합니다", "개념 빈칸을 좁혀 갑니다", "질문의 변화를 확인합니다", "학습 행동을 한 가지 정합니다", "재현 가능한 방법을 남깁니다", "새 진도 시점을 결정합니다", "피드백의 근거를 마련합니다"];
   const pick = <T,>(values: T[], salt: number) => {
-    let value = (seed ^ Math.imul(salt + 1, 0x9e3779b1)) >>> 0;
-    value ^= value << 13; value ^= value >>> 17; value ^= value << 5;
+    let value = 2166136261;
+    for (const char of `${seed}:${page.school.id}:${page.gradeSlug}:${page.subjectSlug}:${salt}`) {
+      value ^= char.charCodeAt(0);
+      value = Math.imul(value, 16777619) >>> 0;
+    }
+    value ^= value >>> 16;
+    value = Math.imul(value, 0x7feb352d) >>> 0;
+    value ^= value >>> 15;
     return values[(value >>> 0) % values.length];
   };
-  const contextualize = (sentence: string) => {
-    const words = sentence.split(/\s+/);
-    const chunks = Array.from({ length: Math.ceil(words.length / 4) }, (_, index) => words.slice(index * 4, index * 4 + 4).join(" "));
-    return `${page.school.name} ${page.grade} ${page.subject} 학습에서는 ${chunks.join(` ${page.school.name} 학생 기록을 바탕으로 `)}`;
-  };
-  const paragraphs = Array.from({ length: 8 }, (_, i) => [
-    pick(openings, i * 17 + 1),
-    pick(diagnostics, i * 29 + 2),
-    `${page.town} 생활권에서 ${challenge}`,
-    `${method}하는 연습을 진행합니다.`,
-    pick(practices, i * 43 + 3),
-    `${stage}을 단계별로 확인합니다.`,
-    `${pick(matching, i * 61 + 4)}가 학생의 질문 방식과 맞는지 살핍니다.`,
-    "경력이 긴 선생님도 학생이 질문을 숨기는 수업이라면 적합하지 않을 수 있습니다.",
-    pick(communications, i * 73 + 5),
-  ].map(contextualize).join(" "));
-  return { stage, challenge, method, paragraphs };
+  const paragraphs = [
+    `${page.school.name} ${page.grade} ${page.subject} 학습은 학교명만으로 진도나 시험 특성을 가정하지 않습니다. ${pick(openings, 17)} ${pick(diagnostics, 29)} 학생이 가져온 범위표, 최근 답안과 실제 주간 일정을 확인해 ${stage}을 우선순위에 맞게 배치합니다.`,
+    `${page.town} 생활권의 ${page.school.name} ${page.grade} ${page.subject} 학습에서 먼저 살필 과제는 ${challenge}입니다. ${pick(diagnostics, 41)} 정답률만 보지 않고 문제를 읽기 시작한 시점, 도움을 요청한 단계와 재풀이 결과를 함께 기록해 개념 부족과 실행 습관을 구분합니다.`,
+    `${page.subject} 수업에서는 ${method}합니다. ${pick(practices, 53)} 학생이 풀이나 판단 근거를 자기 말로 설명한 뒤 새로운 조건에도 같은 원리를 사용할 수 있는지 확인하며, 설명을 대신해 주는 수업이 되지 않도록 힌트를 단계적으로 줄입니다.`,
+    `${page.grade} 시기의 계획은 가능한 공부 시간을 과장하지 않는 데서 출발합니다. ${pick(practices, 67)} 일정이 빡빡한 날의 최소 과제와 여유가 있는 날의 확장 과제를 구분하고, 한 주 뒤 수행률과 정확도를 비교해 분량을 다시 조정합니다.`,
+    `학부모 상담에서는 “${challenge}”라는 관찰을 점수와 분리해 확인합니다. ${pick(communications, 79)} 확인되지 않은 학교별 출제 경향은 안내하지 않고, 공식 수업 자료와 학생 기록에서 확인된 사실만 학습 계획에 반영합니다.`,
+    `실제 연습은 ${method}한 뒤 조건이나 표현이 달라진 문항으로 이어집니다. ${pick(practices, 83)} 같은 답을 기억해 맞힌 경우와 개념을 이해해 해결한 경우를 구분하고, 다음 수업에서는 실패한 단계부터 짧게 회상한 뒤 적용 범위를 넓힙니다.`,
+    `${page.school.name} ${page.grade} ${page.subject} 학생에게는 ${pick(matching, 97)}가 적합한지 상담에서 살핍니다. 경력이나 학벌만 비교하지 않고 질문을 기다리는 시간, 설명의 길이, 과제 확인 방식이 학생 성향과 맞는지 확인하며, 수업 중 질문이 줄거나 과제가 지속되지 않으면 매칭 방식도 다시 점검합니다.`,
+    `${page.sigungu} ${page.town}에서 ${page.grade} ${page.subject} 방문·화상 수업과 일정은 배정 상황에 따라 달라질 수 있습니다. ${pick(communications, 109)} 상담 신청만으로 수업이 확정되지는 않으며, 현재 목표와 학습 기록을 바탕으로 필요한 관리 강도와 수업 방식을 충분히 안내한 뒤 결정합니다.`,
+  ];
+  const identity = `${page.school.name} ${page.grade} ${page.subject}`;
+  const objects = subjectObjects[page.subjectSlug];
+  const essayParagraphs = Array.from({ length: 5 }, (_, paragraphIndex) => {
+    const salt = 211 + paragraphIndex * 257;
+    const sentences = Array.from({ length: paragraphIndex === 4 ? 2 : 4 }, (_, sentenceIndex) => {
+      const offset = salt + sentenceIndex * 31;
+      if (sentenceIndex === 0) {
+        return `${paragraphIndex === 0 ? identity : `${page.town} ${page.grade} ${page.subject} 학습`}에서는 ${pick(studyMoments, offset)} ${pick(objects, offset + 1)} ${pick(approachParts, offset + 2)} ${pick(learningVerbs, offset + 3)}.`;
+      }
+      if (sentenceIndex % 2 === 1) {
+        return `${pick(observationStarts, offset + 4)} ${pick(objects, offset + 5)} ${pick(approachParts, offset + 6)} ${pick(learningVerbs, offset + 7)}. 이어서 ${pick(observationEnds, offset + 14)}.`;
+      }
+      return `${pick(studyMoments, offset + 8)} ${pick(objects, offset + 9)} ${pick(approachParts, offset + 10)} ${pick(learningVerbs, offset + 11)}. ${pick(observationStarts, offset + 12)} ${pick(observationEnds, offset + 13)}.`;
+    });
+    return sentences.join(" ");
+  });
+  return { stage, challenge, method, paragraphs, essayParagraphs };
 }
 
 export function nationwideRecord(page: NationwidePage): AdditionalTutoringRecord {
@@ -192,7 +220,7 @@ export function nationwideRecord(page: NationwidePage): AdditionalTutoringRecord
     content: {
       theme: `${page.grade} ${page.subject} 학습관리`, introduction: copy.paragraphs[0], regionContext: copy.paragraphs[1], schoolAnalysis: copy.paragraphs[2], exam: copy.paragraphs[3],
       examCaveat: "학교별 시험 범위·난이도·출제 경향은 학생이 제공한 최신 공식 자료를 확인한 뒤 계획에 반영합니다.", concern: copy.challenge, difficultUnit: copy.challenge,
-      studyMethod: copy.method, parentConcern: copy.paragraphs[4], workedExample: copy.paragraphs[5], lesson: copy.stage, longForm: copy.paragraphs.slice(1), faq,
+      studyMethod: copy.method, parentConcern: copy.paragraphs[4], workedExample: copy.paragraphs[5], lesson: copy.stage, longForm: copy.essayParagraphs, faq,
     },
     seo: { title, description, canonical, ogTitle: title, ogDescription: description, ogImage: `https://studyhigh.co.kr${imagePath}`, keywords: [`${page.town} ${page.grade} ${page.subject}과외`, `${page.school.name} ${page.subject}`, `${page.sigungu} 1:1 과외`] },
     image: { masterImage: "/thumbnails/studyhigh-official-template.png", imagePath, imageUrl: `https://studyhigh.co.kr${imagePath}`, alt: `${page.town} ${page.school.name} ${page.grade} ${page.subject}과외 대표 이미지`, regionText: page.town, subjectText: `${page.subject}과외`, width: 1200, height: 1200 },
