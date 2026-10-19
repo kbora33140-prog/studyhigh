@@ -1,4 +1,5 @@
-import StudyhighRenewalPreview, { renewalFaqs } from "@/components/StudyhighRenewalPreview";
+import StudyhighRenewalPreview from "@/components/StudyhighRenewalPreview";
+import { renewalFaqs } from "@/data/renewalFaqs";
 
 const jsonLd = [
   {
