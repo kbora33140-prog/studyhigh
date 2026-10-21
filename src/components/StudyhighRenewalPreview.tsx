@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, BarChart3, BookOpen, Check, ChevronDown, ClipboardCheck, GraduationCap, Laptop, MapPin, Search, Sparkles, Target, UserRoundCheck } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, Check, ChevronDown, ClipboardCheck, Eye, Focus, GraduationCap, MapPin, Monitor, Search, Sparkles, Target, UserRoundCheck, UsersRound, Video } from "lucide-react";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/Marketing";
@@ -32,7 +32,60 @@ export default function StudyhighRenewalPreview({preview=true}:{preview?:boolean
    <section className="bg-[#f4efff] px-5 py-20"><div className="mx-auto max-w-[1180px]"><Heading eyebrow="SYNERGY" title="학생도 선생님도 시너지 UP!"/><div className="mt-12 grid gap-5 md:grid-cols-[1fr_auto_1fr]"><div className="rounded-[32px] bg-white p-8"><span className="text-xs font-black text-slate-400">BEFORE</span><h3 className="mt-4 text-2xl font-black">혼자 버티는 공부</h3><div className="mt-8 space-y-4 text-slate-500"><p>계획이 자주 끊겨요</p><p>틀린 이유를 모르겠어요</p><p>질문을 미루게 돼요</p></div></div><div className="flex items-center justify-center"><ArrowRight className="h-10 w-10 rotate-90 text-[#6736c8] md:rotate-0"/></div><div className="rounded-[32px] bg-gradient-to-br from-[#6736c8] to-[#2b105f] p-8 text-white"><span className="text-xs font-black text-[#d9ccf7]">함께 만드는 변화</span><h3 className="mt-4 text-2xl font-black">함께 설계하는 공부</h3><div className="mt-8 space-y-4"><p>✓ 주간 목표를 확인해요</p><p>✓ 오답 원인을 기록해요</p><p>✓ 질문과 피드백을 이어가요</p></div></div></div></div></section>
    <section className="px-5 py-20"><div className="mx-auto max-w-[1180px]"><Heading eyebrow="MATCHING PROCESS" title="선생님 매칭 4단계"/><div className="mt-12 grid gap-4 md:grid-cols-4">{[["상담",BookOpen,"현재 고민 듣기"],["학습 진단",BarChart3,"막히는 지점 찾기"],["선생님 매칭",UserRoundCheck,"성향과 방식 연결"],["수업 시작",Sparkles,"계획과 피드백 실행"]].map(([t,I,d],i)=>{const Icon=I as typeof BookOpen;return <article key={String(t)} className="rounded-[28px] border border-[#ddd1fa] p-6 text-center"><span className="text-xs font-black text-[#7c3aed]">STEP 0{i+1}</span><div className="mx-auto mt-5 flex h-24 w-24 items-center justify-center rounded-full bg-[#f4efff]"><Icon className="h-11 w-11 text-[#6736c8]"/></div><h3 className="mt-5 text-xl font-black">{String(t)}</h3><p className="mt-2 text-sm text-slate-500">{String(d)}</p></article>})}</div></div></section>
    <section id="learning-management" className="scroll-mt-28 bg-[#17131d] px-5 py-20 text-white"><div className="mx-auto grid max-w-[1180px] gap-10 lg:grid-cols-[.9fr_1.1fr]"><div><p className="text-xs font-black tracking-[.22em] text-[#cbb9ee]">LEARNING MANAGEMENT</p><h2 className="mt-4 text-4xl font-black md:text-5xl">수업이 없는 날에도<br/>학습은 이어집니다</h2><p className="mt-6 leading-8 text-white/65">수업 목표와 숙제, 복습, 오답 점검을 연결해 다음 수업에서 확인할 내용을 분명하게 만듭니다.</p></div><div className="grid gap-4 sm:grid-cols-3">{[["수업 목표",Target],["숙제·복습",ClipboardCheck],["오답 피드백",BarChart3]].map(([n,I])=>{const Icon=I as typeof Target;return <div key={String(n)} className="rounded-[26px] bg-white/10 p-6"><Icon className="h-9 w-9 text-[#d8c8ff]"/><h3 className="mt-8 text-xl font-black">{String(n)}</h3></div>})}</div></div></section>
-   <section className="px-5 py-20"><div className="mx-auto max-w-[1180px]"><Heading eyebrow="CLASS METHODS" title="방문과외와 화상과외" text="학생의 집중 방식과 일정, 지역과 선생님 배정 가능 여부를 함께 고려합니다."/><div className="mt-10 grid gap-5 md:grid-cols-2"><article className="rounded-[32px] border border-[#ddd1fa] p-8"><MapPin className="h-11 w-11 text-[#6736c8]"/><h3 className="mt-6 text-3xl font-black">방문과외</h3><p className="mt-4 leading-7 text-slate-600">정해진 장소에서 대면으로 만나 수업 반응과 학습 과정을 확인합니다. 지역별 배정 가능 여부는 상담에서 안내합니다.</p></article><article className="rounded-[32px] bg-[#2b105f] p-8 text-white"><Laptop className="h-11 w-11 text-[#d8c8ff]"/><h3 className="mt-6 text-3xl font-black">화상과외</h3><p className="mt-4 leading-7 text-white/70">이동 부담 없이 온라인으로 만나 학생 일정에 맞는 수업 흐름을 상담합니다.</p></article></div></div></section>
+   <section className="overflow-hidden bg-[#fbf9ff] px-5 py-20 md:py-24">
+    <div className="mx-auto max-w-[1180px]">
+     <Heading eyebrow="CLASS METHODS" title="수업 방식, 아이에게 맞게 선택하세요" text="같은 1:1 수업도 아이가 집중하는 방식과 필요한 도움에 따라 더 잘 맞는 환경이 다릅니다."/>
+     <div className="mt-12 grid gap-6 lg:grid-cols-2">
+      <article className="overflow-hidden rounded-[32px] border border-[#eadcc5] bg-white shadow-[0_20px_60px_rgba(64,42,24,.08)]">
+       <div className="relative aspect-[4/3] overflow-hidden">
+        <Image src="/class-method-in-person.png" alt="선생님이 학생의 표정과 학습 상태를 살피며 진행하는 방문수업" fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw"/>
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#26170b]/70 to-transparent px-6 pb-6 pt-20 text-white">
+         <span className="inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-black text-[#5a3b1f]"><MapPin className="h-4 w-4"/> 직접 만나 세심하게</span>
+        </div>
+       </div>
+       <div className="p-6 sm:p-8">
+        <p className="text-xs font-black tracking-[.2em] text-[#9a641e]">IN-PERSON LESSON</p>
+        <h3 className="mt-3 text-3xl font-black text-[#17131d]">방문수업</h3>
+        <p className="mt-4 text-base font-medium leading-7 text-slate-600">선생님이 아이와 같은 공간에서 수업하며 말로 표현하지 못한 어려움과 집중 흐름까지 세심하게 살핍니다.</p>
+        <ul className="mt-7 grid gap-3">
+         {[
+          [Eye, "표정과 상황을 바로 확인", "말하지 않아도 막히는 순간을 빠르게 알아봅니다."],
+          [UserRoundCheck, "표현이 서툰 아이도 즉시 대응", "반응과 풀이 과정을 보고 설명 방식을 바로 조절합니다."],
+          [Focus, "산만한 집중력을 곁에서 관리", "주변에 쉽게 흐트러지는 아이의 학습 흐름을 직접 잡아줍니다."],
+         ].map(([Icon, title, description]) => {
+          const BenefitIcon = Icon as typeof Eye;
+          return <li key={String(title)} className="flex gap-4 rounded-2xl bg-[#fffaf2] p-4"><span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#ffe8c3] text-[#8a5517]"><BenefitIcon className="h-5 w-5"/></span><span><b className="block text-base text-[#24170d]">{String(title)}</b><span className="mt-1 block text-sm leading-6 text-slate-600">{String(description)}</span></span></li>;
+         })}
+        </ul>
+       </div>
+      </article>
+      <article className="overflow-hidden rounded-[32px] border border-[#d9ccf7] bg-[#2b105f] text-white shadow-[0_20px_60px_rgba(43,16,95,.16)]">
+       <div className="relative aspect-[4/3] overflow-hidden">
+        <Image src="/class-method-live-online.png" alt="학생이 PC로 선생님과 실시간 화상수업을 진행하고 녹화 내용을 복습하는 모습" fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw"/>
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#19063f]/80 to-transparent px-6 pb-6 pt-20">
+         <span className="inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-black text-[#452080]"><Video className="h-4 w-4"/> 어디서나 맞춤 선생님과</span>
+        </div>
+       </div>
+       <div className="p-6 sm:p-8">
+        <p className="text-xs font-black tracking-[.2em] text-[#cbb9ee]">LIVE ONLINE LESSON</p>
+        <h3 className="mt-3 text-3xl font-black">실시간 화상수업</h3>
+        <p className="mt-4 text-base font-medium leading-7 text-white/72">PC만 있으면 장소에 상관없이 실시간으로 만나고, 더 넓은 선생님 후보 중 아이의 성향과 맞는 수업을 찾을 수 있습니다.</p>
+        <ul className="mt-7 grid gap-3">
+         {[
+          [Monitor, "장소 제한 없이 PC로 수업", "이동 없이 편한 학습 공간에서 실시간으로 질문하고 답합니다."],
+          [UsersRound, "더 넓은 선생님 선택", "지역의 제약을 줄여 아이의 성향과 학습 방식에 맞는 선생님을 찾습니다."],
+          [Video, "녹화 수업으로 반복 복습", "수업 녹화가 가능한 경우 놓친 설명을 다시 보며 복습에 활용합니다."],
+         ].map(([Icon, title, description]) => {
+          const BenefitIcon = Icon as typeof Monitor;
+          return <li key={String(title)} className="flex gap-4 rounded-2xl bg-white/10 p-4"><span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/12 text-[#e2d9ff]"><BenefitIcon className="h-5 w-5"/></span><span><b className="block text-base">{String(title)}</b><span className="mt-1 block text-sm leading-6 text-white/68">{String(description)}</span></span></li>;
+         })}
+        </ul>
+       </div>
+      </article>
+     </div>
+     <p className="mx-auto mt-7 max-w-3xl text-center text-sm leading-6 text-slate-500">수업 방식과 녹화 가능 여부는 학생의 일정, 지역, 선생님 배정 조건과 사용하는 수업 환경에 따라 상담 후 안내합니다.</p>
+    </div>
+   </section>
    <section id="reviews" className="scroll-mt-28 bg-[#faf8ff] px-5 py-20"><div className="mx-auto max-w-[1180px]"><Heading eyebrow="LEARNING REVIEWS" title="학습후기" text="수업 참여, 질문, 과제와 복습처럼 학생의 학습 행동이 달라진 지점을 살펴보세요."/><div className="mt-10 grid gap-5 md:grid-cols-3">{[["학부모 후기","상담에서 확인한 학생 성향과 수업 후 전달된 피드백"],["학생 후기","질문하기와 오답 다시 풀기처럼 달라진 학습 행동"],["학습 변화 사례","집중 시간, 숙제 완료와 계획 실천 과정"]].map(([t,d])=><article key={t} className="rounded-[28px] bg-white p-7 shadow-sm"><Sparkles className="h-8 w-8 text-[#6736c8]"/><h3 className="mt-5 text-2xl font-black">{t}</h3><p className="mt-4 leading-7 text-slate-600">{d}</p></article>)}</div></div></section>
    <section id="faq" className="scroll-mt-28 px-5 py-20"><div className="mx-auto max-w-[980px]"><Heading eyebrow="FAQ" title="스터디하이 자주 묻는 질문" text="과외를 시작하기 전 궁금한 내용을 확인해 보세요."/><div className="mt-10 space-y-3">{renewalFaqs.map(([q,a],i)=>{const open=openFaq===i;return <article key={q} className={`overflow-hidden rounded-2xl border ${open?"border-[#cdbaf5] bg-[#f4efff]":"border-[#e7def6] bg-white"}`}><button onClick={()=>setOpenFaq(open?null:i)} className="flex w-full items-center justify-between gap-4 p-5 text-left text-base font-black sm:p-6 sm:text-lg" aria-expanded={open}><span>{i+1}. {q}</span><ChevronDown className={`h-5 w-5 shrink-0 text-[#6736c8] transition ${open?"rotate-180":""}`}/></button>{open&&<p className="px-5 pb-6 text-sm font-medium leading-7 text-[#5e5668] sm:px-6 sm:text-base">{a}</p>}</article>})}</div></div></section>
    <section id="contact" className="bg-[#f4efff] px-5 py-20"><div className="mx-auto grid max-w-[1180px] items-center gap-8 rounded-[36px] bg-[#2b105f] p-8 text-white md:grid-cols-[1fr_auto] md:p-12"><div><p className="text-xs font-black tracking-[.22em] text-[#cbb9ee]">FREE CONSULT</p><h2 className="mt-4 text-4xl font-black">우리 아이에게 맞는<br/>수업 방향을 확인하세요</h2><p className="mt-5 max-w-2xl leading-7 text-white/70">학생의 현재 상황과 희망 과목을 확인한 뒤 상담 가능한 범위에서 안내합니다.</p></div><OpenConsultationButton className="rounded-full bg-white px-8 py-4 font-black text-[#2b105f]">무료 상담 신청</OpenConsultationButton></div></section>
