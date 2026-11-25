@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Header } from "@/components/Header";
 import { OpenConsultationButton } from "@/components/OpenConsultationButton";
 import { buttonVariants } from "@/components/ui/button";
@@ -34,7 +34,7 @@ export default function ContactPage() {
             <br />
             원하는 수업 방식을 알려주세요.
           </p>
-          <div className="mt-10 grid gap-3 sm:grid-cols-3">
+          <div className="mt-10 grid gap-3 sm:grid-cols-2">
             <OpenConsultationButton
               className={buttonVariants({
                 size: "lg",
@@ -51,13 +51,6 @@ export default function ContactPage() {
             >
               <MessageCircle className="h-5 w-5" />
               카카오 상담
-            </Link>
-            <Link
-              href="tel:01025189245"
-              className={buttonVariants({ variant: "secondary", size: "lg" })}
-            >
-              <Phone className="h-5 w-5" />
-              전화 상담
             </Link>
           </div>
         </section>

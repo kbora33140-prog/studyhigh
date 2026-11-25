@@ -2,6 +2,26 @@ export type MenuItem = { label: string; href: string; previewOnly?: boolean };
 
 export type MainMenuItem = MenuItem & { children: MenuItem[] };
 
+export const schoolRegionMenu: MenuItem[] = [
+  { label: "서울 학교별 수업", href: "/regions/seoul" },
+  { label: "경기 학교별 수업", href: "/regions/gyeonggi" },
+  { label: "인천 학교별 수업", href: "/regions/incheon" },
+  { label: "부산 학교별 수업", href: "/regions/busan" },
+  { label: "대구 학교별 수업", href: "/regions/daegu" },
+  { label: "대전 학교별 수업", href: "/regions/daejeon" },
+  { label: "광주 학교별 수업", href: "/regions/gwangju" },
+  { label: "울산 학교별 수업", href: "/regions/ulsan" },
+  { label: "세종 학교별 수업", href: "/regions/sejong" },
+  { label: "강원 학교별 수업", href: "/regions/gangwon" },
+  { label: "충북 학교별 수업", href: "/regions/chungbuk" },
+  { label: "충남 학교별 수업", href: "/regions/chungnam" },
+  { label: "전북 학교별 수업", href: "/regions/jeonbuk" },
+  { label: "전남 학교별 수업", href: "/regions/jeonnam" },
+  { label: "경북 학교별 수업", href: "/regions/gyeongbuk" },
+  { label: "경남 학교별 수업", href: "/regions/gyeongnam" },
+  { label: "제주 학교별 수업", href: "/regions/jeju" },
+];
+
 export const mainMenu: MainMenuItem[] = [
   {
     label: "지역별 수업",
@@ -27,48 +47,42 @@ export const mainMenu: MainMenuItem[] = [
     ],
   },
   {
-    label: "학년별 수업",
-    href: "/grades",
-    children: [
-      { label: "초등학생", href: "/elementary" },
-      { label: "중학생", href: "/middle" },
-      { label: "고등학생", href: "/high" },
-      { label: "N수생", href: "/high#csat" },
-    ],
+    label: "학교별 수업",
+    href: "/schools",
+    children: schoolRegionMenu,
   },
   {
     label: "과목별 수업",
     href: "/subjects",
     children: [
-      { label: "국어", href: "/subjects#korean" },
-      { label: "영어", href: "/subjects#english" },
-      { label: "수학", href: "/subjects#math" },
-      { label: "과학", href: "/subjects#science" },
-      { label: "사회", href: "/subjects#social" },
-      { label: "한국사", href: "/subjects#history" },
+      { label: "국어", href: "/subjects/korean" },
+      { label: "영어", href: "/subjects/english" },
+      { label: "수학", href: "/subjects/math" },
+      { label: "과학", href: "/subjects/science" },
+      { label: "사회", href: "/subjects/social" },
+      { label: "한국사", href: "/subjects/history" },
+      { label: "코딩", href: "/subjects/coding" },
+      { label: "검정고시", href: "/ged" },
     ],
   },
   {
     label: "학습관리",
     href: "/learning-management",
     children: [
-      { label: "맞춤형 학습관리", href: "/learning-management#personal-management" },
+      { label: "학습관리 코칭", href: "/learning-management#personal-management" },
       { label: "자기주도학습 코칭", href: "/learning-management#self-directed" },
       { label: "숙제 및 오답관리", href: "/learning-management#homework-errors" },
       { label: "취약 유형 분석", href: "/learning-management#weakness-analysis" },
-      { label: "AI 수학 학습", href: "/learning-management#ai-math" },
+      { label: "AI 수학", href: "/learning-management#ai-math" },
       { label: "월간 학습 리포트", href: "/learning-management#monthly-report" },
     ],
   },
   {
-    label: "학습후기",
+    label: "학습후기&자료",
     href: "/reviews",
     children: [
-      { label: "학부모 후기", href: "/reviews#parent-reviews" },
-      { label: "학생 후기", href: "/reviews#student-reviews" },
-      { label: "성적 향상 사례", href: "/reviews#score-cases" },
-      { label: "학습 변화 사례", href: "/reviews#change-cases" },
-      { label: "Q&A", href: "/faq" },
+      { label: "학습후기", href: "/reviews" },
+      { label: "학습자료", href: "/reviews#learning-materials" },
     ],
   },
 ];

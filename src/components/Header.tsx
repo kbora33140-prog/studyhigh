@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { OpenConsultationButton } from "@/components/OpenConsultationButton";
-import { VisitorCounter } from "@/components/VisitorCounter";
 import { mainMenu } from "@/lib/siteNavigation";
 
 export function Header() {
@@ -50,10 +48,10 @@ export function Header() {
                 </button>
                 {expanded ? (
                   <div className="absolute left-1/2 top-full w-[290px] -translate-x-1/2 pt-2">
-                    <div className="rounded-[20px] border border-[#E5D8FF] bg-white p-3 shadow-[0_24px_70px_rgba(43,16,95,0.16)]">
+                    <div className="max-h-[calc(100vh-6.5rem)] overflow-y-auto rounded-[20px] border border-[#E5D8FF] bg-white p-3 shadow-[0_24px_70px_rgba(43,16,95,0.16)]">
                       <Link href={item.href} onClick={closeAll} className="block rounded-xl bg-[#F5F0FF] px-4 py-3 text-sm font-black text-[#2B105F] hover:bg-[#EDE5FF]">{item.label} 전체 보기</Link>
                       <ul className="mt-2 grid gap-1">
-                        {item.children.map((child) => <li key={child.href}><Link href={child.href} onClick={closeAll} className="block rounded-xl px-4 py-2.5 text-sm font-bold text-[#504857] transition hover:bg-[#F5F0FF] hover:text-[#6736C8] focus-visible:outline-2 focus-visible:outline-[#6736C8]">{child.label}</Link></li>)}
+                        {item.children.map((child) => <li key={`${child.label}-${child.href}`}>{child.previewOnly ? <button type="button" title="디자인 미리보기 항목" className="flex w-full items-center justify-between rounded-xl px-4 py-2.5 text-left text-sm font-bold text-[#7C7480] hover:bg-[#F5F0FF]"><span>{child.label}</span><span className="text-[10px] font-black text-[#8B6CCB]">PREVIEW</span></button> : <Link href={child.href} onClick={closeAll} className="block rounded-xl px-4 py-2.5 text-sm font-bold text-[#504857] transition hover:bg-[#F5F0FF] hover:text-[#6736C8] focus-visible:outline-2 focus-visible:outline-[#6736C8]">{child.label}</Link>}</li>)}
                       </ul>
                     </div>
                   </div>
@@ -61,11 +59,6 @@ export function Header() {
               </div>
             );
           })}
-        </div>
-
-        <div className="hidden items-center gap-3 xl:flex">
-          <OpenConsultationButton className="inline-flex h-11 items-center justify-center rounded-full bg-[#6736C8] px-5 text-sm font-black text-white transition hover:bg-[#5526B4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6736C8]">무료 상담 신청</OpenConsultationButton>
-          <div className="hidden 2xl:block"><VisitorCounter /></div>
         </div>
 
         <button type="button" onClick={() => setIsOpen((open) => !open)} className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#F5F0FF] text-[#2B105F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6736C8] xl:hidden" aria-expanded={isOpen} aria-controls="mobile-navigation" aria-label={isOpen ? "메뉴 닫기" : "메뉴 열기"}>
@@ -84,16 +77,14 @@ export function Header() {
                     <Link href={item.href} onClick={closeAll} className="flex-1 rounded-xl px-4 py-3 text-base font-black text-[#29252F] hover:bg-[#F5F0FF] hover:text-[#6736C8]">{item.label}</Link>
                     <button type="button" onClick={() => setMobileMenu(expanded ? null : item.label)} aria-expanded={expanded} aria-label={`${item.label} 하위 메뉴 ${expanded ? "닫기" : "열기"}`} className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#F8F5FF] text-[#6736C8]"><ChevronDown className={`h-4 w-4 transition ${expanded ? "rotate-180" : ""}`} /></button>
                   </div>
-                  {expanded ? <ul className="mb-2 grid gap-1 rounded-2xl bg-[#F8F5FF] p-2 sm:grid-cols-2">{item.children.map((child) => <li key={child.href}><Link href={child.href} onClick={closeAll} className="block rounded-xl px-3 py-2.5 text-sm font-bold text-[#504857] hover:bg-white hover:text-[#6736C8]">{child.label}</Link></li>)}</ul> : null}
+                  {expanded ? <ul className="mb-2 grid gap-1 rounded-2xl bg-[#F8F5FF] p-2 sm:grid-cols-2">{item.children.map((child) => <li key={`${child.label}-${child.href}`}>{child.previewOnly ? <button type="button" className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm font-bold text-[#7C7480]"><span>{child.label}</span><span className="text-[9px] font-black text-[#8B6CCB]">PREVIEW</span></button> : <Link href={child.href} onClick={closeAll} className="block rounded-xl px-3 py-2.5 text-sm font-bold text-[#504857] hover:bg-white hover:text-[#6736C8]">{child.label}</Link>}</li>)}</ul> : null}
                 </div>
               );
             })}
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
               <Link href="/regions" onClick={closeAll} className="inline-flex h-12 items-center justify-center rounded-xl border border-[#D8C8F4] text-sm font-black text-[#2B105F]">지역별 과외</Link>
               <Link href="/faq" onClick={closeAll} className="inline-flex h-12 items-center justify-center rounded-xl border border-[#D8C8F4] text-sm font-black text-[#2B105F]">자주 묻는 질문</Link>
-              <OpenConsultationButton className="inline-flex h-12 items-center justify-center rounded-xl bg-[#6736C8] px-5 text-sm font-black text-white sm:col-span-2">무료 상담 신청</OpenConsultationButton>
             </div>
-            <div className="mt-4 px-4"><VisitorCounter /></div>
           </div>
         </div>
       ) : null}

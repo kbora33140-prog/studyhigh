@@ -1,20 +1,6 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Noto_Sans_KR } from "next/font/google";
 import { ConsultationModal } from "@/components/ConsultationModal";
-import { FloatingConsultButton } from "@/components/FloatingConsultButton";
 import "./globals.css";
-
-const notoSansKr = Noto_Sans_KR({
-  variable: "--font-noto-sans-kr",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studyhigh.co.kr"),
@@ -75,10 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ko"
-      className={`${notoSansKr.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
-    >
+    <html lang="ko" className="h-full scroll-smooth antialiased">
       <head>
         <meta
           name="naver-site-verification"
@@ -88,7 +71,6 @@ export default function RootLayout({
       <body className="min-h-full bg-[#fbf8ff] font-sans text-slate-950">
         {children}
         <ConsultationModal />
-        <FloatingConsultButton />
       </body>
     </html>
   );
